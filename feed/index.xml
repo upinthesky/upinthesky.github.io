@@ -6,8 +6,8 @@
 </description>
     <link>http://upinthesky.github.io//</link>
     <atom:link href="http://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Dec 2016 17:57:09 +0100</pubDate>
-    <lastBuildDate>Mon, 12 Dec 2016 17:57:09 +0100</lastBuildDate>
+    <pubDate>Mon, 12 Dec 2016 18:12:34 +0100</pubDate>
+    <lastBuildDate>Mon, 12 Dec 2016 18:12:34 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -15,8 +15,6 @@
         <description>&lt;p&gt;“Up in the Sky” is a project that starts from my interest in Remote Controlled aerial vehicles, mainly quadcopters, airplanes and helicopters.&lt;/p&gt;
 
 &lt;!--more--&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/introduction/devo7e.png&quot;&gt;&lt;img src=&quot;/images/introduction/devo7e.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In particular, during the last years quadcopters have become really popular in a great number of applications: because of their characteristics such as Vertical Take Off and Landing (VTOL), stationary/slow flight and high maneuverability they are perfect for tasks like exploration, mapping, surveillance, cinematography and so on.&lt;br /&gt;
 Even if these features are present on helicopters, quadcopters are preferred for these operations because they are more stable and easier to fly.&lt;/p&gt;
