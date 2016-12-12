@@ -6,19 +6,54 @@
 </description>
     <link>http://upinthesky.github.io//</link>
     <atom:link href="http://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Dec 2016 11:32:41 +0100</pubDate>
-    <lastBuildDate>Mon, 12 Dec 2016 11:32:41 +0100</lastBuildDate>
+    <pubDate>Mon, 12 Dec 2016 17:57:09 +0100</pubDate>
+    <lastBuildDate>Mon, 12 Dec 2016 17:57:09 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Introduction</title>
-        <description>
+        <description>&lt;p&gt;“Up in the Sky” is a project that starts from my interest in Remote Controlled aerial vehicles, mainly quadcopters, airplanes and helicopters.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/introduction/devo7e.png&quot;&gt;&lt;img src=&quot;/images/introduction/devo7e.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In particular, during the last years quadcopters have become really popular in a great number of applications: because of their characteristics such as Vertical Take Off and Landing (VTOL), stationary/slow flight and high maneuverability they are perfect for tasks like exploration, mapping, surveillance, cinematography and so on.&lt;br /&gt;
+Even if these features are present on helicopters, quadcopters are preferred for these operations because they are more stable and easier to fly.&lt;/p&gt;
+
+&lt;p&gt;On the other hand airplanes are better if you need to monitor large areas since they can travel a bigger distance with less battery consumption (of course due to their characteristics they need to keep moving in the air).&lt;/p&gt;
+
+&lt;p&gt;In this scenario, autonomous flight is a really interesting topic and research has done big steps in this direction: using sensors like GPS, barometers and cameras, vehicles can identify their positions in the 3D space so it is possible to plan missions that aircrafts perform in an autonomous way.&lt;/p&gt;
+
+&lt;p&gt;Here is a brief list of the main arguments treated in this blog, so you can have an idea of what you will find in this place:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Build of quadcopters;&lt;/li&gt;
+  &lt;li&gt;Flight test of RC aircrafts;&lt;/li&gt;
+  &lt;li&gt;Transmitter modifications and improvements;&lt;/li&gt;
+  &lt;li&gt;First-Person View (FPV) systems;&lt;/li&gt;
+  &lt;li&gt;Autonomous flight.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I really hope you will find this blog useful, so enjoy the reading and see you in the next post.&lt;/p&gt;
 </description>
         <pubDate>Mon, 12 Dec 2016 00:00:00 +0100</pubDate>
         <link>http://upinthesky.github.io//2016/12/12/introduction.html</link>
         <guid isPermaLink="true">http://upinthesky.github.io//2016/12/12/introduction.html</guid>
         
         <category>Aircraft</category>
+        
+        <category>Airplane</category>
+        
+        <category>Helicopter</category>
+        
+        <category>Quadcopter</category>
+        
+        <category>Remote control</category>
+        
+        <category>VTOL</category>
+        
+        <category>FPV</category>
         
         
       </item>
