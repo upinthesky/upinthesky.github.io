@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+  <head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88840278-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <meta name="google-site-verification" content="2sf0nOsdmxOwb35mzYgNoZLo3dWw5VuhtdWLaSGSekA" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>APM Quadcopter 450 Build</title>
+  <meta name="description" content="In this article I will show the build of a quadcopter made with a 450 frame kit using APM 2.6 with Arducopter firmware version 3.2.1 as controller: this syst...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://upinthesky.github.io//2016/12/18/apm-quadcopter-450-build.html">
+  <link rel="alternate" type="application/rss+xml" title="Up in the Sky" href="https://upinthesky.github.io//feed.xml">
+</head>
+
+  <body>
+    <nav class="single-post-nav">
+      <ul>
+        <li>
+          
+          <a href="/2016/12/12/introduction.html">&#8592; Previous post</a>
+          
+        </li>
+        <li><a href="/">Home Page</a></li>
+        <li>
+          
+        </li>
+      </ul>
+    </nav>
+    <div class="single-post">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header single-post-header" style="background-image:url('https://upinthesky.github.io//images/clouds_banner.jpg')">
+    <div>
+      <h1 class="post-title single-post-title" itemprop="name headline">APM Quadcopter 450 Build</h1>
+      <p class="post-meta single-post-meta">
+        <time datetime="2016-12-18T00:00:00+01:00" itemprop="datePublished">18 December 2016</time>
+        •
+        
+        
+          9 mins
+        
+        read
+      </p>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="single-post-summary">
+      
+    <ul class="tag-box inline">
+      
+        <li><a href="/tags#APM" class="tag">• APM</a></li>
+      
+        <li><a href="/tags#Quadcopter" class="tag">• Quadcopter</a></li>
+      
+        <li><a href="/tags#Build" class="tag">• Build</a></li>
+      
+        <li><a href="/tags#Arducopter" class="tag">• Arducopter</a></li>
+      
+        <li><a href="/tags#Devo 7e" class="tag">• Devo 7e</a></li>
+      
+        <li><a href="/tags#Deviation" class="tag">• Deviation</a></li>
+      
+    </ul>  
+    </div>
+    <div class="post-content single-post-content" itemprop="articleBody">
+      <p>In this article I will show the build of a quadcopter made with a 450 frame kit using APM 2.6 with Arducopter firmware version 3.2.1 as controller: this system performs attitude control and can be programmed for the execution of autonomous missions using PC (via Mission Planner software) or Smartphone (via DroidPlanner app).
+<!--more--></p>
+
+<p><strong>Components list</strong></p>
+
+<p>In this section it is reported a list of the components used for this project with a short description of their most important features.</p>
+
+<ul>
+  <li>HJ450 Frame</li>
+</ul>
+
+<p class="center"><a href="/images/quadcopter_450_build/frame.jpg"><img src="/images/quadcopter_450_build/frame.jpg" alt="" /></a></p>
+
+<p>This frame is a nylon and fiber glass structure: the number stands for the length of each line of the cross frame, i.e. 450 mm (considering the distance from propeller center of rotation to the opposite one).<br />
+As the previous image shows, this frame has an integrated power distribution board (PDB) which simplifies the connections reducing the number of wires floating around the aircraft.</p>
+
+<p>I chose to have the red arms as the front of the quadcopter, while the white ones represent the rear (this is a completely arbitrary choice and depends on how the controller is oriented).</p>
+
+<ul>
+  <li>APM 2.6 controller kit</li>
+</ul>
+
+<p class="center"><a href="/images/quadcopter_450_build/apm.jpg"><img src="/images/quadcopter_450_build/apm.jpg" alt="" /></a></p>
+
+<p>The main component of this kit is the controller, the APM 2.6:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/apm_circuit.jpg"><img src="/images/quadcopter_450_build/apm_circuit.jpg" alt="" /></a></p>
+
+<p>The arrow with the “Front” tag indicates the direction that the controller interprets as forward.
+It features an Atmel ATmega 2560 microcontroller and a series of sensors like gyroscope, magnetometer and barometer (the last one is covered by foam to reduce disturbances). It has ports to connect GPS, telemetry and power module. It features also a series of inputs and outputs pins respectively for receiver channels and ESCs (Electronic Speed Controllers) command signals.<br />
+There is also a port for connecting the board to a PC through USB in order to install/update the firmware or programming the APM.<br />
+A particularly important element on the circuit is the jumper JP1: depending on the chosen power configuration (using power module or taking power from ESCs) you have to remove it or leave it in place:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/apm_power_rails.png"><img src="/images/quadcopter_450_build/apm_power_rails.png" alt="" /></a></p>
+
+<p>In this case, since we are going to use a power module that distributes the power along the board, we have to remove JP1. Moreover, since the ESCs have a BEC (Battery Eliminator Circuit) we need to connect only the signal wire and leave the positive and black wires disconnected.</p>
+
+<p>This kit, other than the APM 2.6 controller, includes the following components: CRIUS power module, GPS, telemetry modules (TX and RX), shock absorber and connection cables.</p>
+
+<p>The power module converts battery voltage (LiPo 3S or 4S) to the proper stable voltage of 5.3V (with a maximum current of 2.25A) needed from the controller and delivers it also to the ESCs; it also measures battery voltage and current consumption, and sends these data to the APM.</p>
+
+<p>The GPS and telemetry TX module are used to transmit respectively aircraft position and general flight data like attitude or battery consumption to the ground station (e.g. PC or Smartphone) where the telemetry RX module is plugged in; telemetry works at a frequency of 433 MHz.</p>
+
+<p>The shock absorber is used as a mount for the controller and helps getting less vibrations so as to improve compass reading.</p>
+
+<ul>
+  <li>4 x Emax MT2213-935KV Brushless Motors</li>
+</ul>
+
+<p class="center"><a href="/images/quadcopter_450_build/motor.jpg"><img src="/images/quadcopter_450_build/motor.jpg" alt="" /></a></p>
+
+<p>Each brushless motor comes with a pair of propellers, one normal (for clockwise rotation) and another pusher (for counterclockwise rotation). Nuts have different colors since they are made to lock propellers in the same way they spin (so depending on motors rotation two of them lock in CW direction and the others CCW).</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/propellers1045.jpg"><img src="/images/quadcopter_450_build/propellers1045.jpg" alt="" /></a></p>
+
+<p>Motors manual suggests to use the provided 10x4.5 propellers with 3S LiPo battery and this is the configuration we are going to set up.<br />
+The maximum Thrust for each motor is given by (0.850 Kg x 9.8 m/s^2) = 8.33 N.</p>
+
+<p>However, as indicated in the manual, it is also possible to set up a configuration with 8x4.5 propellers and 4S LiPo battery.</p>
+
+<ul>
+  <li>4 x Hobbywing FlyFun 30A Brushless ESC</li>
+</ul>
+
+<p class="center"><a href="/images/quadcopter_450_build/esc.jpg"><img src="/images/quadcopter_450_build/esc.jpg" alt="" /></a></p>
+
+<p>These ESCs support 2S to 4S LiPo battery and have a BEC that provides and output of 5V@2A, so we need to keep this in mind when connecting to the APM controller.</p>
+
+<ul>
+  <li>3 x Turnigy LiPo battery 3S 2200mah 25C</li>
+</ul>
+
+<p class="center"><a href="/images/quadcopter_450_build/battery.jpg"><img src="/images/quadcopter_450_build/battery.jpg" alt="" /></a></p>
+
+<p>These are pretty classic 3-cells LiPo batteries with 25C discharge rate. They provide, for my configuration, a flight time of 8-9 minutes depending on the flying style.</p>
+
+<ul>
+  <li>Walkera Devo 7e transmitter with Deviation firmware</li>
+</ul>
+
+<p class="center"><a href="/images/quadcopter_450_build/devo7e.jpg"><img src="/images/quadcopter_450_build/devo7e.jpg" alt="" /></a></p>
+
+<p>This is my favorite transmitter since it supports Deviation firmware, a community project that can be loaded on the Devo 7e by substituting the original software; its main feature is that it permits to bind to almost all commercial RC systems by simply adding some Radio Frequency (RF) modules (we will talk about that in other articles): in this way you can go to the field with a single TX controlling all your models.</p>
+
+<ul>
+  <li>Walkera RX601 receiver:</li>
+</ul>
+
+<p class="center"><a href="/images/quadcopter_450_build/rx601.jpg"><img src="/images/quadcopter_450_build/rx601.jpg" alt="" /></a></p>
+
+<p>This is a basic 6 channel receiver I had laying around; I will probably substitute it in the future in case I will need a wider control range.</p>
+
+<p>Other necessary items for this build are reported here:</p>
+
+<ul>
+  <li>Expandable Sleeving Cable 2m (diameter 1 cm);</li>
+  <li>Heat shrink tubing 2m (diameter 0.7 cm and 1.5 cm);</li>
+  <li>Insulating tape;</li>
+  <li>Nylon zip ties 2.5 mm x 150 mm;</li>
+  <li>14 AWG power cables;</li>
+  <li>XT60 connectors;</li>
+  <li>Decent soldering iron, hot glue gun and cutter.</li>
+</ul>
+
+<p><strong>Build</strong></p>
+
+<p>We can start the build by analyzing the power distribution on the quadrotor frame:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/power_distribution.jpg"><img src="/images/quadcopter_450_build/power_distribution.jpg" alt="" /></a></p>
+
+<p>As the image shows, we have to solder ESCs power leads to the board in the points indicated by the upper four red arrows, being careful to connect the black wire of each ESC, i.e. the negative lead, to the “-“ and the red wire, i.e. the positive lead, to the “+”.</p>
+
+<p>Before doing that we need to solder the brushless motor connectors provided with the motors themselves to the four ESCs:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/esc_connectors.jpg"><img src="/images/quadcopter_450_build/esc_connectors.jpg" alt="" /></a></p>
+
+<p>To insulate the ends, we cut 3x4 short sections of heat shrink tube with diameter 0.7 cm and fix them around the connectors just by using hot air:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/esc_heat_shrink.jpg"><img src="/images/quadcopter_450_build/esc_heat_shrink.jpg" alt="" /></a></p>
+
+<p>After passing ESCs power leads wires inside the expandable sleeving cable, that can be blocked in place using heat shrink tube with diameter 1.5 cm, we can proceed with the soldering:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/esc_soldered.jpg"><img src="/images/quadcopter_450_build/esc_soldered.jpg" alt="" /></a></p>
+
+<p>It is a good practice to cover the power contacts on the board with hot glue just to be sure they are isolated.</p>
+
+<p>We can now proceed by preparing the 14 AWG cable for power connection: one side of the positive/negative wires has to be soldered on the board, while the other one needs a XT60 connector in order to plug in the power module.</p>
+
+<p>We can also lock the arms to the power distribution board with the screws, having care to pass ESC wires inside the arm like in the following picture:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/esc_power.jpg"><img src="/images/quadcopter_450_build/esc_power.jpg" alt="" /></a></p>
+
+<p>Then we can mount the ESCs on the four arms which is the best solution to achieve two objectives: good cooling of their circuit and distributed weight for proper balance; each one of them can be fixed with two zip ties:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/esc_ties.jpg"><img src="/images/quadcopter_450_build/esc_ties.jpg" alt="" /></a></p>
+
+<p>After these steps, remembering to isolate the positive and negative leads of the ESCs (we need only the white signal wire for the reason explained before), we have the following result:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/arms.jpg"><img src="/images/quadcopter_450_build/arms.jpg" alt="" /></a></p>
+
+<p>For CRIUS power module connection we simply follow this scheme:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/power_module.jpg"><img src="/images/quadcopter_450_build/power_module.jpg" alt="" /></a></p>
+
+<p>We can then mount the top plate using the screws included with the frame and fix the shock absorber structure with the APM controller on using some zip ties. This positioning has been chosen because as stated in Ardupilot website referring to the controller: “It should be placed close to the center of gravity of the vehicle (both horizontally and vertically). Generally this means it should be placed within a few centimeters of the middle of the vehicle and level with the motors.”</p>
+
+<p>GPS with its shaft can be fixed through one of the holes in the top plate; we need to be careful orienting the front of it in the same way as the controller, i.e. towards the red arms. Instead telemetry transmitter module can be positioned on the bottom plate. GPS and telemetry module can be easily connected to the ports with their referring tags.</p>
+
+<p>Regarding APM Inputs pins connection, we can follow up this scheme:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/apm_inputs.jpg"><img src="/images/quadcopter_450_build/apm_inputs.jpg" alt="" /></a></p>
+
+<p>So we just follow the reported connections, keeping in mind that we need to take the power for the receiver only from one positive pin (mid rail) from the APM, the other channels need just the signal wire (white).</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/apm_inputs2.jpg"><img src="/images/quadcopter_450_build/apm_inputs2.jpg" alt="" /></a></p>
+
+<p>Instead for APM Outputs pins connection, we can follow up this scheme:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/apm_outputs.jpg"><img src="/images/quadcopter_450_build/apm_outputs.jpg" alt="" /></a></p>
+
+<p>I have chosen to use “Quad X” configuration, i.e. the one highlighted with the red rectangle:</p>
+
+<ul>
+  <li>Motor 1 - CCW rotation with normal propeller;</li>
+  <li>Motor 2 - CCW rotation with normal propeller;</li>
+  <li>Motor 3 - CW rotation with pusher propeller;</li>
+  <li>Motor 4 - CW rotation with pusher propeller.</li>
+</ul>
+
+<p>As the following image reports, only the signal wire (white) from the every ESC has been connected to the controller:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/apm_outputs2.jpg"><img src="/images/quadcopter_450_build/apm_outputs2.jpg" alt="" /></a></p>
+
+<p>Finally we can mount motors and propellers, with particular attention to rotation direction and propeller/nuts type; the following picture shows a CCW rotating motor with a normal propeller blocked through the corresponding red nut:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/motor_propeller.jpg"><img src="/images/quadcopter_450_build/motor_propeller.jpg" alt="" /></a></p>
+
+<p>It is always a good practice to group cables using zip ties in order to avoid collisions with the blades and have a clean result.<br />
+The following image shows the final product, which has a weight of 0.9 Kg without battery:</p>
+
+<p class="center"><a href="/images/quadcopter_450_build/quad_top.jpg"><img src="/images/quadcopter_450_build/quad_top.jpg" alt="" /></a></p>
+
+<p><strong>Next steps</strong></p>
+
+<p>Right now we have the finished structure with everything mounted on, but we still need to upload Arducopter firmware on the APM controller. Once that is done, we can check if motors are rotating in the proper direction (if not, it is just a matter of inverting two of the three ESC cables) and start tuning the PID (Proportional-Integral-Derivative) gains.</p>
+
+    </div>
+  </div>
+</article>
+
+    </div>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+        <p align=right>© 2016 Up in the Sky | All Rights Reserved 
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+</html>
