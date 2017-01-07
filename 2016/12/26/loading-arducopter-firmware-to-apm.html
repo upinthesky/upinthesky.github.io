@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+  <head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88840278-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <meta name="google-site-verification" content="2sf0nOsdmxOwb35mzYgNoZLo3dWw5VuhtdWLaSGSekA" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Loading ArduCopter Firmware to APM</title>
+  <meta name="description" content="This article shows how to load ArduCopter firmware into APM control board. This post refers to the previous “APM 450 Quadcopter Build” post.">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://upinthesky.github.io//2016/12/26/loading-arducopter-firmware-to-apm.html">
+  <link rel="alternate" type="application/rss+xml" title="Up in the Sky" href="https://upinthesky.github.io//feed.xml">
+</head>
+
+  <body>
+    <nav class="single-post-nav">
+      <ul>
+        <li>
+          
+          <a href="/2016/12/18/apm-quadcopter-450-build.html">&#8592; Previous post</a>
+          
+        </li>
+        <li><a href="/">Home Page</a></li>
+        <li>
+          
+        </li>
+      </ul>
+    </nav>
+    <div class="single-post">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header single-post-header" style="background-image:url('https://upinthesky.github.io//images/clouds_banner.jpg')">
+    <div>
+      <h1 class="post-title single-post-title" itemprop="name headline">Loading ArduCopter Firmware to APM</h1>
+      <p class="post-meta single-post-meta">
+        <time datetime="2016-12-26T00:00:00+01:00" itemprop="datePublished">26 December 2016</time>
+        •
+        
+        
+          2 mins
+        
+        read
+      </p>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="single-post-summary">
+      
+    <ul class="tag-box inline">
+      
+    </ul>  
+    </div>
+    <div class="post-content single-post-content" itemprop="articleBody">
+      <p>This article shows how to load ArduCopter firmware into APM control board. This post refers to the previous “APM 450 Quadcopter Build” <a href="https://upinthesky.github.io/2016/12/18/apm-quadcopter-450-build.html">post</a>.</p>
+
+<!--more-->
+
+<p><strong>Mission Planner</strong></p>
+
+<p>First we need do download a free software called Mission Planner. This tool gives us the possibility, other than flashing APM board with different firmwares (ArduRover, ArduCopter, Arduplane), to control flight data, calibrate compass, accelerometer and radio, program switches for different flight modes and even plan flight for performing autonomous missions.<br />
+It can be downloaded from <a href="http://ardupilot.org/planner/docs/common-install-mission-planner.html">here</a>. To install in a Windows machine just double click on the “.exe” and follow the setup:</p>
+
+<p><a href="/images/loading_firmware/mp1.png"><img src="/images/loading_firmware/mp1.png" alt="" /></a></p>
+
+<p>Keep in mind that the package installs also all the necessary drivers needed by the board to be recognized by the Operating System:</p>
+
+<p><a href="/images/loading_firmware/mp2.png"><img src="/images/loading_firmware/mp2.png" alt="" /></a></p>
+
+<p><a href="/images/loading_firmware/mp3.png"><img src="/images/loading_firmware/mp3.png" alt="" /></a></p>
+
+<p>If everything is installed properly the following message is displayed:</p>
+
+<p><a href="/images/loading_firmware/mp4.png"><img src="/images/loading_firmware/mp4.png" alt="" /></a></p>
+
+<p>Once the software has been installed we can connect the board to the PC through the Micro USB cable (be careful to have the APM disconnected from every other power source like the PM); then, clicking on Computer -&gt; Properties -&gt; Device Manager, under “Ports (COM &amp; LPT)” you should have something like this:</p>
+
+<p><a href="/images/loading_firmware/apm_com.png"><img src="/images/loading_firmware/apm_com.png" alt="" /></a></p>
+
+<p>where COM6 is the communication port used for exchanging data with the APM.<br />
+After launching Mission Planner software, this port will be the same appearing in the upper right corner of Mission Planner screen:</p>
+
+<p class="center"><a href="/images/loading_firmware/com6_mp.png"><img src="/images/loading_firmware/com6_mp.png" alt="" /></a></p>
+
+<p>Do not click on “Connect”, since first we have to upload the firmware on the APM; to do so, we have to click on Initial Setup -&gt; Install Firmware:</p>
+
+<p class="center"><a href="/images/loading_firmware/install_firmware.png"><img src="/images/loading_firmware/install_firmware.png" alt="" /></a></p>
+
+<p>Since ArduCopter 3.2.1 is the last supported version for APM 2.x control board (in my case 2.6) we need to click on “Pick previous firmware” on the bottom right and choose the corresponding option as in the image below:</p>
+
+<p class="center"><a href="/images/loading_firmware/firmware_version.png"><img src="/images/loading_firmware/firmware_version.png" alt="" /></a></p>
+
+<p>After that we just select the Quad version “ArduCopter V3.2.1 Quad” and confirm the upload activity:</p>
+
+<p class="center"><a href="/images/loading_firmware/arducopter.png"><img src="/images/loading_firmware/arducopter.png" alt="" /></a></p>
+
+<p>Beware that Mission Planner takes about 5-6 minutes to upload the firmware to the APM control board.</p>
+
+<p>To calibrate magnetometer (compass), accelerometer and receiver just follow these good articles from ArduPilot website: <a href="http://ardupilot.org/copter/docs/common-compass-setup-advanced.html">Compass calibration</a>, <a href="http://ardupilot.org/copter/docs/common-accelerometer-calibration.html">Accelerometer calibration</a>, <a href="http://ardupilot.org/copter/docs/common-radio-control-calibration.html">Radio control calibration</a>.</p>
+
+    </div>
+  </div>
+</article>
+
+    </div>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+        <p align=right>© 2016 Up in the Sky | All Rights Reserved 
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+</html>

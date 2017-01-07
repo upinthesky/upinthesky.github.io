@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>APM Quadcopter 450 Build</title>
-  <meta name="description" content="In this article I will show the build of a quadcopter made with a 450 frame kit using APM 2.6 with Arducopter firmware version 3.2.1 as controller: this syst...">
+  <meta name="description" content="In this article I will show the build of a quadcopter made with a 450 frame kit using APM 2.6 with ArduCopter firmware version 3.2.1 as controller: this syst...">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="https://upinthesky.github.io//2016/12/18/apm-quadcopter-450-build.html">
@@ -36,6 +36,8 @@
         <li><a href="/">Home Page</a></li>
         <li>
           
+          <a href="/2016/12/26/loading-arducopter-firmware-to-apm.html">Next post &#8594;</a>
+          
         </li>
       </ul>
     </nav>
@@ -49,7 +51,7 @@
         •
         
         
-          9 mins
+          10 mins
         
         read
       </p>
@@ -66,7 +68,7 @@
       
         <li><a href="/tags#Build" class="tag">• Build</a></li>
       
-        <li><a href="/tags#Arducopter" class="tag">• Arducopter</a></li>
+        <li><a href="/tags#ArduCopter" class="tag">• ArduCopter</a></li>
       
         <li><a href="/tags#Devo 7e" class="tag">• Devo 7e</a></li>
       
@@ -83,7 +85,7 @@
     </ul>  
     </div>
     <div class="post-content single-post-content" itemprop="articleBody">
-      <p>In this article I will show the build of a quadcopter made with a 450 frame kit using APM 2.6 with Arducopter firmware version 3.2.1 as controller: this system performs attitude control and can be programmed for the execution of autonomous missions using PC (via Mission Planner software) or Smartphone (via DroidPlanner app).
+      <p>In this article I will show the build of a quadcopter made with a 450 frame kit using APM 2.6 with ArduCopter firmware version 3.2.1 as controller: this system performs attitude control and can be programmed for the execution of autonomous missions using PC (via Mission Planner software) or Smartphone (via DroidPlanner app).
 <!--more--></p>
 
 <p><strong>Components list</strong></p>
@@ -127,6 +129,8 @@ A particularly important element on the circuit is the jumper JP1: depending on 
 <p>The GPS and telemetry TX module are used to transmit respectively aircraft position and general flight data like attitude or battery consumption to the ground station (e.g. PC or Smartphone) where the telemetry RX module is plugged in; telemetry works at a frequency of 433 MHz.</p>
 
 <p>The shock absorber is used as a mount for the controller and helps getting less vibrations so as to improve compass reading.</p>
+
+<p>Before mounting the APM control board on the quadcopter we need to upload the firmware like described <a href="https://upinthesky.github.io/2016/12/18/2016/12/26/loading-arducopter-firmware-to-apm.html">here</a> and perform magnetometer (compass) and accelerometer calibration following the links to the guides at the end of that article (radio control calibration can be done even after the structural build).</p>
 
 <ul>
   <li>4 x Emax MT2213-935KV Brushless Motors</li>
@@ -256,7 +260,7 @@ The maximum Thrust for each motor is given by (0.850 Kg x 9.8 m/s^2) = 8.33 N.</
 
 <p class="center"><a href="/images/quadcopter_450_build/apm_outputs2.jpg"><img src="/images/quadcopter_450_build/apm_outputs2.jpg" alt="" /></a></p>
 
-<p>Finally we can mount motors and propellers, with particular attention to rotation direction and propeller/nuts type; the following picture shows a CCW rotating motor with a normal propeller blocked through the corresponding red nut:</p>
+<p>Finally we can mount motors and propellers, with particular attention to rotation direction and propeller/nuts type; the following picture shows a CW rotating motor with a pusher propeller blocked by the corresponding red nut:</p>
 
 <p class="center"><a href="/images/quadcopter_450_build/motor_propeller.jpg"><img src="/images/quadcopter_450_build/motor_propeller.jpg" alt="" /></a></p>
 
@@ -267,7 +271,9 @@ The following image shows the final product, which has a weight of 0.9 Kg withou
 
 <p><strong>Next steps</strong></p>
 
-<p>Right now we have the finished structure with everything mounted on, but we still need to upload Arducopter firmware on the APM controller. Once that is done, we can check if motors are rotating in the proper direction (if not, it is just a matter of inverting two of the three ESC cables) and start tuning the PID (Proportional-Integral-Derivative) gains.</p>
+<p>Right now we have the finished structure with everything mounted on, but we need to check if motors are rotating in the proper direction (if not, it is just a matter of inverting two of the three ESC cables). By doing this, for safety reasons, remove the propellers from the motors.</p>
+
+<p>Once we are sure everything is properly set up, we can go with our first test and start tuning PID (Proportional-Integral-Derivative) gains.</p>
 
     </div>
   </div>
