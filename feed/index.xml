@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 Jan 2017 14:51:20 +0100</pubDate>
-    <lastBuildDate>Sat, 07 Jan 2017 14:51:20 +0100</lastBuildDate>
+    <pubDate>Sat, 30 Sep 2017 12:23:56 +0200</pubDate>
+    <lastBuildDate>Sat, 30 Sep 2017 12:23:56 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -130,7 +130,7 @@ A particularly important element on the circuit is the jumper JP1: depending on 
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/motor.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/motor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Each brushless motor comes with a pair of propellers, one normal (for clockwise rotation) and another pusher (for counterclockwise rotation). Nuts have different colors since they are made to lock propellers in the same way they spin (so depending on motors rotation two of them lock in CW direction and the others CCW).&lt;/p&gt;
+&lt;p&gt;Each brushless motor comes with a pair of propellers, one normal (for clockwise rotation) and another pusher (for counterclockwise rotation). Nuts have different colors since they are made to lock propellers in the opposite direction they spin (self locking nuts, so depending on motors rotation two of them lock in CW direction and the others CCW).&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/propellers1045.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/propellers1045.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -252,7 +252,7 @@ The maximum Thrust for each motor is given by (0.850 Kg x 9.8 m/s^2) = 8.33 N.&l
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/apm_outputs2.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/apm_outputs2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Finally we can mount motors and propellers, with particular attention to rotation direction and propeller/nuts type; the following picture shows a CW rotating motor with a pusher propeller blocked by the corresponding red nut:&lt;/p&gt;
+&lt;p&gt;Finally we can mount motors and propellers, with particular attention to rotation direction and propeller/nuts type; the following picture shows a CCW rotating motor with a pusher propeller blocked by the corresponding red nut:&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/motor_propeller.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/motor_propeller.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
