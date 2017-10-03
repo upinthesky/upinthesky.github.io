@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Sep 2017 12:41:18 +0200</pubDate>
-    <lastBuildDate>Sat, 30 Sep 2017 12:41:18 +0200</lastBuildDate>
+    <pubDate>Tue, 03 Oct 2017 22:31:21 +0200</pubDate>
+    <lastBuildDate>Tue, 03 Oct 2017 22:31:21 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -82,10 +82,10 @@ After launching Mission Planner software, this port will be the same appearing i
 
 &lt;p&gt;&lt;strong&gt;Components list&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;In this section it is reported a list of the components used for this project with a short description of their most important features.&lt;/p&gt;
+&lt;p&gt;In this section it is reported a list of the components used for this project with a short description of their most important features and a link to it. In the case I cannot find the same component I used, I have put a link where you can buy a similar one.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;HJ450 Frame&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Diatone-Q450-Quad-450-V3-PCB-Quadcopter-Frame-Kit-450mm-p-942100.html?p=CA03112038011201508Q&quot;&gt;HJ450 Frame&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/frame.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/frame.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -96,12 +96,20 @@ As the previous image shows, this frame has an integrated power distribution boa
 &lt;p&gt;I chose to have the red arms as the front of the quadcopter, while the white ones represent the rear (this is a completely arbitrary choice and depends on how the controller is oriented).&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;APM 2.6 controller kit&lt;/li&gt;
+  &lt;li&gt;APM controller kit
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Ardupilot-APM-2_8-Flight-Control-Board-Bend-Pin-with-Protective-Case-p-1123217.html?p=CA03112038011201508Q&quot;&gt;APM&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/3DR-Radio-Telemetry-433MHZ-Module-For-APM-APM2-Europe-p-85233.html?p=CA03112038011201508Q&quot;&gt;Telemetry @433Mhz&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/APM-Power-Module-V1-Vision-50V-90A-with-BEC-for-RC-Model-p-917309.html?p=CA03112038011201508Q&quot;&gt;Power Module&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/NEO-M8N-GPS-Module-for-PX4-PIX-APM2_52_6-Built-inCompass-p-974360.html?p=CA03112038011201508Q&quot;&gt;GPS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/APM2_5-2_6-KK-MWC-Glass-Fiber-Shock-Absorber-Anti-vibration-Set-p-914546.html?p=CA03112038011201508Q&quot;&gt;Anti-Vibration Mount&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/apm.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/apm.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;The main component of this kit is the controller, the APM 2.6:&lt;/p&gt;
+&lt;p&gt;The main component of this kit is the controller, the APM:&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/apm_circuit.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/apm_circuit.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -114,7 +122,7 @@ A particularly important element on the circuit is the jumper JP1: depending on 
 
 &lt;p&gt;In this case, since we are going to use a power module that distributes the power along the board, we have to remove JP1. Moreover, since the ESCs have a BEC (Battery Eliminator Circuit) we need to connect only the signal wire and leave the positive and black wires disconnected.&lt;/p&gt;
 
-&lt;p&gt;This kit, other than the APM 2.6 controller, includes the following components: CRIUS power module, GPS, telemetry modules (TX and RX), shock absorber and connection cables.&lt;/p&gt;
+&lt;p&gt;This kit, other than the APM controller, includes the following components: CRIUS power module, GPS, telemetry modules (TX and RX), shock absorber and connection cables.&lt;/p&gt;
 
 &lt;p&gt;The power module converts battery voltage (LiPo 3S or 4S) to the proper stable voltage of 5.3V (with a maximum current of 2.25A) needed from the controller and delivers it also to the ESCs; it also measures battery voltage and current consumption, and sends these data to the APM.&lt;/p&gt;
 
@@ -125,10 +133,14 @@ A particularly important element on the circuit is the jumper JP1: depending on 
 &lt;p&gt;Before mounting the APM control board on the quadcopter we need to upload the firmware like described &lt;a href=&quot;https://upinthesky.github.io/2016/12/18/2016/12/26/loading-arducopter-firmware-to-apm.html&quot;&gt;here&lt;/a&gt; and perform magnetometer (compass) and accelerometer calibration following the links to the guides at the end of that article (radio control calibration can be done even after the structural build).&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;4 x Emax MT2213-935KV Brushless Motors&lt;/li&gt;
+  &lt;li&gt;4 x &lt;a href=&quot;https://www.banggood.com/it/Emax-MT2213-935KV-Brushless-Motor-For-RC-Multicopter-p-69288.html?p=CA03112038011201508Q&quot;&gt;Emax MT2213-935KV Brushless Motors&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/motor.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/motor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;4 x &lt;a href=&quot;https://www.banggood.com/EMAX-1045-Propellers-For-Emax-MT2213-935KV-Brushless-Motor-p-69290.html?p=CA03112038011201508Q&quot;&gt;Propellers 1045&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Each brushless motor comes with a pair of propellers, one normal (for clockwise rotation) and another pusher (for counterclockwise rotation). Nuts have different colors since they are made to lock propellers in the opposite direction they spin (self locking nuts, so depending on motors rotation two of them lock in CW direction and the others CCW).&lt;/p&gt;
 
@@ -140,7 +152,7 @@ The maximum Thrust for each motor is given by (0.850 Kg x 9.8 m/s^2) = 8.33 N.&l
 &lt;p&gt;However, as indicated in the manual, it is also possible to set up a configuration with 8x4.5 propellers and 4S LiPo battery.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;4 x Hobbywing FlyFun 30A Brushless ESC&lt;/li&gt;
+  &lt;li&gt;4 x &lt;a href=&quot;https://www.banggood.com/Hobbywing-Skywalker-2-4S-50A-UBEC-Brushless-ESC-With-5V5A-BEC-For-RC-Models-p-1041723.html?p=CA03112038011201508Q&quot;&gt;Hobbywing FlyFun 30A Brushless ESC&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/esc.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/esc.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -148,7 +160,7 @@ The maximum Thrust for each motor is given by (0.850 Kg x 9.8 m/s^2) = 8.33 N.&l
 &lt;p&gt;These ESCs support 2S to 4S LiPo battery and have a BEC that provides and output of 5V@2A, so we need to keep this in mind when connecting to the APM controller.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;3 x Turnigy LiPo battery 3S 2200mah 25C&lt;/li&gt;
+  &lt;li&gt;3 x &lt;a href=&quot;https://hobbyking.com/en_us/turnigy-2200mah-3s-25c-lipo-pack.html&quot;&gt;Turnigy LiPo battery 3S 2200mah 25C&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/battery.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/battery.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -156,7 +168,7 @@ The maximum Thrust for each motor is given by (0.850 Kg x 9.8 m/s^2) = 8.33 N.&l
 &lt;p&gt;These are pretty classic 3-cells LiPo batteries with 25C discharge rate. They provide, for my configuration, a flight time of 8-9 minutes depending on the flying style.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Walkera Devo 7e transmitter with Deviation firmware&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q&quot;&gt;Walkera Devo 7e transmitter with Deviation firmware&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/devo7e.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/devo7e.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -164,7 +176,7 @@ The maximum Thrust for each motor is given by (0.850 Kg x 9.8 m/s^2) = 8.33 N.&l
 &lt;p&gt;This is my favorite transmitter since it supports Deviation firmware, a community project that can be loaded on the Devo 7e by substituting the original software; its main feature is that it permits to bind to almost all commercial RC systems by simply adding some Radio Frequency (RF) modules (we will talk about that in other articles): in this way you can go to the field with a single TX controlling all your models.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Walkera RX601 receiver:&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/it/Wholesale-Walkera-6CH-2_4Ghz-RX601-Receiver-For-Devo-6-7-8-10-12-Transmitter-p-67222.html?p=CA03112038011201508Q&quot;&gt;Walkera RX601 receiver&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/rx601.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/rx601.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
