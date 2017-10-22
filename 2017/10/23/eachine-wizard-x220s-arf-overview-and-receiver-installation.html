@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+  <head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88840278-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <meta name="google-site-verification" content="2sf0nOsdmxOwb35mzYgNoZLo3dWw5VuhtdWLaSGSekA" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Eachine Wizard X220S ARF Overview and Receiver Installation</title>
+  <meta name="description" content="Eachine Wizard X220S is a 220mm FPV Racing quadcopter that comes both in RTF (Ready To Fly) and ARF (Almost Ready to Fly) version.If you already have a decen...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://upinthesky.github.io//2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html">
+  <link rel="alternate" type="application/rss+xml" title="Up in the Sky" href="https://upinthesky.github.io//feed.xml">
+</head>
+
+  <body>
+    <nav class="single-post-nav">
+      <ul>
+        <li>
+          
+          <a href="/2017/01/07/loading-arducopter-firmware-to-apm.html">&#8592; Previous post</a>
+          
+        </li>
+        <li><a href="/">Home Page</a></li>
+        <li>
+          
+        </li>
+      </ul>
+    </nav>
+    <div class="single-post">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header single-post-header" style="background-image:url('https://upinthesky.github.io//images/clouds_banner.jpg')">
+    <div>
+      <h1 class="post-title single-post-title" itemprop="name headline">Eachine Wizard X220S ARF Overview and Receiver Installation</h1>
+      <p class="post-meta single-post-meta">
+        <time datetime="2017-10-23T00:00:00+02:00" itemprop="datePublished">23 October 2017</time>
+        •
+        
+        
+          3 mins
+        
+        read
+      </p>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="single-post-summary">
+      
+    <ul class="tag-box inline">
+      
+        <li><a href="/tags#Quadcopter" class="tag">• Quadcopter</a></li>
+      
+        <li><a href="/tags#X220S" class="tag">• X220S</a></li>
+      
+        <li><a href="/tags#Eachine" class="tag">• Eachine</a></li>
+      
+        <li><a href="/tags#Wizard" class="tag">• Wizard</a></li>
+      
+        <li><a href="/tags#Overview" class="tag">• Overview</a></li>
+      
+        <li><a href="/tags#Receiver" class="tag">• Receiver</a></li>
+      
+        <li><a href="/tags#Installation" class="tag">• Installation</a></li>
+      
+        <li><a href="/tags#i-BUS" class="tag">• i-BUS</a></li>
+      
+        <li><a href="/tags#AFHDS-2A" class="tag">• AFHDS-2A</a></li>
+      
+        <li><a href="/tags#FPV" class="tag">• FPV</a></li>
+      
+        <li><a href="/tags#Racing" class="tag">• Racing</a></li>
+      
+    </ul>  
+    </div>
+    <div class="post-content single-post-content" itemprop="articleBody">
+      <p>Eachine Wizard X220S is a 220mm FPV Racing quadcopter that comes both in RTF (Ready To Fly) and ARF (Almost Ready to Fly) version.
+If you already have a decent transmitter, you can just go for the ARF version and buy a receiver that uses the same protocol as the TX and this is exactly what we are going to see in this article.</p>
+
+<!--more-->
+
+<p><a href="/images/eachine_wizard_x220s_arf_setup_and_configuration/x220s_specs.png"><img src="/images/eachine_wizard_x220s_arf_setup_and_configuration/x220s_specs.png" alt="" /></a></p>
+
+<p><strong>Package contents</strong></p>
+
+<p>The <a href="https://www.banggood.com/Eachine-Wizard-X220S-FPV-Racer-Omnibus-F4-5_8G-72CH-VTX-30A-Dshot600-2206-2300KV-800TVL-CCD-ARF-p-1155399.html?p=CA03112038011201508Q">ARF version</a> package comes with the quadcopter with the following specifications and accessories:</p>
+
+<ul>
+  <li>4 x Eachine  MN2206 2300KV motor</li>
+  <li>Eachine 30A BLHELI_S  4 in 1 ESC</li>
+  <li>Eachine HS1179 800TVL CCD camera</li>
+  <li>5.8 GHz 72CH 25MW 200mw 600MW switchable transmitter</li>
+  <li>Pagoda antenna 5.8 GHz</li>
+  <li>Omnibus F4 V3 flight controller</li>
+  <li>10 x pairs of Eachine 5051 3-blade propeller</li>
+  <li>30° Camera Mount (For Runcam3/Gopro session)</li>
+  <li>2 x Battery strap</li>
+  <li>2 x Wrench</li>
+</ul>
+
+<p><strong>TX, RX, LiPo Battery, Propellers</strong></p>
+
+<p>The ARF version does not come with TX, RX and battery, so here is my setup:</p>
+
+<ul>
+  <li><a href="https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q">Devo 7e</a> loaded with Deviation firmware and additional RF modules so it is possible to bind different models with just one radio controller. In this case, the RF module we are going to use is the <a href="https://www.banggood.com/A7105-Wireless-RF-2_4GHz-Transceiver-Module-3_3V-Power-Supply-Module-p-909404.html?p=CA03112038011201508Q">A7105</a> (XL7105-D03B chip) which supports AFHDS-2A (FlySky protocol);</li>
+  <li><a href="https://www.banggood.com/Flysky-X6B-2_4G-6CH-i-BUS-PPM-PWM-Receiver-for-AFHDS-i6s-i6-i6x-Transmitter-p-1101513.html?p=CA03112038011201508Q">Flysky X6B 2.4G 6CH i-BUS PPM PWM Receiver for AFHDS</a>;</li>
+  <li><a href="http://www.gensace.de/tattu-1550mah-14-8v-75c-4s1p-lipo-battery-pack.html">TATTU 1550mAh 14.8V 75C 4S1P Lipo Battery Pack</a>;</li>
+  <li><a href="https://www.banggood.com/2-Pairs-DALPROP-T5045C-CW-CCW-3-blade-propeller-for-Multicopter-p-1137038.html?p=CA03112038011201508Q">DALPROP T5045C</a>; changing propellers is a must since the given ones are really inefficient and the quality is not as good as it should be (they develop stress marks after few flights).</li>
+</ul>
+
+<p><strong>Receiver connection to FC board</strong></p>
+
+<p>In the receiver package, there are four cables: we need two of them, the one going inside the top right port for i-BUS and the one going in the bottom side port that we are going to use for battery voltage monitoring:</p>
+
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_setup_and_configuration/x6b.png"><img src="/images/eachine_wizard_x220s_arf_setup_and_configuration/x6b.png" alt="" /></a></p>
+
+<p>Both cables have three wires (black, red and yellow) with a white connector on one side (the one going into the receiver) and a black one on the other side:</p>
+
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_cable.png"><img src="/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_cable.png" alt="" /></a></p>
+
+<p>For battery voltage monitoring we just need the red and black wires, so we need to remove the yellow one from one of the two cables. For both cables, the side with the black connector needs to be cut. Then we can strip the wires and prepare them for the soldering on the FC.</p>
+
+<p>Now we need access to the top of the Flight Controller board. By doing this, we need to remove the top carbon plate (six screws) and the VTX board:</p>
+
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_setup_and_configuration/fc_board.png"><img src="/images/eachine_wizard_x220s_arf_setup_and_configuration/fc_board.png" alt="" /></a></p>
+
+<p>After soldering the wires this is the result:</p>
+
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_fc_connection.png"><img src="/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_fc_connection.png" alt="" /></a></p>
+
+<p><strong>Mounting the receiver</strong></p>
+
+<p>Now we just find a good place to position the receiver. A safe spot could be on the rear, on the bottom plate near the leds. To fix the board on the carbon plate we can just use two <a href="https://www.banggood.com/140pcs-M2-Nylon-Hex-Spacers-Screw-Nut-Assortment-Stand-off-Accessories-Kit-Set-p-996104.html?p=CA03112038011201508Q">M2 standoffs</a>.</p>
+
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_mount.png"><img src="/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_mount.png" alt="" /></a></p>
+
+<p><strong>X6B Binding</strong></p>
+
+<p>To bind Flysky X6B receiver we need to turn on the quadcopter while pressing th “BIND” button on the receiver and using the binding mode on the TX. For Devo 7e, this can be done in Model menu -&gt; Model setup.</p>
+
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_setup_and_configuration/devo7e_bind.png"><img src="/images/eachine_wizard_x220s_arf_setup_and_configuration/devo7e_bind.png" alt="" /></a></p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>We have seen an overview for Eachine Wizard X220S ARF version and how to set up a i-BUS receiver.
+In the next article we are going to talk about the setup and configuration of the quadcopter in Betaflight Configurator.</p>
+
+    </div>
+  </div>
+</article>
+
+    </div>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+        <p align=right>© 2017 Up in the Sky | All Rights Reserved 
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+</html>

@@ -6,9 +6,112 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 03 Oct 2017 22:31:21 +0200</pubDate>
-    <lastBuildDate>Tue, 03 Oct 2017 22:31:21 +0200</lastBuildDate>
+    <pubDate>Mon, 23 Oct 2017 00:15:46 +0200</pubDate>
+    <lastBuildDate>Mon, 23 Oct 2017 00:15:46 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Eachine Wizard X220S ARF Overview and Receiver Installation</title>
+        <description>&lt;p&gt;Eachine Wizard X220S is a 220mm FPV Racing quadcopter that comes both in RTF (Ready To Fly) and ARF (Almost Ready to Fly) version.
+If you already have a decent transmitter, you can just go for the ARF version and buy a receiver that uses the same protocol as the TX and this is exactly what we are going to see in this article.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/x220s_specs.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/x220s_specs.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Package contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.banggood.com/Eachine-Wizard-X220S-FPV-Racer-Omnibus-F4-5_8G-72CH-VTX-30A-Dshot600-2206-2300KV-800TVL-CCD-ARF-p-1155399.html?p=CA03112038011201508Q&quot;&gt;ARF version&lt;/a&gt; package comes with the quadcopter with the following specifications and accessories:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;4 x Eachine  MN2206 2300KV motor&lt;/li&gt;
+  &lt;li&gt;Eachine 30A BLHELI_S  4 in 1 ESC&lt;/li&gt;
+  &lt;li&gt;Eachine HS1179 800TVL CCD camera&lt;/li&gt;
+  &lt;li&gt;5.8 GHz 72CH 25MW 200mw 600MW switchable transmitter&lt;/li&gt;
+  &lt;li&gt;Pagoda antenna 5.8 GHz&lt;/li&gt;
+  &lt;li&gt;Omnibus F4 V3 flight controller&lt;/li&gt;
+  &lt;li&gt;10 x pairs of Eachine 5051 3-blade propeller&lt;/li&gt;
+  &lt;li&gt;30° Camera Mount (For Runcam3/Gopro session)&lt;/li&gt;
+  &lt;li&gt;2 x Battery strap&lt;/li&gt;
+  &lt;li&gt;2 x Wrench&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;TX, RX, LiPo Battery, Propellers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The ARF version does not come with TX, RX and battery, so here is my setup:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q&quot;&gt;Devo 7e&lt;/a&gt; loaded with Deviation firmware and additional RF modules so it is possible to bind different models with just one radio controller. In this case, the RF module we are going to use is the &lt;a href=&quot;https://www.banggood.com/A7105-Wireless-RF-2_4GHz-Transceiver-Module-3_3V-Power-Supply-Module-p-909404.html?p=CA03112038011201508Q&quot;&gt;A7105&lt;/a&gt; (XL7105-D03B chip) which supports AFHDS-2A (FlySky protocol);&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Flysky-X6B-2_4G-6CH-i-BUS-PPM-PWM-Receiver-for-AFHDS-i6s-i6-i6x-Transmitter-p-1101513.html?p=CA03112038011201508Q&quot;&gt;Flysky X6B 2.4G 6CH i-BUS PPM PWM Receiver for AFHDS&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.gensace.de/tattu-1550mah-14-8v-75c-4s1p-lipo-battery-pack.html&quot;&gt;TATTU 1550mAh 14.8V 75C 4S1P Lipo Battery Pack&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/2-Pairs-DALPROP-T5045C-CW-CCW-3-blade-propeller-for-Multicopter-p-1137038.html?p=CA03112038011201508Q&quot;&gt;DALPROP T5045C&lt;/a&gt;; changing propellers is a must since the given ones are really inefficient and the quality is not as good as it should be (they develop stress marks after few flights).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Receiver connection to FC board&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In the receiver package, there are four cables: we need two of them, the one going inside the top right port for i-BUS and the one going in the bottom side port that we are going to use for battery voltage monitoring:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/x6b.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/x6b.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Both cables have three wires (black, red and yellow) with a white connector on one side (the one going into the receiver) and a black one on the other side:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_cable.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_cable.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For battery voltage monitoring we just need the red and black wires, so we need to remove the yellow one from one of the two cables. For both cables, the side with the black connector needs to be cut. Then we can strip the wires and prepare them for the soldering on the FC.&lt;/p&gt;
+
+&lt;p&gt;Now we need access to the top of the Flight Controller board. By doing this, we need to remove the top carbon plate (six screws) and the VTX board:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/fc_board.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/fc_board.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After soldering the wires this is the result:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_fc_connection.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_fc_connection.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mounting the receiver&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we just find a good place to position the receiver. A safe spot could be on the rear, on the bottom plate near the leds. To fix the board on the carbon plate we can just use two &lt;a href=&quot;https://www.banggood.com/140pcs-M2-Nylon-Hex-Spacers-Screw-Nut-Assortment-Stand-off-Accessories-Kit-Set-p-996104.html?p=CA03112038011201508Q&quot;&gt;M2 standoffs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_mount.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_mount.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;X6B Binding&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To bind Flysky X6B receiver we need to turn on the quadcopter while pressing th “BIND” button on the receiver and using the binding mode on the TX. For Devo 7e, this can be done in Model menu -&amp;gt; Model setup.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/devo7e_bind.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/devo7e_bind.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We have seen an overview for Eachine Wizard X220S ARF version and how to set up a i-BUS receiver.
+In the next article we are going to talk about the setup and configuration of the quadcopter in Betaflight Configurator.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Oct 2017 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>X220S</category>
+        
+        <category>Eachine</category>
+        
+        <category>Wizard</category>
+        
+        <category>Overview</category>
+        
+        <category>Receiver</category>
+        
+        <category>Installation</category>
+        
+        <category>i-BUS</category>
+        
+        <category>AFHDS-2A</category>
+        
+        <category>FPV</category>
+        
+        <category>Racing</category>
+        
+        
+      </item>
     
       <item>
         <title>Loading ArduCopter Firmware to APM</title>
