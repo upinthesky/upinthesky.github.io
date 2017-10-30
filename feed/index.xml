@@ -6,18 +6,18 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Oct 2017 20:04:34 +0200</pubDate>
-    <lastBuildDate>Fri, 27 Oct 2017 20:04:34 +0200</lastBuildDate>
+    <pubDate>Mon, 30 Oct 2017 21:41:46 +0100</pubDate>
+    <lastBuildDate>Mon, 30 Oct 2017 21:41:46 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Eachine Wizard X220S ARF Overview and Receiver Installation</title>
-        <description>&lt;p&gt;The Eachine Wizard X220S is a 220mm FPV Racing quadcopter that comes both in RTF (Ready To Fly) and ARF (Almost Ready to Fly) version.
-If you already have a decent transmitter, you can just go for the ARF version and buy a receiver that uses the same protocol as the TX and this is exactly what we are going to see in this article.&lt;/p&gt;
+        <description>&lt;p&gt;The Eachine Wizard X220S is a 220mm FPV Racing quadcopter and it is the evolution of the X220; it comes both in RTF (Ready To Fly) and ARF (Almost Ready to Fly) version.
+If you already have a decent transmitter, you can just go for the ARF version and buy a receiver that uses the same protocol as the TX: this is exactly what we are going to see in this article.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/x220s_specs.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/x220s_specs.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Package contents&lt;/strong&gt;&lt;/p&gt;
 
@@ -51,33 +51,33 @@ If you already have a decent transmitter, you can just go for the ARF version an
 
 &lt;p&gt;In the receiver package, there are four cables: we need two of them, the one going inside the top right port for i-BUS and the one going in the bottom side port that we are going to use for battery voltage monitoring:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/x6b.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/x6b.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x6b.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x6b.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Both cables have three wires (black, red and yellow) with a white connector on one side (the one going into the receiver) and a black one on the other side:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_cable.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_cable.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;For battery voltage monitoring we just need the red and black wires, so we need to remove the yellow one from one of the two cables. For both cables, the side with the black connector needs to be cut. Then we can strip the wires and prepare them for the soldering on the FC.&lt;/p&gt;
 
 &lt;p&gt;Now we need access to the top of the Flight Controller board. By doing this, we need to remove the top carbon plate (six screws) and the VTX board:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/fc_board.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/fc_board.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/fc_board.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/fc_board.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;After soldering the wires this is the result:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_fc_connection.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_fc_connection.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Mounting the receiver&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Now we just find a good place to position the receiver. A safe spot could be on the rear, on the bottom plate near the leds. To fix the board on the carbon plate we can just use two &lt;a href=&quot;https://www.banggood.com/140pcs-M2-Nylon-Hex-Spacers-Screw-Nut-Assortment-Stand-off-Accessories-Kit-Set-p-996104.html?p=CA03112038011201508Q&quot;&gt;M2 standoffs&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_mount.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/receiver_mount.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;X6B Binding&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;To bind Flysky X6B receiver we need to turn on the quadcopter while pressing th “BIND” button on the receiver and using the binding mode on the TX. For Devo 7e, this can be done in Model menu -&amp;gt; Model setup.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/devo7e_bind.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_setup_and_configuration/devo7e_bind.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
