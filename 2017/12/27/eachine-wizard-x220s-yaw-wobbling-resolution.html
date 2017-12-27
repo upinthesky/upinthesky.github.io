@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+  <head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88840278-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <meta name="google-site-verification" content="2sf0nOsdmxOwb35mzYgNoZLo3dWw5VuhtdWLaSGSekA" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Eachine Wizard X220S Yaw Wobbling Resolution</title>
+  <meta name="description" content="In this article we will see how to solve the yaw wobbling on the Eachine Wizard X220S, which is visible and relevant especially during hovering. By doing thi...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://upinthesky.github.io//2017/12/27/eachine-wizard-x220s-yaw-wobbling-resolution.html">
+  <link rel="alternate" type="application/rss+xml" title="Up in the Sky" href="https://upinthesky.github.io//feed.xml">
+</head>
+
+  <body>
+    <nav class="single-post-nav">
+      <ul>
+        <li>
+          
+          <a href="/2017/12/11/eachine-wizard-x220s-betaflight-setup-and-configuration.html">&#8592; Previous post</a>
+          
+        </li>
+        <li><a href="/">Home Page</a></li>
+        <li>
+          
+        </li>
+      </ul>
+    </nav>
+    <div class="single-post">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header single-post-header" style="background-image:url('https://upinthesky.github.io//images/clouds_banner.jpg')">
+    <div>
+      <h1 class="post-title single-post-title" itemprop="name headline">Eachine Wizard X220S Yaw Wobbling Resolution</h1>
+      <p class="post-meta single-post-meta">
+        <time datetime="2017-12-27T00:00:00+01:00" itemprop="datePublished">27 December 2017</time>
+        •
+        
+        
+          3 mins
+        
+        read
+      </p>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="single-post-summary">
+      
+    <ul class="tag-box inline">
+      
+        <li><a href="/tags#Quadcopter" class="tag">• Quadcopter</a></li>
+      
+        <li><a href="/tags#X220S" class="tag">• X220S</a></li>
+      
+        <li><a href="/tags#Eachine" class="tag">• Eachine</a></li>
+      
+        <li><a href="/tags#Wizard" class="tag">• Wizard</a></li>
+      
+        <li><a href="/tags#Yaw Wobbling" class="tag">• Yaw Wobbling</a></li>
+      
+        <li><a href="/tags#FPV" class="tag">• FPV</a></li>
+      
+        <li><a href="/tags#Racing" class="tag">• Racing</a></li>
+      
+        <li><a href="/tags#Noise" class="tag">• Noise</a></li>
+      
+        <li><a href="/tags#Anti-vibration Standoffs" class="tag">• Anti-vibration Standoffs</a></li>
+      
+        <li><a href="/tags#Betaflight Blackbox Explorer" class="tag">• Betaflight Blackbox Explorer</a></li>
+      
+        <li><a href="/tags#Logs" class="tag">• Logs</a></li>
+      
+    </ul>  
+    </div>
+    <div class="post-content single-post-content" itemprop="articleBody">
+      <p>In this article we will see how to solve the yaw wobbling on the Eachine Wizard X220S, which is visible and relevant especially during hovering. By doing this we will see how to analyze flight logs using Betaflight Blackbox Explorer.</p>
+
+<!--more-->
+
+<p><strong>Noise on gyro readings</strong></p>
+
+<p>Understanding the cause of the yaw wobbling is the first thing to do. Let us focus the attention on the flight controller which basically takes some inputs and generates some outputs: now, if the inputs are noise free everything works good. But, what if there is noise, for example, in gyro readings? That noise affects how the controller reacts and this can generate unexpected behavior during flight.</p>
+
+<p>Motors vibration can be transferred to the frame even if they are soft mounted as in the case of the Eachine Wizard X220S. Now, since the Flight Controller is attached to the frame itself through some screws, vibrations are transferred to the FC: this means gyro readings are noisy and that causes the wobbling.</p>
+
+<p><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/motor1_noise.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/motor1_noise.png" alt="" /></a></p>
+
+<p>As the image shows, the noise increases as motors rotation speed reaches a certain value which coincides with the one needed for the hovering: in the graph it is reported how motor 1 rotation affects gyro readings even if the quadcopter is standing still on the bench without propellers on (of course, the amount of vibration depends also from the quality of the motors and in particular from their bearings).</p>
+
+<p>As reported, this vibration affects gyro readings, particularly on the z axis.</p>
+
+<p><strong>Betaflight Blackbox Explorer Analysis</strong></p>
+
+<p>This behavior can be seen in the Betaflight Blackbox Explorer: this application allows to visualize, in a graphical way, data collected during the flight and saved on a microSD card (we have seen how to enable this feature in <a href="https://upinthesky.github.io/2017/12/11/eachine-wizard-x220s-betaflight-setup-and-configuration.html">this previous article</a>).</p>
+
+<p>The installation of the application is just as simple as the one of Betaflight Configurator since it can be downloaded as an extension of Google Chrome browser. Once it is installed, it is just a matter of launching the app, clicking on “Open log file/video” and select the log file saved on the microSD which has the extension .BFL.</p>
+
+<p>This app is very useful to analyze how the quadcopter performed during the flight. In this case we will use it to just check gyro readings. In particular, we are interested in the gyro[yaw] parameter (yellow line in the graph):</p>
+
+<p><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png" alt="" /></a></p>
+
+<p>Clearly, there is a lot of noise affecting the gyro on the yaw. Noise cannot be completely removed, but can be drastically mitigated.</p>
+
+<p><strong>Anti-vibration Stadoffs</strong></p>
+
+<p>This annoying behavior can be fixed with a simple solution, i.e. mounting the Flight Controller on <a href="https://www.banggood.com/4-PCS-Realacc-M376-Flight-Controller-Fixed-Screws-for-FPV-Racer-p-1135527.html?p=CA03112038011201508Q">Anti-vibration Standoffs</a>:</p>
+
+<p class="center"><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs.png" alt="" /></a></p>
+
+<p>The following image shows the result with the FC attached to the bottom stack using anti-vibration standoffs screws which, thanks to the damping material, absorb most of the vibrations caused by the motors and transferred to the quadcopter frame.</p>
+
+<p class="center"><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png" alt="" /></a></p>
+
+<p>After placing anti-vibration standoffs under the Flight Controller, the noise on yaw gyro readings is almost completely gone and consequently the wobbling is no more there.</p>
+
+<p><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png" alt="" /></a></p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>In this article we have seen how it is possible to analyze flight logs using Betaflight Blackbox Explorer and how a simple and cheap modification can solve a bad issue conditioning quadcopter behavior in flight.</p>
+
+    </div>
+  </div>
+</article>
+
+    </div>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+        <p align=right>© 2017 Up in the Sky | All Rights Reserved 
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+</html>
