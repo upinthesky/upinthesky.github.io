@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 11 Jan 2018 21:43:57 +0100</pubDate>
-    <lastBuildDate>Thu, 11 Jan 2018 21:43:57 +0100</lastBuildDate>
+    <pubDate>Sun, 22 Apr 2018 18:42:34 +0200</pubDate>
+    <lastBuildDate>Sun, 22 Apr 2018 18:42:34 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -125,6 +125,14 @@ Now we take a look at the setup and configuration of the quadcopter in Betafligh
 &lt;p&gt;Since we have connected also the VBAT to the receiver, we can enable it to have battery voltage monitoring which is a must.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_4.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_4.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Failsafe&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To configure the failsafe we need to access to an advanced configuration menu which can be activated by clicking on “Enable Expert Mode” like shown in the image below:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/failsafe.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/failsafe.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is recommended to set Failsafe Stage 2 to “Drop”, so if the receiver loses contact with the transmitter for more than a certain time, then the FC turns off the motors. In myu case the guard time is 10*0.1s = 1s.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Receiver&lt;/strong&gt;&lt;/p&gt;
 
