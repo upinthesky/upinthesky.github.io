@@ -6,9 +6,95 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Apr 2018 18:49:09 +0200</pubDate>
-    <lastBuildDate>Sun, 22 Apr 2018 18:49:09 +0200</lastBuildDate>
+    <pubDate>Sun, 22 Jul 2018 13:24:08 +0200</pubDate>
+    <lastBuildDate>Sun, 22 Jul 2018 13:24:08 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Syma X5C Explorers FPV Mod</title>
+        <description>&lt;p&gt;In this article we will see how to add an FPV camera system to the Syma X5C.&lt;br /&gt;
+&lt;a href=&quot;https://www.banggood.com/Syma-X5C-Explorers-2_4G-4CH-RC-Quadcopter-Mode-2-With-Camera-p-913827.html?p=CA03112038011201508Q&quot;&gt;Syma X5C&lt;/a&gt; is a really basic RTF brushed quadcopter which comes with a 2MP camera that can take photos and record videos storing them on the 2GB SD card included in the package. Everything is powered up by a 3.7V 500mAh LiPo battery which guarantees 6-7 minutes of flight depending on flight style and camera usage.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2 MP Camera removal&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since we are going to install our FPV camera and connect it to the same port on which there is the supplied 2MP camera, it is a good idea to remove the standard camera to save as much weight as possible.
+To proceed we have to disconnect the plug and remove 2 screws like shown in the following image:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/camera_removal.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/camera_removal.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mounting FPV Camera&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For this mod I have chosen to use the &lt;a href=&quot;https://www.banggood.com/Eachine-TX02-Super-Mini-AIO-5_8G-40CH-200mW-VTX-600TVL-14-Cmos-FPV-Camera-p-1088368.html?p=CA03112038011201508Q&quot;&gt;Eachine TX02&lt;/a&gt; FPV 5.8G 40CH 600 VTL camera (NTSC) with 120° FOV that has a built in video transmitter with nickel-plated 4 leaf omnidirectional antenna (RHCP circular polarization clover). It is really lightweight (4.57g) and it has a transmitting output power of (0/200)mW, while the input power is 3.2-5V. Newer version of the camera allows to set the power to (0/25/50/200)mW: &lt;a href=&quot;https://www.banggood.com/Eachine-TX03-Super-Mini-025mW50mW200mW-Switchable-AIO-5_8G-72CH-VTX-600TVL-13-Cmos-FPV-Camera-p-1104884.html?p=CA03112038011201508Q&quot;&gt;Eachine TX03&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_front.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_front.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On the back there is a display that shows which channel (5 bands, 40 channels) we are currently transmitting on. To change the CH (channel), short press the button. To enter in FR (band) change mode, just press and hold the button for 2 seconds (short press after to switch between bands). Finally to turn off the video transmitter press and hold the button for 5 seconds (display: “0” is off, “=” is on).&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_back.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_back.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Since we need to connect this FPV system to the quadcopter to power it up, we need the proper connectors: &lt;a href=&quot;https://www.banggood.com/Excellway-20Pcs-of-JST-2P-Female-Male-Connectors-with-80mm-Standard-Wires-p-1191422.html?p=CA03112038011201508Q&quot;&gt;JST 2P Connectors&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/jst_connectors.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/jst_connectors.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Since the wires come with male or female connector on one side while the other is free, we need to solder two of them to have a single cable with two male connectors (red wires together, black wires together).&lt;/p&gt;
+
+&lt;p&gt;Once the soldering job is done we can finally plug everything in:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/camera_connection.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/camera_connection.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Considering the power consumption added by the FPV system, it is a good idea to buy a bigger battery to have a decent flight time (better to stay in the range of 6-7 minutes to let the brushed motors cool down): &lt;a href=&quot;https://www.banggood.com/4Pcs-3_7V-800MAH-25C-Battery-And-Charger-For-Syma-X5C-1-X5SC-X5SW-M68-CX30-U816A-U818A-WLtoys-V929-p-1008693.html?p=CA03112038011201508Q&quot;&gt;3.7V 800mAh LiPo Battery&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A simple but effective way to fix the camera on the Syma X5C is to use double-sided tape.&lt;br /&gt;
+This is the final result:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c_fpv.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c_fpv.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we can just check that everything is working correctly by tuning our FPV monitor or goggles to the same transmitting channel configured on the TX02. Down below two cheap alternatives:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Eachine-LCD5802D-5802-5_8G-40CH-7-Inch-FPV-Monitor-with-DVR-Build-in-Battery-p-1029504.html?p=CA03112038011201508Q&quot;&gt;Eachine LCD5802D 5.8G 40CH 7 Inch FPV Monitor with DVR and Built-in Battery&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/fpv_view.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/fpv_view.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Eachine-VR006-VR-006-3-Inch-500300-Display-5_8G-40CH-Mini-FPV-Goggles-Build-in-3_7V-500mAh-Battery-p-1158147.html?p=CA03112038011201508Q&quot;&gt;Eachine VR006 VR-006 3 Inch 500*300 Display 5.8G 40CH Mini FPV Goggles with Built-in Battery&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We have seen how with a simple modification it is possible to set up a cheap FPV system on the Syma X5C by using the Eachine TX02. This is a good setup for who wants to start experiencing FPV for the first time without spending too much money.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Jul 2018 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2018/07/22/syma-x5c-explorers-fpv-mod.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2018/07/22/syma-x5c-explorers-fpv-mod.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>Syma</category>
+        
+        <category>X5C</category>
+        
+        <category>FPV</category>
+        
+        <category>Mod</category>
+        
+        <category>Eachine</category>
+        
+        <category>TX02</category>
+        
+        <category>Camera</category>
+        
+        <category>LCD5802D</category>
+        
+        <category>VR006</category>
+        
+        
+      </item>
     
       <item>
         <title>Eachine Wizard X220S Yaw Wobbling Resolution</title>
