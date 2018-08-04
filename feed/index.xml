@@ -6,9 +6,239 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 31 Jul 2018 22:25:23 +0200</pubDate>
-    <lastBuildDate>Tue, 31 Jul 2018 22:25:23 +0200</lastBuildDate>
+    <pubDate>Sat, 04 Aug 2018 10:52:17 +0200</pubDate>
+    <lastBuildDate>Sat, 04 Aug 2018 10:52:17 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Eachine Wizard X220S Omnibus F4SD Firmware Upgrade</title>
+        <description>&lt;p&gt;It is always important to keep board’s firmware updated to the latest release. This article shows how to update Betaflight firmware for the Omnibus F4SD which is the Flight Controller (FC) equipped on the &lt;a href=&quot;https://www.banggood.com/Eachine-Wizard-X220S-FPV-Racer-Omnibus-F4-5_8G-72CH-VTX-30A-Dshot600-800TVL-w-iRangeX-iRX-i6X-RTF-p-1153989.html?p=CA03112038011201508Q&quot;&gt;Eachine Wizard X220S&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The first thing to do is to check the current firmware version loaded on the FC. This can be done by using Betaflight Configurator which at the time of this writing has reached version 10.3.1: since it is no longer available as a Chrome Extension on the Chrome Web Store, it needs to be downloaded from &lt;a href=&quot;https://github.com/betaflight/betaflight-configurator/releases&quot;&gt;Github&lt;/a&gt; and installed on the operating system (Windows, Linux and Mac OS X versions are available).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Current firmware version check&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once it is installed, to check current BF firmware version, we just need to connect the board to the PC, launch the application, click “Connect” and navigate to the Command Line Interface (CLI). Here we need to type the command “version” and then just press enter:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Entering CLI Mode, type &#39;exit&#39; to return, or &#39;help&#39;
+
+# version
+# Betaflight / OMNIBUSF4SD 3.1.7 Apr 10 2017 / 17:10:55 ()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As we can see, by default, the FC on the Wizard X220S is loaded with Omnibus F4SD version 3.1.7.&lt;/p&gt;
+
+&lt;p&gt;We can check what is the latest release for the firmware by disconnecting the quadcopter, selecting “Firmware Flasher” and choosing the version from the dropdown menu:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/bf_firmware_flasher.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/bf_firmware_flasher.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So, at the moment, the last release is 3.4.1.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Betaflight Configuration Backup&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Before going forward, there is a really important activity to do. We need to backup Betaflight current confuguration: this is because, when the new firmware will be loaded, all settings/configurations (ports, PIDS, led strips lightning, OSD settings and so on) are reset to BF default. So, if you do not want to lose them, you better save them using the CLI command “dump” and copy the output to a text file.&lt;/p&gt;
+
+&lt;p&gt;For example, here is reported a portion of the dump for leds configuration:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# dump
+
+# version
+# Betaflight / OMNIBUSF4SD 3.1.7 Apr 10 2017 / 17:10:55 ()
+
+# name
+name WIZARD
+
+# resources
+resource BEEPER 1 B04
+resource MOTOR 1 B00
+resource MOTOR 2 B01
+resource MOTOR 3 A03
+resource MOTOR 4 A02
+
+....................
+
+# led
+led 0 0,11::AI:8
+led 1 0,12::AI:8
+led 2 0,13::AI:2
+led 3 0,14::AI:2
+led 4 0,15::AI:2
+led 5 15,11::AI:8
+led 6 15,12::AI:8
+led 7 15,13::AI:2
+led 8 15,14::AI:2
+led 9 15,15::AI:2
+led 10 0,0::C:0
+led 11 0,0::C:0
+led 12 0,0::C:0
+led 13 0,0::C:0
+led 14 0,0::C:0
+led 15 0,0::C:0
+led 16 0,0::C:0
+led 17 0,0::C:0
+led 18 0,0::C:0
+led 19 0,0::C:0
+led 20 0,0::C:0
+led 21 0,0::C:0
+led 22 0,0::C:0
+led 23 0,0::C:0
+led 24 0,0::C:0
+led 25 0,0::C:0
+led 26 0,0::C:0
+led 27 0,0::C:0
+led 28 0,0::C:0
+led 29 0,0::C:0
+led 30 0,0::C:0
+led 31 0,0::C:0
+
+# color
+color 0 0,0,0
+color 1 0,255,255
+color 2 0,0,255
+color 3 30,0,255
+color 4 60,0,255
+color 5 90,0,255
+color 6 120,0,255
+color 7 150,0,255
+color 8 180,0,255
+color 9 210,0,255
+color 10 240,0,255
+color 11 270,0,255
+color 12 300,0,255
+color 13 330,0,255
+color 14 0,0,0
+color 15 0,0,0
+
+# mode_color
+mode_color 0 0 1
+mode_color 0 1 11
+mode_color 0 2 2
+mode_color 0 3 13
+mode_color 0 4 10
+mode_color 0 5 3
+mode_color 1 0 5
+mode_color 1 1 11
+mode_color 1 2 3
+mode_color 1 3 13
+mode_color 1 4 10
+mode_color 1 5 3
+mode_color 2 0 10
+mode_color 2 1 11
+mode_color 2 2 4
+mode_color 2 3 13
+mode_color 2 4 10
+mode_color 2 5 3
+mode_color 3 0 8
+mode_color 3 1 11
+mode_color 3 2 4
+mode_color 3 3 13
+mode_color 3 4 10
+mode_color 3 5 3
+mode_color 4 0 7
+mode_color 4 1 11
+mode_color 4 2 3
+mode_color 4 3 13
+mode_color 4 4 10
+mode_color 4 5 3
+mode_color 5 0 9
+mode_color 5 1 11
+mode_color 5 2 2
+mode_color 5 3 13
+mode_color 5 4 10
+mode_color 5 5 3
+mode_color 6 0 2
+mode_color 6 1 10
+mode_color 6 2 1
+mode_color 6 3 0
+mode_color 6 4 0
+mode_color 6 5 2
+mode_color 6 6 3
+mode_color 6 7 6
+mode_color 6 8 0
+mode_color 6 9 0
+mode_color 6 10 0
+mode_color 7 0 0
+.................
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Drivers installation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Before we can upload the new firmware to the FC, we need to install some drivers which allow to connect the FC to the PC in Device Firmware Update (DFU) mode, that is the mode used to flash the firmware to the board:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/dfu_drivers.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/dfu_drivers.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CP210x USB to UART Bridge VCP Drivers;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://upinthesky.github.io/drivers/en.stsw-stm32102.zip&quot;&gt;STM32 Virtual COM Port Driver&lt;/a&gt; (download link to STM32 Virtual COM Port Driver since it is not directly available from the website);&lt;/li&gt;
+  &lt;li&gt;Zadig (tool to install driver on STM32 Bootloader).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once CP210x and STM32 drivers are installed, it is possible to start the FC in DFU mode: this can be either done by pressing and holding the “Boot” button on the FC and then connecting the quadcopter to the PC or by first connecting the drone to the PC and, using the CLI, entering the “bl” command or “dfu” for versions older than 3.2 (first method is preferred):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A continuous beep from the FC warns it is in DFU mode. However, to make it possible to flash the firmware, we need to install one last driver by using Zadig (otherwise DFU mode does not show up in Betaflight Configurator). In Zadig, to list all devices, click on “Options -&amp;gt; List All Devices”.&lt;br /&gt;
+As the image below reports, by default we have the value “NONE” for the STM32 BOOTLOADER (if you do not see this entry it means you have not installed correctly STM32 Virtual COM Port Driver).&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/zadig_stm32.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/zadig_stm32.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To fix this, it is just a matter of clicking on “Install Driver” and waiting for the installation of WinUSB (v6.1.7600.16385) to complete:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/stm32_driver_installed.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/stm32_driver_installed.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Flashing Firmware&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally we can flash the new firmware in DFU mode.&lt;br /&gt;
+So, we need to go to Firmware Flasher tab, select the latest firmware version for the Omnibus F4SD (like seen before) and click on “Load Firmware [Online]”. Then, we can press on “Flash Firmware” and the process will start:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the activity is completed, we get the message “Programming: SUCCESSFUL” and we see, in the top right of the window, the change from DFU to COMX (in my case COM3).&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As final check, you can use the command “version” to check it is displayed the correct release.&lt;/p&gt;
+
+&lt;p&gt;Finally, it is just a matter to report back all the configurations on Betaflight: for example, to import back leds configurations, we need to open the CLI, paste the portion of the dump regarding the leds, press enter and commit the changes using the “save” command (of course, you can do all of this manually from Betaflight Configurator tabs, but for some settings, like leds light, it is faster to import them back through CLI).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this artile, we have seen how to flash the latest Betaflight firmware version for Omnibus F4SD on the Eachine Wizard X220S (similar steps can be applied for other FCs) and how to save/import back settings/configurations.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 04 Aug 2018 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>Eachine</category>
+        
+        <category>Wizard</category>
+        
+        <category>X220S</category>
+        
+        <category>Betaflight</category>
+        
+        <category>Configuration</category>
+        
+        <category>Omnibus F4SD</category>
+        
+        <category>Firmware</category>
+        
+        <category>Upgrade</category>
+        
+        <category>Drivers</category>
+        
+        <category>FPV</category>
+        
+        <category>Racing</category>
+        
+        
+      </item>
     
       <item>
         <title>Syma X5C Explorers FPV Mod</title>
@@ -297,7 +527,7 @@ If you already have a decent transmitter, you can just go for the ARF version an
 
 &lt;!--more--&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Package contents&lt;/strong&gt;&lt;/p&gt;
 
