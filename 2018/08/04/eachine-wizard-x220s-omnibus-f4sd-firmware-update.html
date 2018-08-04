@@ -17,11 +17,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Eachine Wizard X220S Omnibus F4SD Firmware Upgrade</title>
+  <title>Eachine Wizard X220S Omnibus F4SD Firmware Update</title>
   <meta name="description" content="It is always important to keep board’s firmware updated to the latest release. This article shows how to update Betaflight firmware for the Omnibus F4SD whic...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://upinthesky.github.io//2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html">
+  <link rel="canonical" href="https://upinthesky.github.io//2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-update.html">
   <link rel="alternate" type="application/rss+xml" title="Up in the Sky" href="https://upinthesky.github.io//feed.xml">
 </head>
 
@@ -43,7 +43,7 @@
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header single-post-header" style="background-image:url('https://upinthesky.github.io//images/clouds_banner.jpg')">
     <div>
-      <h1 class="post-title single-post-title" itemprop="name headline">Eachine Wizard X220S Omnibus F4SD Firmware Upgrade</h1>
+      <h1 class="post-title single-post-title" itemprop="name headline">Eachine Wizard X220S Omnibus F4SD Firmware Update</h1>
       <p class="post-meta single-post-meta">
         <time datetime="2018-08-04T00:00:00+02:00" itemprop="datePublished">04 August 2018</time>
         •
@@ -108,7 +108,7 @@
 
 <p>We can check what is the latest release for the firmware by disconnecting the quadcopter, selecting “Firmware Flasher” and choosing the version from the dropdown menu:</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/bf_firmware_flasher.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/bf_firmware_flasher.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/bf_firmware_flasher.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/bf_firmware_flasher.png" alt="" /></a></p>
 
 <p>So, at the moment, the last release is 3.4.1.</p>
 
@@ -244,7 +244,7 @@ mode_color 7 0 0
 
 <p>Before we can upload the new firmware to the FC, we need to install some drivers which allow to connect the FC to the PC in Device Firmware Update (DFU) mode, that is the mode used to flash the firmware to the board:</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/dfu_drivers.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/dfu_drivers.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/dfu_drivers.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/dfu_drivers.png" alt="" /></a></p>
 
 <ul>
   <li>CP210x USB to UART Bridge VCP Drivers;</li>
@@ -254,27 +254,27 @@ mode_color 7 0 0
 
 <p>Once CP210x and STM32 drivers are installed, it is possible to start the FC in DFU mode: this can be either done by pressing and holding the “Boot” button on the FC and then connecting the quadcopter to the PC or by first connecting the drone to the PC and, using the CLI, entering the “bl” command or “dfu” for versions older than 3.2 (first method is preferred):</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/boot_button.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/boot_button.png" alt="" /></a></p>
 
 <p>A continuous beep from the FC warns it is in DFU mode. However, to make it possible to flash the firmware, we need to install one last driver by using Zadig (otherwise DFU mode does not show up in Betaflight Configurator). In Zadig, to list all devices, click on “Options -&gt; List All Devices”.<br />
 As the image below reports, by default we have the value “NONE” for the STM32 BOOTLOADER (if you do not see this entry it means you have not installed correctly STM32 Virtual COM Port Driver).</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/zadig_stm32.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/zadig_stm32.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/zadig_stm32.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/zadig_stm32.png" alt="" /></a></p>
 
 <p>To fix this, it is just a matter of clicking on “Install Driver” and waiting for the installation of WinUSB (v6.1.7600.16385) to complete:</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/stm32_driver_installed.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/stm32_driver_installed.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/stm32_driver_installed.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/stm32_driver_installed.png" alt="" /></a></p>
 
 <p><strong>Flashing Firmware</strong></p>
 
 <p>Finally we can flash the new firmware in DFU mode.<br />
 So, we need to go to Firmware Flasher tab, select the latest firmware version for the Omnibus F4SD (like seen before) and click on “Load Firmware [Online]”. Then, we can press on “Flash Firmware” and the process will start:</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/updating_firmware.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/updating_firmware.png" alt="" /></a></p>
 
 <p>Once the activity is completed, we get the message “Programming: SUCCESSFUL” and we see, in the top right of the window, the change from DFU to COMX (in my case COM3).</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/update_successful.png"><img src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_update/update_successful.png" alt="" /></a></p>
 
 <p>As final check, you can use the command “version” to check it is displayed the correct release.</p>
 
