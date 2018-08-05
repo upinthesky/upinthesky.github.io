@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Aug 2018 17:24:10 +0200</pubDate>
-    <lastBuildDate>Sat, 04 Aug 2018 17:24:10 +0200</lastBuildDate>
+    <pubDate>Sun, 05 Aug 2018 16:45:36 +0200</pubDate>
+    <lastBuildDate>Sun, 05 Aug 2018 16:45:36 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -441,7 +441,7 @@ Now we take a look at the setup and configuration of the quadcopter in Betafligh
 
 &lt;p&gt;Also OSD (On Screen Display) has to be activated to keep track of useful information on the FPV screen or goggles during the flight.&lt;/p&gt;
 
-&lt;p&gt;Since we have connected also the VBAT to the receiver, we can enable it to have battery voltage monitoring which is a must.&lt;/p&gt;
+&lt;p&gt;We can enable VBAT to have battery voltage monitoring (remember we have also connected VBAT output from FC to the receiver to have telemetry on the transmitter) which is a must especially when flying in FPV so we can check on our monitor/goggles the current battery voltage through OSD.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_4.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_4.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -559,7 +559,7 @@ If you already have a decent transmitter, you can just go for the ARF version an
 
 &lt;p&gt;&lt;strong&gt;Receiver connection to FC board&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;In the receiver package, there are four cables: we need two of them, the one going inside the top right port for i-BUS and the one going in the bottom side port that we are going to use for battery voltage monitoring:&lt;/p&gt;
+&lt;p&gt;In the receiver package, there are four cables: we need two of them, the one going inside the top right port for i-BUS and the one going in the bottom side port that we are going to use for battery voltage monitoring (telemetry on transmitter):&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x6b.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x6b.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
