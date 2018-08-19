@@ -6,9 +6,109 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Aug 2018 16:45:36 +0200</pubDate>
-    <lastBuildDate>Sun, 05 Aug 2018 16:45:36 +0200</lastBuildDate>
+    <pubDate>Mon, 20 Aug 2018 01:06:43 +0200</pubDate>
+    <lastBuildDate>Mon, 20 Aug 2018 01:06:43 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Devo 7E RSSI Configuration for X6B Receiver (AFHDS-2A Protocol) and Betaflight Integration</title>
+        <description>&lt;p&gt;RSSI means Received Signal Strength Indication and it is a value that indicates the power in a received radio signal. It becomes extremely handy to have this measurement enabled on the transmitter because it can trigger an alert when we are flying too far away risking to lose communication with the receiver.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;In the following, we will see how to configure this feature on the &lt;a href=&quot;https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q&quot;&gt;Devo 7E&lt;/a&gt; loaded with Deviation TX firmware for the &lt;a href=&quot;https://www.banggood.com/Flysky-X6B-2_4G-6CH-i-BUS-PPM-PWM-Receiver-for-AFHDS-i6s-i6-i6x-Transmitter-p-1101513.html?p=CA03112038011201508Q&quot;&gt;X6B&lt;/a&gt; receiver, i.e. AFHD-2A protocol. Moreover, we will integrate RSSI on Betaflight so the value shows up  in real time on the OSD.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Loading Deviation firmware and installing A7105 module&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since we are going to bind Devo 7E with X6B receiver which uses FlySky protocol, first thing to do is load Deviation TX firmware in the Devo 7E (always use the latest release): the download is available &lt;a href=&quot;https://www.deviationtx.com/downloads-new&quot;&gt;here&lt;/a&gt; under “Deviation Releases” where you can find both stable releases and “nightly builds”. There are many guides on how to load Deviation TX firmware so we will not go in detail through the entire process. However, it is pretty simple: connect the radio to the computer using the supplied USB cable, power it up in “Program Update” mode (press hold “EXT” on TX and then turn it on), install the drivers and load the DFU file present in the archive (downloaded before) using &lt;a href=&quot;https://www.deviationtx.com/downloads-new/category/162-walkera&quot;&gt;Walkera DfuSe USB Upgrade Tool&lt;/a&gt;. Once that is done, just it is just a matter of copying inside the transmitter (press hold “ENT” on TX and then turn it on to connect in USB mode) all the file present in the archive excluding .zip and .dfu.&lt;/p&gt;
+
+&lt;p&gt;To bind protocols which are not supported by CYRF6936 module (the one that is there by default), such as FlySky, we need additional RF modules. For FlySky protocol, we need to solder the A7105 RF module inside the transmitter: I suggest &lt;a href=&quot;https://www.banggood.com/A7105-Wireless-RF-2_4GHz-Transceiver-Module-3_3V-Power-Supply-Module-p-909404.html?p=CA03112038011201508Q&quot;&gt;this version&lt;/a&gt; that has integrated Power Amplifier (PA).&lt;br /&gt;
+For the connection refer to the &lt;a href=&quot;http://www.deviationtx.com/wiki/modulelist/a7105&quot;&gt;official documentation&lt;/a&gt;; beware that after Deviation release 4.0.1 some connections change (everything is well described with images showing the pinout).&lt;/p&gt;
+
+&lt;p&gt;Once the soldering job is finished, we need to enable the module via software: connect again the TX to the computer in USB mode and edit the lines referring to the A7105 module in hardware.ini file like shown below (has_pa-a7105 set to 1 only if you have the version with integrated PA):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[modules]
+.......................
+  enable-a7105    = A13
+  has_pa-a7105    = 1
+.......................
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now that everything is set up, we can start the configuration.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Enabling RSSI for AFHDS-2A on Deviation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since we want to bind to X6B receiver, in Model menu-&amp;gt; Model setup we need to choose the protocol AFHDS-2A and follow the bind procedure (already seen &lt;a href=&quot;https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;
+Then we need to enable RSSI on channel 12 by just pressing “ENT” on the protocol itself and setting that value for “LQI output” (stands for Link Quality indicator):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/lqi_output.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/lqi_output.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once that is done we should start seeing RSSI value displayed on Transmitter menu -&amp;gt; Telemetry monitor:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_monitor.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_monitor.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As the image shows, to a signal strength of 99 corresponds a value of 61d.&lt;br /&gt;
+By going in Model menu -&amp;gt; Telemetry config, we can set up an alarm that triggers when the value goes up a certain threshold. I found 90d as a good value to trigger the alert that signals we need to start paying attention to the distance:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_config.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_config.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We have finished configuring RSSI on the transmitter; next step is to integrate it in Betaflight so we can have the value displayed on the goggles/monitor through OSD while we are flying in FPV.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Betaflight Integration&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;After connecting the quadcopter to the computer, we need to open Betaflight Configurator and navigate to the Receiver tab. Here we can set RSSI channel: even if we have set the value to channel 12 on the transmitter, latest releases of Betaflight use AUX channel number; in order to use the right AUX channel we need to subtract 4 to the channel number, so we need to choose AUX 8.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_rssi_channel.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_rssi_channel.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally we can enable RSSI value to the OSD tab so it shows up on the display:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_osd_rssi.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_osd_rssi.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the result on the FPV screen:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/screen_rssi_osd.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/screen_rssi_osd.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We have seen how to enable RSSI for AFHDS-2A protocol in Devo 7E loaded with Deviation TX firmware and how to integrate RSSI measurement in Betaflight so it is possible to read the value on the goggles/monitor through OSD during FPV flights.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Aug 2018 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2018/08/20/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2018/08/20/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>Eachine</category>
+        
+        <category>Wizard</category>
+        
+        <category>X220S</category>
+        
+        <category>Receiver</category>
+        
+        <category>X6B</category>
+        
+        <category>i-BUS</category>
+        
+        <category>AFHDS-2A</category>
+        
+        <category>FPV</category>
+        
+        <category>Racing</category>
+        
+        <category>Devo 7E</category>
+        
+        <category>Deviation</category>
+        
+        <category>A7105</category>
+        
+        <category>RSSI</category>
+        
+        <category>Betaflight</category>
+        
+        
+      </item>
     
       <item>
         <title>Eachine Wizard X220S Omnibus F4SD Firmware Upgrade</title>
@@ -470,7 +570,7 @@ Set also Stick Min to 1010 and Stick Max to 1990.&lt;/p&gt;
 
 &lt;p&gt;In this way channel AUX 2, a three position switch, controls the flight modes, AUX 3 arms the quadcopter and AUX 4 activates the beeper.&lt;/p&gt;
 
-&lt;p&gt;Since I am using Devo 7e with 3 position switch mod, I will report the steps to configure the switches for this particular radio (instructions below are for the three position switch to change between three flight modes and can be replicated for other features, like arming the quadcopter, on two position switches as well).&lt;br /&gt;
+&lt;p&gt;Since I am using Devo 7E with 3 position switch mod, I will report the steps to configure the switches for this particular radio (instructions below are for the three position switch to change between three flight modes and can be replicated for other features, like arming the quadcopter, on two position switches as well).&lt;br /&gt;
 In Model Menu go on Mixer and set Ch6 to Complex with 3 Mixers:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -515,7 +615,7 @@ In Model Menu go on Mixer and set Ch6 to Complex with 3 Mixers:&lt;/p&gt;
         
         <category>Racing</category>
         
-        <category>Devo 7e</category>
+        <category>Devo 7E</category>
         
         
       </item>
@@ -551,7 +651,7 @@ If you already have a decent transmitter, you can just go for the ARF version an
 &lt;p&gt;The ARF version does not come with TX, RX and battery, so here is my setup:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q&quot;&gt;Devo 7e&lt;/a&gt; loaded with Deviation firmware and additional RF modules so it is possible to bind different models with just one radio controller. In this case, the RF module we are going to use is the &lt;a href=&quot;https://www.banggood.com/A7105-Wireless-RF-2_4GHz-Transceiver-Module-3_3V-Power-Supply-Module-p-909404.html?p=CA03112038011201508Q&quot;&gt;A7105&lt;/a&gt; (XL7105-D03B chip) which supports AFHDS-2A (FlySky protocol);&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q&quot;&gt;Devo 7E&lt;/a&gt; loaded with Deviation firmware and additional RF modules so it is possible to bind different models with just one radio controller. In this case, the RF module we are going to use is the &lt;a href=&quot;https://www.banggood.com/A7105-Wireless-RF-2_4GHz-Transceiver-Module-3_3V-Power-Supply-Module-p-909404.html?p=CA03112038011201508Q&quot;&gt;A7105&lt;/a&gt; (XL7105-D03B chip) which supports AFHDS-2A (FlySky protocol);&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Flysky-X6B-2_4G-6CH-i-BUS-PPM-PWM-Receiver-for-AFHDS-i6s-i6-i6x-Transmitter-p-1101513.html?p=CA03112038011201508Q&quot;&gt;Flysky X6B 2.4G 6CH i-BUS PPM PWM Receiver for AFHDS&lt;/a&gt;;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.gensace.de/tattu-1550mah-14-8v-75c-4s1p-lipo-battery-pack.html&quot;&gt;TATTU 1550mAh 14.8V 75C 4S1P Lipo Battery Pack&lt;/a&gt;;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/2-Pairs-DALPROP-T5045C-CW-CCW-3-blade-propeller-for-Multicopter-p-1137038.html?p=CA03112038011201508Q&quot;&gt;DALPROP T5045C&lt;/a&gt;; changing propellers is a must since the given ones are really inefficient and the quality is not as good as it should be (they develop stress marks after few flights).&lt;/li&gt;
@@ -585,9 +685,8 @@ If you already have a decent transmitter, you can just go for the ARF version an
 
 &lt;p&gt;&lt;strong&gt;X6B Binding&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;To bind Flysky X6B receiver we need to turn on the quadcopter while pressing th “BIND” button on the receiver and using the binding mode on the TX. For Devo 7e, this can be done in Model menu -&amp;gt; Model setup.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;E&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
@@ -624,7 +723,7 @@ In the next article we are going to talk about the setup and configuration of th
         
         <category>Racing</category>
         
-        <category>Devo 7e</category>
+        <category>Devo 7E</category>
         
         <category>DALPROP</category>
         
@@ -789,12 +888,12 @@ The maximum Thrust for each motor is given by (0.850 Kg x 9.8 m/s^2) = 8.33 N.&l
 &lt;p&gt;These are pretty classic 3-cells LiPo batteries with 25C discharge rate. They provide, for my configuration, a flight time of 8-9 minutes depending on the flying style.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q&quot;&gt;Walkera Devo 7e transmitter with Deviation firmware&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q&quot;&gt;Walkera Devo 7E transmitter with Deviation firmware&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/devo7e.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/devo7e.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;This is my favorite transmitter since it supports Deviation firmware, a community project that can be loaded on the Devo 7e by substituting the original software; its main feature is that it permits to bind to almost all commercial RC systems by simply adding some Radio Frequency (RF) modules (we will talk about that in other articles): in this way you can go to the field with a single TX controlling all your models.&lt;/p&gt;
+&lt;p&gt;This is my favorite transmitter since it supports Deviation firmware, a community project that can be loaded on the Devo 7E by substituting the original software; its main feature is that it permits to bind to almost all commercial RC systems by simply adding some Radio Frequency (RF) modules (we will talk about that in other articles): in this way you can go to the field with a single TX controlling all your models.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/it/Wholesale-Walkera-6CH-2_4Ghz-RX601-Receiver-For-Devo-6-7-8-10-12-Transmitter-p-67222.html?p=CA03112038011201508Q&quot;&gt;Walkera RX601 receiver&lt;/a&gt;&lt;/li&gt;
@@ -914,7 +1013,7 @@ The following image shows the final product, which has a weight of 0.9 Kg withou
         
         <category>ArduCopter</category>
         
-        <category>Devo 7e</category>
+        <category>Devo 7E</category>
         
         <category>Deviation</category>
         

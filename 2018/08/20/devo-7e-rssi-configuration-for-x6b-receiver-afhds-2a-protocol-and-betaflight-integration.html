@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+  <head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88840278-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <meta name="google-site-verification" content="2sf0nOsdmxOwb35mzYgNoZLo3dWw5VuhtdWLaSGSekA" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Devo 7E RSSI Configuration for X6B Receiver (AFHDS-2A Protocol) and Betaflight Integration</title>
+  <meta name="description" content="RSSI means Received Signal Strength Indication and it is a value that indicates the power in a received radio signal. It becomes extremely handy to have this...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://upinthesky.github.io//2018/08/20/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration.html">
+  <link rel="alternate" type="application/rss+xml" title="Up in the Sky" href="https://upinthesky.github.io//feed.xml">
+</head>
+
+  <body>
+    <nav class="single-post-nav">
+      <ul>
+        <li>
+          
+          <a href="/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html">&#8592; Previous post</a>
+          
+        </li>
+        <li><a href="/">Home Page</a></li>
+        <li>
+          
+        </li>
+      </ul>
+    </nav>
+    <div class="single-post">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header single-post-header" style="background-image:url('https://upinthesky.github.io//images/clouds_banner.jpg')">
+    <div>
+      <h1 class="post-title single-post-title" itemprop="name headline">Devo 7E RSSI Configuration for X6B Receiver (AFHDS-2A Protocol) and Betaflight Integration</h1>
+      <p class="post-meta single-post-meta">
+        <time datetime="2018-08-20T00:00:00+02:00" itemprop="datePublished">20 August 2018</time>
+        •
+        
+        
+          4 mins
+        
+        read
+      </p>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="single-post-summary">
+      
+    <ul class="tag-box inline">
+      
+        <li><a href="/tags#Quadcopter" class="tag">• Quadcopter</a></li>
+      
+        <li><a href="/tags#Eachine" class="tag">• Eachine</a></li>
+      
+        <li><a href="/tags#Wizard" class="tag">• Wizard</a></li>
+      
+        <li><a href="/tags#X220S" class="tag">• X220S</a></li>
+      
+        <li><a href="/tags#Receiver" class="tag">• Receiver</a></li>
+      
+        <li><a href="/tags#X6B" class="tag">• X6B</a></li>
+      
+        <li><a href="/tags#i-BUS" class="tag">• i-BUS</a></li>
+      
+        <li><a href="/tags#AFHDS-2A" class="tag">• AFHDS-2A</a></li>
+      
+        <li><a href="/tags#FPV" class="tag">• FPV</a></li>
+      
+        <li><a href="/tags#Racing" class="tag">• Racing</a></li>
+      
+        <li><a href="/tags#Devo 7E" class="tag">• Devo 7E</a></li>
+      
+        <li><a href="/tags#Deviation" class="tag">• Deviation</a></li>
+      
+        <li><a href="/tags#A7105" class="tag">• A7105</a></li>
+      
+        <li><a href="/tags#RSSI" class="tag">• RSSI</a></li>
+      
+        <li><a href="/tags#Betaflight" class="tag">• Betaflight</a></li>
+      
+    </ul>  
+    </div>
+    <div class="post-content single-post-content" itemprop="articleBody">
+      <p>RSSI means Received Signal Strength Indication and it is a value that indicates the power in a received radio signal. It becomes extremely handy to have this measurement enabled on the transmitter because it can trigger an alert when we are flying too far away risking to lose communication with the receiver.</p>
+
+<!--more-->
+
+<p>In the following, we will see how to configure this feature on the <a href="https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q">Devo 7E</a> loaded with Deviation TX firmware for the <a href="https://www.banggood.com/Flysky-X6B-2_4G-6CH-i-BUS-PPM-PWM-Receiver-for-AFHDS-i6s-i6-i6x-Transmitter-p-1101513.html?p=CA03112038011201508Q">X6B</a> receiver, i.e. AFHD-2A protocol. Moreover, we will integrate RSSI on Betaflight so the value shows up  in real time on the OSD.</p>
+
+<p><strong>Loading Deviation firmware and installing A7105 module</strong></p>
+
+<p>Since we are going to bind Devo 7E with X6B receiver which uses FlySky protocol, first thing to do is load Deviation TX firmware in the Devo 7E (always use the latest release): the download is available <a href="https://www.deviationtx.com/downloads-new">here</a> under “Deviation Releases” where you can find both stable releases and “nightly builds”. There are many guides on how to load Deviation TX firmware so we will not go in detail through the entire process. However, it is pretty simple: connect the radio to the computer using the supplied USB cable, power it up in “Program Update” mode (press hold “EXT” on TX and then turn it on), install the drivers and load the DFU file present in the archive (downloaded before) using <a href="https://www.deviationtx.com/downloads-new/category/162-walkera">Walkera DfuSe USB Upgrade Tool</a>. Once that is done, just it is just a matter of copying inside the transmitter (press hold “ENT” on TX and then turn it on to connect in USB mode) all the file present in the archive excluding .zip and .dfu.</p>
+
+<p>To bind protocols which are not supported by CYRF6936 module (the one that is there by default), such as FlySky, we need additional RF modules. For FlySky protocol, we need to solder the A7105 RF module inside the transmitter: I suggest <a href="https://www.banggood.com/A7105-Wireless-RF-2_4GHz-Transceiver-Module-3_3V-Power-Supply-Module-p-909404.html?p=CA03112038011201508Q">this version</a> that has integrated Power Amplifier (PA).<br />
+For the connection refer to the <a href="http://www.deviationtx.com/wiki/modulelist/a7105">official documentation</a>; beware that after Deviation release 4.0.1 some connections change (everything is well described with images showing the pinout).</p>
+
+<p>Once the soldering job is finished, we need to enable the module via software: connect again the TX to the computer in USB mode and edit the lines referring to the A7105 module in hardware.ini file like shown below (has_pa-a7105 set to 1 only if you have the version with integrated PA):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[modules]
+.......................
+  enable-a7105    = A13
+  has_pa-a7105    = 1
+.......................
+</code></pre>
+</div>
+
+<p>Now that everything is set up, we can start the configuration.</p>
+
+<p><strong>Enabling RSSI for AFHDS-2A on Deviation</strong></p>
+
+<p>Since we want to bind to X6B receiver, in Model menu-&gt; Model setup we need to choose the protocol AFHDS-2A and follow the bind procedure (already seen <a href="https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html">here</a>.<br />
+Then we need to enable RSSI on channel 12 by just pressing “ENT” on the protocol itself and setting that value for “LQI output” (stands for Link Quality indicator):</p>
+
+<p class="center"><a href="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/lqi_output.png"><img src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/lqi_output.png" alt="" /></a></p>
+
+<p>Once that is done we should start seeing RSSI value displayed on Transmitter menu -&gt; Telemetry monitor:</p>
+
+<p class="center"><a href="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_monitor.png"><img src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_monitor.png" alt="" /></a></p>
+
+<p>As the image shows, to a signal strength of 99 corresponds a value of 61d.<br />
+By going in Model menu -&gt; Telemetry config, we can set up an alarm that triggers when the value goes up a certain threshold. I found 90d as a good value to trigger the alert that signals we need to start paying attention to the distance:</p>
+
+<p class="center"><a href="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_config.png"><img src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_config.png" alt="" /></a></p>
+
+<p>We have finished configuring RSSI on the transmitter; next step is to integrate it in Betaflight so we can have the value displayed on the goggles/monitor through OSD while we are flying in FPV.</p>
+
+<p><strong>Betaflight Integration</strong></p>
+
+<p>After connecting the quadcopter to the computer, we need to open Betaflight Configurator and navigate to the Receiver tab. Here we can set RSSI channel: even if we have set the value to channel 12 on the transmitter, latest releases of Betaflight use AUX channel number; in order to use the right AUX channel we need to subtract 4 to the channel number, so we need to choose AUX 8.</p>
+
+<p class="center"><a href="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_rssi_channel.png"><img src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_rssi_channel.png" alt="" /></a></p>
+
+<p>Finally we can enable RSSI value to the OSD tab so it shows up on the display:</p>
+
+<p class="center"><a href="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_osd_rssi.png"><img src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_osd_rssi.png" alt="" /></a></p>
+
+<p>This is the result on the FPV screen:</p>
+
+<p class="center"><a href="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/screen_rssi_osd.png"><img src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/screen_rssi_osd.png" alt="" /></a></p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>We have seen how to enable RSSI for AFHDS-2A protocol in Devo 7E loaded with Deviation TX firmware and how to integrate RSSI measurement in Betaflight so it is possible to read the value on the goggles/monitor through OSD during FPV flights.</p>
+
+    </div>
+  </div>
+</article>
+
+    </div>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+        <p align=right>© 2017-2018 Up in the Sky | All Rights Reserved 
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+</html>
