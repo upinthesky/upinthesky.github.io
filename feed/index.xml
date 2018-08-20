@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Aug 2018 01:10:36 +0200</pubDate>
-    <lastBuildDate>Mon, 20 Aug 2018 01:10:36 +0200</lastBuildDate>
+    <pubDate>Mon, 20 Aug 2018 11:08:18 +0200</pubDate>
+    <lastBuildDate>Mon, 20 Aug 2018 11:08:18 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -527,7 +527,7 @@ Now we take a look at the setup and configuration of the quadcopter in Betafligh
 
 &lt;p&gt;&lt;strong&gt;Configuration&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;In the “Configuration” tab we need to be sure DHSOT600 is selected and we can deactivate “MOTOR_STOP” switch (personal preference):&lt;/p&gt;
+&lt;p&gt;In the “Configuration” tab we need to be sure DSHOT600 is selected and we can deactivate “MOTOR_STOP” switch (personal preference):&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_1.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_1.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
