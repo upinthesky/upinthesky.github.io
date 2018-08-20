@@ -6,9 +6,191 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Aug 2018 17:53:27 +0200</pubDate>
-    <lastBuildDate>Mon, 20 Aug 2018 17:53:27 +0200</lastBuildDate>
+    <pubDate>Tue, 21 Aug 2018 00:34:53 +0200</pubDate>
+    <lastBuildDate>Tue, 21 Aug 2018 00:34:53 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Runcam 3S Overview and Comparison with Runcam 3</title>
+        <description>&lt;p&gt;Runcam 3 series of cameras has been designed with the main purpose of recording FPV Quads Racing/Freestyle footage.&lt;br /&gt;
+&lt;a href=&quot;http://bit.ly/2wiN3Yc&quot;&gt;Runcam 3S&lt;/a&gt; is the successor of the famous Runcam 3 which has been discontinued in May 2017.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparison&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It is a good idea to start by comparing Runcam 3S specifications with the ones of its predecessor.&lt;br /&gt;
+The image below shows how the two cameras have a really similar look, with Runcam 3S having sharp edges:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-racing-drone-action-camera-overview-and-comparison-with-runcam-3/runcam_comparison.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-racing-drone-action-camera-overview-and-comparison-with-runcam-3/runcam_comparison.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In this table it is reported a comparison between the specs:&lt;/p&gt;
+
+&lt;table rules=&quot;groups&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Feature&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Runcam 3&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Runcam 3S&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Angle of Field&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;FOV 155°&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;FOV 160°&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Video Resolution&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1080p@60fps/1080p@30fps/720p@60fps&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1080p@60fps/1080p@50fps/1080p@30fps/720p@60fps&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Video File Format&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;MOV&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;MOV&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Image Resolution&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2MP&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2MP&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;AV Output Format&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NTSC/PAL&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;NTSC/PAL&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Communication Interface&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Micro USB&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Micro USB&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;MicroSD card supported&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;64G max&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;64G max&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Dimension&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;38*38*37.5mm&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;40*38*37mm&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Battery Capacity&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;960mA&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;850mA&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;USB Power Input&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;DC 5-17V&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;DC 5-15V&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Power Consumption:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;650mAh @5V&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;620mA @5V&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Net Weight&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;66g&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;69g&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br /&gt;
+As we can see there are not so many differences in the specs apart from 5 more degrees in the FOV, an added video resolution of 1080p@50fps and slight changes in dimension, weight, power input and consumption.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Improvements Overview&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;However, a big improvement has been done with the battery: finally, it is removable. In fact, a big problem with Runcam 3 was the difficulty to replace the batteries (two 1s LiPo, each one with a capacity of 480 mAh): they were integrated inside the case and the only way to change them was to open it by removing the front glass and using a replacement kit (not so straightforward as it should be).&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-racing-drone-action-camera-overview-and-comparison-with-runcam-3/runcam3s_battery.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-racing-drone-action-camera-overview-and-comparison-with-runcam-3/runcam3s_battery.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now if you need to replace the battery, it is just a matter of buying a new one, insert it and you are good to go.&lt;br /&gt;
+Moreover they added battery status light to keep track of the charging status (in Runcam 3 the status of the battery was indicated at start up by a blinking light on the power button).&lt;/p&gt;
+
+&lt;p&gt;Wide Dynamic Range (WDR) has been improved with respect to its predecessor and performs pretty well ensuring a good quality image definition when facing directly into the sun. This is a crucial feature for FPV flying, making a big difference if in the same frame there are bright and dark spots.&lt;/p&gt;
+
+&lt;p&gt;Like the previous version, it is equipped with two microphones: one on the front and the other on the back (Runcam 3 had a top mic instead of the front one):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-racing-drone-action-camera-overview-and-comparison-with-runcam-3/runcam3s_details.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-racing-drone-action-camera-overview-and-comparison-with-runcam-3/runcam3s_details.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;They perform pretty well like the previous version. However, if we are using it for FPV racing/freestyle, audio quality should not be our main concern.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mobile App&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since there is no integrated display on the back of the camera, to control camera settings we need to use the mobile app:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-racing-drone-action-camera-overview-and-comparison-with-runcam-3/runcam3s_app.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-racing-drone-action-camera-overview-and-comparison-with-runcam-3/runcam3s_app.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So, through a Wi-Fi connection protected by password, it is possible to change the following settings:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;White balance (Auto, Sunny, Cloudy, Fluorescent light, Incandescent light);&lt;/li&gt;
+  &lt;li&gt;Exposure value (from -2 to 2 with intervals of 0.2);&lt;/li&gt;
+  &lt;li&gt;Field Of View (Wide, Medium, Narrow);&lt;/li&gt;
+  &lt;li&gt;Metering mode (Average metering, Center-weighted average metering, Spot metering);&lt;/li&gt;
+  &lt;li&gt;Flip Screen (Off, On, Automatic);&lt;/li&gt;
+  &lt;li&gt;Changing Mode (Burst mode, Time-lapse Photo, photo, Video, Time-lapse Video).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For video recording it is also possible to change, other than the resolution, the bit rate (expressed in Mbps) and you can send commands to take pictures or record videos directly from the app.&lt;br /&gt;
+WDR can be enabled by the Setting screen (beware that recording at 1080p@60fps with WDR active will be resource heavy resulting in more battery consumption).&lt;/p&gt;
+
+&lt;p&gt;Moreover, through the app you can upgrade the firmware of the camera in case the vendor releases updates.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2wiN3Yc&quot;&gt;Runcam 3S&lt;/a&gt; is a really good action camera and it is specifically designed to record videos mounting it on 5” - 6” quads due to its weight and dimensions. It represents a nice alternative to other more expensive action cams on the market and the improvements from its predecessor, especially the one regarding the battery, make it a competitive product.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Aug 2018 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2018/08/21/runcam-3s-overview-and-comparison-with-runcam-3.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2018/08/21/runcam-3s-overview-and-comparison-with-runcam-3.html</guid>
+        
+        <category>Runcam 3S</category>
+        
+        <category>Runcam 3</category>
+        
+        <category>Quadcopter</category>
+        
+        <category>Overview</category>
+        
+        <category>Comparison</category>
+        
+        <category>FPV</category>
+        
+        <category>Drone</category>
+        
+        <category>Racing</category>
+        
+        <category>Freestyle</category>
+        
+        <category>WDR</category>
+        
+        
+      </item>
     
       <item>
         <title>Devo 7E RSSI Configuration for X6B Receiver (AFHDS-2A Protocol) and Betaflight Integration</title>
@@ -730,6 +912,8 @@ In the next article we are going to talk about the setup and configuration of th
         <category>Devo 7E</category>
         
         <category>DALPROP</category>
+        
+        <category>Runcam 3</category>
         
         
       </item>
