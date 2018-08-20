@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Aug 2018 14:09:56 +0200</pubDate>
-    <lastBuildDate>Mon, 20 Aug 2018 14:09:56 +0200</lastBuildDate>
+    <pubDate>Mon, 20 Aug 2018 16:52:01 +0200</pubDate>
+    <lastBuildDate>Mon, 20 Aug 2018 16:52:01 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -16,13 +16,13 @@
 
 &lt;!--more--&gt;
 
-&lt;p&gt;In the following, we will see how to configure this feature on the &lt;a href=&quot;https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q&quot;&gt;Devo 7E&lt;/a&gt; loaded with Deviation TX firmware for the &lt;a href=&quot;https://www.banggood.com/Flysky-X6B-2_4G-6CH-i-BUS-PPM-PWM-Receiver-for-AFHDS-i6s-i6-i6x-Transmitter-p-1101513.html?p=CA03112038011201508Q&quot;&gt;X6B&lt;/a&gt; receiver, i.e. AFHD-2A protocol. Moreover, we will integrate RSSI on Betaflight so the value shows up  in real time on the OSD.&lt;/p&gt;
+&lt;p&gt;In the following, we will see how to configure this feature on the &lt;a href=&quot;http://bit.ly/2L960Ce&quot;&gt;Devo 7E&lt;/a&gt; loaded with Deviation TX firmware for the &lt;a href=&quot;http://bit.ly/2N1Qnye&quot;&gt;X6B&lt;/a&gt; receiver, i.e. AFHD-2A protocol. Moreover, we will integrate RSSI on Betaflight so the value shows up  in real time on the OSD.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Loading Deviation firmware and installing A7105 module&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Since we are going to bind Devo 7E with X6B receiver which uses FlySky protocol, first thing to do is load Deviation TX firmware in the Devo 7E (always use the latest release): the download is available &lt;a href=&quot;https://www.deviationtx.com/downloads-new&quot;&gt;here&lt;/a&gt; under “Deviation Releases” where you can find both stable releases and “nightly builds”. There are many guides on how to load Deviation TX firmware so we will not go in detail through the entire process. However, it is pretty simple: connect the radio to the computer using the supplied USB cable, power it up in “Program Update” mode (press hold “EXT” on TX and then turn it on), install the drivers and load the DFU file present in the archive (downloaded before) using &lt;a href=&quot;https://www.deviationtx.com/downloads-new/category/162-walkera&quot;&gt;Walkera DfuSe USB Upgrade Tool&lt;/a&gt;. Once that is done, just it is just a matter of copying inside the transmitter (press hold “ENT” on TX and then turn it on to connect in USB mode) all the file present in the archive excluding .zip and .dfu.&lt;/p&gt;
 
-&lt;p&gt;To bind protocols which are not supported by CYRF6936 module (the one that is there by default), such as FlySky, we need additional RF modules. For FlySky protocol, we need to solder the A7105 RF module inside the transmitter: I suggest &lt;a href=&quot;https://www.banggood.com/A7105-Wireless-RF-2_4GHz-Transceiver-Module-3_3V-Power-Supply-Module-p-909404.html?p=CA03112038011201508Q&quot;&gt;this version&lt;/a&gt; that has integrated Power Amplifier (PA).&lt;br /&gt;
+&lt;p&gt;To bind protocols which are not supported by CYRF6936 module (the one that is there by default), such as FlySky, we need additional RF modules. For FlySky protocol, we need to solder the A7105 RF module inside the transmitter: I suggest &lt;a href=&quot;http://bit.ly/2MG6PXV&quot;&gt;this version&lt;/a&gt; that has integrated Power Amplifier (PA).&lt;br /&gt;
 For the connection refer to the &lt;a href=&quot;http://www.deviationtx.com/wiki/modulelist/a7105&quot;&gt;official documentation&lt;/a&gt;; beware that after Deviation release 4.0.1 some connections change (everything is well described with images showing the pinout).&lt;/p&gt;
 
 &lt;p&gt;Once the soldering job is finished, we need to enable the module via software: connect again the TX to the computer in USB mode and edit the lines referring to the A7105 module in hardware.ini file like shown below (has_pa-a7105 set to 1 only if you have the version with integrated PA):&lt;/p&gt;
@@ -112,7 +112,7 @@ By going in Model menu -&amp;gt; Telemetry config, we can set up an alarm that t
     
       <item>
         <title>Eachine Wizard X220S Omnibus F4SD Firmware Upgrade</title>
-        <description>&lt;p&gt;It is always important to keep board’s firmware updated to the latest release. This article shows how to update Betaflight firmware for the Omnibus F4SD which is the Flight Controller (FC) equipped on the &lt;a href=&quot;https://www.banggood.com/Eachine-Wizard-X220S-FPV-Racer-Omnibus-F4-5_8G-72CH-VTX-30A-Dshot600-800TVL-w-iRangeX-iRX-i6X-RTF-p-1153989.html?p=CA03112038011201508Q&quot;&gt;Eachine Wizard X220S&lt;/a&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;It is always important to keep board’s firmware updated to the latest release. This article shows how to update Betaflight firmware for the Omnibus F4SD which is the Flight Controller (FC) equipped on the &lt;a href=&quot;http://bit.ly/2weMZIZ&quot;&gt;Eachine Wizard X220S&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -343,7 +343,7 @@ So, we need to go to Firmware Flasher tab, select the latest firmware version fo
       <item>
         <title>Syma X5C Explorers FPV Mod</title>
         <description>&lt;p&gt;In this article we will see how to add an FPV camera system to the Syma X5C.&lt;br /&gt;
-&lt;a href=&quot;https://www.banggood.com/Syma-X5C-Explorers-2_4G-4CH-RC-Quadcopter-Mode-2-With-Camera-p-913827.html?p=CA03112038011201508Q&quot;&gt;Syma X5C&lt;/a&gt; is a really basic RTF brushed quadcopter which comes with a 2MP camera that can take photos and record videos storing them on the 2GB SD card included in the package. Everything is powered up by a 3.7V 500mAh LiPo battery which guarantees 6-7 minutes of flight depending on flight style and camera usage.&lt;/p&gt;
+&lt;a href=&quot;http://bit.ly/2MZucsj&quot;&gt;Syma X5C&lt;/a&gt; is a really basic RTF brushed quadcopter which comes with a 2MP camera that can take photos and record videos storing them on the 2GB SD card included in the package. Everything is powered up by a 3.7V 500mAh LiPo battery which guarantees 6-7 minutes of flight depending on flight style and camera usage.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -358,7 +358,7 @@ To proceed we have to disconnect the plug and remove 2 screws like shown in the 
 
 &lt;p&gt;&lt;strong&gt;Mounting FPV Camera&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;For this mod I have chosen to use the &lt;a href=&quot;https://www.banggood.com/Eachine-TX02-Super-Mini-AIO-5_8G-40CH-200mW-VTX-600TVL-14-Cmos-FPV-Camera-p-1088368.html?p=CA03112038011201508Q&quot;&gt;Eachine TX02&lt;/a&gt; FPV 5.8G 40CH 600 VTL camera (NTSC) with 120° FOV that has a built in video transmitter with nickel-plated 4 leaf omnidirectional antenna (RHCP circular polarization clover). It is really lightweight (4.57g) and it has a transmitting output power of (0/200)mW, while the input voltage is 3.2-5V. Newer version of the camera allows to set the power to (0/25/50/200)mW: &lt;a href=&quot;https://www.banggood.com/Eachine-TX03-Super-Mini-025mW50mW200mW-Switchable-AIO-5_8G-72CH-VTX-600TVL-13-Cmos-FPV-Camera-p-1104884.html?p=CA03112038011201508Q&quot;&gt;Eachine TX03&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For this mod I have chosen to use the &lt;a href=&quot;http://bit.ly/2N5N60Z&quot;&gt;Eachine TX02&lt;/a&gt; FPV 5.8G 40CH 600 VTL camera (NTSC) with 120° FOV that has a built in video transmitter with nickel-plated 4 leaf omnidirectional antenna (RHCP circular polarization clover). It is really lightweight (4.57g) and it has a transmitting output power of (0/200)mW, while the input voltage is 3.2-5V. Newer version of the camera allows to set the power to (0/25/50/200)mW: &lt;a href=&quot;http://bit.ly/2OTBq1N&quot;&gt;Eachine TX03&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_front.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_front.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -366,7 +366,7 @@ To proceed we have to disconnect the plug and remove 2 screws like shown in the 
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_back.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_back.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Since we need to connect this FPV system to the quadcopter to power it up, we need the proper connectors: &lt;a href=&quot;https://www.banggood.com/Excellway-20Pcs-of-JST-2P-Female-Male-Connectors-with-80mm-Standard-Wires-p-1191422.html?p=CA03112038011201508Q&quot;&gt;JST 2P Connectors&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Since we need to connect this FPV system to the quadcopter to power it up, we need the proper connectors: &lt;a href=&quot;http://bit.ly/2PmfZY6&quot;&gt;JST 2P Connectors&lt;/a&gt;&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/jst_connectors.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/jst_connectors.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -376,7 +376,7 @@ To proceed we have to disconnect the plug and remove 2 screws like shown in the 
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/camera_connection.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/camera_connection.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Considering the power consumption added by the FPV system, it is a good idea to buy a bigger battery to have a decent flight time (better to stay in the range of 6-7 minutes to let the brushed motors cool down): &lt;a href=&quot;https://www.banggood.com/4Pcs-3_7V-800MAH-25C-Battery-And-Charger-For-Syma-X5C-1-X5SC-X5SW-M68-CX30-U816A-U818A-WLtoys-V929-p-1008693.html?p=CA03112038011201508Q&quot;&gt;3.7V 800mAh LiPo Battery&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Considering the power consumption added by the FPV system, it is a good idea to buy a bigger battery to have a decent flight time (better to stay in the range of 6-7 minutes to let the brushed motors cool down): &lt;a href=&quot;http://bit.ly/2ON1qf9&quot;&gt;3.7V 800mAh LiPo Battery&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;A simple but effective way to fix the camera on the Syma X5C is to use double-sided tape.&lt;br /&gt;
 This is the final result:&lt;/p&gt;
@@ -387,10 +387,10 @@ This is the final result:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.banggood.com/Eachine-LCD5802D-5802-5_8G-40CH-7-Inch-FPV-Monitor-with-DVR-Build-in-Battery-p-1029504.html?p=CA03112038011201508Q&quot;&gt;Eachine LCD5802D 5.8G 40CH 7 Inch FPV Monitor with DVR and Built-in Battery&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://bit.ly/2PkZtrv&quot;&gt;Eachine LCD5802D 5.8G 40CH 7 Inch FPV Monitor with DVR and Built-in Battery&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.banggood.com/Eachine-VR006-VR-006-3-Inch-500300-Display-5_8G-40CH-Mini-FPV-Goggles-Build-in-3_7V-500mAh-Battery-p-1158147.html?p=CA03112038011201508Q&quot;&gt;Eachine VR006 VR-006 3 Inch 500*300 Display 5.8G 40CH Mini FPV Goggles with Built-in Battery&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006 VR-006 3 Inch 500*300 Display 5.8G 40CH Mini FPV Goggles with Built-in Battery&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -431,7 +431,7 @@ This is the final result:&lt;/p&gt;
     
       <item>
         <title>Eachine Wizard X220S Yaw Wobbling Resolution</title>
-        <description>&lt;p&gt;In this article we will see how to solve the yaw wobbling on the &lt;a href=&quot;https://www.banggood.com/Eachine-Wizard-X220S-FPV-Racer-Omnibus-F4-5_8G-72CH-VTX-30A-Dshot600-2206-2300KV-800TVL-CCD-ARF-p-1155399.html?p=CA03112038011201508Q&quot;&gt;Eachine Wizard X220S&lt;/a&gt;, which is visible and relevant especially during hovering. By doing this we will see how to analyze flight logs using Betaflight Blackbox Explorer.&lt;/p&gt;
+        <description>&lt;p&gt;In this article we will see how to solve the yaw wobbling on the &lt;a href=&quot;http://bit.ly/2weMZIZ&quot;&gt;Eachine Wizard X220S&lt;/a&gt;, which is visible and relevant especially during hovering. By doing this we will see how to analyze flight logs using Betaflight Blackbox Explorer.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -461,7 +461,7 @@ This is the final result:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Anti-vibration Stadoffs&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;This annoying behavior can be fixed with a simple solution, i.e. mounting the Flight Controller on &lt;a href=&quot;https://www.banggood.com/4-PCS-Realacc-M376-Flight-Controller-Fixed-Screws-for-FPV-Racer-p-1135527.html?p=CA03112038011201508Q&quot;&gt;Anti-vibration Standoffs&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;This annoying behavior can be fixed with a simple solution, i.e. mounting the Flight Controller on &lt;a href=&quot;http://bit.ly/2OTAZVd&quot;&gt;Anti-vibration Standoffs&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -508,7 +508,7 @@ This is the final result:&lt;/p&gt;
     
       <item>
         <title>Eachine Wizard X220S Betaflight Setup and Configuration</title>
-        <description>&lt;p&gt;In the &lt;a href=&quot;https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html&quot;&gt;previous article&lt;/a&gt; we have seen an overview of the &lt;a href=&quot;https://www.banggood.com/Eachine-Wizard-X220S-FPV-Racer-Omnibus-F4-5_8G-72CH-VTX-30A-Dshot600-2206-2300KV-800TVL-CCD-ARF-p-1155399.html?p=CA03112038011201508Q&quot;&gt;Eachine Wizard X220S&lt;/a&gt; and how to install the FlySky X6B receiver on it.
+        <description>&lt;p&gt;In the &lt;a href=&quot;https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html&quot;&gt;previous article&lt;/a&gt; we have seen an overview of the &lt;a href=&quot;http://bit.ly/2weMZIZ&quot;&gt;Eachine Wizard X220S&lt;/a&gt; and how to install the FlySky X6B receiver on it.
 Now we take a look at the setup and configuration of the quadcopter in Betaflight Configurator.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -631,7 +631,7 @@ If you already have a decent transmitter, you can just go for the ARF version an
 
 &lt;p&gt;&lt;strong&gt;Package contents&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href=&quot;https://www.banggood.com/Eachine-Wizard-X220S-FPV-Racer-Omnibus-F4-5_8G-72CH-VTX-30A-Dshot600-2206-2300KV-800TVL-CCD-ARF-p-1155399.html?p=CA03112038011201508Q&quot;&gt;ARF version&lt;/a&gt; package comes with the quadcopter with the following specifications and accessories:&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://bit.ly/2weMZIZ&quot;&gt;ARF version&lt;/a&gt; package comes with the quadcopter with the following specifications and accessories:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;4 x Eachine  MN2206 2300KV motor&lt;/li&gt;
@@ -651,10 +651,10 @@ If you already have a decent transmitter, you can just go for the ARF version an
 &lt;p&gt;The ARF version does not come with TX, RX and battery, so here is my setup:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q&quot;&gt;Devo 7E&lt;/a&gt; loaded with Deviation firmware and additional RF modules so it is possible to bind different models with just one radio controller. In this case, the RF module we are going to use is the &lt;a href=&quot;https://www.banggood.com/A7105-Wireless-RF-2_4GHz-Transceiver-Module-3_3V-Power-Supply-Module-p-909404.html?p=CA03112038011201508Q&quot;&gt;A7105&lt;/a&gt; (XL7105-D03B chip) which supports AFHDS-2A (FlySky protocol);&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Flysky-X6B-2_4G-6CH-i-BUS-PPM-PWM-Receiver-for-AFHDS-i6s-i6-i6x-Transmitter-p-1101513.html?p=CA03112038011201508Q&quot;&gt;Flysky X6B 2.4G 6CH i-BUS PPM PWM Receiver for AFHDS&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2L960Ce&quot;&gt;Devo 7E&lt;/a&gt; loaded with Deviation firmware and additional RF modules so it is possible to bind different models with just one radio controller. In this case, the RF module we are going to use is the &lt;a href=&quot;http://bit.ly/2MG6PXV&quot;&gt;A7105&lt;/a&gt; (XL7105-D03B chip) which supports AFHDS-2A (FlySky protocol);&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2N1Qnye&quot;&gt;Flysky X6B 2.4G 6CH i-BUS PPM PWM Receiver for AFHDS&lt;/a&gt;;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.gensace.de/tattu-1550mah-14-8v-75c-4s1p-lipo-battery-pack.html&quot;&gt;TATTU 1550mAh 14.8V 75C 4S1P Lipo Battery Pack&lt;/a&gt;;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/2-Pairs-DALPROP-T5045C-CW-CCW-3-blade-propeller-for-Multicopter-p-1137038.html?p=CA03112038011201508Q&quot;&gt;DALPROP T5045C&lt;/a&gt;; changing propellers is a must since the given ones are really inefficient and the quality is not as good as it should be (they develop stress marks after few flights).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2BtgmNL&quot;&gt;DALPROP T5045C&lt;/a&gt;; changing propellers is a must since the given ones are really inefficient and the quality is not as good as it should be (they develop stress marks after few flights).&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Receiver connection to FC board&lt;/strong&gt;&lt;/p&gt;
@@ -679,7 +679,7 @@ If you already have a decent transmitter, you can just go for the ARF version an
 
 &lt;p&gt;&lt;strong&gt;Mounting the receiver&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Now we just find a good place to position the receiver. A safe spot could be on the rear, on the bottom plate near the leds. To fix the board on the carbon plate we can just use two &lt;a href=&quot;https://www.banggood.com/140pcs-M2-Nylon-Hex-Spacers-Screw-Nut-Assortment-Stand-off-Accessories-Kit-Set-p-996104.html?p=CA03112038011201508Q&quot;&gt;M2 standoffs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now we just find a good place to position the receiver. A safe spot could be on the rear, on the bottom plate near the leds. To fix the board on the carbon plate we can just use two &lt;a href=&quot;http://bit.ly/2Ppj61j&quot;&gt;M2 standoffs&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -805,7 +805,7 @@ After launching Mission Planner software, this port will be the same appearing i
 &lt;p&gt;In this section it is reported a list of the components used for this project with a short description of their most important features and a link to it. In the case I cannot find the same component I used, I have put a link where you can buy a similar one.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Diatone-Q450-Quad-450-V3-PCB-Quadcopter-Frame-Kit-450mm-p-942100.html?p=CA03112038011201508Q&quot;&gt;HJ450 Frame&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2MFtu6C&quot;&gt;HJ450 Frame&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/frame.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/frame.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -818,11 +818,11 @@ As the previous image shows, this frame has an integrated power distribution boa
 &lt;ul&gt;
   &lt;li&gt;APM controller kit
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Ardupilot-APM-2_8-Flight-Control-Board-Bend-Pin-with-Protective-Case-p-1123217.html?p=CA03112038011201508Q&quot;&gt;APM&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/3DR-Radio-Telemetry-433MHZ-Module-For-APM-APM2-Europe-p-85233.html?p=CA03112038011201508Q&quot;&gt;Telemetry @433Mhz&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/APM-Power-Module-V1-Vision-50V-90A-with-BEC-for-RC-Model-p-917309.html?p=CA03112038011201508Q&quot;&gt;Power Module&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/NEO-M8N-GPS-Module-for-PX4-PIX-APM2_52_6-Built-inCompass-p-974360.html?p=CA03112038011201508Q&quot;&gt;GPS&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/APM2_5-2_6-KK-MWC-Glass-Fiber-Shock-Absorber-Anti-vibration-Set-p-914546.html?p=CA03112038011201508Q&quot;&gt;Anti-Vibration Mount&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://bit.ly/2MFUEdM&quot;&gt;APM&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://bit.ly/2N5yEpp&quot;&gt;Telemetry @433Mhz&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://bit.ly/2MyWixN&quot;&gt;Power Module&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://bit.ly/2vYLcse&quot;&gt;GPS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://bit.ly/2PnLWPC&quot;&gt;Anti-Vibration Mount&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -853,13 +853,13 @@ A particularly important element on the circuit is the jumper JP1: depending on 
 &lt;p&gt;Before mounting the APM control board on the quadcopter we need to upload the firmware like described &lt;a href=&quot;https://upinthesky.github.io/2016/12/18/2016/12/26/loading-arducopter-firmware-to-apm.html&quot;&gt;here&lt;/a&gt; and perform magnetometer (compass) and accelerometer calibration following the links to the guides at the end of that article (radio control calibration can be done even after the structural build).&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;4 x &lt;a href=&quot;https://www.banggood.com/it/Emax-MT2213-935KV-Brushless-Motor-For-RC-Multicopter-p-69288.html?p=CA03112038011201508Q&quot;&gt;Emax MT2213-935KV Brushless Motors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;4 x &lt;a href=&quot;http://bit.ly/2wdxFfW&quot;&gt;Emax MT2213-935KV Brushless Motors&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/motor.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/motor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;4 x &lt;a href=&quot;https://www.banggood.com/EMAX-1045-Propellers-For-Emax-MT2213-935KV-Brushless-Motor-p-69290.html?p=CA03112038011201508Q&quot;&gt;Propellers 1045&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;4 x &lt;a href=&quot;http://bit.ly/2weMKh3&quot;&gt;Propellers 1045&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Each brushless motor comes with a pair of propellers, one normal (for clockwise rotation) and another pusher (for counterclockwise rotation). Nuts have different colors since they are made to lock propellers in the opposite direction they spin (self locking nuts, so depending on motors rotation two of them lock in CW direction and the others CCW).&lt;/p&gt;
@@ -872,7 +872,7 @@ The maximum Thrust for each motor is given by (0.850 Kg x 9.8 m/s^2) = 8.33 N.&l
 &lt;p&gt;However, as indicated in the manual, it is also possible to set up a configuration with 8x4.5 propellers and 4S LiPo battery.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;4 x &lt;a href=&quot;https://www.banggood.com/Hobbywing-Skywalker-2-4S-50A-UBEC-Brushless-ESC-With-5V5A-BEC-For-RC-Models-p-1041723.html?p=CA03112038011201508Q&quot;&gt;Hobbywing FlyFun 30A Brushless ESC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;4 x &lt;a href=&quot;http://bit.ly/2Bu4nj3&quot;&gt;Hobbywing FlyFun 30A Brushless ESC&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/esc.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/esc.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -888,7 +888,7 @@ The maximum Thrust for each motor is given by (0.850 Kg x 9.8 m/s^2) = 8.33 N.&l
 &lt;p&gt;These are pretty classic 3-cells LiPo batteries with 25C discharge rate. They provide, for my configuration, a flight time of 8-9 minutes depending on the flying style.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q&quot;&gt;Walkera Devo 7E transmitter with Deviation firmware&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2L960Ce&quot;&gt;Walkera Devo 7E transmitter with Deviation firmware&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/devo7e.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/devo7e.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -896,7 +896,7 @@ The maximum Thrust for each motor is given by (0.850 Kg x 9.8 m/s^2) = 8.33 N.&l
 &lt;p&gt;This is my favorite transmitter since it supports Deviation firmware, a community project that can be loaded on the Devo 7E by substituting the original software; its main feature is that it permits to bind to almost all commercial RC systems by simply adding some Radio Frequency (RF) modules (we will talk about that in other articles): in this way you can go to the field with a single TX controlling all your models.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.banggood.com/it/Wholesale-Walkera-6CH-2_4Ghz-RX601-Receiver-For-Devo-6-7-8-10-12-Transmitter-p-67222.html?p=CA03112038011201508Q&quot;&gt;Walkera RX601 receiver&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2wmZhPR&quot;&gt;Walkera RX601 receiver&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/quadcopter_450_build/rx601.jpg&quot;&gt;&lt;img src=&quot;/images/quadcopter_450_build/rx601.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
