@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Aug 2018 18:59:36 +0200</pubDate>
-    <lastBuildDate>Fri, 24 Aug 2018 18:59:36 +0200</lastBuildDate>
+    <pubDate>Fri, 24 Aug 2018 19:03:09 +0200</pubDate>
+    <lastBuildDate>Fri, 24 Aug 2018 19:03:09 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -1012,9 +1012,11 @@ If you already have a decent transmitter, you can just go for the ARF version an
 &lt;p&gt;&lt;strong&gt;X6B Binding&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;To bind Flysky X6B receiver we need to turn on the quadcopter while pressing th “BIND” button on the receiver and using the binding mode on the TX.&lt;br /&gt;
-For &lt;a href=&quot;http://bit.ly/2L960Ce&quot;&gt;Devo 7E&lt;/a&gt;, this can be done in Model menu -&amp;gt; Model setup.&lt;/p&gt;
+For &lt;a href=&quot;http://bit.ly/2L960Ce&quot;&gt;Devo 7E&lt;/a&gt;, loaded with Deviation TX firmware, this can be done in Model menu -&amp;gt; Model setup:&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you like Deviation TX firmware and you do not want to solder additional modules inside Devo 7E, there is a new multi-protocol radio already loaded with Deviation firmware, inside which are already installed additional RF modules, including the FlySky one (it has a 4in1 RF module - CC2500, CYRF6936, A7105, NRF2401): &lt;a href=&quot;http://bit.ly/2OVgl6O&quot;&gt;Jumper T8SG V2.0 Plus&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
