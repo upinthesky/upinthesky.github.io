@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Aug 2018 00:30:46 +0200</pubDate>
-    <lastBuildDate>Mon, 27 Aug 2018 00:30:46 +0200</lastBuildDate>
+    <pubDate>Mon, 27 Aug 2018 00:44:02 +0200</pubDate>
+    <lastBuildDate>Mon, 27 Aug 2018 00:44:02 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -356,6 +356,10 @@ Once turned on, short pressing the “MENU” button allow us to enter the menu 
         
         <category>Quadcopter</category>
         
+        <category>Antenna</category>
+        
+        <category>Aomway</category>
+        
         
       </item>
     
@@ -512,7 +516,8 @@ WDR can be enabled by the Setting screen (beware that recording at 1080p@60fps w
 
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2wiN3Yc&quot;&gt;RunCam 3S&lt;/a&gt; is a really good action camera and it is specifically designed to record videos mounting it on 5” - 6” quads due to its weight and dimensions. It represents a nice alternative to other more expensive action cams on the market and the improvements from its predecessor, especially the one regarding the battery, make it a competitive product.&lt;/p&gt;
+&lt;p&gt;RunCam 3S is a really good action camera and it is specifically designed to record videos mounting it on 5” - 6” quads due to its weight and dimensions. It represents a nice alternative to other more expensive action cams on the market and the improvements from its predecessor, especially the one regarding the battery, make it a competitive product.&lt;br /&gt;
+You can get it &lt;a href=&quot;http://bit.ly/2wiN3Yc&quot;&gt;here&lt;/a&gt; for a price that goes around 99$.&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Aug 2018 00:00:00 +0200</pubDate>
         <link>https://upinthesky.github.io//2018/08/21/runcam-3s-overview-and-comparison-with-runcam-3.html</link>
@@ -1285,6 +1290,8 @@ In the next article we are going to talk about the setup and configuration of th
         <category>RunCam 3</category>
         
         <category>RunCam 3S</category>
+        
+        <category>Brushless</category>
         
         
       </item>
