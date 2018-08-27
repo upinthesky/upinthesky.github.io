@@ -51,7 +51,7 @@
         •
         
         
-          4 mins
+          5 mins
         
         read
       </p>
@@ -106,7 +106,7 @@ If you already have a decent transmitter, you can just go for the ARF version an
 
 <!--more-->
 
-<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png" alt="Eachine Wizard X220S Specs" /></a></p>
 
 <p><strong>Package contents</strong></p>
 
@@ -155,34 +155,34 @@ If you already have a decent transmitter, you can just go for the ARF version an
 
 <p>In the receiver package, there are four cables: we need two of them, the one going inside the top right port for i-BUS and the one going in the bottom side port that we are going to use for battery voltage monitoring (telemetry on transmitter):</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x6b.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x6b.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x6b.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x6b.png" alt="FlySky X6B Receiver" /></a></p>
 
 <p>Both cables have three wires (black, red and yellow) with a white connector on one side (the one going into the receiver) and a black one on the other side:</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png" alt="X6B receiver cables" /></a></p>
 
 <p>For battery voltage monitoring we just need the red and black wires, so we need to remove the yellow one from one of the two cables. For both cables, the side with the black connector needs to be cut. Then we can strip the wires and prepare them (tin) for the soldering on the FC.</p>
 
 <p>Now we need access to the top of the Flight Controller board. To achieve this, we need to remove the top carbon plate (six screws) and the VTX board:</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/fc_board.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/fc_board.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/fc_board.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/fc_board.png" alt="Omnibus F4SD Flight Controller Board" /></a></p>
 
 <p>After soldering the wires (remember to tin the pads first for an easy soldering job), this is the result:</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png" alt="X6B connection to FC" /></a></p>
 
 <p><strong>Mounting the receiver</strong></p>
 
 <p>Now we just find a good place to position the receiver. A safe spot could be on the rear, on the bottom plate near the leds. To fix the board on the carbon plate we can just use two <a href="http://bit.ly/2Ppj61j">M2 standoffs</a>.</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png" alt="X6B Receiver Mount" /></a></p>
 
 <p><strong>X6B Binding</strong></p>
 
 <p>To bind Flysky X6B receiver we need to turn on the quadcopter while pressing th “BIND” button on the receiver and using the binding mode on the TX.<br />
 For <a href="http://bit.ly/2L960Ce">Devo 7E</a>, loaded with Deviation TX firmware, this can be done in Model menu -&gt; Model setup:</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png"><img src="/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png" alt="Devo 7E Binding with X6B" /></a></p>
 
 <p>If you like Deviation TX firmware and you do not want to solder additional modules inside Devo 7E, there is a new multi-protocol radio already loaded with Deviation firmware, inside which are already installed additional RF modules, including the FlySky one (it has a 4in1 RF module - CC2500, CYRF6936, A7105, NRF2401): <a href="http://bit.ly/2OVgl6O">Jumper T8SG V2.0 Plus</a>.</p>
 

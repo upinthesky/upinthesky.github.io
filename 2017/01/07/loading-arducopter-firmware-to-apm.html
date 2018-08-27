@@ -84,38 +84,38 @@
 <p>First we need do download a free software called Mission Planner. This tool gives us the possibility, other than flashing APM board with different firmwares (ArduRover, ArduCopter, Arduplane), to control flight data, calibrate compass, accelerometer and radio control, program switches for different flight modes and even plan flight for performing autonomous missions.<br />
 It can be downloaded from <a href="http://ardupilot.org/planner/docs/common-install-mission-planner.html">here</a>. To install in a Windows machine just double click on the “.msi” and follow the setup:</p>
 
-<p><a href="/images/loading_firmware/mp1.png"><img src="/images/loading_firmware/mp1.png" alt="" /></a></p>
+<p><a href="/images/loading_firmware/mp1.png"><img src="/images/loading_firmware/mp1.png" alt="Mission Planner Setup" /></a></p>
 
 <p>Keep in mind that the package installs also all the necessary drivers needed by the board to be recognized by the Operating System:</p>
 
-<p><a href="/images/loading_firmware/mp2.png"><img src="/images/loading_firmware/mp2.png" alt="" /></a></p>
+<p><a href="/images/loading_firmware/mp2.png"><img src="/images/loading_firmware/mp2.png" alt="Mission Planner Setup" /></a></p>
 
-<p><a href="/images/loading_firmware/mp3.png"><img src="/images/loading_firmware/mp3.png" alt="" /></a></p>
+<p><a href="/images/loading_firmware/mp3.png"><img src="/images/loading_firmware/mp3.png" alt="Mission Planner Setup" /></a></p>
 
 <p>If everything is installed properly the following message is displayed:</p>
 
-<p><a href="/images/loading_firmware/mp4.png"><img src="/images/loading_firmware/mp4.png" alt="" /></a></p>
+<p><a href="/images/loading_firmware/mp4.png"><img src="/images/loading_firmware/mp4.png" alt="Mission Planner Setup" /></a></p>
 
 <p>Once the software has been installed we can connect the board to the PC through the Micro USB cable (be careful to have the APM disconnected from every other power source like the PM); then, clicking on Computer -&gt; Properties -&gt; Device Manager, under “Ports (COM &amp; LPT)” you should have something like this:</p>
 
-<p><a href="/images/loading_firmware/apm_com.png"><img src="/images/loading_firmware/apm_com.png" alt="" /></a></p>
+<p><a href="/images/loading_firmware/apm_com.png"><img src="/images/loading_firmware/apm_com.png" alt="APM Com Port" /></a></p>
 
 <p>where COM6 is the communication port used for exchanging data with the APM.<br />
 After launching Mission Planner software, this port will be the same appearing in the upper right corner of Mission Planner screen:</p>
 
-<p class="center"><a href="/images/loading_firmware/com6_mp.png"><img src="/images/loading_firmware/com6_mp.png" alt="" /></a></p>
+<p class="center"><a href="/images/loading_firmware/com6_mp.png"><img src="/images/loading_firmware/com6_mp.png" alt="Mission Planner COM Port" /></a></p>
 
 <p>Do not click on “Connect”, since first we have to upload the firmware on the APM; to do so, we have to click on Initial Setup -&gt; Install Firmware:</p>
 
-<p class="center"><a href="/images/loading_firmware/install_firmware.png"><img src="/images/loading_firmware/install_firmware.png" alt="" /></a></p>
+<p class="center"><a href="/images/loading_firmware/install_firmware.png"><img src="/images/loading_firmware/install_firmware.png" alt="APM Firmware Installation" /></a></p>
 
 <p>Since ArduCopter 3.2.1 is the last supported version for APM 2.x control board (in my case 2.6) we need to click on “Pick previous firmware” on the bottom right and choose the corresponding option as in the image below:</p>
 
-<p class="center"><a href="/images/loading_firmware/firmware_version.png"><img src="/images/loading_firmware/firmware_version.png" alt="" /></a></p>
+<p class="center"><a href="/images/loading_firmware/firmware_version.png"><img src="/images/loading_firmware/firmware_version.png" alt="APM Firmware Version" /></a></p>
 
 <p>After that we just select the Quad version “ArduCopter V3.2.1 Quad” and confirm the upload activity:</p>
 
-<p class="center"><a href="/images/loading_firmware/arducopter.png"><img src="/images/loading_firmware/arducopter.png" alt="" /></a></p>
+<p class="center"><a href="/images/loading_firmware/arducopter.png"><img src="/images/loading_firmware/arducopter.png" alt="APM Arducopter" /></a></p>
 
 <p>Beware that Mission Planner takes about 5-6 minutes to upload the firmware to the APM control board.</p>
 

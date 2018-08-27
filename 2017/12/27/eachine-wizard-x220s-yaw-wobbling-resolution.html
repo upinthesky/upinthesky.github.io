@@ -97,7 +97,7 @@
 
 <p>Motors vibration can be transferred to the frame even if they are soft mounted as in the case of the Eachine Wizard X220S. Now, since the Flight Controller is attached to the frame itself through some screws, vibrations are transferred to the FC: this means gyro readings are noisy and that causes the wobbling.</p>
 
-<p><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/motor1_noise.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/motor1_noise.png" alt="" /></a></p>
+<p><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/motor1_noise.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/motor1_noise.png" alt="Eachine Wizard X220S Motor Noise" /></a></p>
 
 <p>As the image shows, the noise increases as motors rotation speed reaches a certain value which coincides with the one needed for the hovering: in the graph it is reported how motor 1 rotation affects gyro readings even if the quadcopter is standing still on the bench without propellers on (of course, the amount of vibration depends also from the quality of the motors and in particular from their bearings).</p>
 
@@ -111,15 +111,15 @@
 
 <p>This app is very useful to analyze how the quadcopter performed during the flight. In this case we will use it to just check gyro readings. In particular, we are interested in the gyro[yaw] parameter (yellow line in the graph):</p>
 
-<p><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png" alt="" /></a></p>
+<p><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png" alt="Blackbox Yaw Noise" /></a></p>
 
 <p>Clearly, there is a lot of noise affecting the gyro on the yaw. Noise cannot be completely removed, but can be drastically mitigated.</p>
 
-<p><strong>Anti-vibration Stadoffs</strong></p>
+<p><strong>Anti-vibration Standoffs</strong></p>
 
 <p>This annoying behavior can be fixed with a simple solution, i.e. mounting the Flight Controller on <a href="http://bit.ly/2OTAZVd">Anti-vibration Standoffs</a>:</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs.png" alt="Anti-vibration Standoffs" /></a></p>
 
 <p>In the substitution process of the old standoffs, having these tools comes in handy:</p>
 
@@ -131,11 +131,11 @@
 
 <p>The following image shows the result with the FC attached to the bottom stack using anti-vibration standoffs screws which, thanks to the damping material, absorb most of the vibrations caused by the motors and transferred to the quadcopter frame.</p>
 
-<p class="center"><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png" alt="" /></a></p>
+<p class="center"><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png" alt="Anti-vibration Standoffs Mounted" /></a></p>
 
 <p>After placing anti-vibration standoffs under the Flight Controller, the noise on yaw gyro readings is almost completely gone and consequently the wobbling is no more there.</p>
 
-<p><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png" alt="" /></a></p>
+<p><a href="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png"><img src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png" alt="Blackbox Anti-vibration Standoffs" /></a></p>
 
 <p><strong>Conclusions</strong></p>
 
