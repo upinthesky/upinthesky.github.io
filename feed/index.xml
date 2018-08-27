@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Aug 2018 13:17:38 +0200</pubDate>
-    <lastBuildDate>Mon, 27 Aug 2018 13:17:38 +0200</lastBuildDate>
+    <pubDate>Mon, 27 Aug 2018 14:29:26 +0200</pubDate>
+    <lastBuildDate>Mon, 27 Aug 2018 14:29:26 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -19,7 +19,7 @@ In this article we will take a look at the &lt;a href=&quot;http://bit.ly/2PkZtr
 
 &lt;p&gt;This is how the Eachine LCD5802D box appears:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box.png&quot; alt=&quot;Eachine LCD5802D FPV Monitor Box&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Box contents&lt;/strong&gt;&lt;/p&gt;
 
@@ -36,7 +36,7 @@ In this article we will take a look at the &lt;a href=&quot;http://bit.ly/2PkZtr
   &lt;li&gt;Instructions manual.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box_contents.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box_contents.png&quot; alt=&quot;Eachine LCD5802D FPV Monitor Box Contents&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
 
@@ -73,13 +73,13 @@ In this article we will take a look at the &lt;a href=&quot;http://bit.ly/2PkZtr
   &lt;li&gt;&lt;a href=&quot;http://bit.ly/2PyGFVL&quot;&gt;Eachine 5.8GHz 6dBi Flat Antenna RP-SMA&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;As the following image shows, we need antennas with RP-SMA male connectors:&lt;/p&gt;
+&lt;p&gt;As the following image shows, we need antennas with RP-SMA male connectors since we have RP-SMA female connectors on the monitor:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_rpsma.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_rpsma.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_rpsma.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_rpsma.png&quot; alt=&quot;Eachine LCD5802D RP-SMA female connectors&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Here is the result with both antennas mounted on the Eachine LCD5802D:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_antennas.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_antennas.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_antennas.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_antennas.png&quot; alt=&quot;Eachine LCD5802D Antennas&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want to spend a little bit more, a very good alternative for the above patch antenna is this one: &lt;a href=&quot;http://bit.ly/2PyGQQV&quot;&gt;Realacc Triple Feed Patch 5.8GHz 9.4dBi Directional Circular Polarized FPV Pagoda Antenna&lt;/a&gt;.&lt;/p&gt;
 
@@ -87,7 +87,7 @@ In this article we will take a look at the &lt;a href=&quot;http://bit.ly/2PkZtr
 
 &lt;p&gt;Next image shows the ports located on the left side:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_ports.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_ports.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_ports.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_ports.png&quot; alt=&quot;Eachine LCD5802D Ports&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;From the left we have:&lt;/p&gt;
 
@@ -107,7 +107,7 @@ In this article we will take a look at the &lt;a href=&quot;http://bit.ly/2PkZtr
 
 &lt;p&gt;A very nice feature is represented by the speakers on the back of the monitor, so you can listen to the audio both during live FPV or while reviewing your recorded flights:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_back.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_back.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_back.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_back.png&quot; alt=&quot;Eachine LCD5802D Back View&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;They perform well and if you turn up the volume they get pretty loud.&lt;br /&gt;
 In the image above it is also shown the detail of the hole through which it is possible to mount the monitor on a tripod like &lt;a href=&quot;http://bit.ly/2MCq5qg&quot;&gt;this one&lt;/a&gt;.&lt;/p&gt;
@@ -116,7 +116,7 @@ In the image above it is also shown the detail of the hole through which it is p
 
 &lt;p&gt;Raising up the cover a useful sun shield opens up for the 7” display:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_welcome_screen.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_welcome_screen.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_welcome_screen.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_welcome_screen.png&quot; alt=&quot;Eachine LCD5802D Welcome Screen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Consider to remove the screen protector that has an “H” written on which covers part of the screen.&lt;/p&gt;
 
@@ -130,7 +130,7 @@ In the image above it is also shown the detail of the hole through which it is p
   &lt;li&gt;Band/Channel and Frequency.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_display.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_display.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_display.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_display.png&quot; alt=&quot;Eachine LCD5802D Display&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Beware that only the informations in green are from the built-in OSD, the others in white are from the Eachine Wizard X220S.&lt;/p&gt;
 
@@ -227,7 +227,7 @@ In the image above it is also shown the detail of the hole through which it is p
 
 &lt;p&gt;The following image shows the box containing the Eachine VR006 mini FPV goggles:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box.png&quot; alt=&quot;Eachine VR006 Mini FPV Goggles Box&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Box contents&lt;/strong&gt;&lt;/p&gt;
 
@@ -244,7 +244,7 @@ In the image above it is also shown the detail of the hole through which it is p
   &lt;li&gt;Additional sponge for more comfortable nose contact.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box_contents.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box_contents.png&quot; alt=&quot;Eachine VR006 Mini FPV Goggles Box Contents&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
 
@@ -274,7 +274,7 @@ In the image above it is also shown the detail of the hole through which it is p
   &lt;li&gt;“SCAN / Power On/Off”.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_buttons.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_buttons.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_buttons.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_buttons.png&quot; alt=&quot;Eachine VR006 Buttons&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;By long pressing (4 seconds) the “SCAN / Power On/Off” button, the goggles turn on.&lt;br /&gt;
 Once turned on, short pressing the “MENU” button allow us to enter the menu option Function; here, every time we press the “MENU” button we cycle between the following configurations:&lt;/p&gt;
@@ -289,7 +289,7 @@ Once turned on, short pressing the “MENU” button allow us to enter the menu 
 
 &lt;p&gt;Here is a detail of the “AV / AV IN” port with the holes for cooling:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_avin.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_avin.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_avin.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_avin.png&quot; alt=&quot;Eachine VR006 AV IN Port&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Once in “Frequency Display” menu, pressing again the MENU button makes us Exit from menu option Function, returning back to the FPV screen.&lt;/p&gt;
 
@@ -302,7 +302,7 @@ Once turned on, short pressing the “MENU” button allow us to enter the menu 
 
 &lt;p&gt;The image below show Eachine VR006 screen display:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_screen.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_screen.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_screen.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_screen.png&quot; alt=&quot;Eachine VR006 Mini FPV Goggles Display&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Beware the informations in white are from the Eachine Wizard X220S OSD, not from the goggles; the only two values goggles related are the ones in red: battery voltage and frequency (in this case 3.9 V and 5.765 GHz). Unfortunately, it is not possible to hide goggles battery voltage in the OSD (only the frequency can be removed as seen above).&lt;/p&gt;
 
@@ -310,11 +310,11 @@ Once turned on, short pressing the “MENU” button allow us to enter the menu 
 
 &lt;p&gt;To charge Eachine VR006 goggles we have to use the micro USB charging port (more or less one hour of time to full charge):&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_micro_usb.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_micro_usb.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_micro_usb.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_micro_usb.png&quot; alt=&quot;Eachine VR006 Micro USB Port&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;When plugged to a power source through USB, a red light indicates the battery is charging:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_charging_light.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_charging_light.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_charging_light.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_charging_light.png&quot; alt=&quot;Eachine VR006 battery Charging Light&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Eachine VR006 goggles support the possibility of charging while in use. After full charge is reached, the light goes off.&lt;/p&gt;
 
@@ -375,7 +375,7 @@ Once turned on, short pressing the “MENU” button allow us to enter the menu 
 &lt;p&gt;It is a good idea to start by comparing RunCam 3S specifications with the ones of its predecessor.&lt;br /&gt;
 The image below shows how the two cameras have a really similar look, with RunCam 3S having sharp edges:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam_comparison.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam_comparison.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam_comparison.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam_comparison.png&quot; alt=&quot;RunCam 3S vs RunCam 3 Comparison&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In this table it is reported a comparison between the specs:&lt;/p&gt;
 
@@ -479,7 +479,7 @@ As we can see there are not so many differences in the specs apart from 5 more d
 
 &lt;p&gt;However, a big improvement has been done with the battery: finally, in the RunCam 3S it is removable. In fact, a big problem with RunCam 3 was the difficulty to replace the batteries (two 1s LiPo, each one with a capacity of 480 mAh): they were integrated inside the case and the only way to change them was to open it by removing the front glass and using a replacement kit (not so straightforward as it should be).&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_battery.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_battery.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_battery.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_battery.png&quot; alt=&quot;RunCam 3S Battery&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Now if you need to replace the battery, it is just a matter of buying a new one, insert it and you are good to go. Furthermore you can bring more batteries with you, avoiding the problem of finding yourself without the capability to record your flights. Both battery and SD card are stored behind a removable cover. &lt;br /&gt;
 It has been added battery status light to keep track of the charging status (in RunCam 3 the status of the battery was indicated at start up by a blinking light on the power button).&lt;/p&gt;
@@ -488,7 +488,7 @@ It has been added battery status light to keep track of the charging status (in 
 
 &lt;p&gt;Like the previous version, RunCam 3S is equipped with two microphones: one on the front and the other on the back (RunCam 3 had a top mic instead of the front one):&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_details.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_details.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_details.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_details.png&quot; alt=&quot;RunCam 3S Details&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;They are not the strong point of this camera, like on the RunCam 3; they can be improved for sure. However, if we are using it for FPV racing/freestyle, audio quality should not be our main concern.&lt;/p&gt;
 
@@ -496,7 +496,7 @@ It has been added battery status light to keep track of the charging status (in 
 
 &lt;p&gt;Since there is no integrated display on the back of the RunCam 3S camera, to control camera settings we need to use the mobile app:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_app.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_app.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_app.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_app.png&quot; alt=&quot;RunCam 3S Mobile App&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;So, through a Wi-Fi connection protected by password, it is possible to change the following settings:&lt;/p&gt;
 
@@ -592,16 +592,16 @@ For the connection refer to the &lt;a href=&quot;http://www.deviationtx.com/wiki
 &lt;p&gt;Since we want to bind to X6B receiver, in Model menu-&amp;gt; Model setup we need to choose the protocol AFHDS-2A and follow the bind procedure (already seen &lt;a href=&quot;https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;
 Then we need to enable RSSI on channel 12 by just pressing “ENT” on the protocol itself and setting that value for “LQI output” (stands for Link Quality indicator):&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/lqi_output.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/lqi_output.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/lqi_output.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/lqi_output.png&quot; alt=&quot;Deviation AFHDS-2A LQI Output&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Once that is done we should start seeing RSSI value displayed on Transmitter menu -&amp;gt; Telemetry monitor:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_monitor.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_monitor.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_monitor.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_monitor.png&quot; alt=&quot;Deviation Telemetry Monitor&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;As the image shows, to a signal strength of 99 corresponds a value of 61d.&lt;br /&gt;
 By going in Model menu -&amp;gt; Telemetry config, we can set up an alarm that triggers when the value goes up a certain threshold. I found 90d as a good value to trigger the alert that signals we need to start paying attention to the distance:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_config.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_config.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_config.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_config.png&quot; alt=&quot;Deviation Telemetry Config&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;We have finished configuring RSSI on the transmitter; next step is to integrate it in Betaflight so we can have the value displayed on the goggles/monitor through OSD while we are flying in FPV.&lt;/p&gt;
 
@@ -609,15 +609,15 @@ By going in Model menu -&amp;gt; Telemetry config, we can set up an alarm that t
 
 &lt;p&gt;After connecting the quadcopter to the computer, we need to open Betaflight Configurator and navigate to the Receiver tab. Here we can set RSSI channel: even if we have set the value to channel 12 on the transmitter, latest releases of Betaflight use AUX channel number; in order to use the right AUX channel we need to subtract 4 to the channel number, so we need to choose AUX 8.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_rssi_channel.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_rssi_channel.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_rssi_channel.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_rssi_channel.png&quot; alt=&quot;Betaflight RSSI Channel&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Finally we can enable RSSI value in the OSD tab so it shows up on the display:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_osd_rssi.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_osd_rssi.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_osd_rssi.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_osd_rssi.png&quot; alt=&quot;Betaflight OSD RSSI&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This is the result on the FPV screen:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/screen_rssi_osd.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/screen_rssi_osd.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/screen_rssi_osd.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/screen_rssi_osd.png&quot; alt=&quot;Screen OSD RSSI&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
@@ -683,7 +683,7 @@ By going in Model menu -&amp;gt; Telemetry config, we can set up an alarm that t
 
 &lt;p&gt;We can check what is the latest release for the firmware by disconnecting the quadcopter, selecting “Firmware Flasher” and choosing the version from the dropdown menu:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/bf_firmware_flasher.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/bf_firmware_flasher.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/bf_firmware_flasher.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/bf_firmware_flasher.png&quot; alt=&quot;Betaflight Firmware Flasher&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;So, at the moment, the last release is 3.4.1.&lt;/p&gt;
 
@@ -800,7 +800,7 @@ rateprofile 0
 
 &lt;p&gt;Before we can upload the new firmware to the FC, we need to install some drivers which allow to connect the FC to the PC in Device Firmware Update (DFU) mode, that is the mode used to flash the firmware to the board:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/dfu_drivers.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/dfu_drivers.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/dfu_drivers.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/dfu_drivers.png&quot; alt=&quot;DFU Drivers&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;CP210x USB to UART Bridge VCP Drivers;&lt;/li&gt;
@@ -810,27 +810,27 @@ rateprofile 0
 
 &lt;p&gt;Once CP210x and STM32 drivers are installed, it is possible to start the FC in DFU mode: this can be either done by pressing and holding the “Boot” button on the FC and then connecting the quadcopter to the PC or by first connecting the drone to the PC and, using the CLI, entering the “bl” command or “dfu” for versions older than 3.2 (first method is preferred):&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.png&quot; alt=&quot;Eachine Wizard X220S Omnibus F4SD Boot Button&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;A continuous beep from the FC warns it is in DFU mode. However, to make it possible to flash the firmware, we need to install one last driver by using Zadig (otherwise DFU mode does not show up in Betaflight Configurator). In Zadig, to list all devices, click on “Options -&amp;gt; List All Devices”.&lt;br /&gt;
 As the image below reports, by default we have the value “NONE” for the STM32 BOOTLOADER (if you do not see this entry it means you have not installed correctly STM32 Virtual COM Port Driver).&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/zadig_stm32.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/zadig_stm32.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/zadig_stm32.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/zadig_stm32.png&quot; alt=&quot;Zadig STM32&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;To fix this, it is just a matter of clicking on “Install Driver” and waiting for the installation of WinUSB (v6.1.7600.16385) to complete:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/stm32_driver_installed.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/stm32_driver_installed.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/stm32_driver_installed.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/stm32_driver_installed.png&quot; alt=&quot;Zadig STM32 Driver Installed&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Flashing Firmware&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Finally we can flash the new firmware in DFU mode.&lt;br /&gt;
 So, we need to go to Firmware Flasher tab, select the latest firmware version for the Omnibus F4SD (like seen before) and click on “Load Firmware [Online]”. Then, we can press on “Flash Firmware” and the process will start:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot; alt=&quot;Betaflight Firmware Update&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Once the activity is completed, we get the message “Programming: SUCCESSFUL” and we see, in the top right of the window, the change from DFU to COMX (in my case COM3).&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot; alt=&quot;Betaflight Firmware Update&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;As final check, you can use the command “version” to check the correct release is displayed.&lt;/p&gt;
 
@@ -882,41 +882,41 @@ So, we need to go to Firmware Flasher tab, select the latest firmware version fo
 
 &lt;!--more--&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c.jpg&quot; alt=&quot;Syma X5C&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;2 MP Camera removal&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Since we are going to install our FPV camera and connect it to the same port on which there is the supplied 2MP camera, it is a good idea to remove the standard camera to save as much weight as possible.
 To proceed we have to disconnect the plug and remove 2 screws like shown in the following image:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/camera_removal.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/camera_removal.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/camera_removal.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/camera_removal.png&quot; alt=&quot;Syma X5C Camera Removal&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Mounting FPV Camera&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;For this mod I have chosen to use the &lt;a href=&quot;http://bit.ly/2N5N60Z&quot;&gt;Eachine TX02&lt;/a&gt; FPV 5.8G 40CH 600 VTL camera (NTSC) with 120° FOV that has a built in video transmitter with nickel-plated 4 leaf omnidirectional antenna (RHCP circular polarization clover). It is really lightweight (4.57g) and it has a transmitting output power of (0/200)mW, while the input voltage is 3.2-5V. Newer version of the camera allows to set the power to (0/25/50/200)mW: &lt;a href=&quot;http://bit.ly/2OTBq1N&quot;&gt;Eachine TX03&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_front.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_front.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_front.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_front.jpg&quot; alt=&quot;TX02 FPV TX Camera Front&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;On the back there is a display that shows which channel (5 bands, 40 channels) we are currently transmitting on. To change the CH (channel), short press the button. To enter in FR (band) change mode, just press and hold the button for 2 seconds (short press after to switch between bands). To turn off the video transmitter press and hold the button for 5 seconds (display: “0” is off, “=” is on).&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_back.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_back.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_back.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_back.jpg&quot; alt=&quot;TX02 FPV TX Camera Back&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Since we need to connect this FPV system to the quadcopter to power it up, we need the proper connectors: &lt;a href=&quot;http://bit.ly/2PmfZY6&quot;&gt;JST 2P Connectors&lt;/a&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/jst_connectors.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/jst_connectors.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/jst_connectors.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/jst_connectors.png&quot; alt=&quot;JST 2P Connectors&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The wires come with male or female connector on one side while the other is free, so we need to solder two of them to have a single cable with two male connectors (red wires together, black wires together).&lt;/p&gt;
 
 &lt;p&gt;Once the soldering job is done we can finally plug everything in:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/camera_connection.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/camera_connection.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/camera_connection.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/camera_connection.png&quot; alt=&quot;Syma X5C TX02 Connection&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Considering the power consumption added by the FPV system, it is a good idea to buy a bigger battery to have a decent flight time (better to stay in the range of 6-7 minutes to let the brushed motors cool down): &lt;a href=&quot;http://bit.ly/2ON1qf9&quot;&gt;3.7V 800mAh LiPo Battery&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;A simple but effective way to fix the camera on the Syma X5C is to use double-sided tape.&lt;br /&gt;
 This is the final result:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c_fpv.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c_fpv.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c_fpv.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c_fpv.png&quot; alt=&quot;Syma X5C FPV Mod&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Now we can just check that everything is working correctly by tuning our FPV monitor or goggles on the same transmitting channel configured on the TX02. Down below two cheap alternatives:&lt;/p&gt;
 
@@ -931,7 +931,7 @@ This is the final result:&lt;/p&gt;
 
 &lt;p&gt;View from the monitor on CH-A-1:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/fpv_view.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/fpv_view.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/fpv_view.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/fpv_view.jpg&quot; alt=&quot;FPV Monitor View&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
