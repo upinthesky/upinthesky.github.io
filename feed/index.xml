@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Aug 2018 20:58:07 +0200</pubDate>
-    <lastBuildDate>Tue, 28 Aug 2018 20:58:07 +0200</lastBuildDate>
+    <pubDate>Tue, 28 Aug 2018 22:15:59 +0200</pubDate>
+    <lastBuildDate>Tue, 28 Aug 2018 22:15:59 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -375,7 +375,7 @@ Once turned on, short pressing the “MENU” button allow us to enter the menu 
 &lt;p&gt;It is a good idea to start by comparing RunCam 3S specifications with the ones of its predecessor.&lt;br /&gt;
 The image below shows how the two cameras have a really similar look, with RunCam 3S having sharp edges:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam_comparison.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam_comparison.png&quot; alt=&quot;RunCam 3S vs RunCam 3 Comparison&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam_comparison.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam_comparison.png&quot; alt=&quot;RunCam 3S vs RunCam 3 Camera Specs Comparison&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In this table it is reported a comparison between the specs:&lt;/p&gt;
 
@@ -488,7 +488,7 @@ It has been added battery status light to keep track of the charging status (in 
 
 &lt;p&gt;Like the previous version, RunCam 3S is equipped with two microphones: one on the front and the other on the back (RunCam 3 had a top mic instead of the front one):&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_details.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_details.png&quot; alt=&quot;RunCam 3S Details&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_details.png&quot;&gt;&lt;img src=&quot;/images/runcam-3s-overview-and-comparison-with-runcam-3/runcam3s_details.png&quot; alt=&quot;RunCam 3S Camera Details&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;They are not the strong point of this camera, even if they are better than the ones coming with the RunCam 3; they can be improved for sure. However, if we are using it for FPV racing/freestyle, audio quality should not be our main concern.&lt;/p&gt;
 
@@ -826,11 +826,11 @@ As the image below reports, by default we have the value “NONE” for the STM3
 &lt;p&gt;Finally we can flash the new firmware in DFU mode.&lt;br /&gt;
 So, we need to go to Firmware Flasher tab, select the latest firmware version for the Omnibus F4SD (like seen before) and click on “Load Firmware [Online]”. Then, we can press on “Flash Firmware” and the process will start:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot; alt=&quot;Betaflight Firmware Update&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Firmware Update&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Once the activity is completed, we get the message “Programming: SUCCESSFUL” and we see, in the top right of the window, the change from DFU to COMX (in my case COM3).&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot; alt=&quot;Betaflight Firmware Update&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Firmware Update Successful&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;As final check, you can use the command “version” to check the correct release is displayed.&lt;/p&gt;
 
@@ -994,7 +994,7 @@ This is the final result:&lt;/p&gt;
 
 &lt;p&gt;This app is very useful to analyze how the quadcopter performed during the flight. In this case we will use it to just check gyro readings. In particular, we are interested in the gyro[yaw] parameter (yellow line in the graph):&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png&quot; alt=&quot;Blackbox Yaw Noise&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png&quot; alt=&quot;Eachine Wizard X220S Blackbox Yaw Noise&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Clearly, there is a lot of noise affecting the gyro on the yaw. Noise cannot be completely removed, but can be drastically mitigated.&lt;/p&gt;
 
@@ -1014,11 +1014,11 @@ This is the final result:&lt;/p&gt;
 
 &lt;p&gt;The following image shows the result with the FC attached to the bottom stack using anti-vibration standoffs screws which, thanks to the damping material, absorb most of the vibrations caused by the motors and transferred to the quadcopter frame.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png&quot; alt=&quot;Anti-vibration Standoffs Mounted&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png&quot; alt=&quot;Eachine Wizard X220S Anti-vibration Standoffs Mounted&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;After placing anti-vibration standoffs under the Flight Controller, the noise on yaw gyro readings is almost completely gone and consequently the wobbling is no more there.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png&quot; alt=&quot;Blackbox Anti-vibration Standoffs&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png&quot; alt=&quot;Eachine Wizard X220S Blackbox Anti-vibration Standoffs Noise Removed&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
@@ -1072,33 +1072,33 @@ Now we take a look at the setup and configuration of the quadcopter in Betafligh
 
 &lt;p&gt;First, we need to correctly setup the ports on the FC in the “Ports” tab: since we are using FlySky X6B with i-BUS protocol we have to enable “Serial RX” on UART1, which is the port we have soldered receiver cables on:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/ports.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/ports.png&quot; alt=&quot;Betaflight Ports&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/ports.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/ports.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Ports&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Configuration&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;In the “Configuration” tab we need to be sure DSHOT600 is selected and we can deactivate “MOTOR_STOP” switch (personal preference):&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_1.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_1.png&quot; alt=&quot;Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_1.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_1.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Under “Receiver” we have to set Serial-based receiver (SPEKSAT,…) with “IBUS” selected in the drop down menu:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_2.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_2.png&quot; alt=&quot;Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_2.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_2.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Under “Other Features” it is important (we see how much in the next post) to activate BLACKBOX and SDCARD since these are critical to have flight logs for post flight analysis, especially during the tuning phase when it is possible to use an SD card: class 10 is recommended, while the space required is not important since it will be used to store text files (2 GB is more than enough).&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_3.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_3.png&quot; alt=&quot;Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_3.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_3.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Also OSD (On Screen Display) has to be activated to keep track of useful information on the FPV screen or goggles during the flight.&lt;/p&gt;
 
 &lt;p&gt;We can enable VBAT to have battery voltage monitoring (remember we have also connected VBAT output from FC to the receiver to have telemetry on the transmitter) which is a must especially when flying in FPV so we can check on our monitor/goggles the current battery voltage through OSD.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_4.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_4.png&quot; alt=&quot;Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_4.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_4.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Failsafe&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;To configure the failsafe we need to access to an advanced configuration menu which can be activated by clicking on “Enable Expert Mode” like shown in the image below:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/failsafe.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/failsafe.png&quot; alt=&quot;Betaflight Failsafe&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/failsafe.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/failsafe.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Failsafe&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;It is recommended to set Failsafe Stage 2 to “Drop”, so if the receiver loses contact with the transmitter for more than a certain time, then the FC turns off the motors. In my case the guard time is 10*0.1s = 1s.&lt;/p&gt;
 
@@ -1107,15 +1107,15 @@ Now we take a look at the setup and configuration of the quadcopter in Betafligh
 &lt;p&gt;In the “Receiver” tab we have to make sure the values of the channels are configured properly in such a way when radio sticks are centered, the value is ~1500, while the minimum and maximum valure are equal respectively to ~1000 and ~2000. This can be achieved configuring trims on the radio.
 Set also Stick Min to 1010 and Stick Max to 1990.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/receiver.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/receiver.png&quot; alt=&quot;Betaflight Receiver&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/receiver.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/receiver.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Receiver&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Modes&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;For the “Modes” tab, we can set the switches on the radio to arm the quadcopter or change from a flight mode to another one or to enable the buzzer for example. In the next figure are reported my settings (Arm, Angle, Horizon, Air Mode, Beeper):&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_1.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_1.png&quot; alt=&quot;Betaflight Modes&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_1.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_1.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Modes&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_2.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_2.png&quot; alt=&quot;Betaflight Modes&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_2.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_2.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Modes&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In this way channel AUX 2, a three position switch, controls the flight modes, AUX 3 arms the quadcopter and AUX 4 activates the beeper.&lt;/p&gt;
 
@@ -1132,7 +1132,7 @@ In Model Menu go on Mixer and set Ch6 to Complex with 3 Mixers:&lt;/p&gt;
 
 &lt;p&gt;Finally, we can setup the OSD in the way we like, for example, with the following indicators: RSSI, Main Batt Voltage, Crosshairs, Flytime, Flymode.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/osd.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/osd.png&quot; alt=&quot;Betaflight OSD&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/osd.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/osd.png&quot; alt=&quot;Eachine Wizard X220S Betaflight OSD&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Once we have checked that everything fits well on our FPV goggles or screen, we are ready to fly.&lt;/p&gt;
 
@@ -1237,7 +1237,7 @@ If you already have a decent transmitter, you can just go for the ARF version an
 
 &lt;p&gt;Both cables have three wires (black, red and yellow) with a white connector on one side (the one going into the receiver) and a black one on the other side:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png&quot; alt=&quot;X6B receiver cables&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png&quot; alt=&quot;FlySky X6B receiver cables&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;For battery voltage monitoring we just need the red and black wires, so we need to remove the yellow one from one of the two cables. For both cables, the side with the black connector needs to be cut. Then we can strip the wires and prepare them (tin) for soldering on the FC.&lt;/p&gt;
 
@@ -1247,20 +1247,20 @@ If you already have a decent transmitter, you can just go for the ARF version an
 
 &lt;p&gt;After soldering the wires (remember to tin the pads first for an easy soldering job), this is the result:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png&quot; alt=&quot;X6B connection to FC&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png&quot; alt=&quot;FlySky X6B connection to FC&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Mounting the receiver&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Now we just need to find a good place to position the receiver. A safe spot could be on the rear, on the bottom plate near the leds. To fix the board on the carbon plate we can just use two &lt;a href=&quot;http://bit.ly/2Ppj61j&quot;&gt;M2 standoffs&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png&quot; alt=&quot;X6B Receiver Mount&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png&quot; alt=&quot;FlySky X6B Receiver Mount&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;X6B Binding&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;To bind Flysky X6B receiver we need to turn on the quadcopter while pressing th “BIND” button on the receiver and using the binding mode on the TX.&lt;br /&gt;
 For &lt;a href=&quot;http://bit.ly/2L960Ce&quot;&gt;Devo 7E&lt;/a&gt;, loaded with Deviation TX firmware, this can be done in Model menu -&amp;gt; Model setup:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot; alt=&quot;Devo 7E Binding with X6B&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot; alt=&quot;Devo 7E Binding with FlySky X6B&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If you like Deviation TX firmware and you do not want to solder additional modules inside Devo 7E, there is a new multi-protocol radio already loaded with Deviation firmware, inside which are already installed additional RF modules, including the FlySky one (it has a 4in1 RF module - CC2500, CYRF6936, A7105, NRF2401): &lt;a href=&quot;http://bit.ly/2OVgl6O&quot;&gt;Jumper T8SG V2.0 Plus&lt;/a&gt;.&lt;/p&gt;
 
