@@ -6,9 +6,63 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Aug 2018 16:08:28 +0200</pubDate>
-    <lastBuildDate>Wed, 29 Aug 2018 16:08:28 +0200</lastBuildDate>
+    <pubDate>Thu, 30 Aug 2018 00:40:41 +0200</pubDate>
+    <lastBuildDate>Thu, 30 Aug 2018 00:40:41 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Eachine Wizard X220S BLHeli-S 4in1 ESC Firmware Update</title>
+        <description>&lt;p&gt;In a &lt;a href=&quot;https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html&quot;&gt;previous article&lt;/a&gt;, we have seen how to upgrade &lt;a href=&quot;http://bit.ly/2PIOtUS&quot;&gt;Eachine Wizard X220S&lt;/a&gt; Omnibus F4SD Firmware through Betaflight Configurator. Now we are going to see how to update &lt;a href=&quot;http://bit.ly/2PReKAD&quot;&gt;Eachine X220S BLHeli-S 4in1 ESC&lt;/a&gt; firmware through BLHeli Configurator.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;BLHeli Configurator&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;First thing to do is to install BLHeli Configurator: it runs as a Google Chrome App, so we need to download it through the Chrome Web Store (at the moment of this writing the BLHeli Configurator version is 1.1.0):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_configurator_web_store_app.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_configurator_web_store_app.png&quot; alt=&quot;BLHeli Configurator Chrome App&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To install it, we just need to click on “Add to Chrome” and, once the process is completed, we can launch it.&lt;/p&gt;
+
+&lt;p&gt;Before we can go on, we need to connect the Eachine Wizard X220S to the PC using a micro USB (Flight Controller) to USB (PC) cable; differently from what we did for the setup on Betaflight Configurator, in this case we also need to power up the quadcopter using the LiPo battery: &lt;strong&gt;for safety reasons, it is really important to remove the propellers before proceeding any further&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;With the battery plugged in (turn on also the TX) and the quad connected to the PC through the USB, the FC should be recognized (in my case on COM3); click on “Connect” to establish the connection:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_configurator.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_configurator.png&quot; alt=&quot;BLHeli Configurator Connection&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After the connection is established, we get the following screen where we get the note about the props and the battery:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_connected.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_connected.png&quot; alt=&quot;BLHeli Configurator Connected&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To check BLHeli-S firmware actual version and other configuration we need to click on “Read Setup” on the bottom right.&lt;br /&gt;
+After clicking, we can read the actual ESC setup:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_default_firmware.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_default_firmware.png&quot; alt=&quot;BLHeli Configurator Read Setup&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As reported, BLHeli-S version currently loaded on the 4in1 ESC is A-H-25 16.6.&lt;br /&gt;
+Since we want to update the firmware to the latest version we need to click on “Flash All” on the bottom.&lt;/p&gt;
+
+&lt;p&gt;By doing so, we are prompted to the following screen, where we want to select the latest firmware version; at the time of this writing, the latest Official release is 16.7:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_select_target.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_select_target.png&quot; alt=&quot;BLHeli Configurator Select Target&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the target is set, it will automatically download the firmware from the Web. Alternatively, it is possible to upload the firmware manually, from a local folder on our PC.&lt;br /&gt;
+Finally, we can click on “Flash” to start the update process; the app will proceed to update sequentially all the four ESCs:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_update_progress.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_update_progress.png&quot; alt=&quot;BLHeli Configurator Update Progress&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After all the ESCs are updated we can disconnect the quad from BLHeli Configurator and we are ready to fly with the new firmware (you can reconnect to double check that on “Read Setup” all ESCs have now the latest firmware installed).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We have seen how to update &lt;a href=&quot;http://bit.ly/2PIOtUS&quot;&gt;Eachine Wizard X220S&lt;/a&gt; BLHeli-S 4in1 ESC Firmware to the latest version using BLHeli Configurator. The process is pretty straightforward and should be repeated everytime a new firmware version is released.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Aug 2018 23:15:48 +0200</pubDate>
+        <link>https://upinthesky.github.io//2018/08/29/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2018/08/29/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Eachine LCD5802D FPV Monitor with Diversity and DVR Review</title>
@@ -1062,6 +1116,8 @@ Now we take a look at the setup and configuration of the quadcopter in Betafligh
 
 &lt;!--more--&gt;
 
+&lt;p&gt;&lt;strong&gt;Betaflight Configurator&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;Betaflight Configurator is a really popular application that allows to configure the aircraft via GUI and it can be downloaded as an extension for Google Chrome browser. Both flight controller and GUI application are &lt;a href=&quot;https://github.com/betaflight&quot;&gt;open source&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/betaflight_app.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/betaflight_app.png&quot; alt=&quot;Betaflight Configurator Chrome App&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1312,71 +1368,6 @@ If you want to upgrade Betaflight firmware for the Omnibus F4SD on the Eachine X
         <category>RunCam 3S</category>
         
         <category>Brushless</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Loading ArduCopter Firmware to APM</title>
-        <description>&lt;p&gt;This article shows how to load ArduCopter firmware into APM control board. This post refers to the previous “APM 450 Quadcopter Build” &lt;a href=&quot;https://upinthesky.github.io/2016/12/18/apm-quadcopter-450-build.html&quot;&gt;post&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;strong&gt;Mission Planner&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;First we need do download a free software called Mission Planner. This tool gives us the possibility, other than flashing APM board with different firmwares (ArduRover, ArduCopter, Arduplane), to control flight data, calibrate compass, accelerometer and radio control, program switches for different flight modes and even plan flight for performing autonomous missions.&lt;br /&gt;
-It can be downloaded from &lt;a href=&quot;http://ardupilot.org/planner/docs/common-install-mission-planner.html&quot;&gt;here&lt;/a&gt;. To install in a Windows machine just double click on the “.msi” and follow the setup:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/loading_firmware/mp1.png&quot;&gt;&lt;img src=&quot;/images/loading_firmware/mp1.png&quot; alt=&quot;Mission Planner Setup&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Keep in mind that the package installs also all the necessary drivers needed by the board to be recognized by the Operating System:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/loading_firmware/mp2.png&quot;&gt;&lt;img src=&quot;/images/loading_firmware/mp2.png&quot; alt=&quot;Mission Planner Setup&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/loading_firmware/mp3.png&quot;&gt;&lt;img src=&quot;/images/loading_firmware/mp3.png&quot; alt=&quot;Mission Planner Setup&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If everything is installed properly the following message is displayed:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/loading_firmware/mp4.png&quot;&gt;&lt;img src=&quot;/images/loading_firmware/mp4.png&quot; alt=&quot;Mission Planner Setup&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the software has been installed we can connect the board to the PC through the Micro USB cable (be careful to have the APM disconnected from every other power source like the PM); then, clicking on Computer -&amp;gt; Properties -&amp;gt; Device Manager, under “Ports (COM &amp;amp; LPT)” you should have something like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/loading_firmware/apm_com.png&quot;&gt;&lt;img src=&quot;/images/loading_firmware/apm_com.png&quot; alt=&quot;APM Com Port&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;where COM6 is the communication port used for exchanging data with the APM.&lt;br /&gt;
-After launching Mission Planner software, this port will be the same appearing in the upper right corner of Mission Planner screen:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/loading_firmware/com6_mp.png&quot;&gt;&lt;img src=&quot;/images/loading_firmware/com6_mp.png&quot; alt=&quot;Mission Planner COM Port&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Do not click on “Connect”, since first we have to upload the firmware on the APM; to do so, we have to click on Initial Setup -&amp;gt; Install Firmware:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/loading_firmware/install_firmware.png&quot;&gt;&lt;img src=&quot;/images/loading_firmware/install_firmware.png&quot; alt=&quot;APM Firmware Installation&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Since ArduCopter 3.2.1 is the last supported version for APM 2.x control board (in my case 2.6) we need to click on “Pick previous firmware” on the bottom right and choose the corresponding option as in the image below:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/loading_firmware/firmware_version.png&quot;&gt;&lt;img src=&quot;/images/loading_firmware/firmware_version.png&quot; alt=&quot;APM Firmware Version&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After that we just select the Quad version “ArduCopter V3.2.1 Quad” and confirm the upload activity:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/loading_firmware/arducopter.png&quot;&gt;&lt;img src=&quot;/images/loading_firmware/arducopter.png&quot; alt=&quot;APM Arducopter&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Beware that Mission Planner takes about 5-6 minutes to upload the firmware to the APM control board.&lt;/p&gt;
-
-&lt;p&gt;To calibrate magnetometer (compass), accelerometer and radio control just follow these good articles from ArduPilot website: &lt;a href=&quot;http://ardupilot.org/copter/docs/common-compass-setup-advanced.html&quot;&gt;Compass calibration&lt;/a&gt;, &lt;a href=&quot;http://ardupilot.org/copter/docs/common-accelerometer-calibration.html&quot;&gt;Accelerometer calibration&lt;/a&gt;, &lt;a href=&quot;http://ardupilot.org/copter/docs/common-radio-control-calibration.html&quot;&gt;Radio control calibration&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 07 Jan 2017 00:00:00 +0100</pubDate>
-        <link>https://upinthesky.github.io//2017/01/07/loading-arducopter-firmware-to-apm.html</link>
-        <guid isPermaLink="true">https://upinthesky.github.io//2017/01/07/loading-arducopter-firmware-to-apm.html</guid>
-        
-        <category>Quadcopter</category>
-        
-        <category>APM</category>
-        
-        <category>ArduCopter</category>
-        
-        <category>Firmware</category>
-        
-        <category>Mission Planner</category>
         
         
       </item>

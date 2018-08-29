@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+  <head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88840278-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <meta name="google-site-verification" content="2sf0nOsdmxOwb35mzYgNoZLo3dWw5VuhtdWLaSGSekA" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Eachine Wizard X220S BLHeli-S 4in1 ESC Firmware Update</title>
+  <meta name="description" content="In a previous article, we have seen how to upgrade Eachine Wizard X220S Omnibus F4SD Firmware through Betaflight Configurator. Now we are going to see how to...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://upinthesky.github.io//2018/08/29/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html">
+  <link rel="alternate" type="application/rss+xml" title="Up in the Sky" href="https://upinthesky.github.io//feed.xml">
+</head>
+
+  <body>
+    <nav class="single-post-nav">
+      <ul>
+        <li>
+          
+          <a href="/2018/08/27/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review.html">&#8592; Previous post</a>
+          
+        </li>
+        <li><a href="/">Home Page</a></li>
+        <li>
+          
+        </li>
+      </ul>
+    </nav>
+    <div class="single-post">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header single-post-header" style="background-image:url('https://upinthesky.github.io//images/clouds_banner.jpg')">
+    <div>
+      <h1 class="post-title single-post-title" itemprop="name headline">Eachine Wizard X220S BLHeli-S 4in1 ESC Firmware Update</h1>
+      <p class="post-meta single-post-meta">
+        <time datetime="2018-08-29T23:15:48+02:00" itemprop="datePublished">29 August 2018</time>
+        •
+        
+        
+          2 mins
+        
+        read
+      </p>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="single-post-summary">
+      
+    <ul class="tag-box inline">
+      
+    </ul>  
+    </div>
+    <div class="post-content single-post-content" itemprop="articleBody">
+      <p>In a <a href="https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html">previous article</a>, we have seen how to upgrade <a href="http://bit.ly/2PIOtUS">Eachine Wizard X220S</a> Omnibus F4SD Firmware through Betaflight Configurator. Now we are going to see how to update <a href="http://bit.ly/2PReKAD">Eachine X220S BLHeli-S 4in1 ESC</a> firmware through BLHeli Configurator.</p>
+
+<!--more-->
+
+<p><strong>BLHeli Configurator</strong></p>
+
+<p>First thing to do is to install BLHeli Configurator: it runs as a Google Chrome App, so we need to download it through the Chrome Web Store (at the moment of this writing the BLHeli Configurator version is 1.1.0):</p>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_configurator_web_store_app.png"><img src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_configurator_web_store_app.png" alt="BLHeli Configurator Chrome App" /></a></p>
+
+<p>To install it, we just need to click on “Add to Chrome” and, once the process is completed, we can launch it.</p>
+
+<p>Before we can go on, we need to connect the Eachine Wizard X220S to the PC using a micro USB (Flight Controller) to USB (PC) cable; differently from what we did for the setup on Betaflight Configurator, in this case we also need to power up the quadcopter using the LiPo battery: <strong>for safety reasons, it is really important to remove the propellers before proceeding any further</strong>.</p>
+
+<p>With the battery plugged in (turn on also the TX) and the quad connected to the PC through the USB, the FC should be recognized (in my case on COM3); click on “Connect” to establish the connection:</p>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_configurator.png"><img src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_configurator.png" alt="BLHeli Configurator Connection" /></a></p>
+
+<p>After the connection is established, we get the following screen where we get the note about the props and the battery:</p>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_connected.png"><img src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_connected.png" alt="BLHeli Configurator Connected" /></a></p>
+
+<p>To check BLHeli-S firmware actual version and other configuration we need to click on “Read Setup” on the bottom right.<br />
+After clicking, we can read the actual ESC setup:</p>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_default_firmware.png"><img src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_default_firmware.png" alt="BLHeli Configurator Read Setup" /></a></p>
+
+<p>As reported, BLHeli-S version currently loaded on the 4in1 ESC is A-H-25 16.6.<br />
+Since we want to update the firmware to the latest version we need to click on “Flash All” on the bottom.</p>
+
+<p>By doing so, we are prompted to the following screen, where we want to select the latest firmware version; at the time of this writing, the latest Official release is 16.7:</p>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_select_target.png"><img src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_select_target.png" alt="BLHeli Configurator Select Target" /></a></p>
+
+<p>Once the target is set, it will automatically download the firmware from the Web. Alternatively, it is possible to upload the firmware manually, from a local folder on our PC.<br />
+Finally, we can click on “Flash” to start the update process; the app will proceed to update sequentially all the four ESCs:</p>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_update_progress.png"><img src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_update_progress.png" alt="BLHeli Configurator Update Progress" /></a></p>
+
+<p>After all the ESCs are updated we can disconnect the quad from BLHeli Configurator and we are ready to fly with the new firmware (you can reconnect to double check that on “Read Setup” all ESCs have now the latest firmware installed).</p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>We have seen how to update <a href="http://bit.ly/2PIOtUS">Eachine Wizard X220S</a> BLHeli-S 4in1 ESC Firmware to the latest version using BLHeli Configurator. The process is pretty straightforward and should be repeated everytime a new firmware version is released.</p>
+
+    </div>
+  </div>
+</article>
+
+    </div>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+        <p align=right>© 2017-2018 Up in the Sky | All Rights Reserved 
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+</html>
