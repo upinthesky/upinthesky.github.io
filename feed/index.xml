@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Aug 2018 00:43:29 +0200</pubDate>
-    <lastBuildDate>Thu, 30 Aug 2018 00:43:29 +0200</lastBuildDate>
+    <pubDate>Thu, 30 Aug 2018 00:45:52 +0200</pubDate>
+    <lastBuildDate>Thu, 30 Aug 2018 00:45:52 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -60,6 +60,32 @@ Finally, we can click on “Flash” to start the update process; the app will p
         <pubDate>Thu, 30 Aug 2018 00:00:00 +0200</pubDate>
         <link>https://upinthesky.github.io//2018/08/30/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html</link>
         <guid isPermaLink="true">https://upinthesky.github.io//2018/08/30/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>Eachine</category>
+        
+        <category>Wizard</category>
+        
+        <category>X220S</category>
+        
+        <category>Betaflight</category>
+        
+        <category>Configuration</category>
+        
+        <category>ESC</category>
+        
+        <category>BLHeli Configurator</category>
+        
+        <category>Firmware</category>
+        
+        <category>Upgrade</category>
+        
+        <category>Update</category>
+        
+        <category>FPV</category>
+        
+        <category>Racing</category>
         
         
       </item>
