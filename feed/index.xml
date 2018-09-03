@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 Sep 2018 20:22:35 +0200</pubDate>
-    <lastBuildDate>Mon, 03 Sep 2018 20:22:35 +0200</lastBuildDate>
+    <pubDate>Mon, 03 Sep 2018 20:33:41 +0200</pubDate>
+    <lastBuildDate>Mon, 03 Sep 2018 20:33:41 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -54,7 +54,7 @@ To power up the camera we can use, for example, a 3S LiPo battery (remember the 
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/camera_setup_goggles.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/camera_setup_goggles.png&quot; alt=&quot;FPV Camera Setup Though Eachine VR006 Goggles&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;** FPV Camera Setup**&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;FPV Camera Setup&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that everything is connected, we can finally proceed with camera configuration. Using the joystick located on the camera OSD cable, we can modify the settings: by pressing the button one time, we get access to the setup menu (here we can clearly see in the top right that the camera sensor is a SONY CCD 650 TVL):&lt;/p&gt;
 
