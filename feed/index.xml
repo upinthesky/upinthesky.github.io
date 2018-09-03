@@ -6,9 +6,198 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Sep 2018 22:30:10 +0200</pubDate>
-    <lastBuildDate>Sat, 01 Sep 2018 22:30:10 +0200</lastBuildDate>
+    <pubDate>Mon, 03 Sep 2018 20:19:46 +0200</pubDate>
+    <lastBuildDate>Mon, 03 Sep 2018 20:19:46 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Eachine Wizard X220S 1179 FPV Camera Setup and Configuration</title>
+        <description>&lt;p&gt;In this article we will go through the setup and configuration of the 1179 FPV camera equipped on the &lt;a href=&quot;http://bit.ly/2PIOtUS&quot;&gt;Eachine Wizard X220S&lt;/a&gt;, which is a 650 (declared 800, but, as we will see, it is not) TVL (TeleVision Lines) CCD (Charge-Coupled Device) PAL (Phase Alternating Line) format camera.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Cables and adapters&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to connect the camera to the monitor or to the goggles, we need some cables and adapters.&lt;br /&gt;
+The first cable we need is the following which allows us to use FPV camera OSD to change the configuration:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/camera_setup_cable.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/camera_setup_cable.png&quot; alt=&quot;FPV Camera Setup Cable&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;One end of the cable goes to the FPV camera, while the other one is divided in two parts: one goes to the AV IN port of the monitor/goggles and the other one is for battery power (max 5-13V). I got it from a &lt;a href=&quot;http://bit.ly/2NJqKT0&quot;&gt;Foxeer HS1177 FPV camera&lt;/a&gt;, but you can find a similar one &lt;a href=&quot;http://bit.ly/2Pt1OzS&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then we need some adapters:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/cable_adapters.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/cable_adapters.png&quot; alt=&quot;Cable Adapters&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The top one is for battery connection (custom made by connecting a &lt;a href=&quot;http://bit.ly/2wAfAcH&quot;&gt;Plug Jack Adapter Connector 5.5x2.1mm for CCTV&lt;/a&gt; and an &lt;a href=&quot;http://bit.ly/2PWUM7j&quot;&gt;XT60 connector&lt;/a&gt; and the other is used to connect the video plugs.&lt;/p&gt;
+
+&lt;p&gt;We will see it possible to configure camera settings both from LCD monitor or goggles: in both cases, we need to remove the six screws from the top carbon plate of the Eachine Wizard X220S and disconnect the 1179 FPV camera by unplugging the white connector that comes from the FC.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Monitor connection&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For the monitor, we will use the &lt;a href=&quot;http://bit.ly/2PkZtrv&quot;&gt;Eachine LCD5802D&lt;/a&gt; (review available &lt;a href=&quot;https://upinthesky.github.io/2018/08/27/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review.html&quot;&gt;here&lt;/a&gt;); included with the monitor, we get the following cable that can be used to connect a video input to AV IN port:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/lcd5802d_monitor_video_cable.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/lcd5802d_monitor_video_cable.png&quot; alt=&quot;Eachine LCD5802D AV IN Video Cable&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, it is just a matter of connecting everything together.&lt;br /&gt;
+To power up the camera we can use, for example, a 3S LiPo battery (remember the working voltage range for the 1179 is 5-13V):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/camera_setup_monitor.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/camera_setup_monitor.png&quot; alt=&quot;FPV Camera Setup Though Eachine LCD5802D Monitor&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Goggles connection&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To show the possibility to configure the 1179 FPV camera through the goggles, we will use the &lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006&lt;/a&gt; (review available &lt;a href=&quot;https://upinthesky.github.io/2018/08/23/eachine-vr006-mini-fpv-goggles-review.html&quot;&gt;here&lt;/a&gt;); this is the cable that come with the goggles and we are going to use it to connect to AV IN:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/vr006_goggles_video_cable.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/vr006_goggles_video_cable.png&quot; alt=&quot;Eachine VR006 AV IN Video Cable&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the resulting connection with AV IN located in the top part of the goggles:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/camera_setup_goggles.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/camera_setup_goggles.png&quot; alt=&quot;FPV Camera Setup Though Eachine VR006 Goggles&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Camera Setup&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that everything is connected, we can finally proceed with camera configuration. Using the joystick located on the camera OSD cable, we can modify the settings: by pressing the button one time, we get access to the setup menu (here we can clearly see in the top right that the camera sensor is a SONY CCD 650 TVL):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/setup.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/setup.png&quot; alt=&quot;Eachine Wizard X220S 1179 FPV Camera Setup&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The first time we access the menu, language is set to Chinese, so we have to go down at the 9th row and push the joystick to the right. In this way we change to language to English.&lt;/p&gt;
+
+&lt;p&gt;Settings Menu is pretty much the same as the one of the famous HS1177, with items just presented in a different order. Two are the most important configurations: Exposure and Image Adjustment. However, we will take a look also to the other ones.&lt;/p&gt;
+
+&lt;p&gt;We can start by modifying the Exposure setting:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/exposure.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/exposure.png&quot; alt=&quot;Eachine Wizard X220S 1179 FPV Camera Exposure&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Activating DWDR (Digital Wide Dynamic Range) is really important for FPV, since it allows to handle very well light changes from bright spots to dark ones.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/exposure.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/dwdr.png&quot; alt=&quot;Eachine Wizard X220S 1179 FPV Camera Setup&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Day&amp;amp;Night setting is configured to AUTO with the following values handling the transition in 5 seconds:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/dwdr.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/dn_auto.png&quot; alt=&quot;Eachine Wizard X220S 1179 FPV Camera Digital Wide Dynamic Range&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the Special tab, everything is set to Off (I prefer to not use the Cam Title, since it covers part of the screen and I already have set what I want to display in the OSD through Betaflight Configurator):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/special.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/special.png&quot; alt=&quot;Eachine Wizard X220S 1179 FPV Camera Special&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As written above, the other important setting is Image Adjustment and here are reported the values I use:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/image_adj.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/image_adj.png&quot; alt=&quot;Eachine Wizard X220S 1179 FPV Camera Image Adjustment&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Contrast value is fundamental: in fact, next is reported how much difference a change in its value causes when looking directly into the sun. The image below shows the comparison between a contrast value of 164 with respect to 100:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/contrast_difference.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/contrast_difference.png&quot; alt=&quot;Eachine Wizard X220S 1179 FPV Camera Contrast Difference&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A good value is 62, but consider to raise it up if you are flying in dark environments.&lt;/p&gt;
+
+&lt;p&gt;Here are the settings for the Font Color:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/font_color.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/font_color.png&quot; alt=&quot;Eachine Wizard X220S 1179 FPV Camera Font Color&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Be sure to set Display to LCD and then enter in its menu to change the values as reported below:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/lcd_adjust.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/lcd_adjust.png&quot; alt=&quot;Eachine Wizard X220S 1179 FPV Camera LCD Adjustment&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To configure Defective Pixel Compensation remember to put the lens cover on the FPV camera:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/dpc.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/dpc.png&quot; alt=&quot;Eachine Wizard X220S 1179 FPV Camera Defective Pixel Compensation&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Normally this sort of calibration is not needed, so you can skip it.&lt;/p&gt;
+
+&lt;p&gt;All the configurations are now done and, in the next snippet, a recap for the values is reported:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#Lens
+Manual
+
+#Exposure
+Shutter: Auto
+Brightness: 36
+AGC: ----
+DWDR: On
+
+#DWDR
+Level: 63
+
+#White Bal.: ATW1
+
+#Day&amp;amp;Night
+Auto
+D -&amp;gt; N Level: 144
+D -&amp;gt; N Delay: 5 sec
+N -&amp;gt; D Level: 112
+N -&amp;gt; D Delay: 5 sec
+
+#Special
+Cam Title: Off
+Motion: Off
+Privacy: Off
+Park. Line: Off
+
+#Image Adj
+Lens Shad.: Off
+2DNR: On
+Mirror: Off
+Contrast: 62
+Sharpness: 31
+
+#Font Color
+Font: 009
+Id&amp;amp;Title: 009
+
+#Display
+LCD
+Gamma: 0.45
+PED Level: 39
+Color Gain: 255
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now you can navigate back to the main menu and click on Exit, so the settings are automatically saved. After that, you can disconnect all the cables, reconnect the FPV camera to the FC, screw back the top plate and go fly to test the new setup, which works very well for me. Of course, everyone has its own flight style and preferences, so keep trying modifying the values until you find the ones working good for you.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We have seen how to setup and configure the 1179 FPV camera for the Eachine Wizard X220S. Looking through the settings we have made some important changes to assure a better image quality for FPV flying, particularly during rapid changes in the lighting.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Sep 2018 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2018/09/03/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2018/09/03/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>Eachine</category>
+        
+        <category>Wizard</category>
+        
+        <category>X220S</category>
+        
+        <category>1179</category>
+        
+        <category>Camera</category>
+        
+        <category>FPV</category>
+        
+        <category>Racing</category>
+        
+        <category>Freestyle</category>
+        
+        <category>Configuration</category>
+        
+        <category>Setup</category>
+        
+        <category>Settings</category>
+        
+        <category>OSD</category>
+        
+        <category>CCD</category>
+        
+        <category>TVL</category>
+        
+        <category>SONY</category>
+        
+        <category>DWDR</category>
+        
+        
+      </item>
     
       <item>
         <title>Eachine Wizard X220S BLHeli-S 4in1 ESC Firmware Update</title>
@@ -1262,146 +1451,6 @@ If you need a guide in order to upgrade Betaflight firmware for the Omnibus F4SD
         <category>Racing</category>
         
         <category>Devo 7E</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Eachine Wizard X220S ARF Overview and Receiver Installation</title>
-        <description>&lt;p&gt;The &lt;a href=&quot;http://bit.ly/2PIOtUS&quot;&gt;Eachine Wizard X220S&lt;/a&gt; is a 220mm FPV Racing quadcopter and it is the evolution of the X220; it comes both in RTF (Ready To Fly) and ARF (Almost Ready to Fly) version.
-If you already have a decent transmitter, you can just go for the ARF version and buy a receiver that uses the same protocol as the TX: this is exactly what we are going to see in this article.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x220s_specs.png&quot; alt=&quot;Eachine Wizard X220S Specs&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Package contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;http://bit.ly/2weMZIZ&quot;&gt;ARF version&lt;/a&gt; package comes with the quadcopter with the following specifications and accessories:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;4 x Eachine  MN2206 2300KV motor&lt;/li&gt;
-  &lt;li&gt;Eachine 30A BLHELI_S  4 in 1 ESC&lt;/li&gt;
-  &lt;li&gt;Eachine HS1179 800TVL CCD camera&lt;/li&gt;
-  &lt;li&gt;5.8 GHz 72CH 25MW 200mw 600MW switchable transmitter&lt;/li&gt;
-  &lt;li&gt;Pagoda antenna 5.8 GHz&lt;/li&gt;
-  &lt;li&gt;Omnibus F4 V3 flight controller&lt;/li&gt;
-  &lt;li&gt;10 x pairs of Eachine 5051 3-blade propeller&lt;/li&gt;
-  &lt;li&gt;30° Camera Mount (For Runcam3/Gopro session)&lt;/li&gt;
-  &lt;li&gt;2 x Battery strap&lt;/li&gt;
-  &lt;li&gt;2 x Wrench&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;TX, RX, LiPo Battery, Propellers, Camera Lens&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The ARF version does not come with TX, RX and battery. Moreover, I have also replaced propellers and camera lens, so here is my setup:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2L960Ce&quot;&gt;Devo 7E&lt;/a&gt; loaded with Deviation firmware and additional RF modules so it is possible to bind different models with just one radio controller. In this case, the RF module we are going to use is the &lt;a href=&quot;http://bit.ly/2MG6PXV&quot;&gt;A7105&lt;/a&gt; (XL7105-D03B chip) which supports AFHDS-2A (FlySky protocol);&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2N1Qnye&quot;&gt;Flysky X6B 2.4G 6CH i-BUS PPM PWM Receiver for AFHDS&lt;/a&gt;: this is a very good receiver with long range reception capability, so, even if you have bought the &lt;a href=&quot;http://bit.ly/2weMZIZ&quot;&gt;RTF version of the X220S&lt;/a&gt;, I highly recommend to switch to this receiver;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2oeHvuj&quot;&gt;TATTU 1550mAh 14.8V 75C 4S1P Lipo Battery Pack&lt;/a&gt;: this is a very good quality battery, it performs really well and it is really durable;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2BtgmNL&quot;&gt;DALPROP T5045C&lt;/a&gt;: changing propellers is a must since the given ones are really inefficient and the quality is not as good as it should be (they develop stress marks after few flights);&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2wu4wgo&quot;&gt;2.5mm 600TVL 1/3” Super Had II CCD Camera Lens&lt;/a&gt; or &lt;a href=&quot;http://bit.ly/2BXgaXo&quot;&gt;2.1mm 150° FOV Wide Angle Camera Lens&lt;/a&gt;: the stock 2.8mm lens does not offer a good FOV, so it is better to go for a 2.5mm or 2.1mm depending on personal preference. I actually have both and use one instead of the other depending on the situation.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;RunCam 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;RunCam 3 camera shown in the images in not included. However RunCam 3 is discontinued and the new version is available, so you can record your flights in HD with WDR: &lt;a href=&quot;http://bit.ly/2wiN3Yc&quot;&gt;RunCam 3S&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Soldering iron and handy tools&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Of course, a good soldering iron is needed. I really like &lt;a href=&quot;http://bit.ly/2LEde1f&quot;&gt;this one&lt;/a&gt;, which is compact and portable since it can be powered up using LiPo batteries.&lt;/p&gt;
-
-&lt;p&gt;In the process, having these tools comes in handy:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2vZiNCs&quot;&gt;Drillpro 4pcs Hex Screwdriver Tool Kit 1.5/2.0/2.5/3.0mm&lt;/a&gt;;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2w2dd25&quot;&gt;DANIU 4pcs Metal 4.0/5.5/7.0/8.0mm Hex Screwdriver Set&lt;/a&gt;;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2OTJtLJ&quot;&gt;DANIU 25 in 1 Multi-purpose Precision Screwdriver Set&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Receiver connection to FC board&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In the receiver package, there are four cables: we need two of them, the one going inside the middle top side port for i-BUS and the one going in the bottom side port that we are going to use for battery voltage monitoring (telemetry on transmitter):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x6b.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/x6b.png&quot; alt=&quot;FlySky X6B Receiver&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Both cables have three wires (black, red and yellow) with a white connector on one side (the one going into the receiver) and a black one on the other side:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_cable.png&quot; alt=&quot;FlySky X6B receiver cables&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;For battery voltage monitoring we just need the red and black wires, so we need to remove the yellow one from one of the two cables. For both cables, the side with the black connector needs to be cut. Then we can strip the wires and prepare them (tin) for soldering on the FC.&lt;/p&gt;
-
-&lt;p&gt;Now we need access to the top of the Flight Controller board. To achieve this, we need to remove the top carbon plate (six screws) and the VTX board:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/fc_board.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/fc_board.png&quot; alt=&quot;Omnibus F4SD Flight Controller Board&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After soldering the wires (remember to tin the pads first for an easy soldering job), this is the result:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_fc_connection.png&quot; alt=&quot;FlySky X6B connection to FC&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Mounting the receiver&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Now we just need to find a good place to position the receiver. A safe spot could be on the rear, on the bottom plate near the leds. To fix the board on the carbon plate we can just use two &lt;a href=&quot;http://bit.ly/2Ppj61j&quot;&gt;M2 standoffs&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/receiver_mount.png&quot; alt=&quot;FlySky X6B Receiver Mount&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;X6B Binding&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;To bind Flysky X6B receiver we need to turn on the quadcopter while pressing th “BIND” button on the receiver and using the binding mode on the TX.&lt;br /&gt;
-For &lt;a href=&quot;http://bit.ly/2L960Ce&quot;&gt;Devo 7E&lt;/a&gt;, loaded with Deviation TX firmware, this can be done in Model menu -&amp;gt; Model setup:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_arf_overview_and_receiver_installation/devo7e_bind.png&quot; alt=&quot;Devo 7E Binding with FlySky X6B&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you like Deviation TX firmware and you do not want to solder additional modules inside Devo 7E, there is a new multi-protocol radio already loaded with Deviation firmware, inside which are already installed additional RF modules, including the FlySky one (it has a 4in1 RF module - CC2500, CYRF6936, A7105, NRF2401): &lt;a href=&quot;http://bit.ly/2OVgl6O&quot;&gt;Jumper T8SG V2.0 Plus&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We have seen an overview for &lt;a href=&quot;http://bit.ly/2weMZIZ&quot;&gt;Eachine Wizard X220S ARF version&lt;/a&gt; and how to set up X6B i-BUS receiver.&lt;/p&gt;
-
-&lt;p&gt;In the &lt;a href=&quot;https://upinthesky.github.io/2017/12/11/eachine-wizard-x220s-betaflight-setup-and-configuration.html&quot;&gt;next article&lt;/a&gt; we are going to talk about the setup and configuration of the quadcopter in Betaflight Configurator.&lt;br /&gt;
-If you want to upgrade Betaflight firmware for the Omnibus F4SD on the Eachine Wizard X220S, read &lt;a href=&quot;https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html&quot;&gt;this article&lt;/a&gt;.&lt;br /&gt;
-If you want to update Eachine Wizard X220S BLHeli 4in1 ESC firmware, read &lt;a href=&quot;https://upinthesky.github.io/2018/08/30/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 23 Oct 2017 00:00:00 +0200</pubDate>
-        <link>https://upinthesky.github.io//2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html</link>
-        <guid isPermaLink="true">https://upinthesky.github.io//2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html</guid>
-        
-        <category>Quadcopter</category>
-        
-        <category>Eachine</category>
-        
-        <category>Wizard</category>
-        
-        <category>X220S</category>
-        
-        <category>ARF</category>
-        
-        <category>Overview</category>
-        
-        <category>Receiver</category>
-        
-        <category>Installation</category>
-        
-        <category>X6B</category>
-        
-        <category>i-BUS</category>
-        
-        <category>AFHDS-2A</category>
-        
-        <category>FPV</category>
-        
-        <category>Racing</category>
-        
-        <category>Devo 7E</category>
-        
-        <category>DALPROP</category>
-        
-        <category>RunCam 3</category>
-        
-        <category>RunCam 3S</category>
-        
-        <category>Brushless</category>
         
         
       </item>
