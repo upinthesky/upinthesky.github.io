@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Sep 2018 20:44:12 +0200</pubDate>
-    <lastBuildDate>Tue, 04 Sep 2018 20:44:12 +0200</lastBuildDate>
+    <pubDate>Tue, 04 Sep 2018 21:59:05 +0200</pubDate>
+    <lastBuildDate>Tue, 04 Sep 2018 21:59:05 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -29,7 +29,7 @@ The first cable we need is the following which allows us to use FPV camera OSD t
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/cable_adapters.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration/cable_adapters.png&quot; alt=&quot;Cable Adapters&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;The top one is for battery connection (custom made by connecting a &lt;a href=&quot;http://bit.ly/2wAfAcH&quot;&gt;Plug Jack Adapter Connector 5.5x2.1mm for CCTV&lt;/a&gt; and an &lt;a href=&quot;http://bit.ly/2PWUM7j&quot;&gt;XT60 connector&lt;/a&gt; and the other is used to connect the video plugs.&lt;/p&gt;
+&lt;p&gt;The top one is for battery connection (custom made by connecting a &lt;a href=&quot;http://bit.ly/2wAfAcH&quot;&gt;Plug Jack Adapter Connector 5.5x2.1mm for CCTV&lt;/a&gt; and an &lt;a href=&quot;http://bit.ly/2PWUM7j&quot;&gt;XT60 connector&lt;/a&gt; connected together using &lt;a href=&quot;http://bit.ly/2wKxMj6&quot;&gt;14 AWG silicone wire&lt;/a&gt;; the other adapter is used to connect the video plugs.&lt;/p&gt;
 
 &lt;p&gt;We will see it possible to configure camera settings both from LCD monitor or goggles: in both cases, we need to remove the six screws from the top carbon plate of the Eachine Wizard X220S and disconnect the 1179 FPV camera by unplugging the white connector that comes from the FC.&lt;/p&gt;
 
