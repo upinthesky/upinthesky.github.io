@@ -6,9 +6,175 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Sep 2018 00:08:42 +0200</pubDate>
-    <lastBuildDate>Fri, 07 Sep 2018 00:08:42 +0200</lastBuildDate>
+    <pubDate>Sun, 09 Sep 2018 18:26:44 +0200</pubDate>
+    <lastBuildDate>Sun, 09 Sep 2018 18:26:44 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Eachine VR006 Mini FPV Goggles ProDVR Mod</title>
+        <description>&lt;p&gt;In &lt;a href=&quot;https://upinthesky.github.io/2018/08/23/eachine-vr006-mini-fpv-goggles-review.html&quot;&gt;this&lt;/a&gt; previous article, &lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006 Mini FPV Goggles&lt;/a&gt; have been reviewed and we have seen that a weak point is the lack of Digital Video Recorder (DVR). In this blog post we will see how it is possible to integrate DVR in the Eachine VR006 by the application of a simple modification.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;In order to record FPV footage using the Eachine VR006 we need to modify them by adding a DVR module: &lt;a href=&quot;http://bit.ly/2McOXzL&quot;&gt;Eachine ProDVR&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Specs are reported down below:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Operating Voltage: DC 5V;&lt;/li&gt;
+  &lt;li&gt;Video Format: NTSC/PAL;&lt;/li&gt;
+  &lt;li&gt;Video Output Size: VGA(640*480px), D1(720*480), HD(1280*480);&lt;/li&gt;
+  &lt;li&gt;Light Frequency: 50HZ/60HZ;&lt;/li&gt;
+  &lt;li&gt;Compress Format: MJPEG;&lt;/li&gt;
+  &lt;li&gt;Records Frame Rate: 30 Frames;&lt;/li&gt;
+  &lt;li&gt;SD Max Size Support: 32G TF Card;&lt;/li&gt;
+  &lt;li&gt;Size: 41mm*32.9mm*9mm;&lt;/li&gt;
+  &lt;li&gt;Weight: 9.5g.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As we can see, it is really lightweight, which it is really important since we are going to mount it on the goggles.&lt;br /&gt;
+Next image shows how the package arrives:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_package.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_package.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Package&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Package Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Package contents are the following:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_package_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_package_contents.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Package Contents&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DVR recorder;&lt;/li&gt;
+  &lt;li&gt;Cables to connect power supply, video and audio (we are going to use only two of them);&lt;/li&gt;
+  &lt;li&gt;2 x 3M adhesive;&lt;/li&gt;
+  &lt;li&gt;Instructions Manual.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Cables and Wiring&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We need to modify one of the two cables (both have a white connector on one side and free leads on the other one) we are going to use: it is the one with two black wires, a yellow wire and a white one. We need to remove one of the black wires and the white one, like shown in the next image:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cable.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cable.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Cables Position&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To remove them it is just a matter of lifting up the little white strip that locks the wire in place and gently pull off the wire.&lt;/p&gt;
+
+&lt;p&gt;The following image shows the other cable needed, together with the one we prepared above, both connected to the Eachine ProDVR module:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cables_connection.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cables_connection.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Cables Connection&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Disassembling&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since we are going to solder wire leads on the pads located on the board inside the goggles, we need to disassemble them. To do this, we need to cut the black sponge in two points, the ones in which the bottom part of the goggles links up to the top part:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_sponge_cut.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_sponge_cut.png&quot; alt=&quot;Eachine VR006 Sponge Cut&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the cutting job is done, we can proceed with the separation of the two parts by removing the four screws located inside the highlighted holes in this picture:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_disassembled.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_disassembled.png&quot; alt=&quot;Eachine VR006 Disassembled&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you do not want to cut off part of the front vent to get the wires exiting from the inside of the goggles, you need to make them pass through the holes of the vent before proceeding with the soldering job:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cables_position.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cables_position.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Cables Position&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Before we can pull off the board we have to remove the two RP-SMA antenna connectors:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_rpsma_connector_removal.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_rpsma_connector_removal.png&quot; alt=&quot;Eachine VR006 RP-SMA Connector Removal&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once that is done we can unplug the battery connector, gently pull out the board and the LCD screen and place them on the table:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_board.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_board.png&quot; alt=&quot;Eachine VR006 Board&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Soldering&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As always, for an easy soldering job, remember to tin the wires and the pads on which we are going to solder the wires. &lt;a href=&quot;http://bit.ly/2LEde1f&quot;&gt;This&lt;/a&gt; is the soldering iron I use (actually it is a real compact soldering station), which is my preferred one at the moment due to its quality, dimensions and portability.&lt;/p&gt;
+
+&lt;p&gt;The following two images show how to solder the wires on the board pads; the black and yellow wires of the first image correspond to the ones going into the smaller white connector (GND, V_OUT):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_av_soldering_a.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_av_soldering_a.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Soldering on Eachine VR006&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;These wires make possible to use DVR as AV IN for the goggles: in this way we can watch/erase DVR recorded videos directly from the goggles.&lt;/p&gt;
+
+&lt;p&gt;For the bigger white connector, pin leads order starting from the top pad is the following: GND, +5V, A_IN, V_IN, GND/GND:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_av_soldering_b.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_av_soldering_b.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Soldering on Eachine VR006&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just keep attention that the top pad black wire corresponds to the top ground pin for the bigger white connector; the other two black wires soldered together are the ground for A_IN and V_IN:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_wiring_diagram.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_wiring_diagram.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Wiring Diagram&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Recording&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the soldering job is done, before reassembling everything back, we need to test if DVR is working correctly: connecting the battery and powering up the goggles should make the led of the DVR module light up. To start recording (remember to insert an SD card inside the DVR module), we need to press one time the right arrow button: if the recording starts, the led should be flashing. To stop video recording we need to press again that button.&lt;/p&gt;
+
+&lt;p&gt;To play a previously recorded video, we need to set DVR as AV IN in the Eachine VR006 Menu (if you do not know how to do that look &lt;a href=&quot;https://upinthesky.github.io/2018/08/23/eachine-vr006-mini-fpv-goggles-review.html&quot;&gt;here&lt;/a&gt;). Be aware that, if in the future we want to use a different AV IN, we need to unplug the yellow/black connector from the DVR module.
+Once AV IN is set, we just press and hold for 3 seconds the left arrow button and then we can navigate through the media files using arrow buttons; press the mid button to play.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video and Main Menu&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To enter Video Menu we need to long press the mid button (here we can change Size, Rec Sound and Video Time values); once there, we can enter Main Menu by short pressing right arrow button. Here we can:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Format memory card;&lt;/li&gt;
+  &lt;li&gt;Change language;&lt;/li&gt;
+  &lt;li&gt;Restore default settings;&lt;/li&gt;
+  &lt;li&gt;Change display frequency;&lt;/li&gt;
+  &lt;li&gt;Change TV output frequency.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By hold pressing the mid button we exit Main Menu.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reassembling and Module Fixing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally we can put the board and the display back inside the case and close the goggles by screwing back together the two parts.&lt;br /&gt;
+Then we can just fix the DVR module on the top part of the googles by using the included double side tape:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_prodvr.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_prodvr.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Mounted on Eachine VR006&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We have seen how to install ProDVR module on the Eachine VR006 Mini FPV Goggles; in this way we can finally record FPV footage directly from our goggles by saving it to an SD card. We can even watch saved videos on goggles screen through AV IN port using DVR as input source.&lt;br /&gt;
+This module is really cheap and it is a must have mod for VR006 Mini FPV goggles: you can get it &lt;a href=&quot;http://bit.ly/2McOXzL&quot;&gt;here&lt;/a&gt; at a good price.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2018/09/09/eachine-vr006-mini-fpv-goggles-prodvr-mod.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2018/09/09/eachine-vr006-mini-fpv-goggles-prodvr-mod.html</guid>
+        
+        <category>Eachine</category>
+        
+        <category>VR006</category>
+        
+        <category>VR-006</category>
+        
+        <category>Mini</category>
+        
+        <category>FPV</category>
+        
+        <category>Goggles</category>
+        
+        <category>DVR</category>
+        
+        <category>ProDVR</category>
+        
+        <category>Box Style</category>
+        
+        <category>Review</category>
+        
+        <category>Racing</category>
+        
+        <category>Freestyle</category>
+        
+        <category>Drone</category>
+        
+        <category>Quadcopter</category>
+        
+        <category>Antenna</category>
+        
+        <category>Aomway</category>
+        
+        
+      </item>
     
       <item>
         <title>Eachine Wizard X220S 1179 FPV Camera Setup and Configuration</title>
@@ -1329,130 +1495,6 @@ If you want to update Eachine Wizard X220S BLHeli 4in1 ESC firmware, read &lt;a 
         <category>Betaflight Blackbox Explorer</category>
         
         <category>Logs</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Eachine Wizard X220S Betaflight Setup and Configuration</title>
-        <description>&lt;p&gt;In the &lt;a href=&quot;https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html&quot;&gt;previous article&lt;/a&gt; we have seen an overview of the &lt;a href=&quot;http://bit.ly/2PIOtUS&quot;&gt;Eachine Wizard X220S&lt;/a&gt; and how to install the FlySky X6B receiver on it.
-Now we take a look at the setup and configuration of the quadcopter in Betaflight Configurator.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;strong&gt;Betaflight Configurator&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Betaflight Configurator is a really popular application that allows to configure the aircraft via GUI and it can be downloaded as an extension for Google Chrome browser. Both flight controller and GUI application are &lt;a href=&quot;https://github.com/betaflight&quot;&gt;open source&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/betaflight_app.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/betaflight_app.png&quot; alt=&quot;Betaflight Configurator Chrome App&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the application is correctly installed, it is possible to launch it. Then, it is just a matter of connecting the quadcopter to the PC using a micro USB (Flight Controller) to USB (PC) cable and clicking on “Connect” to establish the connection.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ports&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;First, we need to correctly setup the ports on the FC in the “Ports” tab: since we are using FlySky X6B with i-BUS protocol we have to enable “Serial RX” on UART1, which is the port we have soldered receiver cables on:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/ports.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/ports.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Ports&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Configuration&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In the “Configuration” tab we need to be sure DSHOT600 is selected and we can deactivate “MOTOR_STOP” switch (personal preference):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_1.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_1.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Under “Receiver” we have to set Serial-based receiver (SPEKSAT,…) with “IBUS” selected in the drop down menu:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_2.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_2.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Under “Other Features” it is important (we see how much in the next post) to activate BLACKBOX and SDCARD since these are critical to have flight logs for post flight analysis, especially during the tuning phase when it is possible to use an SD card: class 10 is recommended, while the space required is not important since it will be used to store text files (2 GB is more than enough).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_3.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_3.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Also OSD (On Screen Display) has to be activated to keep track of useful information on the FPV screen or goggles during the flight.&lt;/p&gt;
-
-&lt;p&gt;We can enable VBAT to have battery voltage monitoring (remember we have also connected VBAT output from FC to the receiver to have telemetry on the transmitter) which is a must especially when flying in FPV so we can check on our monitor/goggles the current battery voltage through OSD.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_4.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_4.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Failsafe&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;To configure the failsafe we need to access to an advanced configuration menu which can be activated by clicking on “Enable Expert Mode” like shown in the image below:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/failsafe.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/failsafe.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Failsafe&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It is recommended to set Failsafe Stage 2 to “Drop”, so if the receiver loses contact with the transmitter for more than a certain time, then the FC turns off the motors. In my case the guard time is 10*0.1s = 1s.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Receiver&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In the “Receiver” tab we have to make sure the values of the channels are configured properly in such a way when radio sticks are centered, the value is ~1500, while the minimum and maximum valure are equal respectively to ~1000 and ~2000. This can be achieved configuring trims on the radio.
-Set also Stick Min to 1010 and Stick Max to 1990.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/receiver.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/receiver.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Receiver&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Modes&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;For the “Modes” tab, we can set the switches on the radio to arm the quadcopter or change from a flight mode to another one or to enable the buzzer for example. In the next figure are reported my settings (Arm, Angle, Horizon, Air Mode, Beeper):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_1.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_1.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Modes&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_2.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_2.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Modes&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In this way channel AUX 2, a three position switch, controls the flight modes, AUX 3 arms the quadcopter and AUX 4 activates the beeper.&lt;/p&gt;
-
-&lt;p&gt;Since I am using Devo 7E with 3 position switch mod, I will report the steps to configure the switches for this particular radio (instructions below are for the three position switch to change between three flight modes and can be replicated for other features, like arming the quadcopter, on two position switches as well).&lt;br /&gt;
-In Model Menu go on Mixer and set Ch6 to Complex with 3 Mixers:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;on Page 1 set Switch “SW B0”, Mux “replace”, Curve “Fixed”, Scale “-100”;&lt;/li&gt;
-  &lt;li&gt;on Page 2 set Switch “SW B1”, Mux “replace”, Curve “Fixed”, Scale “0”;&lt;/li&gt;
-  &lt;li&gt;on Page 3 set Switch “SW B2”, Mux “replace”, Curve “Fixed”, Scale “100”.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;OSD&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally, we can setup the OSD in the way we like, for example, with the following indicators: RSSI, Main Batt Voltage, Crosshairs, Flytime, Flymode.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/osd.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_betaflight_setup_and_configuration/osd.png&quot; alt=&quot;Eachine Wizard X220S Betaflight OSD&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once we have checked that everything fits well on our FPV goggles or screen, we are ready to fly.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We have seen how to set up and configure Betaflight for the Eachine Wizard X220S using Betaflight Configurator Chrome App.&lt;/p&gt;
-
-&lt;p&gt;For the overview of the Eachine X220S, read &lt;a href=&quot;https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html&quot;&gt;this article&lt;/a&gt;.&lt;br /&gt;
-If you are experiencing yaw wobbling during the hovering, &lt;a href=&quot;https://upinthesky.github.io/2017/12/27/eachine-wizard-x220s-yaw-wobbling-resolution.html&quot;&gt;here&lt;/a&gt; is the resolution.&lt;br /&gt;
-If you need a guide in order to upgrade Betaflight firmware for the Omnibus F4SD on the Eachine X220S, read &lt;a href=&quot;https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 11 Dec 2017 00:00:00 +0100</pubDate>
-        <link>https://upinthesky.github.io//2017/12/11/eachine-wizard-x220s-betaflight-setup-and-configuration.html</link>
-        <guid isPermaLink="true">https://upinthesky.github.io//2017/12/11/eachine-wizard-x220s-betaflight-setup-and-configuration.html</guid>
-        
-        <category>Quadcopter</category>
-        
-        <category>Eachine</category>
-        
-        <category>Wizard</category>
-        
-        <category>X220S</category>
-        
-        <category>Betaflight</category>
-        
-        <category>Setup</category>
-        
-        <category>Configuration</category>
-        
-        <category>X6B</category>
-        
-        <category>i-BUS</category>
-        
-        <category>AFHDS-2A</category>
-        
-        <category>FPV</category>
-        
-        <category>Racing</category>
-        
-        <category>Devo 7E</category>
         
         
       </item>
