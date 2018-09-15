@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+  <head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88840278-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <meta name="google-site-verification" content="2sf0nOsdmxOwb35mzYgNoZLo3dWw5VuhtdWLaSGSekA" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Eachine Wizard X220S FPV Camera Noise Resolution</title>
+  <meta name="description" content="A common problem with the Eachine Wizard X220S is the pretty strong video signal noise observable when motors are spinning: as the throttle value goes up, vi...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://upinthesky.github.io//2018/09/15/eachine-wizard-x220s-fpv-camera-noise-resolution.html">
+  <link rel="alternate" type="application/rss+xml" title="Up in the Sky" href="https://upinthesky.github.io//feed.xml">
+</head>
+  <body>
+    <nav class="single-post-nav">
+      <ul>
+        <li>
+          
+          <a href="/2018/09/09/eachine-vr006-mini-fpv-goggles-prodvr-mod.html">&#8592; Previous post</a>
+          
+        </li>
+        <li><a href="/">Home Page</a></li>
+        <li>
+          
+        </li>
+      </ul>
+    </nav>
+    <div class="single-post">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header single-post-header" style="background-image:url('https://upinthesky.github.io//images/clouds_banner.jpg')">
+    <div>
+      <h1 class="post-title single-post-title" itemprop="name headline">Eachine Wizard X220S FPV Camera Noise Resolution</h1>
+      <p class="post-meta single-post-meta">
+        <time datetime="2018-09-15T00:00:00+02:00" itemprop="datePublished">15 September 2018</time>
+        •
+        
+        
+          3 mins
+        
+        read
+      </p>
+    </div>
+  </header>
+  <div align=center><a href="http://bit.ly/2oYheAT" target="_blank"><img src="https://img.staticbg.com/deals/affiliate_member_banner/1041a92309a495fbb321890d3db9c32c25.jpg" /></a></div>
+  <div class="wrapper">
+    <div class="single-post-summary">
+      
+    <ul class="tag-box inline">
+      
+        <li><a href="/tags#Quadcopter" class="tag">• Quadcopter</a></li>
+      
+        <li><a href="/tags#X220S" class="tag">• X220S</a></li>
+      
+        <li><a href="/tags#Eachine" class="tag">• Eachine</a></li>
+      
+        <li><a href="/tags#Wizard" class="tag">• Wizard</a></li>
+      
+        <li><a href="/tags#FPV" class="tag">• FPV</a></li>
+      
+        <li><a href="/tags#Camera" class="tag">• Camera</a></li>
+      
+        <li><a href="/tags#Noise" class="tag">• Noise</a></li>
+      
+        <li><a href="/tags#Racing" class="tag">• Racing</a></li>
+      
+        <li><a href="/tags#Freestyle" class="tag">• Freestyle</a></li>
+      
+        <li><a href="/tags#Resolution" class="tag">• Resolution</a></li>
+      
+        <li><a href="/tags#LC Filter" class="tag">• LC Filter</a></li>
+      
+        <li><a href="/tags#Mod" class="tag">• Mod</a></li>
+      
+    </ul>  
+    </div>
+    <div class="post-content single-post-content" itemprop="articleBody">
+      <p>A common problem with the <a href="http://bit.ly/2PIOtUS">Eachine Wizard X220S</a> is the pretty strong video signal noise observable when motors are spinning: as the throttle value goes up, video signal noise increases. In this article we will see how to remove this annoying behavior with a simple modification.</p>
+
+<!--more-->
+
+<p>Video signal noise is generated from the 4in1 ESC, so, to remove it, we need to find a way to filter this noise before it reaches the Flight Controller (FC) to which the FPV camera and transmitter are connected.</p>
+
+<p><strong>Handy tools and soldering iron</strong></p>
+
+<p>In the modification process, having these tools comes in handy:</p>
+
+<ul>
+  <li><a href="http://bit.ly/2vZiNCs">Drillpro 4pcs Hex Screwdriver Tool Kit 1.5/2.0/2.5/3.0mm</a></li>
+  <li><a href="http://bit.ly/2w2dd25">DANIU 4pcs Metal 4.0/5.5/7.0/8.0mm Hex Screwdriver Set</a></li>
+  <li><a href="http://bit.ly/2OTJtLJ">DANIU 25 in 1 Multi-purpose Precision Screwdriver Set</a></li>
+</ul>
+
+<p>A good soldering iron is needed. I really like <a href="http://bit.ly/2LEde1f">this one</a>, which is compact and portable since it can be powered up using LiPo batteries.</p>
+
+<p><strong>LC Filter</strong></p>
+
+<p>The simple modification that allows to filter the noise consists in the installation of an LC (inductor-capacitor) filter like <a href="http://bit.ly/2xaAxLS">this one</a> in such a way that DC power supply coming from the 4in1 ESC and going to the FC is cleaned up.</p>
+
+<p>Here are reported the main specs of the LC filter:</p>
+
+<ul>
+  <li>Maximum input voltage: 16V;</li>
+  <li>Maximum current: 2A;</li>
+  <li>Size: length: 3.5cm, width: 1.1cm,  heigth: 1cm;</li>
+  <li>Product weight: 14g.</li>
+</ul>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter.png"><img src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter.png" alt="LC Filter" /></a></p>
+
+<p>Its dimensions allow to place it right behind the FPV camera in vertical position.</p>
+
+<p><strong>LC Filter Connections</strong></p>
+
+<p>We need to have access to the 4in1 ESC, so we have to remove the top carbon plate, the VTX and the FC boards.<br />
+As the above image shows, we have a total of four pads: two for VIN and two for VOUT.<br />
+VIN represents voltage input, that is the one we need to filter coming from the 4in1 ESC, where pads are labeled as BAT (red is positive “+”, black is negative “-“); VOUT stands for voltage output, i.e. the filtered voltage that goes into the FC:</p>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/vin_vout_connections.png"><img src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/vin_vout_connections.png" alt="4in1 ESC Battery Leads" /></a></p>
+
+<p>So, looking at the image, we have to put the LC filter between the two ends. To do so, an easy way is to unsolder the wires on the 4in1 ESC pads while leaving connected the ones on the FC.<br />
+To make the connection between LC filter VIN pads and 4in1 ESC BAT pads, I used <a href="http://bit.ly/2wKxMj6">24 AWG wires</a>. Remember to tin the wires and the pads before soldering them together: in this way the final soldering will be easier.<br />
+The following image shows the resulting connections (ignore the fact that, in the following two images, mid “+” and “-“ pads have no wires soldered on):</p>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter_soldered_wires.png"><img src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter_soldered_wires.png" alt="LC Filter Soldered Wires" /></a></p>
+
+<p>Detail of VOUT going to the FC:</p>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/detail_vout_fc.png"><img src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/detail_vout_fc.png" alt="Detail of LC Filter VOUT going to the FC" /></a></p>
+
+<p>Finally we can solder VIN wires to the 4in1 ESC pads (remember to solder the wires so as they are oriented towards the inside of the board) and mount everything back together positioning the LC filter between the FPV camera and the stack:</p>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter_mounted.png"><img src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter_mounted.png" alt="LC Filter mounted on Eachine Wizard X220S" /></a></p>
+
+<p><strong>Video Signal Comparison</strong></p>
+
+<p>Here is the comparison between the video signal before and after the application of the LC filter (images are taken with lens cover on to see the difference more in detail):</p>
+
+<p class="center"><a href="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/video_signal_before_after.png"><img src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/video_signal_before_after.png" alt="Comparison of the Video Signal Before and After LC Filter Application" /></a></p>
+
+<p>As shown, the noise has been drastically reduced and the horizontal lines caused by it are almost completely gone so we can finally fly with a clear FPV view.</p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>In this post we have seen how to remove the video signal noise on the <a href="http://bit.ly/2PIOtUS">Eachine Wizard X220S</a>, by adding a <a href="http://bit.ly/2xaAxLS">LC filter</a> between the 4in1 ESC and the FC. Considering the low cost of the LC filter and the benefits it gives, it is a must have mod.</p>
+
+    </div>
+  </div>
+</article>
+
+    </div>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+        <p align=right>© 2017-2018 Up in the Sky | All Rights Reserved 
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+</html>

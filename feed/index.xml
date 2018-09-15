@@ -6,9 +6,111 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Sep 2018 21:17:36 +0200</pubDate>
-    <lastBuildDate>Wed, 12 Sep 2018 21:17:36 +0200</lastBuildDate>
+    <pubDate>Sat, 15 Sep 2018 11:32:21 +0200</pubDate>
+    <lastBuildDate>Sat, 15 Sep 2018 11:32:21 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Eachine Wizard X220S FPV Camera Noise Resolution</title>
+        <description>&lt;p&gt;A common problem with the &lt;a href=&quot;http://bit.ly/2PIOtUS&quot;&gt;Eachine Wizard X220S&lt;/a&gt; is the pretty strong video signal noise observable when motors are spinning: as the throttle value goes up, video signal noise increases. In this article we will see how to remove this annoying behavior with a simple modification.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Video signal noise is generated from the 4in1 ESC, so, to remove it, we need to find a way to filter this noise before it reaches the Flight Controller (FC) to which the FPV camera and transmitter are connected.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Handy tools and soldering iron&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In the modification process, having these tools comes in handy:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2vZiNCs&quot;&gt;Drillpro 4pcs Hex Screwdriver Tool Kit 1.5/2.0/2.5/3.0mm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2w2dd25&quot;&gt;DANIU 4pcs Metal 4.0/5.5/7.0/8.0mm Hex Screwdriver Set&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2OTJtLJ&quot;&gt;DANIU 25 in 1 Multi-purpose Precision Screwdriver Set&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A good soldering iron is needed. I really like &lt;a href=&quot;http://bit.ly/2LEde1f&quot;&gt;this one&lt;/a&gt;, which is compact and portable since it can be powered up using LiPo batteries.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LC Filter&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The simple modification that allows to filter the noise consists in the installation of an LC (inductor-capacitor) filter like &lt;a href=&quot;http://bit.ly/2xaAxLS&quot;&gt;this one&lt;/a&gt; in such a way that DC power supply coming from the 4in1 ESC and going to the FC is cleaned up.&lt;/p&gt;
+
+&lt;p&gt;Here are reported the main specs of the LC filter:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Maximum input voltage: 16V;&lt;/li&gt;
+  &lt;li&gt;Maximum current: 2A;&lt;/li&gt;
+  &lt;li&gt;Size: length: 3.5cm, width: 1.1cm,  heigth: 1cm;&lt;/li&gt;
+  &lt;li&gt;Product weight: 14g.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter.png&quot; alt=&quot;LC Filter&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Its dimensions allow to place it right behind the FPV camera in vertical position.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LC Filter Connections&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We need to have access to the 4in1 ESC, so we have to remove the top carbon plate, the VTX and the FC boards.&lt;br /&gt;
+As the above image shows, we have a total of four pads: two for VIN and two for VOUT.&lt;br /&gt;
+VIN represents voltage input, that is the one we need to filter coming from the 4in1 ESC, where pads are labeled as BAT (red is positive “+”, black is negative “-“); VOUT stands for voltage output, i.e. the filtered voltage that goes into the FC:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/vin_vout_connections.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/vin_vout_connections.png&quot; alt=&quot;4in1 ESC Battery Leads&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So, looking at the image, we have to put the LC filter between the two ends. To do so, an easy way is to unsolder the wires on the 4in1 ESC pads while leaving connected the ones on the FC.&lt;br /&gt;
+To make the connection between LC filter VIN pads and 4in1 ESC BAT pads, I used &lt;a href=&quot;http://bit.ly/2wKxMj6&quot;&gt;24 AWG wires&lt;/a&gt;. Remember to tin the wires and the pads before soldering them together: in this way the final soldering will be easier.&lt;br /&gt;
+The following image shows the resulting connections (ignore the fact that, in the following two images, mid “+” and “-“ pads have no wires soldered on):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter_soldered_wires.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter_soldered_wires.png&quot; alt=&quot;LC Filter Soldered Wires&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Detail of VOUT going to the FC:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/detail_vout_fc.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/detail_vout_fc.png&quot; alt=&quot;Detail of LC Filter VOUT going to the FC&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally we can solder VIN wires to the 4in1 ESC pads (remember to solder the wires so as they are oriented towards the inside of the board) and mount everything back together positioning the LC filter between the FPV camera and the stack:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter_mounted.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter_mounted.png&quot; alt=&quot;LC Filter mounted on Eachine Wizard X220S&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Signal Comparison&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is the comparison between the video signal before and after the application of the LC filter (images are taken with lens cover on to see the difference more in detail):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/video_signal_before_after.png&quot;&gt;&lt;img src=&quot;/images/eachine-wizard-x220s-fpv-camera-noise-resolution/video_signal_before_after.png&quot; alt=&quot;Comparison of the Video Signal Before and After LC Filter Application&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As shown, the noise has been drastically reduced and the horizontal lines caused by it are almost completely gone so we can finally fly with a clear FPV view.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this post we have seen how to remove the video signal noise on the &lt;a href=&quot;http://bit.ly/2PIOtUS&quot;&gt;Eachine Wizard X220S&lt;/a&gt;, by adding a &lt;a href=&quot;http://bit.ly/2xaAxLS&quot;&gt;LC filter&lt;/a&gt; between the 4in1 ESC and the FC. Considering the low cost of the LC filter and the benefits it gives, it is a must have mod.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Sep 2018 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2018/09/15/eachine-wizard-x220s-fpv-camera-noise-resolution.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2018/09/15/eachine-wizard-x220s-fpv-camera-noise-resolution.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>X220S</category>
+        
+        <category>Eachine</category>
+        
+        <category>Wizard</category>
+        
+        <category>FPV</category>
+        
+        <category>Camera</category>
+        
+        <category>Noise</category>
+        
+        <category>Racing</category>
+        
+        <category>Freestyle</category>
+        
+        <category>Resolution</category>
+        
+        <category>LC Filter</category>
+        
+        <category>Mod</category>
+        
+        
+      </item>
     
       <item>
         <title>Eachine VR006 Mini FPV Goggles ProDVR Mod</title>
@@ -1411,95 +1513,6 @@ This is the final result:&lt;/p&gt;
         <category>Antenna</category>
         
         <category>Cloverleaf</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Eachine Wizard X220S Yaw Wobbling Resolution</title>
-        <description>&lt;p&gt;In this article we will see how to solve the yaw wobbling on the &lt;a href=&quot;http://bit.ly/2PIOtUS&quot;&gt;Eachine Wizard X220S&lt;/a&gt;, which is visible and relevant especially during hovering. By doing this we will see how to analyze flight logs using Betaflight Blackbox Explorer.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;strong&gt;Noise on gyro readings&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Understanding the cause of the yaw wobbling is the first thing to do. Let us focus the attention on the flight controller which basically takes some inputs and generates some outputs: now, if the inputs are noise free everything works good. But, what if there is noise, for example, in gyro readings? That noise affects how the controller reacts and this can generate unexpected behavior during flight.&lt;/p&gt;
-
-&lt;p&gt;Motors vibration can be transferred to the frame even if they are soft mounted as in the case of the Eachine Wizard X220S. Now, since the Flight Controller is attached to the frame itself through some screws, vibrations are transferred to the FC: this means gyro readings are noisy and that causes the wobbling.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/motor1_noise.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/motor1_noise.png&quot; alt=&quot;Eachine Wizard X220S Motor Noise&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;As the image shows, the noise increases as motors rotation speed reaches a certain value which coincides with the one needed for the hovering: in the graph it is reported how motor 1 rotation affects gyro readings even if the quadcopter is standing still on the bench without propellers on (of course, the amount of vibration depends also from the quality of the motors and in particular from their bearings).&lt;/p&gt;
-
-&lt;p&gt;As reported, this vibration affects gyro readings, particularly on the z axis.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Betaflight Blackbox Explorer Analysis&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This behavior can be seen in the Betaflight Blackbox Explorer: this application allows to visualize, in a graphical way, data collected during the flight and saved on a microSD card (we have seen how to enable this feature in &lt;a href=&quot;https://upinthesky.github.io/2017/12/11/eachine-wizard-x220s-betaflight-setup-and-configuration.html&quot;&gt;this previous article&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;The installation of the application is just as simple as the one of Betaflight Configurator since it can be downloaded as an extension of Google Chrome browser. Once it is installed, it is just a matter of launching the app, clicking on “Open log file/video” and select the log file saved on the microSD which has the extension .BFL.&lt;/p&gt;
-
-&lt;p&gt;This app is very useful to analyze how the quadcopter performed during the flight. In this case we will use it to just check gyro readings. In particular, we are interested in the gyro[yaw] parameter (yellow line in the graph):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png&quot; alt=&quot;Eachine Wizard X220S Blackbox Yaw Noise&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Clearly, there is a lot of noise affecting the gyro on the yaw. Noise cannot be completely removed, but can be drastically mitigated.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Anti-vibration Standoffs&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This annoying behavior can be fixed with a simple solution, i.e. mounting the Flight Controller on &lt;a href=&quot;http://bit.ly/2OTAZVd&quot;&gt;Anti-vibration Standoffs&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs.png&quot; alt=&quot;Anti-vibration Standoffs&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In the substitution process of the old standoffs, having these tools comes in handy:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2vZiNCs&quot;&gt;Drillpro 4pcs Hex Screwdriver Tool Kit 1.5/2.0/2.5/3.0mm&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2w2dd25&quot;&gt;DANIU 4pcs Metal 4.0/5.5/7.0/8.0mm Hex Screwdriver Set&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2OTJtLJ&quot;&gt;DANIU 25 in 1 Multi-purpose Precision Screwdriver Set&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The following image shows the result with the FC attached to the bottom stack using anti-vibration standoffs screws which, thanks to the damping material, absorb most of the vibrations caused by the motors and transferred to the quadcopter frame.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png&quot; alt=&quot;Eachine Wizard X220S Anti-vibration Standoffs Mounted&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After placing anti-vibration standoffs under the Flight Controller, the noise on yaw gyro readings is almost completely gone and consequently the wobbling is no more there.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png&quot; alt=&quot;Eachine Wizard X220S Blackbox Anti-vibration Standoffs Noise Removed&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In this article we have seen how it is possible to analyze flight logs using Betaflight Blackbox Explorer and how a simple and cheap modification can solve a bad issue conditioning quadcopter behavior in flight.&lt;/p&gt;
-
-&lt;p&gt;For the overview of the Eachine X220S, read &lt;a href=&quot;https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html&quot;&gt;this article&lt;/a&gt;.&lt;br /&gt;
-If you want to upgrade Betaflight firmware for the Omnibus F4SD on the Eachine Wizard X220S, read &lt;a href=&quot;https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html&quot;&gt;this article&lt;/a&gt;. &lt;br /&gt;
-If you want to update Eachine Wizard X220S BLHeli 4in1 ESC firmware, read &lt;a href=&quot;https://upinthesky.github.io/2018/08/30/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 27 Dec 2017 00:00:00 +0100</pubDate>
-        <link>https://upinthesky.github.io//2017/12/27/eachine-wizard-x220s-yaw-wobbling-resolution.html</link>
-        <guid isPermaLink="true">https://upinthesky.github.io//2017/12/27/eachine-wizard-x220s-yaw-wobbling-resolution.html</guid>
-        
-        <category>Quadcopter</category>
-        
-        <category>X220S</category>
-        
-        <category>Eachine</category>
-        
-        <category>Wizard</category>
-        
-        <category>Yaw Wobbling</category>
-        
-        <category>FPV</category>
-        
-        <category>Racing</category>
-        
-        <category>Noise</category>
-        
-        <category>Anti-vibration Standoffs</category>
-        
-        <category>Betaflight Blackbox Explorer</category>
-        
-        <category>Logs</category>
         
         
       </item>
