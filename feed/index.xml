@@ -6,9 +6,193 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Sep 2018 11:31:54 +0200</pubDate>
-    <lastBuildDate>Sat, 29 Sep 2018 11:31:54 +0200</lastBuildDate>
+    <pubDate>Sun, 07 Oct 2018 10:30:28 +0200</pubDate>
+    <lastBuildDate>Sun, 07 Oct 2018 10:30:28 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Eachine Pro58 Diversity Receiver Overview and Pirx the Pilot Firmware Installation</title>
+        <description>&lt;p&gt;In this article we will take a look at the &lt;a href=&quot;http://bit.ly/2Qm98gO&quot;&gt;Eachine Pro58 Diversity Receiver&lt;/a&gt; and we will see how to install a custom firmware on it, specifically Pirx The Pilot. To do so, we need &lt;a href=&quot;http://bit.ly/2RgXo0v&quot;&gt;ST-LINK V2 STM8 / STM32 Programmer&lt;/a&gt; which is a USB module used to program/upload the firmware on the receiver.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The following image shows the box containing the Eachine Pro58 Diversity Receiver:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_box.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_box.png&quot; alt=&quot;Eachine Pro58 Diversity Receiver Box&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Down below it is shown the package for the ST-LINK V2:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_box.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_box.png&quot; alt=&quot;ST-LINK V2 Box&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Box Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Inside the two boxes we find the following items:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Eachine Pro58 Diversity Receiver&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/eachine_pro58_box_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/eachine_pro58_box_contents.png&quot; alt=&quot;Eachine Pro58 Diversity Receiver Box Contents&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ST-LINK V2 STM8 / STM32 Programmer&lt;/li&gt;
+  &lt;li&gt;Pin wires&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_box_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_box_contents.png&quot; alt=&quot;ST-LINK V2 Box Contents&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In both cases no manual/instructions are provided inside the box.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Eachine Pro58 Specifications&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Down below are reported the specs for the Eachine Pro58 Diversity Receiver:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Frequency: 5.8G;&lt;/li&gt;
+  &lt;li&gt;Channels: 40CH;&lt;/li&gt;
+  &lt;li&gt;Power Consumption: 1.8-2W;&lt;/li&gt;
+  &lt;li&gt;Size: 42 x 30 x 25mm;&lt;/li&gt;
+  &lt;li&gt;Weight: 23g.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Soldering Iron&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A good soldering iron is needed. I really like &lt;a href=&quot;http://bit.ly/2LEde1f&quot;&gt;this one&lt;/a&gt;, which is compact and portable since it can be powered up using LiPo batteries.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ST-LINK V2 Pins and Connection with Eachine Pro58&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We can start by looking at the pins of the ST-LINK V2:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_pins.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_pins.png&quot; alt=&quot;ST-LINK V2 Pins Layout&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We have to use a total of four pins in order to power and upload the new firmware on the Eachine Pro58: 5.0V, 3.3V, SWCLK, SWDIO. First two are for power the module up and the other two are used to upload the firmware.&lt;/p&gt;
+
+&lt;p&gt;We need to solder two wires on the SWCLK and SWDIO pads of the Eachine Pro58 like shown in the following image (remember to tin pads and wires for an easy soldering job):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_firmware_loading_leads.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_firmware_loading_leads.png&quot; alt=&quot;Eachine Pro58 Firmware Loading Leads&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, we need to connect these two wires to the corresponding ST-LINK V2 pins shown before. Looking the Eachine Pro58 from the back, the 5.0V and 3.3V from the ST-LINK V2 have to be connected as shown here (you can choose whatever pins couple that you prefer since they are identical, upper 3.3V/5.0V or lower 5.0V/3.3V):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_power_leads.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_power_leads.png&quot; alt=&quot;Eachine Pro58 ST-LINK V2 Connections&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Down below is reported the complete wiring connection from the ST-LINK V2 to the Eachine Pro58 (I used upper pins for 3.3V and 5.0V):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_stlinkv2_connections.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_stlinkv2_connections.png&quot; alt=&quot;Eachine Pro58 ST-LINK V2 Connections&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Different view (I used only two of the four wires supplied because I already had similar wires with a free end, but of course you can use the other two and cut off one end in order to solder them on the receiver SWCLK/SWDIO pads):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_stlinkv2_connections2.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_stlinkv2_connections2.png&quot; alt=&quot;Eachine Pro58 ST-LINK V2 Connections&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If power wires are connected properly (double check before proceed), we should see the Eachine logo on the Eachine Pro58 display when connecting the ST-LINK V2 USB to the PC, meaning that it is booting up. After that we should be prompted with the following screen:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_eachine_firmware.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_eachine_firmware.png&quot; alt=&quot;Eachine Pro58 Default Firmware&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To proceed with the load of Pirx The Pilot firmware, we need to install some software on the PC.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Software Installation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;All the following programs are free, but registration is needed in order to download them.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.st.com/en/development-tools/stm32cubeprog.html&quot;&gt;STM32 CubeProgrammer software for programming STM32 products&lt;/a&gt;: we are going to use this to program the receiver, i.e. to load custom firmware on it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32cubeprog_download.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32cubeprog_download.png&quot; alt=&quot;STM32 CubeProgrammer Software Download&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This software needs Java to run, so we have to download and install also the latest Java version available.&lt;br /&gt;
+To “Connect” the Eachine Pro58 through the ST-LINK V2, we need to install some drivers.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.st.com/en/development-tools/stsw-link009.html&quot;&gt;ST-LINK, ST-LINK/V2, ST-LINK/V2-1 USB driver signed for Windows7, Windows8, Windows10&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stsw-link009_download.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stsw-link009_download.png&quot; alt=&quot;STSW-LINK009 Software Download - ST-LINK, ST-LINK/V2, ST-LINK/V2-1 USB Driver Signed for Windows 7, Windows 8, Windows 10&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally we need to upgrade the firmware of the ST-LINK V2 using ST-LinkUpgrade.exe:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.st.com/en/development-tools/stsw-link007.html&quot;&gt;STSW-LINK007 Software Download - ST-LINK, ST-LINK/V2, ST-LINK/V2-1 Firmware Upgrade&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stsw-link007_download.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stsw-link007_download.png&quot; alt=&quot;STSW-LINK007 Software Download - ST-LINK, ST-LINK/V2, ST-LINK/V2-1 Firmware Upgrade&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the upgrade has been done we get the following message:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_driver_update.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_driver_update.png&quot; alt=&quot;ST-LINK V2 Driver Update&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We are now ready to upload Pirx The Pilot Firmware (or every other firmware we like for the Eachine Pro58). To proceed we need to install the previously downloaded STM32 CubeProgrammer and launch it.&lt;br /&gt;
+Clicking on “Connect” should connect the Eachine Pro58 to the PC through the ST-LINK V2:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer.png&quot; alt=&quot;STM32 CubeProgrammer&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Loading Pirx The Pilot Firmware&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once connected, we should get the following screen:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_connected.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_connected.png&quot; alt=&quot;STM32 CubeProgrammer Pro58 Connected Through ST-LINK V2&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Be sure that, on the screen shown after clicking on “OB” on the left, the box for the “Read protection option byte” (RDP) is unchecked:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_ob_readout_protection.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_ob_readout_protection.png&quot; alt=&quot;STM32 CubeProgrammer OB Readout Protection&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If that is not the case, uncheck it and click on “Apply”.&lt;br /&gt;
+Before uploading the new firmware, we need to erase the old one (first click on the pencil button, then on the eraser one):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_erase.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_erase.png&quot; alt=&quot;STM32 CubeProgrammer Firmware Erase&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Next we have to click on the second icon from the top left (the one with the downloading arrow) and browsing for the firmware we want to load.
+Pirx The Pilot Firmware .bin file is available &lt;a href=&quot;https://pirxfpv.com&quot;&gt;here&lt;/a&gt; for free (you just have to register to get the download link).&lt;/p&gt;
+
+&lt;p&gt;Once you have it on the PC, it is just a matter of setting the file path, controlling that “Verify programming” and “Run after programming” tick boxes are checked and clicking on “Start Programming”.&lt;/p&gt;
+
+&lt;p&gt;If everything went ok, we get the following message:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_pirx_loaded.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_pirx_loaded.png&quot; alt=&quot;STM32 CubeProgrammer Pirx The Pilot Firmware Loaded&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On the Eachine Pro58 we should see Pirx The Pilot firmware in action:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_pirx_firmware.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_pirx_firmware.png&quot; alt=&quot;Eachine Pro58 Pirx The Pilot Display&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this article we have seen how to load a custom firmware, specifically Pirx The Pilot, on the &lt;a href=&quot;http://bit.ly/2Qm98gO&quot;&gt;Eachine Pro58 Diversity Receiver&lt;/a&gt; using the &lt;a href=&quot;http://bit.ly/2RgXo0v&quot;&gt;ST-LINK V2 STM8 / STM32 Programmer&lt;/a&gt;. This is a really good diversity receiver with very nice performance and this firmware just make it a must have product especially if you want to upgrade a pair of goggles not having diversity like the &lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006 Mini FPV Goggles&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 07 Oct 2018 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>Eachine</category>
+        
+        <category>Pro58</category>
+        
+        <category>ST-LINK V2</category>
+        
+        <category>Overview</category>
+        
+        <category>Review</category>
+        
+        <category>Diversity</category>
+        
+        <category>Receiver</category>
+        
+        <category>Firmware</category>
+        
+        <category>Installation</category>
+        
+        <category>Mod</category>
+        
+        <category>Pirx The Pilot</category>
+        
+        <category>FPV</category>
+        
+        <category>Racing</category>
+        
+        <category>Freestyle</category>
+        
+        
+      </item>
     
       <item>
         <title>Eachine Wizard X220S FPV Camera Noise Resolution</title>
@@ -80,6 +264,16 @@ The following image shows the resulting connections (ignore the fact that, in th
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;In this post we have seen how to remove the video signal noise on the &lt;a href=&quot;http://bit.ly/2PIOtUS&quot;&gt;Eachine Wizard X220S&lt;/a&gt;, by adding a &lt;a href=&quot;http://bit.ly/2xaAxLS&quot;&gt;LC filter&lt;/a&gt; between the 4in1 ESC and the FC. Considering the low cost of the LC filter and the benefits it gives, it is a must have mod.&lt;/p&gt;
+
+&lt;p&gt;For the overview of the Eachine X220S, read &lt;a href=&quot;https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want to upgrade Betaflight firmware for the Omnibus F4SD on the Eachine Wizard X220S, read &lt;a href=&quot;https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want to update Eachine Wizard X220S BLHeli 4in1 ESC firmware, read &lt;a href=&quot;https://upinthesky.github.io/2018/08/30/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are experiencing yaw wobbling, &lt;a href=&quot;https://upinthesky.github.io/2017/12/27/eachine-wizard-x220s-yaw-wobbling-resolution.html&quot;&gt;here&lt;/a&gt; is the resolution.&lt;/p&gt;
+
+&lt;p&gt;If you want to know how to setup and configure the 1179 FPV camera that comes with the quad, take a look at &lt;a href=&quot;https://upinthesky.github.io/2018/09/03/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Sep 2018 00:00:00 +0200</pubDate>
         <link>https://upinthesky.github.io//2018/09/15/eachine-wizard-x220s-fpv-camera-noise-resolution.html</link>
@@ -1424,99 +1618,6 @@ If you want to update Eachine Wizard X220S BLHeli-S 4in1 ESC Firmware, read &lt;
         <category>FPV</category>
         
         <category>Racing</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Syma X5C Explorers FPV Mod</title>
-        <description>&lt;p&gt;In this article we will see how to add an FPV camera system to the Syma X5C.&lt;br /&gt;
-&lt;a href=&quot;http://bit.ly/2MZucsj&quot;&gt;Syma X5C&lt;/a&gt; is a really basic RTF brushed quadcopter which comes with a 2MP camera that can take photos and record videos storing them on the 2GB SD card included in the package. Everything is powered up by a 3.7V 500mAh LiPo battery which guarantees 6-7 minutes of flight depending on flight style and camera usage.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c.jpg&quot; alt=&quot;Syma X5C&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2 MP Camera removal&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Since we are going to install our FPV camera and connect it to the same port on which there is the supplied 2MP camera, it is a good idea to remove the standard camera to save as much weight as possible.
-To proceed we have to disconnect the plug and remove 2 screws like shown in the following image:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/camera_removal.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/camera_removal.png&quot; alt=&quot;Syma X5C Camera Removal&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Mounting FPV Camera&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;For this mod I have chosen to use the &lt;a href=&quot;http://bit.ly/2N5N60Z&quot;&gt;Eachine TX02&lt;/a&gt; FPV 5.8G 40CH 600 VTL camera (NTSC) with 120° FOV that has a built in video transmitter with nickel-plated 4 leaf omnidirectional antenna (RHCP circular polarization clover). It is really lightweight (4.57g) and it has a transmitting output power of (0/200)mW, while the input voltage is 3.2-5V. Newer version of the camera allows to set the power to (0/25/50/200)mW: &lt;a href=&quot;http://bit.ly/2OTBq1N&quot;&gt;Eachine TX03&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_front.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_front.jpg&quot; alt=&quot;TX02 FPV TX Camera Front&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;On the back there is a display that shows which channel (5 bands, 40 channels) we are currently transmitting on. To change the CH (channel), short press the button. To enter in FR (band) change mode, just press and hold the button for 2 seconds (short press after to switch between bands). To turn off the video transmitter press and hold the button for 5 seconds (display: “0” is off, “=” is on).&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_back.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/tx02_back.jpg&quot; alt=&quot;TX02 FPV TX Camera Back&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Since we need to connect this FPV system to the quadcopter to power it up, we need the proper connectors: &lt;a href=&quot;http://bit.ly/2PmfZY6&quot;&gt;JST 2P Connectors&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/jst_connectors.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/jst_connectors.png&quot; alt=&quot;JST 2P Connectors&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The wires come with male or female connector on one side while the other is free, so we need to solder two of them to have a single cable with two male connectors (red wires together, black wires together).&lt;/p&gt;
-
-&lt;p&gt;Once the soldering job is done we can finally plug everything in:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/camera_connection.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/camera_connection.png&quot; alt=&quot;Syma X5C TX02 Connection&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Considering the power consumption added by the FPV system, it is a good idea to buy a bigger battery to have a decent flight time (better to stay in the range of 6-7 minutes to let the brushed motors cool down): &lt;a href=&quot;http://bit.ly/2ON1qf9&quot;&gt;3.7V 800mAh LiPo Battery&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A simple but effective way to fix the camera on the Syma X5C is to use double-sided tape.&lt;br /&gt;
-This is the final result:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c_fpv.png&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/syma_x5c_fpv.png&quot; alt=&quot;Syma X5C FPV Mod&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Now we can just check that everything is working correctly by tuning our FPV monitor or goggles on the same transmitting channel configured on the TX02. Down below two cheap alternatives:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://bit.ly/2PkZtrv&quot;&gt;Eachine LCD5802D 5.8G 40CH 7 Inch FPV Monitor with DVR and Built-in Battery&lt;/a&gt;: a detailed review is available &lt;a href=&quot;https://upinthesky.github.io/2018/08/27/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review.html&quot;&gt;here&lt;/a&gt;;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006 VR-006 3 Inch 500*300 Display 5.8G 40CH Mini FPV Goggles with Built-in Battery&lt;/a&gt;: a detailed review is available &lt;a href=&quot;https://upinthesky.github.io/2018/08/23/eachine-vr006-mini-fpv-goggles-review.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;View from the monitor on CH-A-1:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/syma_x5c_explorers_fpv_mod/fpv_view.jpg&quot;&gt;&lt;img src=&quot;/images/syma_x5c_explorers_fpv_mod/fpv_view.jpg&quot; alt=&quot;FPV Monitor View&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We have seen how with a simple modification it is possible to set up a cheap FPV system on the Syma X5C by using the Eachine TX02. This is a good setup for who wants to start experiencing FPV for the first time without spending too much money.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 22 Jul 2018 00:00:00 +0200</pubDate>
-        <link>https://upinthesky.github.io//2018/07/22/syma-x5c-explorers-fpv-mod.html</link>
-        <guid isPermaLink="true">https://upinthesky.github.io//2018/07/22/syma-x5c-explorers-fpv-mod.html</guid>
-        
-        <category>Quadcopter</category>
-        
-        <category>Syma</category>
-        
-        <category>X5C</category>
-        
-        <category>FPV</category>
-        
-        <category>Mod</category>
-        
-        <category>Eachine</category>
-        
-        <category>TX02</category>
-        
-        <category>Camera</category>
-        
-        <category>LCD5802D</category>
-        
-        <category>VR006</category>
-        
-        <category>Antenna</category>
-        
-        <category>Cloverleaf</category>
         
         
       </item>
