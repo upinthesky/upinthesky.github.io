@@ -6,9 +6,120 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Oct 2018 23:45:54 +0200</pubDate>
-    <lastBuildDate>Sun, 07 Oct 2018 23:45:54 +0200</lastBuildDate>
+    <pubDate>Thu, 01 Nov 2018 22:53:12 +0100</pubDate>
+    <lastBuildDate>Thu, 01 Nov 2018 22:53:12 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Eachine VR006 Mini FPV Goggles Pro58 Diversity Receiver Mod</title>
+        <description>&lt;p&gt;As discussed in &lt;a href=&quot;https://upinthesky.github.io/2018/08/23/eachine-vr006-mini-fpv-goggles-review.html&quot;&gt;this article&lt;/a&gt;, &lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006 Mini FPV Goggles&lt;/a&gt; lack of an important feature, Diversity Reception. This is why in this blog post we are going to see how to install a diversity receiver module, in particular the &lt;a href=&quot;http://bit.ly/2Qm98gO&quot;&gt;Eachine Pro58&lt;/a&gt;, which is cheap and is a real game changer.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Flashing Pirx The Pilot Firmware on Eachine Pro58&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Before proceeding with the mod, I have chosen to load Pirx The Pilot firmware on the Eachine Pro58, which is a free good alternative to the default Eachine firmware because it adds a series of useful features (read &lt;a href=&quot;https://upinthesky.github.io/2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html&quot;&gt;this article&lt;/a&gt; if you want to know how to load Pirx The Pilot firmware on the Eachine Pro58 Diversity Receiver).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Disassembling&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Like done for the &lt;a href=&quot;https://upinthesky.github.io/2018/09/09/eachine-vr006-mini-fpv-goggles-prodvr-mod.html&quot;&gt;Eachine VR006 ProDVR Mod&lt;/a&gt;, since we are going to solder wire leads on the pads located on the board inside the goggles, we need to disassemble them. To do this, we need to cut the black sponge in two points, the ones in which the bottom part of the goggles links up to the top part:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_sponge_cut.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_sponge_cut.png&quot; alt=&quot;Eachine VR006 Sponge Cut&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the cutting job is done, we can proceed with the separation of the two parts by removing the four screws located inside the highlighted holes in this picture:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_disassembled.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_disassembled.png&quot; alt=&quot;Eachine VR006 Disassembled&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Before we can pull off the board we have to remove the two RP-SMA antenna connectors:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_rpsma_connector_removal.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_rpsma_connector_removal.png&quot; alt=&quot;Eachine VR006 RP-SMA Connector Removal&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once that is done we can unplug the battery connector and gently pull out the board for the soldering job.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Soldering&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The soldering job is pretty easy: we need only three wires and we can use the ones given with the Eachine Pro58, being careful to cut off the connectors only on one end, i.e. the side we are going to solder on the board. The other end connector is needed to plug into the diversity receiver module.&lt;/p&gt;
+
+&lt;p&gt;The three wires are used as reported below:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;red for power, taken from VBAT pad;&lt;/li&gt;
+  &lt;li&gt;black for ground, taken from GND pad;&lt;/li&gt;
+  &lt;li&gt;brown for video signal coming from the diversity receiver and going to the goggles through AV_IN pad.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is the result after soldering the wires to the board (remember to tin pads and wires for an easy soldering job):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/diversity_wiring.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/diversity_wiring.png&quot; alt=&quot;Eachine VR006 Pro58 Diversity Receiver Wiring&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The other wires shown in the picture are from the DVR mod.&lt;br /&gt;
+Soldering the wires in this way gives us the possibility to maintain the original single receiver functionality; if we want to switch to the Pro58 instead, we have to activate the AV IN input from goggles MENU: in this way, goggles switch to the video signal received from the diversity receiver.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reassembling&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, it is just a matter of reassembling the goggles and making a hole for taking out the wires (we are going to mount the Eachine Pro58 on the outside):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/vr006_reassembly.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/vr006_reassembly.png&quot; alt=&quot;Eachine VR006 Reassembly&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is how soldered wires need to be connected to Eachine Pro58 pins:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/pro58_pins.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/pro58_pins.png&quot; alt=&quot;Eachine VR006 Pro58 Diversity Receiver Wiring&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Eachine Pro58 comes with double sided tape, that can be used to fix the module on the left side of the VR006. Be careful to connect the wires as reported in the image below (we need to bend the pins by 90 degrees to place the receiver module flat on the surface):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/pro58_wiring.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/pro58_wiring.png&quot; alt=&quot;Eachine VR006 Pro58 Diversity Receiver Wiring&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The display reports the current frequency on which the receiver is tuned on and the reception quality of the two receivers. It also cycles informations like CPU usage, temperature and input voltage (it also have a funny customizable screen saver).&lt;/p&gt;
+
+&lt;p&gt;Be careful to follow the calibration process when you start for the first time the diversity receiver module with Pirx The Pilot firmware (just follow the instructions prompted on the screen).&lt;/p&gt;
+
+&lt;p&gt;If the Eachine VR006 have already the DVR mod, remember to disconnect the AV IN connector from the ProDVR when you want to use the diversity module: this is because we have connected the Eachine Pro58 diversity receiver module in order to use AV IN to display the received signal on the screen:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/vr006_dvr_diversity.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/vr006_dvr_diversity.png&quot; alt=&quot;Eachine VR006 with ProDVR and Pro58 Diversity Mod&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we have both DVR and Diversity, which is a big improvement. Note that, due to the higher power consumption caused by these mods, I have decided to change the internal battery, that is 3.7V 500mAh, with one that has a capacity of 2000mAh (same voltage of course).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this article we have seen how to mod the &lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006 Mini FPV Goggles&lt;/a&gt; in order to add Eachine Pro58 Diversity Receiver module. This improvement increases a lot the reception quality of the goggles making them a really nice alternative to the expensive goggles on the market.&lt;br /&gt;
+Eachine Pro58 Diversity Receiver module can be found &lt;a href=&quot;http://bit.ly/2Qm98gO&quot;&gt;here&lt;/a&gt; at a very good price.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 01 Nov 2018 00:00:00 +0100</pubDate>
+        <link>https://upinthesky.github.io//2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>Eachine</category>
+        
+        <category>VR006</category>
+        
+        <category>VR-006</category>
+        
+        <category>Pro58</category>
+        
+        <category>Goggles</category>
+        
+        <category>Mod</category>
+        
+        <category>Diversity</category>
+        
+        <category>Receiver</category>
+        
+        <category>Soldering</category>
+        
+        <category>Firmware</category>
+        
+        <category>Pirx The Pilot</category>
+        
+        <category>FPV</category>
+        
+        <category>Racing</category>
+        
+        <category>Freestyle</category>
+        
+        
+      </item>
     
       <item>
         <title>Eachine Pro58 Diversity Receiver Overview and Pirx the Pilot Firmware Installation</title>
@@ -1402,222 +1513,6 @@ By going in Model menu -&amp;gt; Telemetry config, we can set up an alarm that t
         <category>RSSI</category>
         
         <category>Betaflight</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Eachine Wizard X220S Omnibus F4SD Firmware Upgrade</title>
-        <description>&lt;p&gt;It is always important to keep board’s firmware updated to the latest release. This article shows how to update Betaflight firmware for the &lt;a href=&quot;http://bit.ly/2LodBwE&quot;&gt;Omnibus F4SD&lt;/a&gt; which is the Flight Controller (FC) equipped on the &lt;a href=&quot;http://bit.ly/2PIOtUS&quot;&gt;Eachine Wizard X220S&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;The first thing to do is to check the current firmware version loaded on the FC. This can be done by using Betaflight Configurator which at the time of this writing has reached version 10.3.1: it can be run as a Chrome Extension on the Chrome Web Store or it can be downloaded from &lt;a href=&quot;https://github.com/betaflight/betaflight-configurator/releases&quot;&gt;Github&lt;/a&gt; and installed on the operating system (Windows, Linux and Mac OS X versions are available).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Current firmware version check&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Once it is installed, to check current BF firmware version, we just need to connect the board to the PC, launch the application, click “Connect” and navigate to the Command Line Interface (CLI). Here we need to type the command “version” and then just press enter:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Entering CLI Mode, type &#39;exit&#39; to return, or &#39;help&#39;
-
-# version
-# Betaflight / OMNIBUSF4SD 3.1.7 Apr 10 2017 / 17:10:55 ()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;As we can see, by default, the FC on the Wizard X220S is loaded with Omnibus F4SD version 3.1.7.&lt;/p&gt;
-
-&lt;p&gt;We can check what is the latest release for the firmware by disconnecting the quadcopter, selecting “Firmware Flasher” and choosing the version from the dropdown menu:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/bf_firmware_flasher.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/bf_firmware_flasher.png&quot; alt=&quot;Betaflight Firmware Flasher&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;So, at the moment, the last release is 3.4.1.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Betaflight Configuration Backup&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Before going forward, there is a really important activity to do. We need to backup Betaflight current confuguration: this is because, when the new firmware will be loaded, all settings/configurations (ports, PIDS, led strips lightning, OSD settings and so on) are reset to BF default. So, if you do not want to lose them, you better save them using the CLI command “diff” (recommended) or “dump” and copy the output to a text file.&lt;/p&gt;
-
-&lt;p&gt;For example, here is reported the output of the “diff” command:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# diff
-
-# version
-# Betaflight / OMNIBUSF4SD (OBSD) 3.4.0 Jul  8 2018 / 04:24:36 (cce8a59be) MSP API: 1.39
-
-board_name OMNIBUSF4SD
-manufacturer_id 
-
-# name
-name X220S
-
-# resources
-
-# mixer
-
-# servo
-
-# servo mix
-
-
-# feature
-feature -RX_PARALLEL_PWM
-feature RX_SERIAL
-feature LED_STRIP
-
-# beeper
-
-# beacon
-
-# map
-
-# serial
-serial 0 64 115200 57600 0 115200
-
-# led
-led 0 0,11::AI:8
-led 1 0,12::AI:8
-led 2 0,13::AI:2
-led 3 0,14::AI:2
-led 4 0,15::AI:2
-led 5 15,11::AI:8
-led 6 15,12::AI:8
-led 7 15,13::AI:2
-led 8 15,14::AI:2
-led 9 15,15::AI:2
-
-# color
-
-# mode_color
-mode_color 6 0 2
-mode_color 7 0 0
-
-# aux
-aux 0 0 2 1300 2100 0
-aux 1 1 1 900 1225 0
-aux 2 2 1 1300 1700 0
-aux 3 13 3 1300 2100 0
-aux 4 28 1 1300 2100 0
-
-# adjrange
-
-# rxrange
-
-# vtx
-
-# rxfail
-
-# master
-set acc_calibration = -2,71,-94
-set baro_hardware = NONE
-set max_check = 1950
-set rssi_channel = 12
-set serialrx_provider = IBUS
-set dshot_idle_value = 800
-set motor_pwm_protocol = DSHOT600
-set small_angle = 180
-set pid_process_denom = 2
-set osd_vbat_pos = 2497
-set osd_rssi_pos = 2465
-set osd_tim_1_pos = 2519
-set osd_flymode_pos = 2413
-set osd_crosshairs_pos = 2285
-set osd_craft_name_pos = 2509
-set osd_warnings_pos = 2345
-
-# profile
-profile 0
-
-set dterm_notch_cutoff = 0
-set p_pitch = 58
-set d_pitch = 35
-set p_roll = 44
-set i_roll = 40
-set d_roll = 30
-set p_yaw = 75
-set i_yaw = 50
-
-# rateprofile
-rateprofile 0
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Drivers installation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Before we can upload the new firmware to the FC, we need to install some drivers which allow to connect the FC to the PC in Device Firmware Update (DFU) mode, that is the mode used to flash the firmware to the board:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/dfu_drivers.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/dfu_drivers.png&quot; alt=&quot;DFU Drivers&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;CP210x USB to UART Bridge VCP Drivers;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://upinthesky.github.io/drivers/en.stsw-stm32102.zip&quot;&gt;STM32 Virtual COM Port Driver&lt;/a&gt; (download link to STM32 Virtual COM Port Driver since it is not directly available from the website);&lt;/li&gt;
-  &lt;li&gt;Zadig (tool to install driver on STM32 Bootloader).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Once CP210x and STM32 drivers are installed, it is possible to start the FC in DFU mode: this can be either done by pressing and holding the “Boot” button on the FC and then connecting the quadcopter to the PC or by first connecting the drone to the PC and, using the CLI, entering the “bl” command or “dfu” for versions older than 3.2 (first method is preferred):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.png&quot; alt=&quot;Eachine Wizard X220S Omnibus F4SD Boot Button&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A continuous beep from the FC warns it is in DFU mode. However, to make it possible to flash the firmware, we need to install one last driver by using Zadig (otherwise DFU mode does not show up in Betaflight Configurator). In Zadig, to list all devices, click on “Options -&amp;gt; List All Devices”.&lt;br /&gt;
-As the image below reports, by default we have the value “NONE” for the STM32 BOOTLOADER (if you do not see this entry it means you have not installed correctly STM32 Virtual COM Port Driver).&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/zadig_stm32.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/zadig_stm32.png&quot; alt=&quot;Zadig STM32&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;To fix this, it is just a matter of clicking on “Install Driver” and waiting for the installation of WinUSB (v6.1.7600.16385) to complete:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/stm32_driver_installed.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/stm32_driver_installed.png&quot; alt=&quot;Zadig STM32 Driver Installed&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Flashing Firmware&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally we can flash the new firmware in DFU mode.&lt;br /&gt;
-So, we need to go to Firmware Flasher tab, select the latest firmware version for the Omnibus F4SD (like seen before) and click on “Load Firmware [Online]”. Then, we can press on “Flash Firmware” and the process will start:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/updating_firmware.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Firmware Update&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the activity is completed, we get the message “Programming: SUCCESSFUL” and we see, in the top right of the window, the change from DFU to COMX (in my case COM3).&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot;&gt;&lt;img src=&quot;/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/update_successful.png&quot; alt=&quot;Eachine Wizard X220S Betaflight Firmware Update Successful&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;As final check, you can use the command “version” to check the correct release is displayed.&lt;/p&gt;
-
-&lt;p&gt;Finally, it is just a matter to report back all the configurations on Betaflight: for example, to import back led configurations, we need to open the CLI, paste the portion of the dump regarding the leds, press enter and commit the changes using the “save” command (of course, you can do all of this manually from Betaflight Configurator tabs, but for some settings, like led lights, it is faster to import them back through CLI).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In this article, we have seen how to flash the latest Betaflight firmware version for Omnibus F4SD on the Eachine Wizard X220S (similar steps can be applied for other FCs) and how to save/import back settings/configurations.&lt;/p&gt;
-
-&lt;p&gt;For the overview of the Eachine Wizard X220S, read &lt;a href=&quot;https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html&quot;&gt;this article&lt;/a&gt;.
-If you want to update Eachine Wizard X220S BLHeli-S 4in1 ESC Firmware, read &lt;a href=&quot;https://upinthesky.github.io/2018/08/30/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 04 Aug 2018 00:00:00 +0200</pubDate>
-        <link>https://upinthesky.github.io//2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html</link>
-        <guid isPermaLink="true">https://upinthesky.github.io//2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html</guid>
-        
-        <category>Quadcopter</category>
-        
-        <category>Eachine</category>
-        
-        <category>Wizard</category>
-        
-        <category>X220S</category>
-        
-        <category>Betaflight</category>
-        
-        <category>Configuration</category>
-        
-        <category>Omnibus F4SD</category>
-        
-        <category>Firmware</category>
-        
-        <category>Upgrade</category>
-        
-        <category>Update</category>
-        
-        <category>Drivers</category>
-        
-        <category>FPV</category>
-        
-        <category>Racing</category>
         
         
       </item>
