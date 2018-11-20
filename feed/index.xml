@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Nov 2018 20:02:36 +0100</pubDate>
-    <lastBuildDate>Tue, 20 Nov 2018 20:02:36 +0100</lastBuildDate>
+    <pubDate>Tue, 20 Nov 2018 20:35:30 +0100</pubDate>
+    <lastBuildDate>Tue, 20 Nov 2018 20:35:30 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -83,6 +83,8 @@ Soldering the wires in this way gives us the possibility to maintain the origina
 
 &lt;p&gt;In this article we have seen how to mod the &lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006 Mini FPV Goggles&lt;/a&gt; in order to add Eachine Pro58 Diversity Receiver module. This improvement increases a lot the reception quality of the goggles making them a really nice alternative to the expensive goggles on the market.&lt;br /&gt;
 Eachine Pro58 Diversity Receiver module can be found &lt;a href=&quot;http://bit.ly/2Qm98gO&quot;&gt;here&lt;/a&gt; at a very good price.&lt;/p&gt;
+
+&lt;p&gt;If you want to know how to flash Pirx The Pilot firmware on the Eachine Pro58, you can read &lt;a href=&quot;https://upinthesky.github.io/2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 01 Nov 2018 00:00:00 +0100</pubDate>
         <link>https://upinthesky.github.io//2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod.html</link>
