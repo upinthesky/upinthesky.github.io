@@ -6,9 +6,146 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Jan 2019 20:32:16 +0100</pubDate>
-    <lastBuildDate>Tue, 08 Jan 2019 20:32:16 +0100</lastBuildDate>
+    <pubDate>Sat, 12 Jan 2019 17:29:56 +0100</pubDate>
+    <lastBuildDate>Sat, 12 Jan 2019 17:29:56 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Eachine Lizard 105S Overview and FS-i6X Binding</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;http://bit.ly/2rFfj5y&quot;&gt;Eachine Lizard 105S&lt;/a&gt; is a 105mm FPV Racing/Freestyle quadcopter. It comes with no transmitter and three possible choices for receiver protocol: Flysky AFHDS-2A, DSM2/DSMX, Frsky XM+. So, depending on our transmitter, we choose the compatible one.&lt;/p&gt;
+
+&lt;p&gt;Since in my case the transmitter is the &lt;a href=&quot;http://bit.ly/2PFdqPK&quot;&gt;Flysky FS-i6X&lt;/a&gt;, in this article we will take a look at the version mounting a receiver compatible with Flysky AFHDS-2A protocol, which is the Flysky Flit10.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The following image shows the box containing the Eachine Lizard 105S FPV Racing Drone:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_box.png&quot;&gt;&lt;img src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_box.png&quot; alt=&quot;Eachine Lizard 105S Box&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Package contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://bit.ly/2rFfj5y&quot;&gt;Eachine Lizard 105S&lt;/a&gt; package comes with the following contents:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Eachine Lizard 105S;&lt;/li&gt;
+  &lt;li&gt;8 x 2435 4-blades propellers;&lt;/li&gt;
+  &lt;li&gt;4x propeller guards;&lt;/li&gt;
+  &lt;li&gt;4S 14.8V 550mAh 60C LiPo battery;&lt;/li&gt;
+  &lt;li&gt;zip ties;&lt;/li&gt;
+  &lt;li&gt;spare screws;&lt;/li&gt;
+  &lt;li&gt;screw drivers;&lt;/li&gt;
+  &lt;li&gt;battery anti slip;&lt;/li&gt;
+  &lt;li&gt;velcro;&lt;/li&gt;
+  &lt;li&gt;user manual.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_box_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_box_contents.png&quot; alt=&quot;Eachine Lizard 105S Box Contents&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The user manual is really detailed and contains all the informations to get the quad in the air. It also has a scheme with all spare parts number, which is really useful if some replacement is needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Eachine Lizard 105S main specs are reported down below:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Omnibus F4 nano flight controller with built-in OSD with damping box for IMU (Inertial Measurement Unit) preloaded with Betaflight 3.2 firmware;&lt;/li&gt;
+  &lt;li&gt;Compatible Frsky XM+/DSMX/Flysky AFHDS2A Receiver (possible alternatives);&lt;/li&gt;
+  &lt;li&gt;Eachine 1106 5200KV brushless motors;&lt;/li&gt;
+  &lt;li&gt;BS-28A 4IN1 ESC Dshot600 ready;&lt;/li&gt;
+  &lt;li&gt;720P HD CMOS 1/4 inch camera with 130 degrees FOV;&lt;/li&gt;
+  &lt;li&gt;720P DVR (SD card not included) for on board video recording (max 32 GB SD card);&lt;/li&gt;
+  &lt;li&gt;5.8g 25MW/200MW switchable 48CH VTX;&lt;/li&gt;
+  &lt;li&gt;UXII Antenna;&lt;/li&gt;
+  &lt;li&gt;WS2812 LED Board + Buzzer;&lt;/li&gt;
+  &lt;li&gt;Weight: 85g (without battery), 146g (with included battery).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following image shows the dimension comparison between the Eachine Wizard X220S and the Eachine Lizard 105S:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/105s_x220s_comparison.png&quot;&gt;&lt;img src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/105s_x220s_comparison.png&quot; alt=&quot;Eachine Wizard X220S vs Eachine Lizard 105S&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Integrated On Board DVR&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The Eachine Lizard 105S has a nice feature: Digital Video Recording (DVR). This means it is possible to record flight footage, on board, through the FPV camera using an SD card (better if class 10).
+If the SD card is inserted, the integrated DVR will start recording videos by just pressing the button located on the board:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_dvr.png&quot;&gt;&lt;img src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_dvr.png&quot; alt=&quot;Eachine Lizard 105S DVR&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Buzzer and Leds Board&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A little board with a buzzer and leds is placed on the back of the Lizard 105S. Be careful because it is not well fixed, so I suggest to put back some stronger double side tape. Moreover, it is a good idea to check the soldering points (in my case some wires got disconnected after few flights).
+The buzzer does a good job and can be heard from pretty far away.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Battery&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As stated before, the included battery is an Eachine 4S 14.8V 550mAh 60C LiPo battery. As always, included batteries are not that good in terms of performance, so I suggest to take something better like these ones (they have the same XT30 connector, so you are good to go):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2SSNRxg&quot;&gt;ZOP Power 14.8V 550mAh 80C 4S Lipo Battery XT30 Plug&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;They have same mAh, but higher discharge rate. Weight is 86 grams.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Flysky FS-i6X Binding&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this section it is shown how to bind the Eachine Lizard 105S to the Flysky FS-i6X transmitter.&lt;br /&gt;
+To enter in binding mode we have to press and hold the binding button on the Lizard 105S receiver while connecting the battery to the quad.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_binding_1.png&quot;&gt;&lt;img src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_binding_1.png&quot; alt=&quot;Eachine Lizard 105S Binding&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the battery is connected, if the quad is in binding mode, you should see a green led blinking fast on the receiver. Then, it is just a matter of turning on the transmitter and, if the bind process is successful, the green led becomes solid. If the led blinks slowly, it means the receiver is getting no signal from the transmitter.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_binding_2.png&quot;&gt;&lt;img src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_binding_2.png&quot; alt=&quot;Eachine Lizard 105S Binding&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We have seen an overview of the Eachine Lizard 105S which is a very nice FPV freestyle/racing mini quad: it is a good quad for who wants to start a journey in the FPV world.&lt;br /&gt;
+Comparing its behavior to the Eachine X220S, it has a pretty similar style, but you can feel the difference in the momentum due to the weight difference. However its brushless motors are really powerful so they allow to perform hard freestyle maneuvers.&lt;/p&gt;
+
+&lt;p&gt;The Eachine Lizard 105S can be found &lt;a href=&quot;http://bit.ly/2rFfj5y&quot;&gt;here&lt;/a&gt; at a good price.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 12 Jan 2019 00:00:00 +0100</pubDate>
+        <link>https://upinthesky.github.io//2019/01/12/eachine-lizard-105s-overview-and-fs-i6x-binding.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2019/01/12/eachine-lizard-105s-overview-and-fs-i6x-binding.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>Eachine</category>
+        
+        <category>Lizard</category>
+        
+        <category>105S</category>
+        
+        <category>ARF</category>
+        
+        <category>Overview</category>
+        
+        <category>Review</category>
+        
+        <category>Receiver</category>
+        
+        <category>i-BUS</category>
+        
+        <category>AFHDS-2A</category>
+        
+        <category>Flysky</category>
+        
+        <category>FS-i6X</category>
+        
+        <category>FPV</category>
+        
+        <category>Racing</category>
+        
+        <category>Freestyle</category>
+        
+        <category>Brushless</category>
+        
+        <category>DVR</category>
+        
+        <category>Mini</category>
+        
+        
+      </item>
     
       <item>
         <title>Eachine VR006 Mini FPV Goggles Pro58 Diversity Receiver Mod</title>
@@ -1416,110 +1553,6 @@ You can get it &lt;a href=&quot;http://bit.ly/2wiN3Yc&quot;&gt;here&lt;/a&gt;.&l
         <category>Mobile App</category>
         
         <category>Wi-Fi</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Devo 7E RSSI Configuration for X6B Receiver (AFHDS-2A Protocol) and Betaflight Integration</title>
-        <description>&lt;p&gt;RSSI means Received Signal Strength Indication and it is a value that indicates the power in a received radio signal. It becomes extremely handy to have this measurement enabled on the transmitter because it can trigger an alert when we are flying too far away risking to lose communication with the receiver.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;In the following, we will see how to configure this feature on the &lt;a href=&quot;http://bit.ly/2L960Ce&quot;&gt;Devo 7E&lt;/a&gt; loaded with Deviation TX firmware for the &lt;a href=&quot;http://bit.ly/2N1Qnye&quot;&gt;X6B&lt;/a&gt; receiver, i.e. AFHD-2A protocol. Moreover, we will integrate RSSI on Betaflight so the value shows up  in real time on the OSD.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Loading Deviation firmware and installing A7105 module&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Since we are going to bind Devo 7E with X6B receiver which uses FlySky protocol, first thing to do is load Deviation TX firmware in the Devo 7E (always use the latest release): the download is available &lt;a href=&quot;https://www.deviationtx.com/downloads-new&quot;&gt;here&lt;/a&gt; under “Deviation Releases” where you can find both stable releases and “nightly builds”. There are many guides on how to load Deviation TX firmware so we will not go in detail through the entire process. However, it is pretty simple: connect the radio to the computer using the supplied USB cable, power it up in “Program Update” mode (press hold “EXT” on TX and then turn it on), install the drivers and load the DFU file present in the archive (downloaded before) using &lt;a href=&quot;https://www.deviationtx.com/downloads-new/category/162-walkera&quot;&gt;Walkera DfuSe USB Upgrade Tool&lt;/a&gt;. Once that is done, just it is just a matter of copying inside the transmitter (press hold “ENT” on TX and then turn it on to connect in USB mode) all the file present in the archive excluding .zip and .dfu.&lt;/p&gt;
-
-&lt;p&gt;To bind protocols which are not supported by CYRF6936 module (the one that is there by default), such as FlySky, we need additional RF modules. For FlySky protocol, we need to solder the A7105 RF module inside the transmitter: I suggest &lt;a href=&quot;http://bit.ly/2MG6PXV&quot;&gt;this version&lt;/a&gt; that has integrated Power Amplifier (PA).&lt;br /&gt;
-For the connection refer to the &lt;a href=&quot;http://www.deviationtx.com/wiki/modulelist/a7105&quot;&gt;official documentation&lt;/a&gt;; beware that after Deviation release 4.0.1 some connections change (everything is well described with images showing the pinout).&lt;/p&gt;
-
-&lt;p&gt;Once the soldering job is finished, we need to enable the module via software: connect again the TX to the computer in USB mode and edit the lines referring to the A7105 module in hardware.ini file like shown below (has_pa-a7105 set to 1 only if you have the version with integrated PA):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[modules]
-.......................
-  enable-a7105    = A13
-  has_pa-a7105    = 1
-.......................
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;As a side note, since modifying the Devo 7E could be a little tricky if not particularly familiar with soldering, there is a new multi-protocol radio already loaded with Deviation firmware, inside which are already installed additional RF modules, including the FlySky one (it has a 4in1 RF module - CC2500, CYRF6936, A7105, NRF2401): &lt;a href=&quot;http://bit.ly/2OVgl6O&quot;&gt;Jumper T8SG V2.0 Plus&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now that everything is set up, we can start the configuration.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Enabling RSSI for AFHDS-2A on Deviation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Since we want to bind to X6B receiver, in Model menu-&amp;gt; Model setup we need to choose the protocol AFHDS-2A and follow the bind procedure (already seen &lt;a href=&quot;https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;
-Then we need to enable RSSI on channel 12 by just pressing “ENT” on the protocol itself and setting that value for “LQI output” (stands for Link Quality indicator):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/lqi_output.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/lqi_output.png&quot; alt=&quot;Deviation AFHDS-2A LQI Output&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once that is done we should start seeing RSSI value displayed on Transmitter menu -&amp;gt; Telemetry monitor:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_monitor.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_monitor.png&quot; alt=&quot;Deviation Telemetry Monitor&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;As the image shows, to a signal strength of 99 corresponds a value of 61d.&lt;br /&gt;
-By going in Model menu -&amp;gt; Telemetry config, we can set up an alarm that triggers when the value goes up a certain threshold. I found 90d as a good value to trigger the alert that signals we need to start paying attention to the distance:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_config.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_config.png&quot; alt=&quot;Deviation Telemetry Config&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We have finished configuring RSSI on the transmitter; next step is to integrate it in Betaflight so we can have the value displayed on the goggles/monitor through OSD while we are flying in FPV.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Betaflight Integration&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;After connecting the quadcopter to the computer, we need to open Betaflight Configurator and navigate to the Receiver tab. Here we can set RSSI channel: even if we have set the value to channel 12 on the transmitter, latest releases of Betaflight use AUX channel number; in order to use the right AUX channel we need to subtract 4 to the channel number, so we need to choose AUX 8.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_rssi_channel.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_rssi_channel.png&quot; alt=&quot;Betaflight RSSI Channel&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally we can enable RSSI value in the OSD tab so it shows up on the display:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_osd_rssi.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_osd_rssi.png&quot; alt=&quot;Betaflight OSD RSSI&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is the result on the FPV screen:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/screen_rssi_osd.png&quot;&gt;&lt;img src=&quot;/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/screen_rssi_osd.png&quot; alt=&quot;Screen OSD RSSI&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We have seen how to enable RSSI for AFHDS-2A protocol in Devo 7E loaded with Deviation TX firmware and how to integrate RSSI measurement in Betaflight so it is possible to read the value on the goggles/monitor through OSD during FPV flights.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 20 Aug 2018 00:00:00 +0200</pubDate>
-        <link>https://upinthesky.github.io//2018/08/20/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration.html</link>
-        <guid isPermaLink="true">https://upinthesky.github.io//2018/08/20/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration.html</guid>
-        
-        <category>Quadcopter</category>
-        
-        <category>Eachine</category>
-        
-        <category>Wizard</category>
-        
-        <category>X220S</category>
-        
-        <category>Receiver</category>
-        
-        <category>X6B</category>
-        
-        <category>i-BUS</category>
-        
-        <category>AFHDS-2A</category>
-        
-        <category>FlySky</category>
-        
-        <category>FPV</category>
-        
-        <category>Racing</category>
-        
-        <category>Devo 7E</category>
-        
-        <category>Deviation</category>
-        
-        <category>A7105</category>
-        
-        <category>RSSI</category>
-        
-        <category>Betaflight</category>
         
         
       </item>
