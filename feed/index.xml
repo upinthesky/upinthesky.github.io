@@ -6,9 +6,146 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Aug 2019 23:12:08 +0200</pubDate>
-    <lastBuildDate>Tue, 27 Aug 2019 23:12:08 +0200</lastBuildDate>
+    <pubDate>Wed, 04 Sep 2019 23:22:48 +0200</pubDate>
+    <lastBuildDate>Wed, 04 Sep 2019 23:22:48 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>iFlight Nazgul5 Overview</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;http://bit.ly/2ZFHK1V&quot;&gt;iFlight Nazgul5 4S&lt;/a&gt; / &lt;a href=&quot;http://bit.ly/2HD109Q&quot;&gt;iFlight Nazgul5 6S&lt;/a&gt; is a 5 inch FPV Racing/Freestyle quadcopter; it comes both in BNF (Bind aNd Fly) and PNP (Plug aNd Play) version. The BNF version offers only FrSky receivers (ideal if you have a Taranis transmitter): in fact, you can choose between FrSky R-XSR and Frsky XM+ receiver. Otherwise, you can choose the PNP version (without receiver) so you can equip the iFlight Nazgul5 with your preferred receiver (for example, if you have a FlySky transmitter you can use &lt;a href=&quot;http://bit.ly/2N1Qnye&quot;&gt;this&lt;/a&gt; receiver, which is very good).&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_front.jpg&quot;&gt;&lt;img src=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_front.jpg&quot; alt=&quot;iFlight Nazgul5 Front&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Package Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is what is contained in iFlight Nazgul5 package:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;iFlight Nazgul5 227mm FPV Drone 4S/6S;&lt;/li&gt;
+  &lt;li&gt;2 x Battery strap;&lt;/li&gt;
+  &lt;li&gt;4 x NAZGUL 5140 CW Propeller;&lt;/li&gt;
+  &lt;li&gt;4 x NAZGUL 5140 CCW Propeller;&lt;/li&gt;
+  &lt;li&gt;iFlightdoom Antenna.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;iFlight Nazgul5 6S specs are reported below:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Brand Name: iFlight&lt;/li&gt;
+  &lt;li&gt;Model: Nazgul5&lt;/li&gt;
+  &lt;li&gt;Item Name: 227mm SucceX-EF4 Freestyle FPV Racing Drone&lt;/li&gt;
+  &lt;li&gt;Voltage Version: 1800KV @ 6S&lt;/li&gt;
+  &lt;li&gt;Drone Type: BNF / PNP&lt;/li&gt;
+  &lt;li&gt;Wheelbase: 227mm&lt;/li&gt;
+  &lt;li&gt;Weight: 362g (without battery)&lt;/li&gt;
+  &lt;li&gt;Main Flight Controller: SucceX-E F4&lt;/li&gt;
+  &lt;li&gt;ESC: 45A 2-6S BLheli_S DShot600 4In1 ESC&lt;/li&gt;
+  &lt;li&gt;Motor: XING-E 2207 1800KV&lt;/li&gt;
+  &lt;li&gt;Propeller: IFLIGHT NAZGUL 5140 3-Blade Prop&lt;/li&gt;
+  &lt;li&gt;Receiver: FrSky XM+ Receiver/FrSky R-XSR Receiver  Optional ( Only BNF Version)&lt;/li&gt;
+  &lt;li&gt;Camera: Caddx Ratel Camera 1200 TVL Starlight HDR Sensor, 8m/s ultra low latency&lt;/li&gt;
+  &lt;li&gt;FPV Transmitter: 0/25/100/200/400/600mW 5.8 GHz adjustable frequency 48CH with IRC protocol&lt;/li&gt;
+  &lt;li&gt;Battery: Recommended 1300-1800mAh 6S (all version are Not Include battery)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Frame&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;iFlight Nazgul5 frame is  an X frame with 5mm arms which are connected individually to the center of the frame.
+There are a lot of TPU parts covering exposed portions of the frame (for example, at the end of each arms to protect motors in case of a crash).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FPV Camera&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The camera is a 2.1mm Caddx Ratel 1200 TVL and the cable to change the configuration is included (even if the port to plug it in is not so easy to reach). The FPV camera is mounted on TPU so it is possible to fit a micro camera there. The quality is pretty good and there is not so much noise in the video feed.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_camera.jpg&quot;&gt;&lt;img src=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_camera.jpg&quot; alt=&quot;iFlight Nazgul5 Camera&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Motors&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;XING-E 2207 1800KV are really smooth motors (4S version comes with 2750KV motors) and the 5140 props included are lightweight and are just a perfect combination with the motors.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_motor.jpg&quot;&gt;&lt;img src=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_motor.jpg&quot; alt=&quot;iFlight Nazgul5 Motor&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ESCs, FC and VTX stack&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;45A ESCs have an external 220uF 35V capacitor to handle voltage spikes smoothing voltage so as to reduce noise incoming to the flight controller and the video feed.
+Moreover the FC is soft mounted to reduce gyro noise coming from frame vibrations caused by motors rotation.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_stack.jpg&quot;&gt;&lt;img src=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_stack.jpg&quot; alt=&quot;iFlight Nazgul5 Stack&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Coming out from the stack, kept in place by TPU support, there are 12AWG wires ending with an XT60 connector to plug in the LiPo battery.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_support_detail.jpg&quot;&gt;&lt;img src=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_support_detail.jpg&quot; alt=&quot;iFlight Nazgul5 Support Detail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The FC is the SucceX-E F4 and it comes flashed with Betaflight 4.0.4.&lt;br /&gt;
+Beware that in Betaflight the quad is configured to have “props out” instead of the most common rotation configuration (“Motor direction is reversed” is active).
+It is also important to activate AIRMODE in the “Configuration” tab otherwise the motors will stop spinning at zero throttle.&lt;/p&gt;
+
+&lt;p&gt;VTX is FORCE VT5804 V2 and has smart audio control to change power levels and channels (see the specs), so it is possible to modified everything through the OSD instead of using the button on the VTX itself. It connects to the iFlightdoom antenna through a pigtail MMCX connector. It has also incorporated microphone for the audio.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Battery&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Remember that battery is not included, so you have to buy it separately. A good choice for the 6S version is the &lt;a href=&quot;http://bit.ly/2lExVTh&quot;&gt;GNB 1100mAh 6S 130C&lt;/a&gt;. Otherwise, for the 4S version, a good option is the &lt;a href=&quot;http://bit.ly/2oeHvuj&quot;&gt;TATTU 1550mAh 14.8V 75C 4S1P Lipo Battery Pack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is possible to choose between a silicon or foam pad to mount the battery: the silicon one is surely better as it offers a really good grip. It is also a good idea to use both the battery straps to keep them safely in place.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_side.jpg&quot;&gt;&lt;img src=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_side.jpg&quot; alt=&quot;iFlight Nazgul5 Side&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;iFlight has made a very nice BNF/PNP freestyle quad and probably one of the best ARF freestyle quad on the market at the moment, also considering what you get for that price.&lt;/p&gt;
+
+&lt;p&gt;You can buy the iFlight Nazgul5 4S version &lt;a href=&quot;http://bit.ly/2ZFHK1V&quot;&gt;here&lt;/a&gt;, while the 6S version is available &lt;a href=&quot;http://bit.ly/2HD109Q&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 Sep 2019 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2019/09/04/iflight-nazgul5-overview.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2019/09/04/iflight-nazgul5-overview.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>iFlight</category>
+        
+        <category>Nazgul5</category>
+        
+        <category>BNF</category>
+        
+        <category>PNP</category>
+        
+        <category>Overview</category>
+        
+        <category>Review</category>
+        
+        <category>Receiver</category>
+        
+        <category>FrSky</category>
+        
+        <category>Flysky</category>
+        
+        <category>R-XSR</category>
+        
+        <category>XM+</category>
+        
+        <category>FPV</category>
+        
+        <category>Racing</category>
+        
+        <category>Freestyle</category>
+        
+        <category>Brushless</category>
+        
+        <category>Caddx Ratel</category>
+        
+        <category>GNB</category>
+        
+        <category>Tattu</category>
+        
+        <category>Betaflight</category>
+        
+        
+      </item>
     
       <item>
         <title>Runcam 5 Overview</title>
@@ -1399,155 +1536,6 @@ You can get it &lt;a href=&quot;http://bit.ly/2PkZtrv&quot;&gt;here&lt;/a&gt; at
         <category>Diversity</category>
         
         <category>DVR</category>
-        
-        <category>Review</category>
-        
-        <category>Racing</category>
-        
-        <category>Freestyle</category>
-        
-        <category>Drone</category>
-        
-        <category>Quadcopter</category>
-        
-        <category>Antenna</category>
-        
-        <category>Aomway</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Eachine VR006 Mini FPV Goggles Review</title>
-        <description>&lt;p&gt;FPV goggles can be divided in two main categories based on the form factor: box style or slim (Fat Shark like).&lt;br /&gt;
-&lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006&lt;/a&gt; are mini FPV box style goggles based on Fresnel optical lens zoom principle.&lt;/p&gt;
-
-&lt;p&gt;In this article we are going to review the Eachine VR006 mini FPV box style goggles, looking through their specifications and functionalities.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;The following image shows the box containing the Eachine VR006 mini FPV goggles:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box.png&quot; alt=&quot;Eachine VR006 Mini FPV Goggles Box&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Box contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Inside the box we get the following items:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Goggles with adjustable elastic head band and sponge pad for comfortable skin touch when wearing;&lt;/li&gt;
-  &lt;li&gt;Mushroom antenna;&lt;/li&gt;
-  &lt;li&gt;Flat plate antenna;&lt;/li&gt;
-  &lt;li&gt;Operating manual;&lt;/li&gt;
-  &lt;li&gt;USB charging cable;&lt;/li&gt;
-  &lt;li&gt;AV IN cable;&lt;/li&gt;
-  &lt;li&gt;2 x Alcohol cloth to clean the screen;&lt;/li&gt;
-  &lt;li&gt;Additional sponge for more comfortable nose contact.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_box_contents.png&quot; alt=&quot;Eachine VR006 Mini FPV Goggles Box Contents&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Here below are reported Eachine VR006 main specs:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Screen size: 3” LCD display;&lt;/li&gt;
-  &lt;li&gt;Screen resolution: 500x300 pixels;&lt;/li&gt;
-  &lt;li&gt;5.8 GHz with 40 receiving bands (bands and channels are not selectable, selection is done by setting up directly the frequency value);&lt;/li&gt;
-  &lt;li&gt;Single receiver&lt;/li&gt;
-  &lt;li&gt;Dual RP-SMA male antennas (they do some kind of mixing, no diversity since it is mono receiver): mushroom (omnidirectional) and flat plate (directional) antenna. A good idea is to replace the mushroom one with the &lt;a href=&quot;http://bit.ly/2MNxHFo&quot;&gt;Aomway 5.8G 3dBi RP-SMA Four Lobe RHCP antenna&lt;/a&gt; which is well known to have a very good performance;&lt;/li&gt;
-  &lt;li&gt;Built-in LiPo battery 1S 500mah (3.7V-4.2V) that ensures a working time of 1 hour (working current 350-450 mAh);&lt;/li&gt;
-  &lt;li&gt;Fresnel lens: beware that distance not adjustable and, since goggles screen display housing is small, there is no possibility to fit glasses in it;&lt;/li&gt;
-  &lt;li&gt;Small and lightweight: 138*129*79mm (without antennas) with a weight of only 165g;&lt;/li&gt;
-  &lt;li&gt;Receiving sensitivity: -95dBm;&lt;/li&gt;
-  &lt;li&gt;One key auto-search function.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Buttons and Function Menu&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;There are 4 buttons on the right side of the Eachine VR006 goggles:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;”+”;&lt;/li&gt;
-  &lt;li&gt;“MENU”;&lt;/li&gt;
-  &lt;li&gt;”-“;&lt;/li&gt;
-  &lt;li&gt;“SCAN / Power On/Off”.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_buttons.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_buttons.png&quot; alt=&quot;Eachine VR006 Buttons&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;By long pressing (4 seconds) the “SCAN / Power On/Off” button, the goggles turn on.&lt;br /&gt;
-Once turned on, short pressing the “MENU” button allow us to enter the menu option Function; here, every time we press the “MENU” button we cycle between the following configurations:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Brightness adjustment: increase or decrease the value by using “+” or “-“ button;&lt;/li&gt;
-  &lt;li&gt;Contrast adjustment: increase or decrease the value by using “+” or “-“ button;&lt;/li&gt;
-  &lt;li&gt;Saturation adjustment: increase or decrease the value by using “+” or “-“ button;&lt;/li&gt;
-  &lt;li&gt;“AV / AV IN” mode setting: by pressing “+” or “-“ it is possible to switch from AV to AV IN and vice versa (in case we want to use an external video source by using the included cable);&lt;/li&gt;
-  &lt;li&gt;Frequency Display: by pressing “+” or “-“ it is possible to switch from On to Off and vice versa (in case we want to hide frequency value from OSD).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here is a detail of the “AV / AV IN” port with the holes for cooling:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_avin.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_avin.png&quot; alt=&quot;Eachine VR006 AV IN Port&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once in “Frequency Display” menu, pressing again the MENU button makes us Exit from menu option Function, returning back to the FPV screen.&lt;/p&gt;
-
-&lt;p&gt;On the FPV screen it is possible to change the frequency and, to do so, there are two options:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;auto-search functionality: pressing once the “SCAN / Power On/Off” button, it starts to look through all the frequencies for a good video signal to tune on;&lt;/li&gt;
-  &lt;li&gt;manual frequency setup: it is not possible to set band and channel, but we have to go through all the frequencies using the “+” or “-“ button until we reach the one we want to receive on (however the last frequency set remains configured also after turning off the goggles).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The image below show Eachine VR006 screen display:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_screen.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_screen.png&quot; alt=&quot;Eachine VR006 Mini FPV Goggles Display&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Beware the informations in white are from the Eachine Wizard X220S OSD, not from the goggles; the only two values goggles related are the ones in red: battery voltage and frequency (in this case 3.9 V and 5.765 GHz). Unfortunately, it is not possible to hide goggles battery voltage in the OSD (only the frequency can be removed as seen above).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Battery Charging&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;To charge Eachine VR006 goggles we have to use the micro USB charging port (more or less one hour of time to full charge):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_micro_usb.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_micro_usb.png&quot; alt=&quot;Eachine VR006 Micro USB Port&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;When plugged to a power source through USB, a red light indicates the battery is charging:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_charging_light.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-fpv-mini-goggles-review/vr006_charging_light.png&quot; alt=&quot;Eachine VR006 battery Charging Light&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Eachine VR006 goggles support the possibility of charging while in use. After full charge is reached, the light goes off.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Reception&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The single receiver does a pretty good job, so reception quality is very good. As written before, a nice improvement is to change the stock mushroom antenna with this one which is cheap, but effective: &lt;a href=&quot;http://bit.ly/2MNxHFo&quot;&gt;Aomway 5.8G 3dBi RP-SMA Four Lobe RHCP antenna&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Eachine VR006 mini FPV goggles are addressed to who wants to start experiencing FPV for the first time without spending too much on goggles : they are really cheap and can be found &lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;here&lt;/a&gt;. They can also be carried on the field as spare goggles in case we want to let someone experience FPV while we are using our main goggles. Moreover they are small/light and this is a very good feature for box goggles since they are generally big/heavy.&lt;/p&gt;
-
-&lt;p&gt;Speaking about improvements, a nice one would be to have Digital Video Recorder (DVR) integrated with the goggles, a real diversity and adjustable distance between screen and lens.&lt;br /&gt;
-If you want to know how to install a DVR on the Eachine VR006 Mini FPV Goggles, read &lt;a href=&quot;https://upinthesky.github.io/2018/09/09/eachine-vr006-mini-fpv-goggles-prodvr-mod.html&quot;&gt;this article&lt;/a&gt;.&lt;br /&gt;
-If you want to know how to install a diversity receiver module on the Eachine VR006 Mini FPV Goggles, read &lt;a href=&quot;https://upinthesky.github.io/2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 23 Aug 2018 00:00:00 +0200</pubDate>
-        <link>https://upinthesky.github.io//2018/08/23/eachine-vr006-mini-fpv-goggles-review.html</link>
-        <guid isPermaLink="true">https://upinthesky.github.io//2018/08/23/eachine-vr006-mini-fpv-goggles-review.html</guid>
-        
-        <category>Eachine</category>
-        
-        <category>VR006</category>
-        
-        <category>VR-006</category>
-        
-        <category>Mini</category>
-        
-        <category>FPV</category>
-        
-        <category>Goggles</category>
-        
-        <category>Box Style</category>
         
         <category>Review</category>
         
