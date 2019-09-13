@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Sep 2019 19:37:42 +0200</pubDate>
-    <lastBuildDate>Thu, 05 Sep 2019 19:37:42 +0200</lastBuildDate>
+    <pubDate>Fri, 13 Sep 2019 19:25:54 +0200</pubDate>
+    <lastBuildDate>Fri, 13 Sep 2019 19:25:54 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -66,13 +66,13 @@ There are a lot of TPU parts covering exposed portions of the frame (for example
 
 &lt;p&gt;&lt;strong&gt;Motors&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;XING-E 2207 1800KV are really smooth motors (4S version comes with 2750KV motors) and the 5140 props included are lightweight and are just a perfect combination with the motors.&lt;/p&gt;
+&lt;p&gt;XING-E 2207 1800KV are really smooth motors (4S version comes with 2750KV motors) and the 5140 props included are lightweight and they are just a perfect combination with the motors.&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_motor.jpg&quot;&gt;&lt;img src=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_motor.jpg&quot; alt=&quot;iFlight Nazgul5 Motor&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;ESCs, FC and VTX stack&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;45A ESCs have an external 220uF 35V capacitor to handle voltage spikes smoothing voltage so as to reduce noise incoming to the flight controller and the video feed.
+&lt;p&gt;45A ESCs have an external 220uF 35V capacitor to handle voltage spikes (smoothing voltage), so as to reduce noise incoming to the flight controller and the video feed.
 Moreover the FC is soft mounted to reduce gyro noise coming from frame vibrations caused by motors rotation.&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_stack.jpg&quot;&gt;&lt;img src=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_stack.jpg&quot; alt=&quot;iFlight Nazgul5 Stack&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
