@@ -6,9 +6,291 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 Sep 2019 19:25:54 +0200</pubDate>
-    <lastBuildDate>Fri, 13 Sep 2019 19:25:54 +0200</lastBuildDate>
+    <pubDate>Sun, 22 Sep 2019 17:16:38 +0200</pubDate>
+    <lastBuildDate>Sun, 22 Sep 2019 17:16:38 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>FrSky Taranis X9D Plus 2019 Overview and Comparison With SE Version</title>
+        <description>&lt;p&gt;FrSky brand is famous for its transmitters/receivers and in the RC world, if you say the word Taranis anyone knows what you are talking about.&lt;br /&gt;
+Taranis X9D is one of the best transmitter out there and now it has got an upgrade with the &lt;a href=&quot;http://bit.ly/2m1x2Vc&quot;&gt;Taranis X9D Plus 2019&lt;/a&gt; and &lt;a href=&quot;http://bit.ly/2ktT6Yd&quot;&gt;Taranis X9D Plus 2019 SE&lt;/a&gt; models.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2m1x2Vc&quot;&gt;FrSky Taranis X9D Plus 2019&lt;/a&gt; comes with three different colorations, white, blue and silver:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version/x9dplus2019.jpg&quot;&gt;&lt;img src=&quot;/images/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version/x9dplus2019.jpg&quot; alt=&quot;FrSky Taranis X9D Plus 2019&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2ktT6Yd&quot;&gt;FrSky Taranis X9D Plus 2019 SE&lt;/a&gt;, instead, comes with only two options for the color scheme, dark blue and carbon:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version/x9dplus2019se.jpg&quot;&gt;&lt;img src=&quot;/images/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version/x9dplus2019se.jpg&quot; alt=&quot;FrSky Taranis X9D Plus 2019 SE&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Package contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is listed what is included in the package:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;transmitter;&lt;/li&gt;
+  &lt;li&gt;gimbal protectors;&lt;/li&gt;
+  &lt;li&gt;neck strap;&lt;/li&gt;
+  &lt;li&gt;charging cable;&lt;/li&gt;
+  &lt;li&gt;bag (SE version only);&lt;/li&gt;
+  &lt;li&gt;basic instruction manual and stickers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Common Specifications&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The specs reported below are common to both transmitter versions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dimension: 200*194*110mm (L*W*H)&lt;/li&gt;
+  &lt;li&gt;Weight: 670g (without battery)&lt;/li&gt;
+  &lt;li&gt;Operating system: OpenTX&lt;/li&gt;
+  &lt;li&gt;Mode: Mode 2&lt;/li&gt;
+  &lt;li&gt;Number of channels: 24 channels&lt;/li&gt;
+  &lt;li&gt;Internal RF module: ISRM-S-X9&lt;/li&gt;
+  &lt;li&gt;Operating voltage range: 6.5 - 8.4V&lt;/li&gt;
+  &lt;li&gt;Operating current: 130mA@8.2V&lt;/li&gt;
+  &lt;li&gt;Operating Temperature: -20℃  ~ 60℃ (-4℉ ~ 140℉)&lt;/li&gt;
+  &lt;li&gt;Backlit LCD resolution: 212*64&lt;/li&gt;
+  &lt;li&gt;Smart Port, Micro SD card slot and DSC Port&lt;/li&gt;
+  &lt;li&gt;Micro USB interface: supports 2S Li-battery balancing charge&lt;/li&gt;
+  &lt;li&gt;Model memories: 60 models (expandable by Micro SD card)&lt;/li&gt;
+  &lt;li&gt;Compatibility: ACCST D16 and ACCESS receivers (ACCST D8 is not available, an external module is required)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this table it is reported a comparison between standard and SE version features:&lt;/p&gt;
+
+&lt;table class=&quot;mbtablestyle&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Feature&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;X9D Plus 2019&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;X9D Plus SE 2019&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Operating System&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;OpenTX&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;OpenTX&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Communication Protocol&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ACCST D16 / ACCESS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ACCST D16 / ACCESS&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;High-speed Module Digital Interface&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Accurate SWR indicator&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Spectrum Analyzer Function&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Program Navigation Button&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Easily Launch Momentary Button&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Haptic Vibration Alerts&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Voice Speech Outputs&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2S Li-Battery Charging System&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;G9D Potentiometer Gimbal&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;M9 Hall Sensor Gimbal&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Upgraded Switches&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Wired Training System&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;PARA wireless training function: PAPA High-speed training system with a lower latency; Compatible with FrSky Free Link App and AirLink S via mobile devices&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;√&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Main upgrades in 2019 version&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;FrSky Taranis X9D Plus 2019 (Standard or SE) is the upgraded version of the notorious Taranis X9D Plus. The most important changes are the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;use of ACCESS (Advanced Communication Control, Elevated Spread Spectrum) RC control and communications protocol;&lt;/li&gt;
+  &lt;li&gt;power on/off is achieved by a button rather than a slider;&lt;/li&gt;
+  &lt;li&gt;additional momentary button placed on the top left useful for DLG pilots to activate launch mode;&lt;/li&gt;
+  &lt;li&gt;program scroll wheel on the right of the screen substituting buttons to make it easier to navigate the menus;&lt;/li&gt;
+  &lt;li&gt;upgraded MCU is applied to a re-structured mainboard that further increase the compute capability and extend the storage resource of data: this is to allow the execution of more complex LUA scripts and it also optimize the overall performance (for example, for voice speech outputs).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Everything runs, like with the previous model, on the solid OpenTX firmware.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ACCESS protocol&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The ACCESS communication protocol boasts 24 channels with a faster baud rate and lower latency with a high-speed module digital interface. Along with the new spectrum analysis function added to the OpenTX firmware, it is now possible to check the airwaves for RF noise with an accurate SWR indicator, which can measure yours and others signal strength in the area. So, the Spectrum Analyzer allows the user to measure power, noise, and distortion of the frequencies around.&lt;/p&gt;
+
+&lt;p&gt;Moreover, thanks to the ACCESS protocol, once a receiver is registered to a radio, there is no need to access the receiver to bind (pressing bind button) or flash a new firmware (via smartport) since these procedures are achieved through wireless technology (Smart Match and Smart Share features).&lt;/p&gt;
+
+&lt;p&gt;FrSky also states that the protocol has a better security due to its higher encryption, assuring model’s signal will not be interfered with.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Internal RF Modes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;These are the internal RF modes supported in Taranis X9D Plus 2019:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ACCESS;&lt;/li&gt;
+  &lt;li&gt;ACCST D16;&lt;/li&gt;
+  &lt;li&gt;ACCST LR12.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;External RF Modes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Taranis X9D Plus 2019 supports the addition of external modules, like R9M or TBS Crossfire. OpenTX firmware installed by default (version 2.3.0) does not have the option for TBS; available external RF modes are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PPM;&lt;/li&gt;
+  &lt;li&gt;XJT D16;&lt;/li&gt;
+  &lt;li&gt;DSM2 LP45;&lt;/li&gt;
+  &lt;li&gt;R9M FCC;&lt;/li&gt;
+  &lt;li&gt;SBUS.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, to use TBS Crossfire, flashing the latest firmware is required.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Removable antenna&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Beware that only for the SE version there is the possibility to remove the antenna and change it with another one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Battery&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Taranis X9D Plus 2019 comes with no battery included. Since its working voltage is 6.5 - 8.4V, it can be powered with 2S LiPo batteries, but no 3S (differently from the previous Taranis X9D).&lt;br /&gt;
+A possible choice for the battery is this one, which assures a pretty decent working time: &lt;a href=&quot;http://bit.ly/2m1JrZe&quot;&gt;2S 3000mAh LiPo battery&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;FrSky Taranis X9D Plus 2019 is a very good transmitter, especially considering the promising new ACCESS protocol, that could simplify many tasks. OpenTX firmware is not totally ready yet, but it is just a matter of time.&lt;br /&gt;
+Both transmitters can be found here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2m1x2Vc&quot;&gt;FrSky Taranis X9D Plus 2019&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2ktT6Yd&quot;&gt;FrSky Taranis X9D Plus 2019 SE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SE version is a little bit more expensive, but it is worth the extra cost.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Sep 2019 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2019/09/22/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2019/09/22/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version.html</guid>
+        
+        <category>Taranis X9D Plus 2019</category>
+        
+        <category>Taranis X9D Plus 2019 SE</category>
+        
+        <category>Transmitter</category>
+        
+        <category>Overview</category>
+        
+        <category>Review</category>
+        
+        <category>Receiver</category>
+        
+        <category>FrSky</category>
+        
+        <category>FPV</category>
+        
+        <category>Racing</category>
+        
+        <category>Freestyle</category>
+        
+        <category>ACCESS</category>
+        
+        <category>ACCST D16</category>
+        
+        <category>Spectrum Analyzer</category>
+        
+        <category>M9 Hall Sensor Gimbal</category>
+        
+        <category>Antenna</category>
+        
+        <category>OpenTX</category>
+        
+        <category>Voice Speech</category>
+        
+        <category>R9M</category>
+        
+        <category>TBS Crossfire</category>
+        
+        <category>LiPo Battery</category>
+        
+        
+      </item>
     
       <item>
         <title>iFlight Nazgul5 Overview</title>
@@ -1344,213 +1626,6 @@ Finally, we can click on “Flash” to start the update process; the app will p
         <category>FPV</category>
         
         <category>Racing</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Eachine LCD5802D FPV Monitor with Diversity and DVR Review</title>
-        <description>&lt;p&gt;Not every FPV pilot is into goggles, especially if race/freestyle is not the main aim.&lt;br /&gt;
-In this article we will take a look at the &lt;a href=&quot;http://bit.ly/2PkZtrv&quot;&gt;Eachine LCD5802D&lt;/a&gt;, an FPV monitor that comes with Diversity Receiver and Digital Video Recorder (DVR).&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;This is how the Eachine LCD5802D box appears:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box.png&quot; alt=&quot;Eachine LCD5802D FPV Monitor Box&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Box contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Inside the box we get the following items:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;7” LCD Screen Receiver Monitor with built in rechargeable battery (7.4V 2000mAh);&lt;/li&gt;
-  &lt;li&gt;2 x 5.8G Antenna (standard dipole antenna);&lt;/li&gt;
-  &lt;li&gt;AV Cable;&lt;/li&gt;
-  &lt;li&gt;Battery Charger (EU adapter not included);&lt;/li&gt;
-  &lt;li&gt;DC Cable with JST connector (useful if you run out of built-in battery on the field, so it is possible to plug in an external battery);&lt;/li&gt;
-  &lt;li&gt;Monitor slip case;&lt;/li&gt;
-  &lt;li&gt;Clean screen cloth;&lt;/li&gt;
-  &lt;li&gt;Instructions manual.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_box_contents.png&quot; alt=&quot;Eachine LCD5802D FPV Monitor Box Contents&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Eachine LCD5802D FPV monitor main specs are reported down below:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Built-in 5.8Ghz Dual diversity receiver for best reception;&lt;/li&gt;
-  &lt;li&gt;Built-in 2CH 5.8Ghz AV output and 1CH AV input;&lt;/li&gt;
-  &lt;li&gt;Built-in high performance Li-Po battery: 2000mAh@7.4V;&lt;/li&gt;
-  &lt;li&gt;OSD display;&lt;/li&gt;
-  &lt;li&gt;One-key Auto Search for video signal search;&lt;/li&gt;
-  &lt;li&gt;5 bands and a total of 40 channels;&lt;/li&gt;
-  &lt;li&gt;File Format: JPEG for photos and AVI for videos (720x480 pixels resolution);&lt;/li&gt;
-  &lt;li&gt;Screen size and resolution: 7”, 800*480;&lt;/li&gt;
-  &lt;li&gt;Screen type: TFT LCD Screen/long life, LED back light;&lt;/li&gt;
-  &lt;li&gt;Brightness: 600cd/m2;&lt;/li&gt;
-  &lt;li&gt;View Angle:140/120 degrees (Horizontal/Vertical);&lt;/li&gt;
-  &lt;li&gt;Size:180mm x 120mm x 25mm (Sun Shield height is 110mm);&lt;/li&gt;
-  &lt;li&gt;Working Voltage: DC 7~16V;&lt;/li&gt;
-  &lt;li&gt;Power Consumption: max 650 mA @12V;&lt;/li&gt;
-  &lt;li&gt;Battery charging current : 850mA @12V (max)&lt;/li&gt;
-  &lt;li&gt;Working temperature: - 10°C ~ +65 °C;&lt;/li&gt;
-  &lt;li&gt;Antenna Connectors on LCD monitor: RP-SMA female (outer needle);&lt;/li&gt;
-  &lt;li&gt;Antenna Connectors: RP-SMA male (inner hole);&lt;/li&gt;
-  &lt;li&gt;Support up to 32G , C10 SD Card.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Improved antennas&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Since the included antennas are simple dipole, it is a must to change them with some better products. To take advantage of the diversity receiver a good approach is to use one omnidirectional antenna (cloverleaf) for short/medium distance and one directional antenna (patch) for long range:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2MNxHFo&quot;&gt;Aomway 5.8GHz 3dBi RP-SMA Four Lobe RHCP antenna&lt;/a&gt;;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2PyGFVL&quot;&gt;Eachine 5.8GHz 6dBi Flat Antenna RP-SMA&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As the following image shows, we need antennas with RP-SMA male connectors since we have RP-SMA female connectors on the monitor:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_rpsma.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_rpsma.png&quot; alt=&quot;Eachine LCD5802D RP-SMA female connectors&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is the result with both antennas mounted on the Eachine LCD5802D:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_antennas.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_antennas.png&quot; alt=&quot;Eachine LCD5802D Antennas&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you want to spend a little bit more, a very good alternative for the above patch antenna is this one: &lt;a href=&quot;http://bit.ly/2PyGQQV&quot;&gt;Realacc Triple Feed Patch 5.8GHz 9.4dBi Directional Circular Polarized FPV Pagoda Antenna&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ports detail&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Next image shows the ports located on the left side:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_ports.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_ports.png&quot; alt=&quot;Eachine LCD5802D Ports&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;From the left we have:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;AVOUT: to send video signal to an external device (for example, FPV goggles);&lt;/li&gt;
-  &lt;li&gt;RE: reset button to restore default settings;&lt;/li&gt;
-  &lt;li&gt;TF CARD: port to insert SD card up to 32GB (it is important to format the SD card to FAT32, otherwise it could not be recognized);&lt;/li&gt;
-  &lt;li&gt;AVIN: to receive video signal from an external source;&lt;/li&gt;
-  &lt;li&gt;DC/+12V: port to connect the battery charger or an external power source (like a LiPo battery in case we run out of power with the built-in one).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Built-in LiPo Battery&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Eachine LCD5802D Monitor has a built-in LiPo battery of 2000mAh@7.4V. Even if it is declared a working time of 3-4 hours, after testing it, I got a maximum duration of 1.5-2 hours, depending on the usage of the DVR.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Rear speakers&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A very nice feature is represented by the speakers on the back of the monitor, so you can listen to the audio both during live FPV or while reviewing your recorded flights:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_back.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_back.png&quot; alt=&quot;Eachine LCD5802D Back View&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;They perform well and if you turn up the volume they get pretty loud.&lt;br /&gt;
-In the image above it is also shown the detail of the hole through which it is possible to mount the monitor on a tripod like &lt;a href=&quot;http://bit.ly/2MCq5qg&quot;&gt;this one&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Monitor Sun Shield&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Raising up the cover a useful sun shield opens up for the 7” display:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_welcome_screen.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5802d_welcome_screen.png&quot; alt=&quot;Eachine LCD5802D Welcome Screen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Consider to remove the screen protector that has an “H” written on which covers part of the screen.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;On Screen Display&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The built-in OSD reports the following useful informations on the top of the display:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;RSSI indicator for video signal;&lt;/li&gt;
-  &lt;li&gt;Battery charge status&lt;/li&gt;
-  &lt;li&gt;Band/Channel and Frequency.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_display.png&quot;&gt;&lt;img src=&quot;/images/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review/lcd5902d_display.png&quot; alt=&quot;Eachine LCD5802D Display&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Beware that only the informations in green are from the built-in OSD, the others in white are from the Eachine Wizard X220S.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Monitor indicators and buttons&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;As shown in the previous images, the monitor has three indicators and six buttons.&lt;/p&gt;
-
-&lt;p&gt;Indicators:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A: if the light is on, it indicates that the monitor is using the first receiver module to capture video signal (corresponding to the signal received from Antenna A);&lt;/li&gt;
-  &lt;li&gt;B: if the light is on, it indicates that the monitor is using the second receiver module to capture video signal (corresponding to the signal received from Antenna B);&lt;/li&gt;
-  &lt;li&gt;Battery: when charging the light is red, while after charging is complete the light turn green;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Buttons:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Band+: changes the band (A, B, C, D, R) and increase values in function MENU;&lt;/li&gt;
-  &lt;li&gt;CH+: changes the channel (1 to 8) and decrease values in function MENU;&lt;/li&gt;
-  &lt;li&gt;MENU/SRC: long press to enter function MENU, short press to switch video source (DIVERSITY, RF A, RF B, AV);&lt;/li&gt;
-  &lt;li&gt;SEARCH: one key auto search function (short press to start researching for video signal);&lt;/li&gt;
-  &lt;li&gt;Rec/Pic: long press starts video recorder (short press to stop), while short press triggers photo capture;&lt;/li&gt;
-  &lt;li&gt;Power On/Off.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Function MENU&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Once in Function MENU, it is possible to switch betweeen the following possibilities:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;DVR: entering here allows to go through saved photos and videos to review them;&lt;/li&gt;
-  &lt;li&gt;BRIGHT: increase/decrease brightness level;&lt;/li&gt;
-  &lt;li&gt;CONTRAST: increase/decrease contrast level;&lt;/li&gt;
-  &lt;li&gt;COLOR: increase/decrease color level;&lt;/li&gt;
-  &lt;li&gt;SHARPNESS: increase/decrease sharpness level;&lt;/li&gt;
-  &lt;li&gt;ROTATION: display rotation;&lt;/li&gt;
-  &lt;li&gt;VOLUME: increase/decrease volume level;&lt;/li&gt;
-  &lt;li&gt;POWER OFF;&lt;/li&gt;
-  &lt;li&gt;LANGUAGE: change language.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To increase/decrease the values we have to use the Band+ and CH+ buttons as stated before.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Performances&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The Eachine LCD5802D FPV Monitor performs really well: the diversity module works incredibly good and the transition between the two received signals is very smooth. Video and audio quality are great and the DVR feature is a real plus. The sun shade has been revealed really useful to maintain a clear view of the screen during sunny days.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Eachine LCD5802D has been revealed a really good FPV Monitor with good reception, thanks to diversity, and a very nice DVR. It has high quality and it is good value for money.&lt;br /&gt;
-You can get it &lt;a href=&quot;http://bit.ly/2PkZtrv&quot;&gt;here&lt;/a&gt; at a good price.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 27 Aug 2018 00:00:00 +0200</pubDate>
-        <link>https://upinthesky.github.io//2018/08/27/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review.html</link>
-        <guid isPermaLink="true">https://upinthesky.github.io//2018/08/27/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review.html</guid>
-        
-        <category>Eachine</category>
-        
-        <category>LCD5802D</category>
-        
-        <category>Monitor</category>
-        
-        <category>FPV</category>
-        
-        <category>Diversity</category>
-        
-        <category>DVR</category>
-        
-        <category>Review</category>
-        
-        <category>Racing</category>
-        
-        <category>Freestyle</category>
-        
-        <category>Drone</category>
-        
-        <category>Quadcopter</category>
-        
-        <category>Antenna</category>
-        
-        <category>Aomway</category>
         
         
       </item>

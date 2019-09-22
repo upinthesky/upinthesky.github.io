@@ -61,11 +61,10 @@ li > ol {
  */
 .mbtablestyle {
   border-collapse: collapse;
-  width: 100%; }
+  width: 98%; }
   .mbtablestyle table, .mbtablestyle td, .mbtablestyle th {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: left; }
+    border: 2px solid black;
+    padding: 2px; }
 
 /**
  * Headings
