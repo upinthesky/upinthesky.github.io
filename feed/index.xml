@@ -6,9 +6,126 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Oct 2019 23:19:07 +0200</pubDate>
-    <lastBuildDate>Mon, 07 Oct 2019 23:19:07 +0200</lastBuildDate>
+    <pubDate>Sat, 12 Oct 2019 19:34:58 +0200</pubDate>
+    <lastBuildDate>Sat, 12 Oct 2019 19:34:58 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>EMAX Tinyhawk Freestyle Upgrades</title>
+        <description>&lt;p&gt;In the &lt;a href=&quot;https://upinthesky.github.io/2019/10/02/emax-tinyhawk-freestyle-overview.html&quot;&gt;previous article&lt;/a&gt;, we have discussed about the &lt;a href=&quot;http://bit.ly/2nJaytr&quot;&gt;EMAX Tinyhawk Freestyle&lt;/a&gt; quadcopter. Since it is a beginner FPV freestyle quad, some components can be upgraded to better ones and in this article we will take a look at some possible upgrades for the battery,the receiver, the FPV camera, the VTX and its 5.8 GHz antenna.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Battery Connectors&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Like reported in the &lt;a href=&quot;https://upinthesky.github.io/2019/10/02/emax-tinyhawk-freestyle-overview.html&quot;&gt;previous article&lt;/a&gt;, instead of using 2 x 1S batteries, we can switch to &lt;a href=&quot;http://bit.ly/2M1vtRF&quot;&gt;XT30 Connectors&lt;/a&gt; and use 2S batteries like the &lt;a href=&quot;http://bit.ly/2oBgZ1L&quot;&gt;Tattu 7.6V 450mAh 95C 2S HV 4.35V Lipo Battery&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Receiver&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The stock receiver is built-in the FC board: this is not a full range receiver so, if you need a better range, a good upgrade is given by the &lt;a href=&quot;http://bit.ly/35qbgNh&quot;&gt;FrSky XM+ Full Range Receiver&lt;/a&gt;, which is a full range receiver.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/emax-tinyhawk-freestyle-upgrades/frsky_xm+_receiver.jpg&quot;&gt;&lt;img src=&quot;/images/emax-tinyhawk-freestyle-upgrades/frsky_xm+_receiver.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is FrSky XM+ Full Range Receiver schematic:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/emax-tinyhawk-freestyle-upgrades/frsky_xm+_full_sbus_receiver_schematic.jpg&quot;&gt;&lt;img src=&quot;/images/emax-tinyhawk-freestyle-upgrades/frsky_xm+_full_sbus_receiver_schematic.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On the left side there are the pins we are interested in: SBUS (signal), +5V (power) and GND (ground).&lt;/p&gt;
+
+&lt;p&gt;We have to connect these pins to the same ones located on the MATEKF411RX FC:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/emax-tinyhawk-freestyle-upgrades/fc_matekf411rx_sbus_pads.png&quot;&gt;&lt;img src=&quot;/images/emax-tinyhawk-freestyle-upgrades/fc_matekf411rx_sbus_pads.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The pads on the FC are located near the gray antenna where there is the label “Sbus”:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;S (signal)&lt;/li&gt;
+  &lt;li&gt;5V (power)&lt;/li&gt;
+  &lt;li&gt;- (ground)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Remember to pre-tin the pads and the wires for an easy soldering.&lt;br /&gt;
+Then, it is just a matter of removing the stock antenna by unsoldering it. A good place to put the FrSky XM+ receiver is under the FC using some double sided tape to lock it down. Be careful it does not touch the frame.&lt;/p&gt;
+
+&lt;p&gt;We can use some zip ties to orient antennas in the desired direction.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FPV Camera&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Another good upgrade is changing the stock FPV camera with the &lt;a href=&quot;http://bit.ly/2M3ciGY&quot;&gt;Runcam Nano V2 Camera&lt;/a&gt; which is more performing; the image quality is improved with its 700 TVL and 2.1mm lens (155 degrees FOV). Runcam Nano V2 FPV camera fits perfectly in the EMAX Tinyhawk Freestyle.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/emax-tinyhawk-freestyle-upgrades/runcam_nano_v2.jpg&quot;&gt;&lt;img src=&quot;/images/emax-tinyhawk-freestyle-upgrades/runcam_nano_v2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To connect the Runcam Nano V2 FPV camera, we have to remove the stock 600 VTL FPV camera. Then, we have to solder the original connector wires to the Runcam Nano V2 by keeping in mind wire color meaning:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;yellow = signal&lt;/li&gt;
+  &lt;li&gt;black = ground&lt;/li&gt;
+  &lt;li&gt;red = power&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/emax-tinyhawk-freestyle-upgrades/runcam_nano_v2_back.jpg&quot;&gt;&lt;img src=&quot;/images/emax-tinyhawk-freestyle-upgrades/runcam_nano_v2_back.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once connections are done, we can simply fix the camera to the frame using some double sided tape with hot glue and tilt it like the stock one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;VTX and Antenna&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since the original VTX has an output power of only 25 mW, if more range is needed we can change it with a better one with similar weight and dimensions. A possible choice is given by the &lt;a href=&quot;http://bit.ly/2OwaIPA&quot;&gt;HGLRC Forward 350mw Mini VTX&lt;/a&gt;, which has a maximum output power of 350 mW and MMCX connector: this means we can use a better antenna instead of the dipole stock one.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/emax-tinyhawk-freestyle-upgrades/hglrc_forward_350mw_mini_vtx.png&quot;&gt;&lt;img src=&quot;/images/emax-tinyhawk-freestyle-upgrades/hglrc_forward_350mw_mini_vtx.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;VTX comes with cables to connect it to the FC:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/emax-tinyhawk-freestyle-upgrades/hglrc_forward_350mw_mini_vtx_cables.png&quot;&gt;&lt;img src=&quot;/images/emax-tinyhawk-freestyle-upgrades/hglrc_forward_350mw_mini_vtx_cables.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Black and red wires near the video wire (yellow) are not needed.
+VCC 7-26V (red wire) and GND (black) wires, near the RX wire (white), need to be soldered to the FC board battery pads, the same ones where the capacitor is soldered.
+Lastly, we have to solder video (yellow) and RX (white) wire to the FC:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the yellow wire needs to be soldered to the Vout pad;&lt;/li&gt;
+  &lt;li&gt;the white wire goes to TX2 pad.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/emax-tinyhawk-freestyle-upgrades/fc_matekf411rx_schematic.png&quot;&gt;&lt;img src=&quot;/images/emax-tinyhawk-freestyle-upgrades/fc_matekf411rx_schematic.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;When fixing the VTX to the frame be careful the board does not touch the frame: for example, we can use some double sided tape to isolate them.&lt;/p&gt;
+
+&lt;p&gt;A good antenna for this VTX is the &lt;a href=&quot;http://bit.ly/2OzcPCv&quot;&gt;Lumenier AXII 2 Antenna with MMCX&lt;/a&gt;, which is a 5.8 Ghz omnidirectional antenna:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/emax-tinyhawk-freestyle-upgrades/lumenier_axii_2_antenna.jpg&quot;&gt;&lt;img src=&quot;/images/emax-tinyhawk-freestyle-upgrades/lumenier_axii_2_antenna.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To keep the antenna in place, we can use some zip ties.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2nJaytr&quot;&gt;EMAX Tinyhawk Freestyle&lt;/a&gt; is a very good mini quad, but lacks in range, so with the receiver and VTX/Antenna mods we do not need to worry anymore of radio failsafe or video feed lost. Moreover with Runcam Nano V2 we gain a better video image quality with better lightning control.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 12 Oct 2019 00:00:00 +0200</pubDate>
+        <link>https://upinthesky.github.io//2019/10/12/emax-tinyhawk-freestyle-upgrades.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2019/10/12/emax-tinyhawk-freestyle-upgrades.html</guid>
+        
+        <category>Quadcopter</category>
+        
+        <category>EMAX</category>
+        
+        <category>Tinyhawk Freestyle</category>
+        
+        <category>BNF</category>
+        
+        <category>Upgrades</category>
+        
+        <category>Receiver</category>
+        
+        <category>FrSky</category>
+        
+        <category>XM+</category>
+        
+        <category>FPV</category>
+        
+        <category>Freestyle</category>
+        
+        
+      </item>
     
       <item>
         <title>EMAX Tinyhawk Freestyle Overview</title>
@@ -94,7 +211,7 @@ Video quality is pretty good with small amount of noise coming through the video
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/emax-tinyhawk-freestyle-overview/emax_tinyhawk_battery.jpg&quot;&gt;&lt;img src=&quot;/images/emax-tinyhawk-freestyle-overview/emax_tinyhawk_battery.jpg&quot; alt=&quot;EMAX Tinyhawk Freestyle Battery&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;This configuration is not the most convenient, so a good change is to substitute the JST-PH2 duo connector with an XT30 one.&lt;/p&gt;
+&lt;p&gt;This configuration is not the most convenient, so a good change is to substitute the JST-PH2 duo connector with an &lt;a href=&quot;http://bit.ly/2M1vtRF&quot;&gt;XT30 one&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In case you prefer to continue using the JST-PH2 Duo connector, then these 1S batteries are really good:&lt;/p&gt;
 
@@ -113,6 +230,8 @@ Video quality is pretty good with small amount of noise coming through the video
 &lt;p&gt;The EMAX Tinyhawk Freestyle is a freestyle beginner oriented quad and the default tuning is very good, so it gives the ability to new freestyle pilots to focus on the flight instead of spending time adjusting PIDs values. Moreover, the flight time with 2S 450 mAh battery is pretty long (about 5 minutes) compared to the average flight time of freestyle quads, another positive note for who is starting to fly and needs to stay in the air as long as possible.&lt;/p&gt;
 
 &lt;p&gt;You can buy the EMAX Tinyhawk Freestyle &lt;a href=&quot;http://bit.ly/2nJaytr&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want to check some possible upgrades, take a look at &lt;a href=&quot;https://upinthesky.github.io/2019/10/12/emax-tinyhawk-freestyle-upgrades.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 02 Oct 2019 00:00:00 +0200</pubDate>
         <link>https://upinthesky.github.io//2019/10/02/emax-tinyhawk-freestyle-overview.html</link>
@@ -1560,179 +1679,6 @@ The following image shows the resulting connections (ignore the fact that, in th
         <category>LC Filter</category>
         
         <category>Mod</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Eachine VR006 Mini FPV Goggles ProDVR Mod</title>
-        <description>&lt;p&gt;In &lt;a href=&quot;https://upinthesky.github.io/2018/08/23/eachine-vr006-mini-fpv-goggles-review.html&quot;&gt;this&lt;/a&gt; previous article, &lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006 Mini FPV Goggles&lt;/a&gt; have been reviewed and we have seen that a weak point is the lack of Digital Video Recorder (DVR). In this blog post we will see how it is possible to integrate DVR in the Eachine VR006 by the application of a simple modification.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;In order to record FPV footage using the Eachine VR006 we need to modify them by adding a DVR module: &lt;a href=&quot;http://bit.ly/2McOXzL&quot;&gt;Eachine ProDVR&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Specs are reported down below:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Operating Voltage: DC 5V;&lt;/li&gt;
-  &lt;li&gt;Video Format: NTSC/PAL;&lt;/li&gt;
-  &lt;li&gt;Video Output Size: VGA(640*480px), D1(720*480), HD(1280*480);&lt;/li&gt;
-  &lt;li&gt;Light Frequency: 50HZ/60HZ;&lt;/li&gt;
-  &lt;li&gt;Compress Format: MJPEG;&lt;/li&gt;
-  &lt;li&gt;Records Frame Rate: 30 Frames;&lt;/li&gt;
-  &lt;li&gt;SD Max Size Support: 32G TF Card;&lt;/li&gt;
-  &lt;li&gt;Size: 41mm*32.9mm*9mm;&lt;/li&gt;
-  &lt;li&gt;Weight: 9.5g.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As we can see, it is really lightweight, which it is really important since we are going to mount it on the goggles.&lt;br /&gt;
-Next image shows how the package arrives:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_package.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_package.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Package&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Package Contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Package contents are the following:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_package_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_package_contents.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Package Contents&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;DVR recorder;&lt;/li&gt;
-  &lt;li&gt;Cables to connect power supply, video and audio (we are going to use only two of them);&lt;/li&gt;
-  &lt;li&gt;2 x 3M adhesive;&lt;/li&gt;
-  &lt;li&gt;Instructions Manual.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Cables and Wiring&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We need to modify one of the two cables (both have a white connector on one side and free leads on the other one) we are going to use: it is the one with two black wires, a yellow wire and a white one. We need to remove one of the black wires and the white one, like shown in the next image:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cable.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cable.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Cables Position&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;To remove them it is just a matter of lifting up the little white strip that locks the wire in place and gently pull off the wire.&lt;/p&gt;
-
-&lt;p&gt;The following image shows the other cable needed, together with the one we prepared above, both connected to the Eachine ProDVR module:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cables_connection.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cables_connection.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Cables Connection&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Disassembling&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Since we are going to solder wire leads on the pads located on the board inside the goggles, we need to disassemble them. To do this, we need to cut the black sponge in two points, the ones in which the bottom part of the goggles links up to the top part:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_sponge_cut.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_sponge_cut.png&quot; alt=&quot;Eachine VR006 Sponge Cut&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the cutting job is done, we can proceed with the separation of the two parts by removing the four screws located inside the highlighted holes in this picture:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_disassembled.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_disassembled.png&quot; alt=&quot;Eachine VR006 Disassembled&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you do not want to cut off part of the front vent to get the wires exiting from the inside of the goggles, you need to make them pass through the holes of the vent before proceeding with the soldering job:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cables_position.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_cables_position.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Cables Position&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Before we can pull off the board we have to remove the two RP-SMA antenna connectors:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_rpsma_connector_removal.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_rpsma_connector_removal.png&quot; alt=&quot;Eachine VR006 RP-SMA Connector Removal&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once that is done we can unplug the battery connector, gently pull out the board and the LCD screen and place them on the table:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_board.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_board.png&quot; alt=&quot;Eachine VR006 Board&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Soldering&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;As always, for an easy soldering job, remember to tin the wires and the pads on which we are going to solder the wires. &lt;a href=&quot;http://bit.ly/2LEde1f&quot;&gt;This&lt;/a&gt; is the soldering iron I use (actually it is a real compact soldering station), which is my preferred one at the moment due to its quality, dimensions and portability.&lt;/p&gt;
-
-&lt;p&gt;The following two images show how to solder the wires on the board pads; the black and yellow wires of the first image correspond to the ones going into the smaller white connector (GND, V_OUT):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_av_soldering_a.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_av_soldering_a.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Soldering on Eachine VR006&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;These wires make possible to use DVR as AV IN for the goggles: in this way we can watch/erase DVR recorded videos directly from the goggles.&lt;/p&gt;
-
-&lt;p&gt;For the bigger white connector, pin leads order starting from the top pad is the following: GND, +5V, A_IN, V_IN, GND/GND:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_av_soldering_b.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_av_soldering_b.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Soldering on Eachine VR006&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Just keep attention that the top pad black wire corresponds to the top ground pin for the bigger white connector; the other two black wires soldered together are the ground for A_IN and V_IN:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_wiring_diagram.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_prodvr_wiring_diagram.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Wiring Diagram&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Recording&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the soldering job is done, before reassembling everything back, we need to test if DVR is working correctly: connecting the battery and powering up the goggles should make the led of the DVR module light up. To start recording (remember to insert an SD card inside the DVR module), we need to press one time the right arrow button: if the recording starts, the led should be flashing. To stop video recording we need to press again that button.&lt;/p&gt;
-
-&lt;p&gt;To play a previously recorded video, we need to set DVR as AV IN in the Eachine VR006 Menu (if you do not know how to do that look &lt;a href=&quot;https://upinthesky.github.io/2018/08/23/eachine-vr006-mini-fpv-goggles-review.html&quot;&gt;here&lt;/a&gt;). Be aware that, if in the future we want to use a different AV IN, we need to unplug the yellow/black connector from the DVR module.
-Once AV IN is set, we just press and hold for 3 seconds the left arrow button and then we can navigate through the media files using arrow buttons; press the mid button to play.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Video and Main Menu&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;To enter Video Menu we need to long press the mid button (here we can change Size, Rec Sound and Video Time values); once there, we can enter Main Menu by short pressing right arrow button. Here we can:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Format memory card;&lt;/li&gt;
-  &lt;li&gt;Change language;&lt;/li&gt;
-  &lt;li&gt;Restore default settings;&lt;/li&gt;
-  &lt;li&gt;Change display frequency;&lt;/li&gt;
-  &lt;li&gt;Change TV output frequency.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;By hold pressing the mid button we exit Main Menu.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Reassembling and Module Fixing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally we can put the board and the display back inside the case and close the goggles by screwing back together the two parts.&lt;br /&gt;
-Then we can just fix the DVR module on the top part of the googles by using the included double side tape:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_prodvr.png&quot;&gt;&lt;img src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_prodvr.png&quot; alt=&quot;Eachine ProDVR Digital Video and Audio Recorder Mounted on Eachine VR006&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We have seen how to install ProDVR module on the Eachine VR006 Mini FPV Goggles; in this way we can finally record FPV footage directly from our goggles by saving it to an SD card. We can even watch saved videos on goggles screen through AV IN port using DVR as input source.&lt;br /&gt;
-This module is really cheap and it is a must have mod for VR006 Mini FPV goggles: you can get it &lt;a href=&quot;http://bit.ly/2McOXzL&quot;&gt;here&lt;/a&gt; at a good price.&lt;/p&gt;
-
-&lt;p&gt;If you want to read the review of the Eachine VR006 Mini FPV Goggles, take a look at &lt;a href=&quot;https://upinthesky.github.io/2018/08/23/eachine-vr006-mini-fpv-goggles-review.html&quot;&gt;this article&lt;/a&gt;.&lt;br /&gt;
-If you want to know how to install a diversity receiver module on the Eachine VR006 Mini FPV Goggles, read &lt;a href=&quot;https://upinthesky.github.io/2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
-        <link>https://upinthesky.github.io//2018/09/09/eachine-vr006-mini-fpv-goggles-prodvr-mod.html</link>
-        <guid isPermaLink="true">https://upinthesky.github.io//2018/09/09/eachine-vr006-mini-fpv-goggles-prodvr-mod.html</guid>
-        
-        <category>Eachine</category>
-        
-        <category>VR006</category>
-        
-        <category>VR-006</category>
-        
-        <category>Mini</category>
-        
-        <category>FPV</category>
-        
-        <category>Goggles</category>
-        
-        <category>DVR</category>
-        
-        <category>ProDVR</category>
-        
-        <category>Mod</category>
-        
-        <category>Box Style</category>
-        
-        <category>Review</category>
-        
-        <category>Racing</category>
-        
-        <category>Freestyle</category>
-        
-        <category>Drone</category>
-        
-        <category>Quadcopter</category>
-        
-        <category>Antenna</category>
-        
-        <category>RP-SMA</category>
-        
-        <category>Soldering</category>
         
         
       </item>
