@@ -6,8 +6,8 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jan 2020 23:29:40 +0100</pubDate>
-    <lastBuildDate>Mon, 06 Jan 2020 23:29:40 +0100</lastBuildDate>
+    <pubDate>Wed, 08 Jan 2020 21:48:30 +0100</pubDate>
+    <lastBuildDate>Wed, 08 Jan 2020 21:48:30 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -111,13 +111,90 @@ is powered by a rechargeable battery that has a capacity of 2970 mAh, which ensu
 
 &lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/dji-mavic-air-arctic-white-review/mavic_air_controller_smartphone.jpg&quot;&gt;&lt;img src=&quot;/images/dji-mavic-air-arctic-white-review/mavic_air_controller_smartphone.jpg&quot; alt=&quot;Mavic Air Arctic White Radio Controller with Smartphone&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;The image above shows DJI Radio Controller with a Saminìsung Galaxy S8 mounted on.&lt;/p&gt;
+&lt;p&gt;The image above shows DJI Radio Controller with a Samsung Galaxy S8 mounted on.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DJI GO4 App&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;DJI GO4 App is used to view FPV downlink on the mobile device the app is installed on. The app is available for free download on the Google Play Store for Android users and on the Apple Store for iOS users.&lt;/p&gt;
+
+&lt;p&gt;The following image shows mobile device screen after launching the app:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/dji-mavic-air-arctic-white-review/dji_go4_app_start.png&quot;&gt;&lt;img src=&quot;/images/dji-mavic-air-arctic-white-review/dji_go4_app_start.png&quot; alt=&quot;DJI Go4 App Start&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;When connecting the aircraft for the first time, it is important to download and install the latest firmware available. The drone will also update maps used by &lt;a href=&quot;https://www.dji.com/it/flysafe/geo-map&quot;&gt;DJI’s GEO system&lt;/a&gt; that defines which zones are safe to fly.&lt;/p&gt;
+
+&lt;p&gt;Once everything is updated, the app shows the current FPV video image in real time:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/dji-mavic-air-arctic-white-review/dji_go4_app_fpv_view.png&quot;&gt;&lt;img src=&quot;/images/dji-mavic-air-arctic-white-review/dji_go4_app_fpv_view.png&quot; alt=&quot;DJI Go4 App FPV View&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As the screenshot shows, FPV reports real time video from drone camera with many information on the overlay: in the top part it is reported aircraft status with GPS signal strength; if no satellite is acquired, then the tag OPTI is displayed meaning the aircraft will fly using vision sensors to maintain its current position. After that, there is an indicator of the Forward and Backward Vision System status and another one for wireless connection, which can be @2.4GHz or @5.8GHz, followed by battery level expressed in percentage. The last icon represents three dots: by tapping on it, it is possible to access a menu with the following configuration settings:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;MC Settings;&lt;/li&gt;
+  &lt;li&gt;Visual Navigation Settings;&lt;/li&gt;
+  &lt;li&gt;Remote Controller Settings;&lt;/li&gt;
+  &lt;li&gt;Image Transmission Settings;&lt;/li&gt;
+  &lt;li&gt;Aircraft Battery;&lt;/li&gt;
+  &lt;li&gt;General Settings.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Under these top icons, informations about camera settings are reported: ISO, Shutter, EV, White Balance and remaining space on the SD card when recording videos or taking photos at current resolution.&lt;/p&gt;
+
+&lt;p&gt;On the left side there are four icons for the following flight modes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Auto Take Off / Land;&lt;/li&gt;
+  &lt;li&gt;Return To Home;&lt;/li&gt;
+  &lt;li&gt;Intelligent Flight Modes;&lt;/li&gt;
+  &lt;li&gt;Advanced Pilot Assistance System (APAS), which allows autonomous obstacle avoidance.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The bottom part displays flight telemetry:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;D = distance between the aircraft and the Home Point;&lt;/li&gt;
+  &lt;li&gt;H = height from the Home Point;&lt;/li&gt;
+  &lt;li&gt;HS = aircraft horizontal speed;&lt;/li&gt;
+  &lt;li&gt;VS = aircraft vertical speed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On the right side there are four icons: from the top, the first one toggles between video recording and photo shooting. Tapping on the second one, it is possible to start/stop recording or take photos. The third icon allows to enter the menu to configure camera settings, while the last one gives access to the SD card to view video and photos taken during the flight session.&lt;/p&gt;
+
+&lt;p&gt;The mid part of the screen shows obstacle detection system activity displaying the distance from the closest obstacle detected. The color of the indicators varies based on the distance from the aircraft and the obstacle.&lt;/p&gt;
+
+&lt;p&gt;Finally, on the bottom left, there is the map showing GPS location and flight path (flight data are recorded in the app and can be analyzed after the flight).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intelligent Flight Modes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;DJI Mavic Air features Intelligent Flight Modes, i.e. autonomous functions through which the aircraft can perform interesting moves for aerial shots. These modes are the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;QuickShots
+    &lt;ul&gt;
+      &lt;li&gt;Dronie&lt;/li&gt;
+      &lt;li&gt;Circle&lt;/li&gt;
+      &lt;li&gt;Elix&lt;/li&gt;
+      &lt;li&gt;Rocket&lt;/li&gt;
+      &lt;li&gt;Boomerang&lt;/li&gt;
+      &lt;li&gt;Asteroid&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ActiveTrack&lt;/li&gt;
+  &lt;li&gt;SmartCapture&lt;/li&gt;
+  &lt;li&gt;Tripod Mode&lt;/li&gt;
+  &lt;li&gt;Cinematic Mode&lt;/li&gt;
+  &lt;li&gt;TapFly&lt;/li&gt;
+  &lt;li&gt;Point of Interest&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Intelligent Flight Modes can be entered by clicking on the radio controller icon on the left of the screen (under the Return To Home icon).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;DJI Mavic Air is one of the best drones for filming high quality footage with a portable and really easy to fly product of high technology.&lt;/p&gt;
+&lt;p&gt;DJI Mavic Air is one of the best drones for filming high quality footage with a portable and really easy to fly product of high technology.&lt;br /&gt;
+Intelligent Flight Modes are just awesome for taking good cinematic shoots and the obstacle detection system is very accurate.&lt;/p&gt;
 
-&lt;p&gt;You can buy the Mavic Air &lt;a href=&quot;http://bit.ly/2sFBlZP&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can buy the DJI Mavic Air &lt;a href=&quot;http://bit.ly/2sFBlZP&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Jan 2020 00:00:00 +0100</pubDate>
         <link>https://upinthesky.github.io//2020/01/06/dji-mavic-air-arctic-white-review.html</link>
@@ -140,6 +217,18 @@ is powered by a rechargeable battery that has a capacity of 2970 mAh, which ensu
         <category>Battery</category>
         
         <category>DJI GO4 App</category>
+        
+        <category>APAS</category>
+        
+        <category>HD</category>
+        
+        <category>4K</category>
+        
+        <category>Intelligent Flight Modes</category>
+        
+        <category>LiPo</category>
+        
+        <category>Telemetry</category>
         
         
       </item>
