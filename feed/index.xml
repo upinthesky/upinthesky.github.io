@@ -6,9 +6,130 @@
 </description>
     <link>https://upinthesky.github.io//</link>
     <atom:link href="https://upinthesky.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 14 Jan 2020 21:34:57 +0100</pubDate>
-    <lastBuildDate>Tue, 14 Jan 2020 21:34:57 +0100</lastBuildDate>
+    <pubDate>Wed, 15 Jan 2020 22:30:07 +0100</pubDate>
+    <lastBuildDate>Wed, 15 Jan 2020 22:30:07 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>FrSky Taranis X9D Plus SE 2019 Switch Setup and Configuration in Betaflight</title>
+        <description>&lt;p&gt;In this post we will see how to configure switches on the &lt;a href=&quot;http://bit.ly/2ktT6Yd&quot;&gt;FrSky Taranis X9D Plus SE 2019&lt;/a&gt;, the notorious radio transmitter using FrSky protocol and presented in &lt;a href=&quot;https://upinthesky.github.io/2019/09/22/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version.html&quot;&gt;this previous article&lt;/a&gt;, and how to set up flight modes on Betaflight Configurator through the configured switches. Since FrSky Taranis X9D Plus SE 2019 is loaded with OpenTX firmware (in my case the version is OpenTX 2.3.0), this guide is valid for all the transmitter using OpenTX firmware.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Setting up switches on OpenTX&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;After turning on the FrSky Taranis X9D Plus SE 2019 by holding the power button, the LCD display turns on and we get the starting screen with our aircraft model page, in my case the Eachine X220S.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_2019_se_home_screen.jpg&quot;&gt;&lt;img src=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_2019_se_home_screen.jpg&quot; alt=&quot;FrSky Taranis X9D Plus SE 2019&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To proceed with the configuration of the switches, we need to go to the MODEL SELECTION menu, by pressing the MENU button; note the 1/13 on the top right of the display, indicating we are at page 1 of 13.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_2019_se_model_selection.jpg&quot;&gt;&lt;img src=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_2019_se_model_selection.jpg&quot; alt=&quot;FrSky Taranis X9D Plus SE 2019&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;By pressing the PAGE button we can move to the next page (hold it to go to the previous page): we need to reach page number 5, which is INPUTS page. Here we can create new inputs and use them to set up, for example, switches.&lt;br /&gt;
+When reaching INPUTS page for the first time, we have only 4 inputs: Thr (throttle), Ail (aileron), Ele (elevator), Rud (rudder).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Arming/disarming switch&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is presented the detail for setting up an arming/disarming switch. To set the others (MODE, BEEP, TURTLE), it is just a matter of applying the same configuration.&lt;/p&gt;
+
+&lt;p&gt;First, we need to create a new INPUT (page 5/13), that we name ARM, since we want to configure a switch that has the arming/disarming functionality. To move between the inputs, we can use the scroll wheel on the right:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_inputs.jpg&quot;&gt;&lt;img src=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_inputs.jpg&quot; alt=&quot;FrSky Taranis X9D Plus SE 2019 Inputs&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;By pressing and holding the scroll wheel button on an input line, we can edit the corresponding input. We are interested in two fields: “Input name” and “Source”. In the first one, we write ARM since this is the name we want to assign to this input, while in the second one we need to assign the switch name, in my case “SD”. To assign the switch, instead of scrolling through the list, one can simply change the switch position to have the field automatically filled in with the corresponding switch name.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_input_edit.jpg&quot;&gt;&lt;img src=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_input_edit.jpg&quot; alt=&quot;FrSky Taranis X9D Plus SE 2019 Inputs&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the INPUT is created, we need to assign that input to a MIXER (page 6/13) channel. Since the first four channels are already occupied by default aircraft commands, we use CH5 for ARM functionality:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_mixer.jpg&quot;&gt;&lt;img src=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_mixer.jpg&quot; alt=&quot;FrSky Taranis X9D Plus SE 2019 Mixer&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Like for the INPUTS, in MIXER menu we enter in the channel we are interested in using the scroll wheel button: once in edit mode, we set a MIX name and the Source: since we have defined an ARM input, we can configure it as our source (of course, we could have set up directly “SD” switch name, but I think creating an INPUT and referring to it is more clear).&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_mixer_edit.jpg&quot;&gt;&lt;img src=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_mixer_edit.jpg&quot; alt=&quot;FrSky Taranis X9D Plus SE 2019 Mixer&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, we just repeat this process for all the switches we need.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Adding sound or voice speech when flipping switches&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Suppose now we want to have a sound or a voice track played when a switch is flipped; this can be useful, especially when flying with FPV goggles on.&lt;/p&gt;
+
+&lt;p&gt;This can be done using SPECIAL FUNCTIONS menu (page 11/13): some sounds and voice tracks are already available in the “SD card contents” from OpenTX download page. However, there is a good sound pack available &lt;a href=&quot;http://open-txu.org/home/version-2/v2-2-resources-2/&quot;&gt;here&lt;/a&gt;, called Amber Sound pack, which has many tracks.&lt;/p&gt;
+
+&lt;p&gt;So, the first thing to do is to download “SD card contents” for OpenTX: downloads are available &lt;a href=&quot;https://www.open-tx.org/downloads&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;“SD card contents” for OpenTX 2.3.0 are &lt;a href=&quot;https://www.open-tx.org/2019/09/27/opentx-2.3.0&quot;&gt;here&lt;/a&gt;. Be careful to choose the correct transmitter model on the &lt;a href=&quot;https://downloads.open-tx.org/2.3/release/sdcard/&quot;&gt;download page&lt;/a&gt; (for example, if you have the FrSky Taranis X9D Plus SE 2019, the correct folder is opentx-x9d+2019).&lt;/p&gt;
+
+&lt;p&gt;So, in my case, the correct file is &lt;a href=&quot;https://downloads.open-tx.org/2.3/release/sdcard/opentx-x9d%2B2019/sdcard-212x64-2.3V0021.zip&quot;&gt;this one&lt;/a&gt;, since the documentation reports the following note: &lt;em&gt;“Note: 2.3.0 uses 2.3v0021”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once downloaded, we need an &lt;a href=&quot;http://bit.ly/2FI27Un&quot;&gt;SD card&lt;/a&gt; for the FrSky Taranis X9D Plus SE 2019 on which we are going to transfer the downloaded file and extract its contents. We can either load the zip archive directly into the SD card by connecting it to the PC through a USB adapter or insert the SD card into the radio and then transfer the zip archive using the USB cable included with the Taranis. I suggest to proceed using the first solution since the transfer speed is better.&lt;/p&gt;
+
+&lt;p&gt;If everything went correctly, we should get the welcome sound when turning on the transmitter.&lt;br /&gt;
+If you want to install also the Amber Sound pack, just download the file from the link mentioned above and extract its contents (“SOUNDS” folder) in the SD card like done before for the “SD card contents” zip archive.&lt;/p&gt;
+
+&lt;p&gt;Then, to setup sound or voice tracks, it is just a matter of going into the SPECIAL FUNCTIONS menu and select the corresponding switch name and sound/track by selecting it using the scroll wheel. The following image shows the tracks for arming, disarming, stabilize (angle) mode, horizon mode and acro (air) mode respectively playing when flipping SD and SC switches.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_special_functions.jpg&quot;&gt;&lt;img src=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_special_functions.jpg&quot; alt=&quot;FrSky Taranis X9D Plus SE 2019 Special Functions&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Setting up switches in Betaflight Configurator&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, we have to set up the switches through &lt;a href=&quot;https://github.com/betaflight/betaflight-configurator/releases&quot;&gt;Betaflight Configurator&lt;/a&gt;, so the flight controller knows what to do when a switch is flipped (the fact we have named one input as “ARM” does mean nothing to the flight controller until we make this configuration).&lt;/p&gt;
+
+&lt;p&gt;So, in Modes tab of Betaflight Configurator we can make an association between AUX channels, representing the switches, and modes recognized by the flight controller.&lt;br /&gt;
+Here is the setup for ARM, ANGLE, HORIZON, BEEPER, AIR MODE, FLIP OVER AFTER CRASH (turtle mode):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/betaflight_taranis_x9d_plus_2019_se_modes.png&quot;&gt;&lt;img src=&quot;/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/betaflight_taranis_x9d_plus_2019_se_modes.png&quot; alt=&quot;Betaflight FrSky Taranis X9D Plus SE 2019 Modes Configuration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So we have:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SD (AUX1) -&amp;gt; arm/disarm&lt;/li&gt;
+  &lt;li&gt;SC (AUX2) -&amp;gt; angle, horizon , air modes&lt;/li&gt;
+  &lt;li&gt;SA (AUX3) -&amp;gt; beeper&lt;/li&gt;
+  &lt;li&gt;SE (AUX4) -&amp;gt; flip over after crash (turtle mode)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this article we have seen how to set up and configure switches on the &lt;a href=&quot;http://bit.ly/2ktT6Yd&quot;&gt;FrSky Taranis X9D Plus SE 2019&lt;/a&gt; and how to activate flight modes in Betaflight Configurator by flipping the corresponding associated switch on the radio transmitter. Moreover, we have also seen how to play a sound or a voice track when flipping a switch by downloading and installing OpenTX SD card contents and Amber Sound pack.&lt;/p&gt;
+
+&lt;p&gt;For an overview of the FrSky Taranis X9D Plus SE 2019, read &lt;a href=&quot;https://upinthesky.github.io/2019/09/22/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 Jan 2020 00:00:00 +0100</pubDate>
+        <link>https://upinthesky.github.io//2020/01/15/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight.html</link>
+        <guid isPermaLink="true">https://upinthesky.github.io//2020/01/15/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight.html</guid>
+        
+        <category>Taranis X9D Plus SE 2019</category>
+        
+        <category>Transmitter</category>
+        
+        <category>Radio</category>
+        
+        <category>OpenTX</category>
+        
+        <category>FrSky</category>
+        
+        <category>FPV</category>
+        
+        <category>Racing</category>
+        
+        <category>Freestyle</category>
+        
+        <category>ACCESS</category>
+        
+        <category>Switch</category>
+        
+        <category>Betaflight Configurator</category>
+        
+        <category>Configuration</category>
+        
+        <category>Modes</category>
+        
+        <category>Voice Speech</category>
+        
+        
+      </item>
     
       <item>
         <title>DJI Mavic Air Arctic White Review</title>
@@ -725,7 +846,7 @@ To activate the Wi-Fi there is a button on the right side: after a long press, a
       <item>
         <title>FrSky Taranis X9D Plus 2019 Overview and Comparison with SE Version</title>
         <description>&lt;p&gt;FrSky brand is famous for its transmitters/receivers: in the RC world, if you say the word Taranis, anyone knows what you are talking about.&lt;br /&gt;
-Taranis X9D is one of the best transmitter out there and now it has got an upgrade with the &lt;a href=&quot;http://bit.ly/2m1x2Vc&quot;&gt;Taranis X9D Plus 2019&lt;/a&gt; and &lt;a href=&quot;http://bit.ly/2ktT6Yd&quot;&gt;Taranis X9D Plus SE 2019&lt;/a&gt; models.&lt;/p&gt;
+Taranis X9D is one of the best transmitter out there and now it has got an upgrade with the &lt;a href=&quot;http://bit.ly/2m1x2Vc&quot;&gt;FrSky Taranis X9D Plus 2019&lt;/a&gt; and &lt;a href=&quot;http://bit.ly/2ktT6Yd&quot;&gt;FrSky Taranis X9D Plus SE 2019&lt;/a&gt; models.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -1656,192 +1777,6 @@ Eachine Pro58 Diversity Receiver module can be found &lt;a href=&quot;http://bit
         <category>Soldering</category>
         
         <category>Firmware</category>
-        
-        <category>Pirx The Pilot</category>
-        
-        <category>FPV</category>
-        
-        <category>Racing</category>
-        
-        <category>Freestyle</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Eachine Pro58 Diversity Receiver Overview and Pirx the Pilot Firmware Installation</title>
-        <description>&lt;p&gt;In this article we will take a look at the &lt;a href=&quot;http://bit.ly/2Qm98gO&quot;&gt;Eachine Pro58 Diversity Receiver&lt;/a&gt; and we will see how to install a custom firmware on it, specifically Pirx The Pilot. To do so, we need &lt;a href=&quot;http://bit.ly/2RgXo0v&quot;&gt;ST-LINK V2 STM8 / STM32 Programmer&lt;/a&gt; which is a USB module used to program/upload the firmware on the receiver.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;The following image shows the box containing the Eachine Pro58 Diversity Receiver:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_box.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_box.png&quot; alt=&quot;Eachine Pro58 Diversity Receiver Box&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Down below it is shown the package for the ST-LINK V2:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_box.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_box.png&quot; alt=&quot;ST-LINK V2 Box&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Box Contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Inside the two boxes we find the following items:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Eachine Pro58 Diversity Receiver&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/eachine_pro58_box_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/eachine_pro58_box_contents.png&quot; alt=&quot;Eachine Pro58 Diversity Receiver Box Contents&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ST-LINK V2 STM8 / STM32 Programmer&lt;/li&gt;
-  &lt;li&gt;Pin wires&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_box_contents.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_box_contents.png&quot; alt=&quot;ST-LINK V2 Box Contents&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In both cases no manual/instructions are provided inside the box.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Eachine Pro58 Specifications&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Down below are reported the specs for the Eachine Pro58 Diversity Receiver:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Frequency: 5.8G;&lt;/li&gt;
-  &lt;li&gt;Channels: 40CH;&lt;/li&gt;
-  &lt;li&gt;Power Consumption: 1.8-2W;&lt;/li&gt;
-  &lt;li&gt;Size: 42 x 30 x 25mm;&lt;/li&gt;
-  &lt;li&gt;Weight: 23g.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Soldering Iron&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A good soldering iron is needed. I really like &lt;a href=&quot;http://bit.ly/2LEde1f&quot;&gt;this one&lt;/a&gt;, which is compact and portable since it can be powered up using LiPo batteries.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ST-LINK V2 Pins and Connection with Eachine Pro58&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We can start by looking at the pins of the ST-LINK V2:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_pins.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_pins.png&quot; alt=&quot;ST-LINK V2 Pins Layout&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We have to use a total of four pins in order to power and upload the new firmware on the Eachine Pro58: 5.0V, 3.3V, SWCLK, SWDIO. First two are for power the module up and the other two are used to upload the firmware.&lt;/p&gt;
-
-&lt;p&gt;We need to solder two wires on the SWCLK and SWDIO pads of the Eachine Pro58 like shown in the following image (remember to tin pads and wires for an easy soldering job):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_firmware_loading_leads.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_firmware_loading_leads.png&quot; alt=&quot;Eachine Pro58 Firmware Loading Leads&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Of course, we need to connect these two wires to the corresponding ST-LINK V2 pins shown before. Looking the Eachine Pro58 from the back, the 5.0V and 3.3V from the ST-LINK V2 have to be connected as shown here (you can choose whatever pins couple that you prefer since they are identical, upper 3.3V/5.0V or lower 5.0V/3.3V):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_power_leads.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_power_leads.png&quot; alt=&quot;Eachine Pro58 ST-LINK V2 Connections&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Down below is reported the complete wiring connection from the ST-LINK V2 to the Eachine Pro58 (I used upper pins for 3.3V and 5.0V):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_stlinkv2_connections.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_stlinkv2_connections.png&quot; alt=&quot;Eachine Pro58 ST-LINK V2 Connections&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Different view (I used only two of the four wires supplied because I already had similar wires with a free end, but of course you can use the other two and cut off one end in order to solder them on the receiver SWCLK/SWDIO pads):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_stlinkv2_connections2.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_stlinkv2_connections2.png&quot; alt=&quot;Eachine Pro58 ST-LINK V2 Connections&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If power wires are connected properly (double check before proceed), we should see the Eachine logo on the Eachine Pro58 display when connecting the ST-LINK V2 USB to the PC, meaning that it is booting up. After that we should be prompted with the following screen:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_eachine_firmware.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_eachine_firmware.png&quot; alt=&quot;Eachine Pro58 Default Firmware&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;To proceed with the load of Pirx The Pilot firmware, we need to install some software on the PC.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Software Installation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;All the following programs are free, but registration is needed in order to download them.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.st.com/en/development-tools/stm32cubeprog.html&quot;&gt;STM32 CubeProgrammer software for programming STM32 products&lt;/a&gt;: we are going to use this to program the receiver, i.e. to load custom firmware on it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32cubeprog_download.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32cubeprog_download.png&quot; alt=&quot;STM32 CubeProgrammer Software Download&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This software needs Java to run, so we have to download and install also the latest Java version available.&lt;br /&gt;
-To “Connect” the Eachine Pro58 through the ST-LINK V2, we need to install some drivers.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.st.com/en/development-tools/stsw-link009.html&quot;&gt;ST-LINK, ST-LINK/V2, ST-LINK/V2-1 USB driver signed for Windows7, Windows8, Windows10&lt;/a&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stsw-link009_download.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stsw-link009_download.png&quot; alt=&quot;STSW-LINK009 Software Download - ST-LINK, ST-LINK/V2, ST-LINK/V2-1 USB Driver Signed for Windows 7, Windows 8, Windows 10&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally we need to upgrade the firmware of the ST-LINK V2 using ST-LinkUpgrade.exe:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.st.com/en/development-tools/stsw-link007.html&quot;&gt;STSW-LINK007 Software Download - ST-LINK, ST-LINK/V2, ST-LINK/V2-1 Firmware Upgrade&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stsw-link007_download.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stsw-link007_download.png&quot; alt=&quot;STSW-LINK007 Software Download - ST-LINK, ST-LINK/V2, ST-LINK/V2-1 Firmware Upgrade&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the upgrade has been done we get the following message:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_driver_update.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_driver_update.png&quot; alt=&quot;ST-LINK V2 Driver Update&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We are now ready to upload Pirx The Pilot Firmware (or every other firmware we like for the Eachine Pro58). To proceed we need to install the previously downloaded STM32 CubeProgrammer and launch it.&lt;br /&gt;
-Clicking on “Connect” should connect the Eachine Pro58 to the PC through the ST-LINK V2:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer.png&quot; alt=&quot;STM32 CubeProgrammer&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Loading Pirx The Pilot Firmware&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Once connected, we should get the following screen:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_connected.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_connected.png&quot; alt=&quot;STM32 CubeProgrammer Pro58 Connected Through ST-LINK V2&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Be sure that, on the screen shown after clicking on “OB” on the left, the box for the “Read protection option byte” (RDP) is unchecked:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_ob_readout_protection.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_ob_readout_protection.png&quot; alt=&quot;STM32 CubeProgrammer OB Readout Protection&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If that is not the case, uncheck it and click on “Apply”.&lt;br /&gt;
-Before uploading the new firmware, we need to erase the old one (first click on the pencil button, then on the eraser one):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_erase.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_erase.png&quot; alt=&quot;STM32 CubeProgrammer Firmware Erase&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Next we have to click on the second icon from the top left (the one with the downloading arrow) and browsing for the firmware we want to load.
-Pirx The Pilot Firmware .bin file is available &lt;a href=&quot;https://pirxfpv.com&quot;&gt;here&lt;/a&gt; for free (you just have to register to get the download link).&lt;/p&gt;
-
-&lt;p&gt;Once you have it on the PC, it is just a matter of setting the file path, controlling that “Verify programming” and “Run after programming” tick boxes are checked and clicking on “Start Programming”.&lt;/p&gt;
-
-&lt;p&gt;If everything went ok, we get the following message:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_pirx_loaded.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_pirx_loaded.png&quot; alt=&quot;STM32 CubeProgrammer Pirx The Pilot Firmware Loaded&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;On the Eachine Pro58 we should see Pirx The Pilot firmware in action:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;a href=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_pirx_firmware.png&quot;&gt;&lt;img src=&quot;/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_pirx_firmware.png&quot; alt=&quot;Eachine Pro58 Pirx The Pilot Display&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In this article we have seen how to load a custom firmware, specifically Pirx The Pilot, on the &lt;a href=&quot;http://bit.ly/2Qm98gO&quot;&gt;Eachine Pro58 Diversity Receiver&lt;/a&gt; using the &lt;a href=&quot;http://bit.ly/2RgXo0v&quot;&gt;ST-LINK V2 STM8 / STM32 Programmer&lt;/a&gt;. This is a really good diversity receiver with very nice performance and this firmware just make it a must have product especially if you want to upgrade a pair of goggles not having diversity like the &lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006 Mini FPV Goggles&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you want to know how to install the Eachine Pro58 diversity receiver module on the Eachine VR006 Mini FPV Goggles, you can read &lt;a href=&quot;https://upinthesky.github.io/2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 07 Oct 2018 00:00:00 +0200</pubDate>
-        <link>https://upinthesky.github.io//2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html</link>
-        <guid isPermaLink="true">https://upinthesky.github.io//2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html</guid>
-        
-        <category>Quadcopter</category>
-        
-        <category>Eachine</category>
-        
-        <category>Pro58</category>
-        
-        <category>ST-LINK V2</category>
-        
-        <category>Overview</category>
-        
-        <category>Review</category>
-        
-        <category>Diversity</category>
-        
-        <category>Receiver</category>
-        
-        <category>Firmware</category>
-        
-        <category>Installation</category>
-        
-        <category>Mod</category>
         
         <category>Pirx The Pilot</category>
         
