@@ -17,12 +17,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
+  <title>Search</title>
   <meta name="description" content="© 2017-2020 Up in the Sky | All Rights Reserved 
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://upinthesky.github.io//about/">
+  <link rel="canonical" href="https://upinthesky.github.io//search/">
   <link rel="alternate" type="application/rss+xml" title="Up in the Sky" href="https://upinthesky.github.io//feed.xml">
 </head>
 
@@ -93,15 +93,31 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title">Search</h1>
   </header>
 
   <div class="post-content">
-    <p>I am an Electronic Engineer with a big interest in remote controlled aircrafts; so in this blog I will wrote articles about RC quadcopters, airplanes, helicopters.</p>
+    <!-- Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="Search blog posts..." />
+<ul id="results-container"></ul>
+</div>
 
-<p>The Home Page contains a list of the most recent blog posts, while in the Archive Page you can find a list of all the articles. Check out the Tags Page if you search for a particular argument.</p>
+<!-- Script pointing to search-script.js -->
+<script src="/js/search-script.js" type="text/javascript"></script>
 
-<p>If you want to contact me, feel free to send me an <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#117;&#112;&#105;&#110;&#116;&#104;&#101;&#115;&#107;&#121;&#098;&#108;&#111;&#103;&#091;&#097;&#116;&#093;&#103;&#109;&#097;&#105;&#108;&#091;&#100;&#111;&#116;&#093;&#099;&#111;&#109;">email</a>.</p>
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json',
+  //-- searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a></div>',
+  noResultsText: ("Sorry, no result found")
+})
+
+</script>
+
 
   </div>
 
