@@ -21,8 +21,8 @@
   <meta name="description" content="It is always important to keep board’s firmware updated to the latest release. This article shows how to update Betaflight firmware for the Omnibus F4SD whic...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://upinthesky.github.io//2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html">
-  <link rel="alternate" type="application/rss+xml" title="Up in the Sky" href="https://upinthesky.github.io//feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html">
+  <link rel="alternate" type="application/rss+xml" title="Up in the Sky" href="http://0.0.0.0:4000/feed.xml">
 </head>
   <body>
     <nav class="single-post-nav">
@@ -42,7 +42,7 @@
     </nav>
     <div class="single-post">
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header single-post-header" style="background-image:url('https://upinthesky.github.io//images/clouds_banner.jpg')">
+  <header class="post-header single-post-header" style="background-image:url('http://0.0.0.0:4000/images/clouds_banner.jpg')">
     <div>
       <h1 class="post-title single-post-title" itemprop="name headline">Eachine Wizard X220S Omnibus F4SD Firmware Upgrade</h1>
       <p class="post-meta single-post-meta">
@@ -100,12 +100,11 @@
 
 <p>Once it is installed, to check current BF firmware version, we just need to connect the board to the PC, launch the application, click “Connect” and navigate to the Command Line Interface (CLI). Here we need to type the command “version” and then just press enter:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Entering CLI Mode, type 'exit' to return, or 'help'
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Entering CLI Mode, type 'exit' to return, or 'help'
 
 # version
 # Betaflight / OMNIBUSF4SD 3.1.7 Apr 10 2017 / 17:10:55 ()
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>As we can see, by default, the FC on the Wizard X220S is loaded with Omnibus F4SD version 3.1.7.</p>
 
@@ -121,7 +120,7 @@
 
 <p>For example, here is reported the output of the “diff” command:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># diff
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># diff
 
 # version
 # Betaflight / OMNIBUSF4SD (OBSD) 3.4.0 Jul  8 2018 / 04:24:36 (cce8a59be) MSP API: 1.39
@@ -221,8 +220,7 @@ set i_yaw = 50
 # rateprofile
 rateprofile 0
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>Drivers installation</strong></p>
 
