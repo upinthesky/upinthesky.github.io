@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Eachine VR006 Mini FPV Goggles Pro58 Diversity Receiver Mod - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="As discussed in this article, Eachine VR006 Mini FPV Goggles lack of an important feature, Diversity Reception. This is why in this blog post we are going to...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Eachine VR006 Mini FPV Goggles Pro58 Diversity Receiver Mod</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on November 01, 2018 &middot; <span class="reading-time" title="Estimated read time">
+  
+   6 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>As discussed in <a href="https://upinthesky.github.io/2018/08/23/eachine-vr006-mini-fpv-goggles-review.html">this article</a>, <a href="http://bit.ly/2Mz17Hp">Eachine VR006 Mini FPV Goggles</a> lack of an important feature, Diversity Reception. This is why in this blog post we are going to see how to install a diversity receiver module, in particular the <a href="http://bit.ly/2Qm98gO">Eachine Pro58</a>, which is cheap and is a real game changer.</p>
+
+<!--more-->
+
+<p><strong>Flashing Pirx The Pilot Firmware on Eachine Pro58</strong></p>
+
+<p>Before proceeding with the mod, I have chosen to load Pirx The Pilot firmware on the Eachine Pro58, which is a free good alternative to the default Eachine firmware because it adds a series of useful features (read <a href="https://upinthesky.github.io/2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html">this article</a> if you want to know how to load Pirx The Pilot firmware on the Eachine Pro58 Diversity Receiver).</p>
+
+<p><strong>Disassembling</strong></p>
+
+<p>Like done for the <a href="https://upinthesky.github.io/2018/09/09/eachine-vr006-mini-fpv-goggles-prodvr-mod.html">Eachine VR006 ProDVR Mod</a>, since we are going to solder wire leads on the pads located on the board inside the goggles, we need to disassemble them. To do this, we need to cut the black sponge in two points, the ones in which the bottom part of the goggles links up to the top part:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_sponge_cut.png" alt="Eachine VR006 Sponge Cut" /></p>
+
+<p>Once the cutting job is done, we can proceed with the separation of the two parts by removing the four screws located inside the highlighted holes in this picture:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_disassembled.png" alt="Eachine VR006 Disassembled" /></p>
+
+<p>Before we can pull off the board we have to remove the two RP-SMA antenna connectors:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_rpsma_connector_removal.png" alt="Eachine VR006 RP-SMA Connector Removal" /></p>
+
+<p>Once that is done we can unplug the battery connector and gently pull out the board for the soldering job.</p>
+
+<p><strong>Soldering</strong></p>
+
+<p>The soldering job is pretty easy: we need only three wires and we can use the ones given with the Eachine Pro58, being careful to cut off the connectors only on one end, i.e. the side we are going to solder on the board. The other end connector is needed to plug into the diversity receiver module.</p>
+
+<p>The three wires are used as reported below:</p>
+
+<ul>
+  <li>red for power, taken from VBAT pad;</li>
+  <li>black for ground, taken from GND pad;</li>
+  <li>brown for video signal coming from the diversity receiver and going to the goggles through AV_IN pad.</li>
+</ul>
+
+<p>This is the result after soldering the wires to the board (remember to tin pads and wires for an easy soldering job):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/diversity_wiring.png" alt="Eachine VR006 Pro58 Diversity Receiver Wiring Soldered on the Board" /></p>
+
+<p>The other wires shown in the picture are from the DVR mod.<br />
+Soldering the wires in this way gives us the possibility to maintain the original single receiver functionality; if we want to switch to the Pro58 instead, we have to activate the AV IN input from goggles MENU: in this way, goggles switch to the video signal received from the diversity receiver.</p>
+
+<p><strong>Reassembling</strong></p>
+
+<p>Now, it is just a matter of reassembling the goggles and making a hole for taking out the wires (we are going to mount the Eachine Pro58 on the outside):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/vr006_reassembly.png" alt="Eachine VR006 Reassembly" /></p>
+
+<p>Here is how soldered wires need to be connected to Eachine Pro58 pins:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/pro58_pins.png" alt="Eachine VR006 Pro58 Diversity Receiver Pins" /></p>
+
+<p>The Eachine Pro58 comes with double sided tape, that can be used to fix the module on the left side of the VR006. Be careful to connect the wires as reported in the image below (we need to bend the pins by 90 degrees to place the receiver module flat on the surface):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/pro58_wiring.png" alt="Eachine VR006 Pro58 Diversity Receiver Wiring" /></p>
+
+<p>The display reports the current frequency on which the receiver is tuned on and the reception quality of the two receivers. It also cycles informations like CPU usage, temperature and input voltage (it also have a funny customizable screen saver).</p>
+
+<p>Be careful to follow the calibration process when you start for the first time the diversity receiver module with Pirx The Pilot firmware (just follow the instructions prompted on the screen).</p>
+
+<p>If the Eachine VR006 have already the DVR mod, remember to disconnect the AV IN connector from the ProDVR when you want to use the diversity module: this is because we have connected the Eachine Pro58 diversity receiver module in order to use AV IN to display the received signal on the screen:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/vr006_dvr_diversity.png" alt="Eachine VR006 with ProDVR and Pro58 Diversity Mod" /></p>
+
+<p>Now we have both DVR and Diversity, which is a big improvement. Note that, due to the higher power consumption caused by these mods, I have decided to change the internal battery, that is 3.7V 500mAh, with one that has a capacity of 2000mAh (same voltage of course).</p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>In this article we have seen how to mod the <a href="http://bit.ly/2Mz17Hp">Eachine VR006 Mini FPV Goggles</a> in order to add Eachine Pro58 Diversity Receiver module. This improvement increases a lot the reception quality of the goggles making them a really nice alternative to the expensive goggles on the market.<br />
+Eachine Pro58 Diversity Receiver module can be found <a href="http://bit.ly/2Qm98gO">here</a> at a very good price.</p>
+
+<p>If you want to know how to flash Pirx The Pilot firmware on the Eachine Pro58, you can read <a href="https://upinthesky.github.io/2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html">this article</a>.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html" data-toggle="tooltip" data-placement="top" title="Eachine Pro58 Diversity Receiver Overview and Pirx the Pilot Firmware Installation">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/2019/01/12/eachine-lizard-105s-overview-and-fs-i6x-binding.html" data-toggle="tooltip" data-placement="top" title="Eachine Lizard 105S Overview and FS-i6X Binding">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/upinthesky">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2020 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Eachine Wizard X220S FPV Camera Noise Resolution - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="A common problem with the Eachine Wizard X220S is the pretty strong video signal noise observable when motors are spinning: as the throttle value goes up, vi...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2018/09/15/eachine-wizard-x220s-fpv-camera-noise-resolution.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Eachine Wizard X220S FPV Camera Noise Resolution</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on September 15, 2018 &middot; <span class="reading-time" title="Estimated read time">
+  
+   5 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>A common problem with the <a href="http://bit.ly/2PIOtUS">Eachine Wizard X220S</a> is the pretty strong video signal noise observable when motors are spinning: as the throttle value goes up, video signal noise (appearing as horizontal lines on the FPV screen) increases. In this article we will see how to remove this annoying behavior with a simple modification.</p>
+
+<!--more-->
+
+<p>Video signal noise is generated from the 4in1 ESC, so, to remove it, we need to find a way to filter this noise before it reaches the Flight Controller (FC) to which the FPV camera and transmitter are connected.</p>
+
+<p><strong>Handy tools and soldering iron</strong></p>
+
+<p>In the modification process, having these tools comes in handy:</p>
+
+<ul>
+  <li><a href="http://bit.ly/2vZiNCs">Drillpro 4pcs Hex Screwdriver Tool Kit 1.5/2.0/2.5/3.0mm</a></li>
+  <li><a href="http://bit.ly/2w2dd25">DANIU 4pcs Metal 4.0/5.5/7.0/8.0mm Hex Screwdriver Set</a></li>
+  <li><a href="http://bit.ly/2OTJtLJ">DANIU 25 in 1 Multi-purpose Precision Screwdriver Set</a></li>
+</ul>
+
+<p>A good soldering iron is needed. I really like <a href="http://bit.ly/2LEde1f">this one</a>, which is compact and portable since it can be powered up using LiPo batteries.</p>
+
+<p><strong>LC Filter</strong></p>
+
+<p>The simple modification that allows to filter the noise consists in the installation of an LC (inductor-capacitor) filter like <a href="http://bit.ly/2xaAxLS">this one</a> in such a way that DC power supply coming from the 4in1 ESC and going to the FC is cleaned up.</p>
+
+<p>Here are reported the main specs of the LC filter:</p>
+
+<ul>
+  <li>Maximum input voltage: 16V;</li>
+  <li>Maximum current: 2A;</li>
+  <li>Size: length: 3.5cm, width: 1.1cm,  heigth: 1cm;</li>
+  <li>Product weight: 14g.</li>
+</ul>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter.png" alt="LC Filter" /></p>
+
+<p>Its dimensions allow to place it right behind the FPV camera in vertical position.</p>
+
+<p><strong>LC Filter Connections</strong></p>
+
+<p>We need to have access to the 4in1 ESC, so we have to remove the top carbon plate, the VTX and the FC boards.<br />
+As the above image shows, we have a total of four pads: two for VIN and two for VOUT.<br />
+VIN represents voltage input, that is the one we need to filter coming from the 4in1 ESC, where pads are labeled as BAT (red is positive “+”, black is negative “-“); VOUT stands for voltage output, i.e. the filtered voltage that goes into the FC:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/vin_vout_connections.png" alt="4in1 ESC Battery Leads" /></p>
+
+<p>So, looking at the image, we have to put the LC filter between the two ends. To do so, an easy way is to unsolder the wires on the 4in1 ESC pads while leaving connected the ones on the FC.<br />
+To make the connection between LC filter VIN pads and 4in1 ESC BAT pads, I used <a href="http://bit.ly/2wKxMj6">24 AWG wires</a>. Remember to tin the wires and the pads before soldering them together: in this way the final soldering will be easier.<br />
+The following image shows the resulting connections (ignore the fact that, in the following two images, mid “+” and “-“ pads have no wires soldered on):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter_soldered_wires.png" alt="LC Filter Soldered Wires" /></p>
+
+<p>Detail of VOUT going to the FC:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/detail_vout_fc.png" alt="Detail of LC Filter VOUT going to the FC" /></p>
+
+<p>Finally we can solder VIN wires to the 4in1 ESC pads (remember to solder the wires so as they are oriented towards the inside of the board) and mount everything back together positioning the LC filter between the FPV camera and the stack:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/lc_filter_mounted.png" alt="LC Filter mounted on Eachine Wizard X220S" /></p>
+
+<p><strong>Video Signal Comparison</strong></p>
+
+<p>Here is the comparison between the video signal before and after the application of the LC filter (images are taken with lens cover on to see the difference more in detail):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-fpv-camera-noise-resolution/video_signal_before_after.png" alt="Comparison of the Video Signal Before and After LC Filter Application" /></p>
+
+<p>As shown, the noise has been drastically reduced and the horizontal lines caused by it are almost completely gone so we can finally fly with a clear FPV view.</p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>In this post we have seen how to remove video signal noise on the <a href="http://bit.ly/2PIOtUS">Eachine Wizard X220S</a>, by adding a <a href="http://bit.ly/2xaAxLS">LC filter</a> between the 4in1 ESC and the FC. Considering the low cost of the LC filter and the benefits it gives, it is a must have mod.</p>
+
+<p>For the overview of the Eachine Wizard X220S, read <a href="https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html">this article</a>.</p>
+
+<p>If you want to upgrade Betaflight firmware for the Omnibus F4SD on the Eachine Wizard X220S, read <a href="https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html">this article</a>.</p>
+
+<p>If you want to update Eachine Wizard X220S BLHeli 4in1 ESC firmware, read <a href="https://upinthesky.github.io/2018/08/30/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html">this post</a>.</p>
+
+<p>If you are experiencing yaw wobbling, <a href="https://upinthesky.github.io/2017/12/27/eachine-wizard-x220s-yaw-wobbling-resolution.html">here</a> is the resolution.</p>
+
+<p>If you want to know how to setup and configure the 1179 FPV camera that comes with the quad, take a look at <a href="https://upinthesky.github.io/2018/09/03/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration.html">this article</a>.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2018/09/09/eachine-vr006-mini-fpv-goggles-prodvr-mod.html" data-toggle="tooltip" data-placement="top" title="Eachine VR006 Mini FPV Goggles ProDVR Mod">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html" data-toggle="tooltip" data-placement="top" title="Eachine Pro58 Diversity Receiver Overview and Pirx the Pilot Firmware Installation">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/upinthesky">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2020 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

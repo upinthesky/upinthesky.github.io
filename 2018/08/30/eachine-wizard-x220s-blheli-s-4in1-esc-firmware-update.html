@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Eachine Wizard X220S BLHeli-S 4in1 ESC Firmware Update - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="In a previous article, we have seen how to upgrade Eachine Wizard X220S Omnibus F4SD Firmware through Betaflight Configurator. Now we are going to see how to...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2018/08/30/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Eachine Wizard X220S BLHeli-S 4in1 ESC Firmware Update</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on August 30, 2018 &middot; <span class="reading-time" title="Estimated read time">
+  
+   3 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>In a <a href="https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html">previous article</a>, we have seen how to upgrade <a href="http://bit.ly/2PIOtUS">Eachine Wizard X220S</a> Omnibus F4SD Firmware through Betaflight Configurator. Now we are going to see how to update <a href="http://bit.ly/2PReKAD">Eachine X220S BLHeli-S 4in1 ESC</a> firmware through BLHeli Configurator.</p>
+
+<!--more-->
+
+<p><strong>BLHeli Configurator</strong></p>
+
+<p>First thing to do is to install BLHeli Configurator: it runs as a Google Chrome App, so we need to download it through the Chrome Web Store (at the moment of this writing the BLHeli Configurator version is 1.1.0):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_configurator_web_store_app.png" alt="BLHeli Configurator Chrome App" /></p>
+
+<p>To install it, we just need to click on “Add to Chrome” and, once the process is completed, we can launch it.</p>
+
+<p>Before we can go on, we need to connect the Eachine Wizard X220S to the PC using a micro USB (Flight Controller) to USB (PC) cable; differently from what we did for the setup on Betaflight Configurator, in this case we also need to power up the quadcopter using the LiPo battery: <strong>for safety reasons, it is really important to remove the propellers before proceeding any further</strong>.</p>
+
+<p>With the battery plugged in (turn on also the TX) and the quad connected to the PC through the USB, the FC should be recognized (in my case on COM3); click on “Connect” to establish the connection:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_configurator.png" alt="BLHeli Configurator Connection" /></p>
+
+<p>After the connection is established, we get the following screen where we get the note about the props and the battery:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_connected.png" alt="BLHeli Configurator Connected" /></p>
+
+<p>To check BLHeli-S firmware actual version and other configuration we need to click on “Read Setup” on the bottom right.<br />
+After clicking, we can read the actual ESC setup:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_default_firmware.png" alt="BLHeli Configurator Read Setup" /></p>
+
+<p>As reported, BLHeli-S version currently loaded on the 4in1 ESC is A-H-25 16.6.<br />
+Since we want to update the firmware to the latest version on all four ESCs, we need to click on “Flash All” on the bottom.</p>
+
+<p>By doing so, we are prompted to the following screen, where we want to select the latest firmware version; at the time of this writing, the latest Official release is 16.7:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_select_target.png" alt="BLHeli Configurator Select Target" /></p>
+
+<p>Once the target is set, it will automatically download the firmware from the Web. Alternatively, it is possible to upload the firmware manually, from a local folder on our PC.<br />
+Finally, we can click on “Flash” to start the update process; the app will proceed to update sequentially all the four ESCs:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update/blheli_update_progress.png" alt="BLHeli Configurator Update Progress" /></p>
+
+<p>After all the ESCs are updated we can disconnect the quad from BLHeli Configurator and we are ready to fly with the new firmware (you can reconnect to double check that on “Read Setup” all ESCs have now the latest firmware installed).</p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>We have seen how to update <a href="http://bit.ly/2PIOtUS">Eachine Wizard X220S</a> BLHeli-S 4in1 ESC Firmware to the latest version using BLHeli Configurator. The process is pretty straightforward and should be repeated everytime a new firmware version is released.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2018/08/27/eachine-lcd5802d-fpv-monitor-with-diversity-and-dvr-review.html" data-toggle="tooltip" data-placement="top" title="Eachine LCD5802D FPV Monitor with Diversity and DVR Review">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/2018/09/03/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration.html" data-toggle="tooltip" data-placement="top" title="Eachine Wizard X220S 1179 FPV Camera Setup and Configuration">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/upinthesky">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2020 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    FrSky Taranis X9D Plus SE 2019 Switch Setup and Configuration in Betaflight - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="In this post we will see how to configure switches on the FrSky Taranis X9D Plus SE 2019, the notorious radio transmitter using FrSky protocol and presented ...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2020/01/15/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>FrSky Taranis X9D Plus SE 2019 Switch Setup and Configuration in Betaflight</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on January 15, 2020 &middot; <span class="reading-time" title="Estimated read time">
+  
+   8 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>In this post we will see how to configure switches on the <a href="http://bit.ly/2ktT6Yd">FrSky Taranis X9D Plus SE 2019</a>, the notorious radio transmitter using FrSky protocol and presented in <a href="https://upinthesky.github.io/2019/09/22/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version.html">this previous article</a>, and how to set up flight modes on Betaflight Configurator through the configured switches. Since FrSky Taranis X9D Plus SE 2019 is loaded with OpenTX firmware (in my case the version is OpenTX 2.3.0), this guide is valid for all the transmitter using OpenTX firmware.</p>
+
+<!--more-->
+
+<p><strong>Setting up switches on OpenTX</strong></p>
+
+<p>After turning on the FrSky Taranis X9D Plus SE 2019 by holding the power button, the LCD display turns on and we get the starting screen with our aircraft model page, in my case the Eachine X220S.</p>
+
+<p class="center"><img class="img-fluid" src="/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_2019_se_home_screen.jpg" alt="FrSky Taranis X9D Plus SE 2019" /></p>
+
+<p>To proceed with the configuration of the switches, we need to go to the MODEL SELECTION menu, by pressing the MENU button; note the 1/13 on the top right of the display, indicating we are at page 1 of 13.</p>
+
+<p class="center"><img class="img-fluid" src="/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_2019_se_model_selection.jpg" alt="FrSky Taranis X9D Plus SE 2019" /></p>
+
+<p>By pressing the PAGE button we can move to the next page (hold it to go to the previous page): we need to reach page number 5, which is INPUTS page. Here we can create new inputs and use them to set up, for example, switches.<br />
+When reaching INPUTS page for the first time, we have only 4 inputs: Thr (throttle), Ail (aileron), Ele (elevator), Rud (rudder).</p>
+
+<p><strong>Arming/disarming switch</strong></p>
+
+<p>Here is presented the detail for setting up an arming/disarming switch. To set the others (MODE, BEEP, TURTLE), it is just a matter of applying the same configuration.</p>
+
+<p>First, we need to create a new INPUT (page 5/13), that we name ARM, since we want to configure a switch that has the arming/disarming functionality. To move between the inputs, we can use the scroll wheel on the right:</p>
+
+<p class="center"><img class="img-fluid" src="/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_2019_se_model_selection.jpg" alt="FrSky Taranis X9D Plus SE 2019 Inputs" /></p>
+
+<p>By pressing and holding the scroll wheel button on an input line, we can edit the corresponding input. We are interested in two fields: “Input name” and “Source”. In the first one, we write ARM since this is the name we want to assign to this input, while in the second one we need to assign the switch name, in my case “SD”. To assign the switch, instead of scrolling through the list, one can simply change the switch position to have the field automatically filled in with the corresponding switch name.</p>
+
+<p class="center"><img class="img-fluid" src="/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_input_edit.jpg" alt="FrSky Taranis X9D Plus SE 2019 Inputs" /></p>
+
+<p>Once the INPUT is created, we need to assign that input to a MIXER (page 6/13) channel. Since the first four channels are already occupied by default aircraft commands, we use CH5 for ARM functionality:</p>
+
+<p class="center"><img class="img-fluid" src="/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_mixer.jpg" alt="FrSky Taranis X9D Plus SE 2019 Mixer" /></p>
+
+<p>Like for the INPUTS, in MIXER menu we enter in the channel we are interested in using the scroll wheel button: once in edit mode, we set a MIX name and the Source: since we have defined an ARM input, we can configure it as our source (of course, we could have set up directly “SD” switch name, but I think creating an INPUT and referring to it is more clear).</p>
+
+<p class="center"><img class="img-fluid" src="/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_mixer_edit.jpg" alt="FrSky Taranis X9D Plus SE 2019 Mixer" /></p>
+
+<p>Then, we just repeat this process for all the switches we need.</p>
+
+<p><strong>Adding sound or voice speech when flipping switches</strong></p>
+
+<p>Suppose now we want to have a sound or a voice track played when a switch is flipped; this can be useful, especially when flying with FPV goggles on.</p>
+
+<p>This can be done using SPECIAL FUNCTIONS menu (page 11/13): some sounds and voice tracks are already available in the “SD card contents” from OpenTX download page. However, there is a good sound pack available <a href="http://open-txu.org/home/version-2/v2-2-resources-2/">here</a>, called Amber Sound pack, which has many tracks.</p>
+
+<p>So, the first thing to do is to download “SD card contents” for OpenTX: downloads are available <a href="https://www.open-tx.org/downloads">here</a>.</p>
+
+<p>“SD card contents” for OpenTX 2.3.0 are <a href="https://www.open-tx.org/2019/09/27/opentx-2.3.0">here</a>. Be careful to choose the correct transmitter model on the <a href="https://downloads.open-tx.org/2.3/release/sdcard/">download page</a> (for example, if you have the FrSky Taranis X9D Plus SE 2019, the correct folder is opentx-x9d+2019).</p>
+
+<p>So, in my case, the correct file is <a href="https://downloads.open-tx.org/2.3/release/sdcard/opentx-x9d%2B2019/sdcard-212x64-2.3V0021.zip">this one</a>, since the documentation reports the following note: <em>“Note: 2.3.0 uses 2.3v0021”</em>.</p>
+
+<p>Once downloaded, we need an <a href="http://bit.ly/2FI27Un">SD card</a> for the FrSky Taranis X9D Plus SE 2019 on which we are going to transfer the downloaded file and extract its contents. We can either load the zip archive directly into the SD card by connecting it to the PC through a USB adapter or insert the SD card into the radio and then transfer the zip archive using the USB cable included with the Taranis. I suggest to proceed using the first solution since the transfer speed is better.</p>
+
+<p>If everything went correctly, we should get the welcome sound when turning on the transmitter.<br />
+If you want to install also the Amber Sound pack, just download the file from the link mentioned above and extract its contents (“SOUNDS” folder) in the SD card like done before for the “SD card contents” zip archive.</p>
+
+<p>Then, to setup sound or voice tracks, it is just a matter of going into the SPECIAL FUNCTIONS menu and select the corresponding switch name and sound/track by selecting it using the scroll wheel. The following image shows the tracks for arming, disarming, stabilize (angle) mode, horizon mode and acro (air) mode respectively playing when flipping SD and SC switches.</p>
+
+<p class="center"><img class="img-fluid" src="/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/taranis_x9d_plus_se_2019_special_functions.jpg" alt="FrSky Taranis X9D Plus SE 2019 Special Functions" /></p>
+
+<p><strong>Setting up switches in Betaflight Configurator</strong></p>
+
+<p>Finally, we have to set up the switches through <a href="https://github.com/betaflight/betaflight-configurator/releases">Betaflight Configurator</a>, so the flight controller knows what to do when a switch is flipped (the fact we have named one input as “ARM” does mean nothing to the flight controller until we make this configuration).</p>
+
+<p>So, in Modes tab of Betaflight Configurator we can make an association between AUX channels, representing the switches, and modes recognized by the flight controller.<br />
+Here is the setup for ARM, ANGLE, HORIZON, BEEPER, AIR MODE, FLIP OVER AFTER CRASH (turtle mode):</p>
+
+<p class="center"><img class="img-fluid" src="/images/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight/betaflight_taranis_x9d_plus_2019_se_modes.png" alt="Betaflight FrSky Taranis X9D Plus SE 2019 Modes Configuration" /></p>
+
+<p>So we have:</p>
+
+<ul>
+  <li>SD (AUX1) -&gt; arm/disarm</li>
+  <li>SC (AUX2) -&gt; angle, horizon , air modes</li>
+  <li>SA (AUX3) -&gt; beeper</li>
+  <li>SE (AUX4) -&gt; flip over after crash (turtle mode)</li>
+</ul>
+
+<p><strong>Conclusions</strong></p>
+
+<p>In this article we have seen how to set up and configure switches on the <a href="http://bit.ly/2ktT6Yd">FrSky Taranis X9D Plus SE 2019</a> and how to activate flight modes in Betaflight Configurator by flipping the corresponding associated switch on the radio transmitter. Moreover, we have also seen how to play a sound or a voice track when flipping a switch by downloading and installing OpenTX SD card contents and Amber Sound pack.</p>
+
+<p>For an overview of the FrSky Taranis X9D Plus SE 2019, read <a href="https://upinthesky.github.io/2019/09/22/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version.html">this article</a>.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2020/01/06/dji-mavic-air-arctic-white-review.html" data-toggle="tooltip" data-placement="top" title="DJI Mavic Air Arctic White Review">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/upinthesky">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2020 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

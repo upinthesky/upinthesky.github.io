@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Eachine Pro58 Diversity Receiver Overview and Pirx the Pilot Firmware Installation - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="In this article we will take a look at the Eachine Pro58 Diversity Receiver and we will see how to install a custom firmware on it, specifically Pirx The Pil...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Eachine Pro58 Diversity Receiver Overview and Pirx the Pilot Firmware Installation</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on October 07, 2018 &middot; <span class="reading-time" title="Estimated read time">
+  
+   8 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>In this article we will take a look at the <a href="http://bit.ly/2Qm98gO">Eachine Pro58 Diversity Receiver</a> and we will see how to install a custom firmware on it, specifically Pirx The Pilot. To do so, we need <a href="http://bit.ly/2RgXo0v">ST-LINK V2 STM8 / STM32 Programmer</a> which is a USB module used to program/upload the firmware on the receiver.</p>
+
+<!--more-->
+
+<p>The following image shows the box containing the Eachine Pro58 Diversity Receiver:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_box.png" alt="Eachine Pro58 Diversity Receiver Box" /></p>
+
+<p>Down below it is shown the package for the ST-LINK V2:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_box.png" alt="ST-LINK V2 Box" /></p>
+
+<p><strong>Box Contents</strong></p>
+
+<p>Inside the two boxes we find the following items:</p>
+
+<ul>
+  <li>Eachine Pro58 Diversity Receiver</li>
+</ul>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/eachine_pro58_box_contents.png" alt="Eachine Pro58 Diversity Receiver Box Contents" /></p>
+
+<ul>
+  <li>ST-LINK V2 STM8 / STM32 Programmer</li>
+  <li>Pin wires</li>
+</ul>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_box_contents.png" alt="ST-LINK V2 Box Contents" /></p>
+
+<p>In both cases no manual/instructions are provided inside the box.</p>
+
+<p><strong>Eachine Pro58 Specifications</strong></p>
+
+<p>Down below are reported the specs for the Eachine Pro58 Diversity Receiver:</p>
+
+<ul>
+  <li>Frequency: 5.8G;</li>
+  <li>Channels: 40CH;</li>
+  <li>Power Consumption: 1.8-2W;</li>
+  <li>Size: 42 x 30 x 25mm;</li>
+  <li>Weight: 23g.</li>
+</ul>
+
+<p><strong>Soldering Iron</strong></p>
+
+<p>A good soldering iron is needed. I really like <a href="http://bit.ly/2LEde1f">this one</a>, which is compact and portable since it can be powered up using LiPo batteries.</p>
+
+<p><strong>ST-LINK V2 Pins and Connection with Eachine Pro58</strong></p>
+
+<p>We can start by looking at the pins of the ST-LINK V2:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_pins.png" alt="ST-LINK V2 Pins Layout" /></p>
+
+<p>We have to use a total of four pins in order to power and upload the new firmware on the Eachine Pro58: 5.0V, 3.3V, SWCLK, SWDIO. First two are for power the module up and the other two are used to upload the firmware.</p>
+
+<p>We need to solder two wires on the SWCLK and SWDIO pads of the Eachine Pro58 like shown in the following image (remember to tin pads and wires for an easy soldering job):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_firmware_loading_leads.png" alt="Eachine Pro58 Firmware Loading Leads" /></p>
+
+<p>Of course, we need to connect these two wires to the corresponding ST-LINK V2 pins shown before. Looking the Eachine Pro58 from the back, the 5.0V and 3.3V from the ST-LINK V2 have to be connected as shown here (you can choose whatever pins couple that you prefer since they are identical, upper 3.3V/5.0V or lower 5.0V/3.3V):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_power_leads.png" alt="Eachine Pro58 ST-LINK V2 Connections" /></p>
+
+<p>Down below is reported the complete wiring connection from the ST-LINK V2 to the Eachine Pro58 (I used upper pins for 3.3V and 5.0V):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_stlinkv2_connections.png" alt="Eachine Pro58 ST-LINK V2 Connections" /></p>
+
+<p>Different view (I used only two of the four wires supplied because I already had similar wires with a free end, but of course you can use the other two and cut off one end in order to solder them on the receiver SWCLK/SWDIO pads):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_stlinkv2_connections2.png" alt="Eachine Pro58 ST-LINK V2 Connections" /></p>
+
+<p>If power wires are connected properly (double check before proceed), we should see the Eachine logo on the Eachine Pro58 display when connecting the ST-LINK V2 USB to the PC, meaning that it is booting up. After that we should be prompted with the following screen:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_eachine_firmware.png" alt="Eachine Pro58 Default Firmware" /></p>
+
+<p>To proceed with the load of Pirx The Pilot firmware, we need to install some software on the PC.</p>
+
+<p><strong>Software Installation</strong></p>
+
+<p>All the following programs are free, but registration is needed in order to download them.</p>
+
+<ul>
+  <li><a href="https://www.st.com/en/development-tools/stm32cubeprog.html">STM32 CubeProgrammer software for programming STM32 products</a>: we are going to use this to program the receiver, i.e. to load custom firmware on it.</li>
+</ul>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32cubeprog_download.png" alt="STM32 CubeProgrammer Software Download" /></p>
+
+<p>This software needs Java to run, so we have to download and install also the latest Java version available.<br />
+To “Connect” the Eachine Pro58 through the ST-LINK V2, we need to install some drivers.</p>
+
+<ul>
+  <li><a href="https://www.st.com/en/development-tools/stsw-link009.html">ST-LINK, ST-LINK/V2, ST-LINK/V2-1 USB driver signed for Windows7, Windows8, Windows10</a>:</li>
+</ul>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stsw-link009_download.png" alt="STSW-LINK009 Software Download - ST-LINK, ST-LINK/V2, ST-LINK/V2-1 USB Driver Signed for Windows 7, Windows 8, Windows 10" /></p>
+
+<p>Finally we need to upgrade the firmware of the ST-LINK V2 using ST-LinkUpgrade.exe:</p>
+
+<ul>
+  <li><a href="https://www.st.com/en/development-tools/stsw-link007.html">STSW-LINK007 Software Download - ST-LINK, ST-LINK/V2, ST-LINK/V2-1 Firmware Upgrade</a></li>
+</ul>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stsw-link007_download.png" alt="STSW-LINK007 Software Download - ST-LINK, ST-LINK/V2, ST-LINK/V2-1 Firmware Upgrade" /></p>
+
+<p>Once the upgrade has been done we get the following message:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stlinkv2_driver_update.png" alt="ST-LINK V2 Driver Update" /></p>
+
+<p>We are now ready to upload Pirx The Pilot Firmware (or every other firmware we like for the Eachine Pro58). To proceed we need to install the previously downloaded STM32 CubeProgrammer and launch it.<br />
+Clicking on “Connect” should connect the Eachine Pro58 to the PC through the ST-LINK V2:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer.png" alt="STM32 CubeProgrammer" /></p>
+
+<p><strong>Loading Pirx The Pilot Firmware</strong></p>
+
+<p>Once connected, we should get the following screen:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_connected.png" alt="STM32 CubeProgrammer Pro58 Connected Through ST-LINK V2" /></p>
+
+<p>Be sure that, on the screen shown after clicking on “OB” on the left, the box for the “Read protection option byte” (RDP) is unchecked:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_ob_readout_protection.png" alt="STM32 CubeProgrammer OB Readout Protection" /></p>
+
+<p>If that is not the case, uncheck it and click on “Apply”.<br />
+Before uploading the new firmware, we need to erase the old one (first click on the pencil button, then on the eraser one):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_erase.png" /></p>
+
+<p>Next we have to click on the second icon from the top left (the one with the downloading arrow) and browsing for the firmware we want to load.
+Pirx The Pilot Firmware .bin file is available <a href="https://pirxfpv.com">here</a> for free (you just have to register to get the download link).</p>
+
+<p>Once you have it on the PC, it is just a matter of setting the file path, controlling that “Verify programming” and “Run after programming” tick boxes are checked and clicking on “Start Programming”.</p>
+
+<p>If everything went ok, we get the following message:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/stm32_cubeprogrammer_pirx_loaded.png" alt="STM32 CubeProgrammer Pirx The Pilot Firmware Loaded" /></p>
+
+<p>Then we should see Pirx The Pilot firmware in action on the Eachine Pro58:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation/pro58_pirx_firmware.png" alt="Eachine Pro58 Pirx The Pilot Display" /></p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>In this article we have seen how to load a custom firmware, specifically Pirx The Pilot, on the <a href="http://bit.ly/2Qm98gO">Eachine Pro58 Diversity Receiver</a> using the <a href="http://bit.ly/2RgXo0v">ST-LINK V2 STM8 / STM32 Programmer</a>. This is a really good diversity receiver with very nice performance and this firmware just make it a must have product especially if you want to upgrade a pair of goggles not having diversity like the <a href="http://bit.ly/2Mz17Hp">Eachine VR006 Mini FPV Goggles</a>.</p>
+
+<p>If you want to know how to install the Eachine Pro58 diversity receiver module on the Eachine VR006 Mini FPV Goggles, you can read <a href="https://upinthesky.github.io/2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod.html">this article</a>.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2018/09/15/eachine-wizard-x220s-fpv-camera-noise-resolution.html" data-toggle="tooltip" data-placement="top" title="Eachine Wizard X220S FPV Camera Noise Resolution">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod.html" data-toggle="tooltip" data-placement="top" title="Eachine VR006 Mini FPV Goggles Pro58 Diversity Receiver Mod">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/upinthesky">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2020 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

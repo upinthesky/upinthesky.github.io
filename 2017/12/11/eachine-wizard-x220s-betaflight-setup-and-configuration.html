@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Eachine Wizard X220S Betaflight Setup and Configuration - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="In the previous article we have seen an overview of the Eachine Wizard X220S and how to install the FlySky X6B receiver on it (if you have the RTF version I ...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2017/12/11/eachine-wizard-x220s-betaflight-setup-and-configuration.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Eachine Wizard X220S Betaflight Setup and Configuration</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on December 11, 2017 &middot; <span class="reading-time" title="Estimated read time">
+  
+   7 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>In the <a href="https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html">previous article</a> we have seen an overview of the <a href="http://bit.ly/2PIOtUS">Eachine Wizard X220S</a> and how to install the <a href="http://bit.ly/2N1Qnye">FlySky X6B</a> receiver on it (if you have the RTF version I highly suggest to switch to this receiver due to its long range reception capability).
+Now we take a look at the setup and configuration of the quadcopter in Betaflight Configurator.</p>
+
+<!--more-->
+
+<p><strong>Betaflight Configurator</strong></p>
+
+<p>Betaflight Configurator is a really popular application that allows to configure the aircraft via GUI and it can be downloaded as an extension for Google Chrome browser. Both flight controller and GUI application are <a href="https://github.com/betaflight">open source</a>.</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_betaflight_setup_and_configuration/betaflight_app.png" alt="Betaflight Configurator Chrome App" /></p>
+
+<p>Once the application is correctly installed, it is possible to launch it. Then, it is just a matter of connecting the quadcopter to the PC using a micro USB (Flight Controller) to USB (PC) cable and clicking on “Connect” to establish the connection.</p>
+
+<p><strong>Ports</strong></p>
+
+<p>First, we need to correctly setup the ports on the FC in the “Ports” tab: since we are using FlySky X6B with i-BUS protocol we have to enable “Serial RX” on UART1, which is the port we have soldered receiver cables on:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_betaflight_setup_and_configuration/ports.png" alt="Eachine Wizard X220S Betaflight Ports" /></p>
+
+<p><strong>Configuration</strong></p>
+
+<p>In the “Configuration” tab we need to be sure DSHOT600 is selected and we can deactivate “MOTOR_STOP” switch (personal preference):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_1.png" alt="Eachine Wizard X220S Betaflight Configuration" /></p>
+
+<p>Under “Receiver” we have to set Serial-based receiver (SPEKSAT,…) with “IBUS” selected in the drop down menu:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_2.png" alt="Eachine Wizard X220S Betaflight Configuration" /></p>
+
+<p>Under “Other Features” it is important (we see how much in the next post) to activate BLACKBOX and SDCARD since these are critical to have flight logs for post flight analysis, especially during the tuning phase when it is possible to use an SD card: class 10 is recommended, while the space required is not important since it will be used to store text files (2 GB is more than enough).</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_3.png" alt="Eachine Wizard X220S Betaflight Configuration" /></p>
+
+<p>Also OSD (On Screen Display) has to be activated to keep track of useful information on the FPV screen or goggles during the flight.</p>
+
+<p>We can enable VBAT to have battery voltage monitoring (remember we have also connected VBAT output from FC to the receiver to have telemetry on the transmitter) which is a must especially when flying in FPV so we can check on our monitor/goggles the current battery voltage through OSD.</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_betaflight_setup_and_configuration/configuration_4.png" alt="Eachine Wizard X220S Betaflight Configuration" /></p>
+
+<p><strong>Failsafe</strong></p>
+
+<p>To configure the failsafe we need to access to an advanced configuration menu which can be activated by clicking on “Enable Expert Mode” like shown in the image below:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_betaflight_setup_and_configuration/failsafe.png" alt="Eachine Wizard X220S Betaflight Failsafe" /></p>
+
+<p>It is recommended to set Failsafe Stage 2 to “Drop”, so if the receiver loses contact with the transmitter for more than a certain time, then the FC turns off the motors. In my case the guard time is 10*0.1s = 1s.</p>
+
+<p><strong>Receiver</strong></p>
+
+<p>In the “Receiver” tab we have to make sure the values of the channels are configured properly in such a way when radio sticks are centered, the value is ~1500, while the minimum and maximum valure are equal respectively to ~1000 and ~2000. This can be achieved configuring trims on the radio.
+Set also Stick Min to 1010 and Stick Max to 1990.</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_betaflight_setup_and_configuration/receiver.png" alt="Eachine Wizard X220S Betaflight Receiver" /></p>
+
+<p><strong>Modes</strong></p>
+
+<p>For the “Modes” tab, we can set the switches on the radio to arm the quadcopter or change from a flight mode to another one or to enable the buzzer for example. In the next figure are reported my settings (Arm, Angle, Horizon, Air Mode, Beeper):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_1.png" alt="Eachine Wizard X220S Betaflight Modes" /></p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_betaflight_setup_and_configuration/modes_2.png" alt="Eachine Wizard X220S Betaflight Modes" /></p>
+
+<p>In this way channel AUX 2, a three position switch, controls the flight modes, AUX 3 arms the quadcopter and AUX 4 activates the beeper.</p>
+
+<p>Since I am using <a href="http://bit.ly/2L960Ce">Devo 7E</a> loaded with Deviation TX firmware with 3 position switch mod, I will report the steps to configure the switches for this particular radio (instructions below are for the three position switch to change between three flight modes and can be replicated for other features, like arming the quadcopter, on two position switches as well).<br />
+In Model Menu go on Mixer and set Ch6 to Complex with 3 Mixers:</p>
+
+<ul>
+  <li>on Page 1 set Switch “SW B0”, Mux “replace”, Curve “Fixed”, Scale “-100”;</li>
+  <li>on Page 2 set Switch “SW B1”, Mux “replace”, Curve “Fixed”, Scale “0”;</li>
+  <li>on Page 3 set Switch “SW B2”, Mux “replace”, Curve “Fixed”, Scale “100”.</li>
+</ul>
+
+<p>If you like Deviation TX firmware and you do not want to solder additional modules inside Devo 7E, there is a new multi-protocol radio already loaded with Deviation firmware, inside which are already installed additional RF modules, including the FlySky one (it has a 4in1 RF module - CC2500, CYRF6936, A7105, NRF2401): <a href="http://bit.ly/2OVgl6O">Jumper T8SG V2.0 Plus</a>.</p>
+
+<p><strong>OSD</strong></p>
+
+<p>Finally, we can setup the OSD in the way we like, for example, with the following indicators: RSSI, Main Batt Voltage, Crosshairs, Flytime, Flymode.</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_betaflight_setup_and_configuration/osd.png" alt="Eachine Wizard X220S Betaflight OSD" /></p>
+
+<p>Once we have checked that everything fits well on our FPV goggles or screen, we are ready to fly.</p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>We have seen how to set up and configure Betaflight for the Eachine Wizard X220S using Betaflight Configurator Chrome App.</p>
+
+<p>For the overview of the Eachine X220S, read <a href="https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html">this article</a>.</p>
+
+<p>If you are experiencing yaw wobbling during the hovering, <a href="https://upinthesky.github.io/2017/12/27/eachine-wizard-x220s-yaw-wobbling-resolution.html">here</a> is the resolution.</p>
+
+<p>If you need a guide in order to upgrade Betaflight firmware for the Omnibus F4SD on the Eachine X220S, read <a href="https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html">this article</a>.</p>
+
+<p>If you want to know how to setup and configure the 1179 FPV camera that comes with the quad, take a look at <a href="https://upinthesky.github.io/2018/09/03/eachine-wizard-x220s-1179-fpv-camera-setup-and-configuration.html">this article</a>.</p>
+
+<p>If you are experiencing video noise appearing as horizontal lines on the FPV camera view when motors are spinning, <a href="https://upinthesky.github.io/2018/09/15/eachine-wizard-x220s-fpv-camera-noise-resolution.html">here</a> is the resolution.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html" data-toggle="tooltip" data-placement="top" title="Eachine Wizard X220S ARF Overview and Receiver Installation">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/2017/12/27/eachine-wizard-x220s-yaw-wobbling-resolution.html" data-toggle="tooltip" data-placement="top" title="Eachine Wizard X220S Yaw Wobbling Resolution">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/upinthesky">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2020 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

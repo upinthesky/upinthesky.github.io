@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Devo 7E RSSI Configuration for X6B Receiver (AFHDS-2A Protocol) and Betaflight Integration - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="RSSI means Received Signal Strength Indication and it is a value that indicates the power in a received radio signal. It becomes extremely handy to have this...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2018/08/20/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Devo 7E RSSI Configuration for X6B Receiver (AFHDS-2A Protocol) and Betaflight Integration</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on August 20, 2018 &middot; <span class="reading-time" title="Estimated read time">
+  
+   6 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>RSSI means Received Signal Strength Indication and it is a value that indicates the power in a received radio signal. It becomes extremely handy to have this measurement enabled on the transmitter because it can trigger an alert when we are flying too far away risking to lose communication with the receiver.</p>
+
+<!--more-->
+
+<p>In the following, we will see how to configure this feature on the <a href="http://bit.ly/2L960Ce">Devo 7E</a> loaded with Deviation TX firmware for the <a href="http://bit.ly/2N1Qnye">X6B</a> receiver, i.e. AFHD-2A protocol. Moreover, we will integrate RSSI on Betaflight so the value shows up  in real time on the OSD.</p>
+
+<p><strong>Loading Deviation firmware and installing A7105 module</strong></p>
+
+<p>Since we are going to bind Devo 7E with X6B receiver which uses FlySky protocol, first thing to do is load Deviation TX firmware in the Devo 7E (always use the latest release): the download is available <a href="https://www.deviationtx.com/downloads-new">here</a> under “Deviation Releases” where you can find both stable releases and “nightly builds”. There are many guides on how to load Deviation TX firmware so we will not go in detail through the entire process. However, it is pretty simple: connect the radio to the computer using the supplied USB cable, power it up in “Program Update” mode (press hold “EXT” on TX and then turn it on), install the drivers and load the DFU file present in the archive (downloaded before) using <a href="https://www.deviationtx.com/downloads-new/category/162-walkera">Walkera DfuSe USB Upgrade Tool</a>. Once that is done, just it is just a matter of copying inside the transmitter (press hold “ENT” on TX and then turn it on to connect in USB mode) all the file present in the archive excluding .zip and .dfu.</p>
+
+<p>To bind protocols which are not supported by CYRF6936 module (the one that is there by default), such as FlySky, we need additional RF modules. For FlySky protocol, we need to solder the A7105 RF module inside the transmitter: I suggest <a href="http://bit.ly/2MG6PXV">this version</a> that has integrated Power Amplifier (PA).<br />
+For the connection refer to the <a href="http://www.deviationtx.com/wiki/modulelist/a7105">official documentation</a>; beware that after Deviation release 4.0.1 some connections change (everything is well described with images showing the pinout).</p>
+
+<p>Once the soldering job is finished, we need to enable the module via software: connect again the TX to the computer in USB mode and edit the lines referring to the A7105 module in hardware.ini file like shown below (has_pa-a7105 set to 1 only if you have the version with integrated PA):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[modules]
+.......................
+  enable-a7105    = A13
+  has_pa-a7105    = 1
+.......................
+</code></pre></div></div>
+
+<p>As a side note, since modifying the Devo 7E could be a little tricky if not particularly familiar with soldering, there is a new multi-protocol radio already loaded with Deviation firmware, inside which are already installed additional RF modules, including the FlySky one (it has a 4in1 RF module - CC2500, CYRF6936, A7105, NRF2401): <a href="http://bit.ly/2OVgl6O">Jumper T8SG V2.0 Plus</a>.</p>
+
+<p>Now that everything is set up, we can start the configuration.</p>
+
+<p><strong>Enabling RSSI for AFHDS-2A on Deviation</strong></p>
+
+<p>Since we want to bind to X6B receiver, in Model menu-&gt; Model setup we need to choose the protocol AFHDS-2A and follow the bind procedure (already seen <a href="https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html">here</a>.<br />
+Then we need to enable RSSI on channel 12 by just pressing “ENT” on the protocol itself and setting that value for “LQI output” (stands for Link Quality indicator):</p>
+
+<p class="center"><img class="img-fluid" src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/lqi_output.png" alt="Deviation AFHDS-2A LQI Output" /></p>
+
+<p>Once that is done we should start seeing RSSI value displayed on Transmitter menu -&gt; Telemetry monitor:</p>
+
+<p class="center"><img class="img-fluid" src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_monitor.png" alt="Deviation Telemetry Monitor" /></p>
+
+<p>As the image shows, to a signal strength of 99 corresponds a value of 61d.<br />
+By going in Model menu -&gt; Telemetry config, we can set up an alarm that triggers when the value goes up a certain threshold. I found 90d as a good value to trigger the alert that signals we need to start paying attention to the distance:</p>
+
+<p class="center"><img class="img-fluid" src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/telemetry_config.png" alt="Deviation Telemetry Config" /></p>
+
+<p>We have finished configuring RSSI on the transmitter; next step is to integrate it in Betaflight so we can have the value displayed on the goggles/monitor through OSD while we are flying in FPV.</p>
+
+<p><strong>Betaflight Integration</strong></p>
+
+<p>After connecting the quadcopter to the computer, we need to open Betaflight Configurator and navigate to the Receiver tab. Here we can set RSSI channel: even if we have set the value to channel 12 on the transmitter, latest releases of Betaflight use AUX channel number; in order to use the right AUX channel we need to subtract 4 to the channel number, so we need to choose AUX 8.</p>
+
+<p class="center"><img class="img-fluid" src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_rssi_channel.png" alt="Betaflight RSSI Channel" /></p>
+
+<p>Finally we can enable RSSI value in the OSD tab so it shows up on the display:</p>
+
+<p class="center"><img class="img-fluid" src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/betaflight_osd_rssi.png" alt="Betaflight OSD RSSI" /></p>
+
+<p>This is the result on the FPV screen:</p>
+
+<p class="center"><img class="img-fluid" src="/images/devo-7e-rssi-configuration-for-x6b-receiver-afhds-2a-protocol-and-betaflight-integration/screen_rssi_osd.png" alt="Screen OSD RSSI" /></p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>We have seen how to enable RSSI for AFHDS-2A protocol in Devo 7E loaded with Deviation TX firmware and how to integrate RSSI measurement in Betaflight so it is possible to read the value on the goggles/monitor through OSD during FPV flights.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html" data-toggle="tooltip" data-placement="top" title="Eachine Wizard X220S Omnibus F4SD Firmware Upgrade">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/2018/08/21/runcam-3s-overview-and-comparison-with-runcam-3.html" data-toggle="tooltip" data-placement="top" title="RunCam 3S Overview and Comparison with RunCam 3">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/upinthesky">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2020 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

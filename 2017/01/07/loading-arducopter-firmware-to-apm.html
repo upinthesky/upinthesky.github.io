@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Loading ArduCopter Firmware to APM - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="This article shows how to load ArduCopter firmware into APM control board. This post refers to the previous “APM 450 Quadcopter Build” post.">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2017/01/07/loading-arducopter-firmware-to-apm.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Loading ArduCopter Firmware to APM</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on January 07, 2017 &middot; <span class="reading-time" title="Estimated read time">
+  
+   3 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>This article shows how to load ArduCopter firmware into APM control board. This post refers to the previous “APM 450 Quadcopter Build” <a href="https://upinthesky.github.io/2016/12/18/apm-quadcopter-450-build.html">post</a>.</p>
+
+<!--more-->
+
+<p><strong>Mission Planner</strong></p>
+
+<p>First we need do download a free software called Mission Planner. This tool gives us the possibility, other than flashing APM board with different firmwares (ArduRover, ArduCopter, Arduplane), to control flight data, calibrate compass, accelerometer and radio control, program switches for different flight modes and even plan flight for performing autonomous missions.<br />
+It can be downloaded from <a href="http://ardupilot.org/planner/docs/common-install-mission-planner.html">here</a>. To install in a Windows machine just double click on the “.msi” and follow the setup:</p>
+
+<p class="center"><img class="img-fluid" src="/images/loading_firmware/mp1.png" alt="Mission Planner Setup" /></p>
+
+<p>Keep in mind that the package installs also all the necessary drivers needed by the board to be recognized by the Operating System:</p>
+
+<p class="center"><img class="img-fluid" src="/images/loading_firmware/mp2.png" alt="Mission Planner Setup" /></p>
+
+<p class="center"><img class="img-fluid" src="/images/loading_firmware/mp3.png" alt="Mission Planner Setup" /></p>
+
+<p>If everything is installed properly the following message is displayed:</p>
+
+<p class="center"><img class="img-fluid" src="/images/loading_firmware/mp4.png" alt="Mission Planner Setup" /></p>
+
+<p>Once the software has been installed we can connect the board to the PC through the Micro USB cable (be careful to have the APM disconnected from every other power source like the PM); then, clicking on Computer -&gt; Properties -&gt; Device Manager, under “Ports (COM &amp; LPT)” you should have something like this:</p>
+
+<p class="center"><img class="img-fluid" src="/images/loading_firmware/apm_com.png" alt="APM Com Port" /></p>
+
+<p>where COM6 is the communication port used for exchanging data with the APM.<br />
+After launching Mission Planner software, this port will be the same appearing in the upper right corner of Mission Planner screen:</p>
+
+<p class="center"><img class="img-fluid" src="/images/loading_firmware/com6_mp.png" alt="Mission Planner COM Port" /></p>
+
+<p>Do not click on “Connect”, since first we have to upload the firmware on the APM; to do so, we have to click on Initial Setup -&gt; Install Firmware:</p>
+
+<p class="center"><img class="img-fluid" src="/images/loading_firmware/install_firmware.png" alt="APM Firmware Installation" /></p>
+
+<p>Since ArduCopter 3.2.1 is the last supported version for APM 2.x control board (in my case 2.6) we need to click on “Pick previous firmware” on the bottom right and choose the corresponding option as in the image below:</p>
+
+<p class="center"><img class="img-fluid" src="/images/loading_firmware/firmware_version.png" alt="APM Firmware Version" /></p>
+
+<p>After that, we just select the Quad version “ArduCopter V3.2.1 Quad” and confirm the upload activity:</p>
+
+<p class="center"><img class="img-fluid" src="/images/loading_firmware/arducopter.png" alt="APM Arducopter" /></p>
+
+<p>Beware that Mission Planner takes about 5-6 minutes to upload the firmware to the APM control board.</p>
+
+<p>To calibrate magnetometer (compass), accelerometer and radio control just follow these good articles from ArduPilot website: <a href="http://ardupilot.org/copter/docs/common-compass-setup-advanced.html">Compass calibration</a>, <a href="http://ardupilot.org/copter/docs/common-accelerometer-calibration.html">Accelerometer calibration</a>, <a href="http://ardupilot.org/copter/docs/common-radio-control-calibration.html">Radio control calibration</a>.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2016/12/18/apm-quadcopter-450-build.html" data-toggle="tooltip" data-placement="top" title="APM Quadcopter 450 Build">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html" data-toggle="tooltip" data-placement="top" title="Eachine Wizard X220S ARF Overview and Receiver Installation">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/upinthesky">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2020 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

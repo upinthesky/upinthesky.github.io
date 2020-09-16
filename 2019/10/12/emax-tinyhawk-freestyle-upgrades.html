@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    EMAX Tinyhawk Freestyle Upgrades - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="In the previous article, we have discussed about the EMAX Tinyhawk Freestyle quadcopter. Since it is a beginner FPV freestyle quad, some components can be up...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2019/10/12/emax-tinyhawk-freestyle-upgrades.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>EMAX Tinyhawk Freestyle Upgrades</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on October 12, 2019 &middot; <span class="reading-time" title="Estimated read time">
+  
+   5 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>In the <a href="https://upinthesky.github.io/2019/10/02/emax-tinyhawk-freestyle-overview.html">previous article</a>, we have discussed about the <a href="http://bit.ly/2nJaytr">EMAX Tinyhawk Freestyle</a> quadcopter. Since it is a beginner FPV freestyle quad, some components can be upgraded to better ones and in this article we will take a look at some possible upgrades for the battery,the receiver, the FPV camera, the VTX and its 5.8 GHz antenna.</p>
+
+<!--more-->
+
+<p><strong>Battery Connectors</strong></p>
+
+<p>Like reported in the <a href="https://upinthesky.github.io/2019/10/02/emax-tinyhawk-freestyle-overview.html">previous article</a>, instead of using 2 x 1S batteries, we can switch to <a href="http://bit.ly/2M1vtRF">XT30 Connectors</a> and use 2S batteries like the <a href="http://bit.ly/2oBgZ1L">Tattu 7.6V 450mAh 95C 2S HV 4.35V Lipo Battery</a>.</p>
+
+<p><strong>Receiver</strong></p>
+
+<p>The stock receiver is built-in the FC board: this is not a full range receiver so, if you need a better range, a good upgrade is given by the <a href="http://bit.ly/35qbgNh">FrSky XM+ Full Range Receiver</a>, which is a full range receiver.</p>
+
+<p class="center"><img class="img-fluid" src="/images/emax-tinyhawk-freestyle-upgrades/frsky_xm+_receiver.jpg" alt="FrSky XM+ Receiver" /></p>
+
+<p>Here is FrSky XM+ Full Range Receiver schematic:</p>
+
+<p class="center"><img class="img-fluid" src="/images/emax-tinyhawk-freestyle-upgrades/frsky_xm+_full_sbus_receiver_schematic.jpg" alt="FrSky XM+ Receiver Schematic" /></p>
+
+<p>On the left side there are the pins we are interested in: SBUS (signal), +5V (power) and GND (ground).</p>
+
+<p>We have to connect these pins to the same ones located on the MATEKF411RX FC:</p>
+
+<p class="center"><img class="img-fluid" src="/images/emax-tinyhawk-freestyle-upgrades/fc_matekf411rx_sbus_pads.png" alt="FC MATEKF411RX SBUS Pads" /></p>
+
+<p>The pads on the FC are located near the gray antenna where there is the label “Sbus”:</p>
+
+<ul>
+  <li>S (signal)</li>
+  <li>5V (power)</li>
+  <li>- (ground)</li>
+</ul>
+
+<p>Remember to pre-tin the pads and the wires for an easy soldering.<br />
+Then, it is just a matter of removing the stock antenna by unsoldering it. A good place to put the FrSky XM+ receiver is under the FC using some double sided tape to lock it down. Be careful it does not touch the frame.</p>
+
+<p>We can use some zip ties to orient antennas in the desired direction.</p>
+
+<p><strong>FPV Camera</strong></p>
+
+<p>Another good upgrade is changing the stock FPV camera with the <a href="http://bit.ly/2M3ciGY">Runcam Nano V2 Camera</a> which is more performing; the image quality is improved with its 700 TVL and 2.1mm lens (155 degrees FOV). Runcam Nano V2 FPV camera fits perfectly in the EMAX Tinyhawk Freestyle.</p>
+
+<p class="center"><img class="img-fluid" src="/images/emax-tinyhawk-freestyle-upgrades/runcam_nano_v2.jpg" alt="Runcam Nano V2" /></p>
+
+<p>To connect the Runcam Nano V2 FPV camera, we have to remove the stock 600 VTL FPV camera. Then, we have to solder the original connector wires to the Runcam Nano V2 by keeping in mind wire color meaning:</p>
+
+<ul>
+  <li>yellow = signal</li>
+  <li>black = ground</li>
+  <li>red = power</li>
+</ul>
+
+<p class="center"><img class="img-fluid" src="/images/emax-tinyhawk-freestyle-upgrades/runcam_nano_v2_back.jpg" alt="Runcam Nano V2 Back" /></p>
+
+<p>Once connections are done, we can simply fix the camera to the frame using some double sided tape with hot glue and tilt it like the stock one.</p>
+
+<p><strong>VTX and Antenna</strong></p>
+
+<p>Since the original VTX has an output power of only 25 mW, if more range is needed we can change it with a better one with similar weight and dimensions. A possible choice is given by the <a href="http://bit.ly/2OwaIPA">HGLRC Forward 350mw Mini VTX</a>, which has a maximum output power of 350 mW and MMCX connector: this means we can use a better antenna instead of the dipole stock one.</p>
+
+<p class="center"><img class="img-fluid" src="/images/emax-tinyhawk-freestyle-upgrades/hglrc_forward_350mw_mini_vtx.png" alt="HGLRC Forward 350mW Mini VTX" /></p>
+
+<p>VTX comes with cables to connect it to the FC:</p>
+
+<p class="center"><img class="img-fluid" src="/images/emax-tinyhawk-freestyle-upgrades/hglrc_forward_350mw_mini_vtx_cables.png" alt="HGLRC Forward 350mW Mini VTX Cables" /></p>
+
+<p>Black and red wires near the video wire (yellow) are not needed.
+VCC 7-26V (red wire) and GND (black) wires, near the RX wire (white), need to be soldered to the FC board battery pads, the same ones where the capacitor is soldered.
+Lastly, we have to solder video (yellow) and RX (white) wire to the FC:</p>
+
+<ul>
+  <li>the yellow wire needs to be soldered to the Vout pad;</li>
+  <li>the white wire goes to TX2 pad.</li>
+</ul>
+
+<p class="center"><img class="img-fluid" src="/images/emax-tinyhawk-freestyle-upgrades/fc_matekf411rx_schematic.png" alt="FC MATEKF411RX Schematic" /></p>
+
+<p>When fixing the VTX to the frame be careful the board does not touch the frame: for example, we can use some double sided tape to isolate them.</p>
+
+<p>A good antenna for this VTX is the <a href="http://bit.ly/2OzcPCv">Lumenier AXII 2 Antenna with MMCX</a>, which is a 5.8 GHz omnidirectional antenna:</p>
+
+<p class="center"><img class="img-fluid" src="/images/emax-tinyhawk-freestyle-upgrades/lumenier_axii_2_antenna.jpg" alt="Lumenier AXII 2 Antenna" /></p>
+
+<p>To keep the antenna in place, we can use some zip ties.</p>
+
+<p><strong>Conclusions</strong></p>
+
+<p><a href="http://bit.ly/2nJaytr">EMAX Tinyhawk Freestyle</a> is a very good mini quad, but lacks in range, so with the receiver and VTX/Antenna mods we do not need to worry anymore of radio failsafe or video feed lost. Moreover with Runcam Nano V2 we gain a better video image quality with better lighting control.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2019/10/02/emax-tinyhawk-freestyle-overview.html" data-toggle="tooltip" data-placement="top" title="EMAX Tinyhawk Freestyle Overview">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/2020/01/06/dji-mavic-air-arctic-white-review.html" data-toggle="tooltip" data-placement="top" title="DJI Mavic Air Arctic White Review">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/upinthesky">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2020 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

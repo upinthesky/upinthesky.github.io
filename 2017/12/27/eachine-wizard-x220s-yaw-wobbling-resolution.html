@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Eachine Wizard X220S Yaw Wobbling Resolution - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="In this article we will see how to solve the yaw wobbling on the Eachine Wizard X220S, which is visible and relevant especially during hovering. By doing thi...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2017/12/27/eachine-wizard-x220s-yaw-wobbling-resolution.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Eachine Wizard X220S Yaw Wobbling Resolution</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on December 27, 2017 &middot; <span class="reading-time" title="Estimated read time">
+  
+   5 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>In this article we will see how to solve the yaw wobbling on the <a href="http://bit.ly/2PIOtUS">Eachine Wizard X220S</a>, which is visible and relevant especially during hovering. By doing this we will see how to analyze flight logs using Betaflight Blackbox Explorer.</p>
+
+<!--more-->
+
+<p><strong>Noise on gyro readings</strong></p>
+
+<p>Understanding the cause of the yaw wobbling is the first thing to do. Let us focus the attention on the flight controller which basically takes some inputs and generates some outputs: now, if the inputs are noise free everything works good. But, what if there is noise, for example, in gyro readings? That noise affects how the controller reacts and this can generate unexpected behavior during flight.</p>
+
+<p>Motors vibration can be transferred to the frame even if they are soft mounted as in the case of the Eachine Wizard X220S. Now, since the Flight Controller is attached to the frame itself through some screws, vibrations are transferred to the FC: this means gyro readings are noisy and that causes the wobbling.</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/motor1_noise.png" alt="Eachine Wizard X220S Motor Noise" /></p>
+
+<p>As the image shows, the noise increases as motors rotation speed reaches a certain value which coincides with the one needed for the hovering: in the graph it is reported how motor 1 rotation affects gyro readings even if the quadcopter is standing still on the bench without propellers on (of course, the amount of vibration depends also from the quality of the motors and in particular from their bearings).</p>
+
+<p>As reported, this vibration affects gyro readings, particularly on the z axis.</p>
+
+<p><strong>Betaflight Blackbox Explorer Analysis</strong></p>
+
+<p>This behavior can be seen in the Betaflight Blackbox Explorer: this application allows to visualize, in a graphical way, data collected during the flight and saved on a microSD card (we have seen how to enable this feature in <a href="https://upinthesky.github.io/2017/12/11/eachine-wizard-x220s-betaflight-setup-and-configuration.html">this previous article</a>).</p>
+
+<p>The installation of the application is just as simple as the one of Betaflight Configurator since it can be downloaded as an extension of Google Chrome browser. Once it is installed, it is just a matter of launching the app, clicking on “Open log file/video” and select the log file saved on the microSD which has the extension .BFL.</p>
+
+<p>This app is very useful to analyze how the quadcopter performed during the flight. In this case we will use it to just check gyro readings. In particular, we are interested in the gyro[yaw] parameter (yellow line in the graph):</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_yaw_noise.png" alt="Eachine Wizard X220S Blackbox Yaw Noise" /></p>
+
+<p>Clearly, there is a lot of noise affecting the gyro on the yaw. Noise cannot be completely removed, but can be drastically mitigated.</p>
+
+<p><strong>Anti-vibration Standoffs</strong></p>
+
+<p>This annoying behavior can be fixed with a simple solution, i.e. mounting the Flight Controller on <a href="http://bit.ly/2OTAZVd">Anti-vibration Standoffs</a>:</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs.png" alt="Anti-vibration Standoffs" /></p>
+
+<p>In the substitution process of the old standoffs, having these tools comes in handy:</p>
+
+<ul>
+  <li><a href="http://bit.ly/2vZiNCs">Drillpro 4pcs Hex Screwdriver Tool Kit 1.5/2.0/2.5/3.0mm</a></li>
+  <li><a href="http://bit.ly/2w2dd25">DANIU 4pcs Metal 4.0/5.5/7.0/8.0mm Hex Screwdriver Set</a></li>
+  <li><a href="http://bit.ly/2OTJtLJ">DANIU 25 in 1 Multi-purpose Precision Screwdriver Set</a></li>
+</ul>
+
+<p>The following image shows the result with the FC attached to the bottom stack using anti-vibration standoffs screws which, thanks to the damping material, absorb most of the vibrations caused by the motors and transferred to the quadcopter frame.</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/antivibration_standoffs_mounted.png" alt="Eachine Wizard X220S Anti-vibration Standoffs Mounted" /></p>
+
+<p>After placing anti-vibration standoffs under the Flight Controller, the noise on yaw gyro readings is almost completely gone and consequently the wobbling is no more there.</p>
+
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_yaw_wobbling_resolution/blackbox_antivibration_standoffs.png" alt="Eachine Wizard X220S Blackbox Anti-vibration Standoffs Noise Removed" /></p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>In this article we have seen how it is possible to analyze flight logs using Betaflight Blackbox Explorer and how a simple and cheap modification can solve a bad issue conditioning quadcopter behavior in flight.</p>
+
+<p>For the overview of the Eachine X220S, read <a href="https://upinthesky.github.io/2017/10/23/eachine-wizard-x220s-arf-overview-and-receiver-installation.html">this article</a>.</p>
+
+<p>If you want to upgrade Betaflight firmware for the Omnibus F4SD on the Eachine Wizard X220S, read <a href="https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html">this article</a>.</p>
+
+<p>If you want to update Eachine Wizard X220S BLHeli 4in1 ESC firmware, read <a href="https://upinthesky.github.io/2018/08/30/eachine-wizard-x220s-blheli-s-4in1-esc-firmware-update.html">this post</a>.</p>
+
+<p>If you are experiencing video noise appearing as horizontal lines on the FPV camera view when motors are spinning, <a href="https://upinthesky.github.io/2018/09/15/eachine-wizard-x220s-fpv-camera-noise-resolution.html">here</a> is the resolution.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2017/12/11/eachine-wizard-x220s-betaflight-setup-and-configuration.html" data-toggle="tooltip" data-placement="top" title="Eachine Wizard X220S Betaflight Setup and Configuration">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/2018/07/22/syma-x5c-explorers-fpv-mod.html" data-toggle="tooltip" data-placement="top" title="Syma X5C Explorers FPV Mod">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/upinthesky">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2020 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>
