@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-17T20:30:48+02:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">DJI Mavic Air 2 Review</title><link href="/2020/09/17/dji-mavic-air-2-review.html" rel="alternate" type="text/html" title="DJI Mavic Air 2 Review" /><published>2020-09-17T00:00:00+02:00</published><updated>2020-09-17T00:00:00+02:00</updated><id>/2020/09/17/dji-mavic-air-2-review</id><content type="html" xml:base="/2020/09/17/dji-mavic-air-2-review.html">&lt;p&gt;&lt;a href=&quot;https://bit.ly/3d2lwyj&quot;&gt;DJI Mavic Air 2&lt;/a&gt; is the successor of the DJI Mavic Air portable drone. In this article we will take a look at the features and improvements made by DJI, which has developed an impressive product.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-17T21:52:07+02:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">DJI Mavic Air 2 Review</title><link href="/2020/09/17/dji-mavic-air-2-review.html" rel="alternate" type="text/html" title="DJI Mavic Air 2 Review" /><published>2020-09-17T00:00:00+02:00</published><updated>2020-09-17T00:00:00+02:00</updated><id>/2020/09/17/dji-mavic-air-2-review</id><content type="html" xml:base="/2020/09/17/dji-mavic-air-2-review.html">&lt;p&gt;&lt;a href=&quot;https://bit.ly/3d2lwyj&quot;&gt;DJI Mavic Air 2&lt;/a&gt; is the successor of the DJI Mavic Air portable drone. In this article we will take a look at the features and improvements made by DJI, which has developed an impressive product.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -68,7 +68,7 @@ Here is the Mavic Air 2 box:&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_camera.jpg&quot; alt=&quot;Mavic Air 2 Camera&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The camera is capable of capturing up to 48MP photos.&lt;/p&gt;
+&lt;p&gt;The camera is capable of taking videos up to 4K@60fps and of capturing photos up to 48MP.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Vision System&lt;/strong&gt;&lt;/p&gt;
 
@@ -86,7 +86,7 @@ Here is the Mavic Air 2 box:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Battery&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;DJI Mavic Air 2 has an intelligent flight battery, by means it automatically discharge to 40%-60% when it is in idle for more than 10 days (4 days are needed to reach that percentage). It is a 3S 3500 mAh LiPo that can keep the drone in the air for a maximum of 34 minutes.&lt;/p&gt;
+&lt;p&gt;DJI Mavic Air 2 has an intelligent flight battery, by means it automatically discharge to 40%-60% when it is in idle for more than 10 days (4 days are needed to reach that percentage). It is a 3S 3500mAh LiPo that can keep the drone in the air for a maximum of 34 minutes.&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_battery.jpg&quot; alt=&quot;Mavic Air 2 Battery&quot; /&gt;&lt;/p&gt;
 
@@ -122,7 +122,7 @@ Here is the Mavic Air 2 box:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Storage&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;DJI Mavic Air 2 has an internal storage of 8GB. This is good, but not enough considering the high quality videos and photos it can acquire, in fact it can reach a writing bit reat up to 120 Mbps, i.e. 15MBs. This means that in a single minute of video recording it can produce a 900MB video file. This is why there is the possibility to add an external SD card, up to 256GB.&lt;/p&gt;
+&lt;p&gt;DJI Mavic Air 2 has an internal storage of 8GB. This is good, but not enough considering the high quality videos and photos it can acquire, in fact it can reach a writing bit rate up to 120 Mbps, i.e. 15MBs. This means that in a single minute of video recording it can produce a 900MB video file. This is why there is the possibility to add an external SD card, up to 256GB.&lt;/p&gt;
 
 &lt;p&gt;The only consideration to keep in mind while looking for the additional SD card it is that we need one that has capable of a writing speed of at least 15MBs: a cheap good choice is the &lt;a href=&quot;http://bit.ly/2FI27Un&quot;&gt;BlitzWolf BW-TF1 Class 10 UHS-3 V30 64GB or 128GB&lt;/a&gt;, which has a writing speed &amp;gt; 30MBs (beware that 32GB version has lower speeds, so consider at least 64GB version).&lt;/p&gt;
 
