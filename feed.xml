@@ -1,4 +1,209 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-16T16:18:16+02:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">FrSky Taranis X9D Plus SE 2019 Switch Setup and Configuration in Betaflight</title><link href="/2020/01/15/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight.html" rel="alternate" type="text/html" title="FrSky Taranis X9D Plus SE 2019 Switch Setup and Configuration in Betaflight" /><published>2020-01-15T00:00:00+01:00</published><updated>2020-01-15T00:00:00+01:00</updated><id>/2020/01/15/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight</id><content type="html" xml:base="/2020/01/15/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight.html">&lt;p&gt;In this post we will see how to configure switches on the &lt;a href=&quot;http://bit.ly/2ktT6Yd&quot;&gt;FrSky Taranis X9D Plus SE 2019&lt;/a&gt;, the notorious radio transmitter using FrSky protocol and presented in &lt;a href=&quot;https://upinthesky.github.io/2019/09/22/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version.html&quot;&gt;this previous article&lt;/a&gt;, and how to set up flight modes on Betaflight Configurator through the configured switches. Since FrSky Taranis X9D Plus SE 2019 is loaded with OpenTX firmware (in my case the version is OpenTX 2.3.0), this guide is valid for all the transmitter using OpenTX firmware.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-17T20:22:00+02:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">DJI Mavic Air 2 Review</title><link href="/2020/09/17/dji-mavic-air-2-review.html" rel="alternate" type="text/html" title="DJI Mavic Air 2 Review" /><published>2020-09-17T00:00:00+02:00</published><updated>2020-09-17T00:00:00+02:00</updated><id>/2020/09/17/dji-mavic-air-2-review</id><content type="html" xml:base="/2020/09/17/dji-mavic-air-2-review.html">&lt;p&gt;&lt;a href=&quot;https://bit.ly/3d2lwyj&quot;&gt;DJI Mavic Air 2&lt;/a&gt; is the successor of the DJI Mavic Air portable drone. In this article we will take a look at the features and improvements made by DJI, which has developed an impressive product.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Like its predecessor, Mavic Air 2 is available in two different kits: standard and Fly More Combo. The second kit has 2 more batteries, ND filters (ND16/64/256), 6 pairs of propellers (instead of 3), a battery charger hub and a shoulder bag for carrying the drone.&lt;/p&gt;
+
+&lt;p&gt;In this review we will examine the standard version. 
+Here is the Mavic Air 2 box:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_box.jpg&quot; alt=&quot;Mavic Air 2 Box&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Opening the box we get immediately the view of the folded drone:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_folded.jpg&quot; alt=&quot;Mavic Air 2 Folded&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note there is a sticker telling us that the battery will be activated after the first charge.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Package Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The following image shows the contents of the box:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_box_contents.jpg&quot; alt=&quot;Mavic Air 2 Box Contents&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DJI Mavic Air 2, which weights 570g (140g heavier than its predecessor);&lt;/li&gt;
+  &lt;li&gt;radio controller;&lt;/li&gt;
+  &lt;li&gt;USB to type C cable;&lt;/li&gt;
+  &lt;li&gt;battery charger (one for both drone and radio controller) and power cable;&lt;/li&gt;
+  &lt;li&gt;cables to connect different smartphone brands to the radio controller;&lt;/li&gt;
+  &lt;li&gt;3 pairs of propellers (CCW props can be recognized by the presence of a white marker and the same marker is on the drone to guide the user during the assembly);&lt;/li&gt;
+  &lt;li&gt;spare control sticks;&lt;/li&gt;
+  &lt;li&gt;instruction manual.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since DJI Mavic Air 2 specifications are quite long and detailed, &lt;a href=&quot;https://www.dji.com/mavic-air-2/specs&quot;&gt;here&lt;/a&gt; is the link at the official DJI website with all the info.&lt;/p&gt;
+
+&lt;p&gt;DJI Mavic Air 2 main features are the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;4k@60fps videos;&lt;/li&gt;
+  &lt;li&gt;48MP photos;&lt;/li&gt;
+  &lt;li&gt;34 minutes max flight time;&lt;/li&gt;
+  &lt;li&gt;10km 1080p video transmission;&lt;/li&gt;
+  &lt;li&gt;HDR;&lt;/li&gt;
+  &lt;li&gt;FocusTrack;&lt;/li&gt;
+  &lt;li&gt;8K Hyperlapse.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Down below DJI Mavic Air 2 is shown unfolded:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_front.jpg&quot; alt=&quot;Mavic Air 2 Front&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Front landing gears are drone built-in antennas.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Camera&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hidden under the camera gimbal protector there is a camera with 1/2” CMOS sensor (Quad Bayer):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;FOV: 84°&lt;/li&gt;
+  &lt;li&gt;Equivalent Focal Length: 24mm&lt;/li&gt;
+  &lt;li&gt;Aperture: f/2.8&lt;/li&gt;
+  &lt;li&gt;Focus Range: 1m to ∞&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_camera.jpg&quot; alt=&quot;Mavic Air 2 Camera&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The camera is capable of capturing up to 48MP photos.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Vision System&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On the front there are also two sensors used by the Advanced Pilot Assistance System (APAS), i.e. DJI obstacle avoidance system. For the same purpose, there are also other two sensors on the back:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_back.jpg&quot; alt=&quot;Mavic Air 2 Back&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Under the drone there are also other sensors for the downward vision system and the infrared sensing system. Moreover, there is also an auxiliary bottom led light on the central part.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_bottom_sensors.jpg&quot; alt=&quot;Mavic Air 2 Bottom Sensors&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The following image shows vision system detection ranges for obstacle avoidance:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_vision_system.png&quot; alt=&quot;Mavic Air 2 Vision System&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Battery&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;DJI Mavic Air 2 has an intelligent flight battery, by means it automatically discharge to 40%-60% when it is in idle for more than 10 days (4 days are needed to reach that percentage). It is a 3S 3500 mAh LiPo that can keep the drone in the air for a maximum of 34 minutes.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_battery.jpg&quot; alt=&quot;Mavic Air 2 Battery&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the top side, 4 leds indicate battery charge status by pressing the circular button once.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Radio Controller&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The radio controller is bigger than the Mavic Air one, but it is more comfortable. The sticks are kept in the bottom part and can be easily mounted on by screwing them in place.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_controller.jpg&quot; alt=&quot;Mavic Air 2 Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the front part, there are 4 buttons and a slider:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;top left -&amp;gt; Fn button;&lt;/li&gt;
+  &lt;li&gt;top right -&amp;gt; Photo/Video switch;&lt;/li&gt;
+  &lt;li&gt;mid left -&amp;gt; return home / stop advanced flight modes button;&lt;/li&gt;
+  &lt;li&gt;mid right -&amp;gt; power button;&lt;/li&gt;
+  &lt;li&gt;slider -&amp;gt; tripod, normal, sport mode switch.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On the top part there is also a button for taking photos or starting/stopping videos depending on the current mode and a scroll wheel to change camera angle through gimbal adjustment:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_controller_top.jpg&quot; alt=&quot;Mavic Air 2 Controller Top&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Differently from its predecessor,this controller has a the phone holder on the top part instead of the bottom, which is definitely a better choice:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_controller_phone_holder.jpg&quot; alt=&quot;Mavic Air 2 Controller Phone Holder&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Phone connection cable to the remote is well kept inside when not in use.&lt;/p&gt;
+
+&lt;p&gt;Finally, 4 leds indicate battery charge status by pressing the power button once.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Storage&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;DJI Mavic Air 2 has an internal storage of 8GB. This is good, but not enough considering the high quality videos and photos it can acquire, in fact it can reach a writing bit reat up to 120 Mbps, i.e. 15MBs. This means that in a single minute of video recording it can produce a 900MB video file. This is why there is the possibility to add an external SD card, up to 256GB.&lt;/p&gt;
+
+&lt;p&gt;The only consideration to keep in mind while looking for the additional SD card it is that we need one that has capable of a writing speed of at least 15MBs: a cheap good choice is the &lt;a href=&quot;http://bit.ly/2FI27Un&quot;&gt;BlitzWolf BW-TF1 Class 10 UHS-3 V30 64GB or 128GB&lt;/a&gt;, which has a writing speed &amp;gt; 30MBs (beware that 32GB version has lower speeds, so consider at least 64GB version).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DJI Fly App&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Differently from the Mavic Air which was controlled by DJI GO4 app, DJI Mavic Air 2 uses DJI Fly app (same as Mavic Mini). 
+Of course, a DJI account is necessary to be able to use the app and register the drone, so you have to create it in the official DJI website.&lt;/p&gt;
+
+&lt;p&gt;Once started, we get the prompt for connecting to the aircraft:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/dji_fly_app.png&quot; alt=&quot;DJI Fly App&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If the connection is successful we get the camera view on the screen:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/dji_fly_app_camera_view.png&quot; alt=&quot;DJI Fly App Camera View&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From here we get all Mavic Air 2 informations, like battery percentage, remaining flight time, RC singal, number of satellites and of course all the controls for the drone. On the left, for example, we have the icon to take off.&lt;/p&gt;
+
+&lt;p&gt;On the right there is the possibility to change photo/video settings and to access intelligent flight modes, like Quickshots:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/dji_fly_app_video_mode.png&quot; alt=&quot;DJI Fly App Video Mode&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intelligent Flight Modes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Like its predecessor, DJI Mavic Air 2 features Intelligent Flight Modes, i.e. autonomous functions through which the aircraft can perform interesting moves for aerial shots. These modes are the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;FocusTrack
+    &lt;ul&gt;
+      &lt;li&gt;Spotlight 2.0 (default mode)&lt;/li&gt;
+      &lt;li&gt;ActiveTrack 3.0 (Trace, Parallel)&lt;/li&gt;
+      &lt;li&gt;Point Of Interest 3.0&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;QuickShots
+    &lt;ul&gt;
+      &lt;li&gt;Dronie&lt;/li&gt;
+      &lt;li&gt;Rocket&lt;/li&gt;
+      &lt;li&gt;Circle&lt;/li&gt;
+      &lt;li&gt;Elix&lt;/li&gt;
+      &lt;li&gt;Boomerang&lt;/li&gt;
+      &lt;li&gt;Asteroid&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Hyperlapse
+    &lt;ul&gt;
+      &lt;li&gt;Free&lt;/li&gt;
+      &lt;li&gt;Circle&lt;/li&gt;
+      &lt;li&gt;Course Lock&lt;/li&gt;
+      &lt;li&gt;Waypoint&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While Quickshots and Hyperlapse are accessible by tapping on the “film icon” on the right of the app, FocusTrack can be activated by dragging a box on the screen in the camera view around the subject we want to track. To stop FocusTrack we need to press the Retun Home button once which acts like a Flight Pause button also for the other intelligent flight modes.&lt;/p&gt;
+
+&lt;p&gt;DJI Fly app menu settings are grouped in the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Safety -&amp;gt; options like APAS configuration&lt;/li&gt;
+  &lt;li&gt;Control -&amp;gt; options like aircraft measurement units and gimbal mode&lt;/li&gt;
+  &lt;li&gt;Camera -&amp;gt; photo/video options&lt;/li&gt;
+  &lt;li&gt;Transmission -&amp;gt; definition and frequency&lt;/li&gt;
+  &lt;li&gt;About -&amp;gt; firmware informations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Firmware update&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Before flying for the first time it is important to update the Mavic Air 2 with the latest firmware available. The update process is shown in the following image:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/dji-mavic-air-2-review/mavic_air_2_firmware_update.jpg&quot; alt=&quot;Mavic Air 2 Firmware Update&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Flight Recorder&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It is useful to know that flight data can be accessed using DJI Assistant 2 for Mavic available in the download area of DJI official website.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;DJI Mavic Air 2 is an impressive drone with stunning photo and video capabilities; the advanced flight modes are a really nice features allowing suggestive shots: it really gives you the ability to focus on the shots instead on the flying since its autonomous flight modes are very accurate.&lt;/p&gt;
+
+&lt;p&gt;The drone is available &lt;a href=&quot;https://bit.ly/3d2lwyj&quot;&gt;here&lt;/a&gt; in both standard and Fly More Combo kits.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="DJI" /><category term="Mavic Air 2" /><category term="Review" /><category term="FPV" /><category term="Cinematic" /><category term="Battery" /><category term="DJI Fly App" /><category term="APAS" /><category term="HD" /><category term="4K" /><category term="Intelligent Flight Modes" /><category term="LiPo" /><category term="Telemetry" /><summary type="html">DJI Mavic Air 2 is the successor of the DJI Mavic Air portable drone. In this article we will take a look at the features and improvements made by DJI, which has developed an impressive product.</summary></entry><entry><title type="html">FrSky Taranis X9D Plus SE 2019 Switch Setup and Configuration in Betaflight</title><link href="/2020/01/15/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight.html" rel="alternate" type="text/html" title="FrSky Taranis X9D Plus SE 2019 Switch Setup and Configuration in Betaflight" /><published>2020-01-15T00:00:00+01:00</published><updated>2020-01-15T00:00:00+01:00</updated><id>/2020/01/15/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight</id><content type="html" xml:base="/2020/01/15/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight.html">&lt;p&gt;In this post we will see how to configure switches on the &lt;a href=&quot;http://bit.ly/2ktT6Yd&quot;&gt;FrSky Taranis X9D Plus SE 2019&lt;/a&gt;, the notorious radio transmitter using FrSky protocol and presented in &lt;a href=&quot;https://upinthesky.github.io/2019/09/22/frsky-taranis-x9d-plus-2019-overview-and-comparison-with-se-version.html&quot;&gt;this previous article&lt;/a&gt;, and how to set up flight modes on Betaflight Configurator through the configured switches. Since FrSky Taranis X9D Plus SE 2019 is loaded with OpenTX firmware (in my case the version is OpenTX 2.3.0), this guide is valid for all the transmitter using OpenTX firmware.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -260,7 +465,7 @@ is powered by a rechargeable battery that has a capacity of 2970 mAh, which ensu
 
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;DJI Mavic Air is one of the best drones for filming high quality footage with a portable and really easy to fly product of high technology.&lt;br /&gt;
+&lt;p&gt;DJI Mavic Air is one of the best drones for filming high quality footage; it is a portable and really easy to fly product featuring high quality technology.&lt;br /&gt;
 Intelligent Flight Modes are just awesome for taking good cinematic shoots and the obstacle detection system is very accurate.&lt;/p&gt;
 
 &lt;p&gt;You can buy the DJI Mavic Air &lt;a href=&quot;http://bit.ly/2sFBlZP&quot;&gt;here&lt;/a&gt;. 
@@ -1254,76 +1459,4 @@ To enter in binding mode we have to press and hold the binding button on the Liz
 &lt;p&gt;We have seen an overview of the Eachine Lizard 105S which is a very nice FPV freestyle/racing mini quad: it is a good quad for who wants to start a journey in the FPV world.&lt;br /&gt;
 Comparing its behavior to the Eachine X220S, it has a pretty similar style, but you can feel the difference in the momentum due to the weight difference. However its brushless motors are really powerful so they allow to perform hard freestyle maneuvers.&lt;/p&gt;
 
-&lt;p&gt;The Eachine Lizard 105S can be found &lt;a href=&quot;http://bit.ly/2rFfj5y&quot;&gt;here&lt;/a&gt; at a good price.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="Eachine" /><category term="Lizard" /><category term="105S" /><category term="ARF" /><category term="Overview" /><category term="Review" /><category term="Receiver" /><category term="i-BUS" /><category term="AFHDS-2A" /><category term="Flysky" /><category term="FS-i6X" /><category term="FPV" /><category term="Racing" /><category term="Freestyle" /><category term="Brushless" /><category term="DVR" /><category term="Mini" /><summary type="html">The Eachine Lizard 105S is a 105mm FPV Racing/Freestyle quadcopter. It comes with no transmitter and three possible choices for receiver protocol: Flysky AFHDS-2A, DSM2/DSMX, Frsky XM+. So, depending on our transmitter, we choose the compatible one. Since in my case the transmitter is the Flysky FS-i6X, in this article we will take a look at the version mounting a receiver compatible with Flysky AFHDS-2A protocol, which is the Flysky Flit10.</summary></entry><entry><title type="html">Eachine VR006 Mini FPV Goggles Pro58 Diversity Receiver Mod</title><link href="/2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod.html" rel="alternate" type="text/html" title="Eachine VR006 Mini FPV Goggles Pro58 Diversity Receiver Mod" /><published>2018-11-01T00:00:00+01:00</published><updated>2018-11-01T00:00:00+01:00</updated><id>/2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod</id><content type="html" xml:base="/2018/11/01/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod.html">&lt;p&gt;As discussed in &lt;a href=&quot;https://upinthesky.github.io/2018/08/23/eachine-vr006-mini-fpv-goggles-review.html&quot;&gt;this article&lt;/a&gt;, &lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006 Mini FPV Goggles&lt;/a&gt; lack of an important feature, Diversity Reception. This is why in this blog post we are going to see how to install a diversity receiver module, in particular the &lt;a href=&quot;http://bit.ly/2Qm98gO&quot;&gt;Eachine Pro58&lt;/a&gt;, which is cheap and is a real game changer.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;strong&gt;Flashing Pirx The Pilot Firmware on Eachine Pro58&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Before proceeding with the mod, I have chosen to load Pirx The Pilot firmware on the Eachine Pro58, which is a free good alternative to the default Eachine firmware because it adds a series of useful features (read &lt;a href=&quot;https://upinthesky.github.io/2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html&quot;&gt;this article&lt;/a&gt; if you want to know how to load Pirx The Pilot firmware on the Eachine Pro58 Diversity Receiver).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Disassembling&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Like done for the &lt;a href=&quot;https://upinthesky.github.io/2018/09/09/eachine-vr006-mini-fpv-goggles-prodvr-mod.html&quot;&gt;Eachine VR006 ProDVR Mod&lt;/a&gt;, since we are going to solder wire leads on the pads located on the board inside the goggles, we need to disassemble them. To do this, we need to cut the black sponge in two points, the ones in which the bottom part of the goggles links up to the top part:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_sponge_cut.png&quot; alt=&quot;Eachine VR006 Sponge Cut&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the cutting job is done, we can proceed with the separation of the two parts by removing the four screws located inside the highlighted holes in this picture:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_disassembled.png&quot; alt=&quot;Eachine VR006 Disassembled&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Before we can pull off the board we have to remove the two RP-SMA antenna connectors:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-vr006-mini-fpv-goggles-prodvr-mod/eachine_vr006_rpsma_connector_removal.png&quot; alt=&quot;Eachine VR006 RP-SMA Connector Removal&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once that is done we can unplug the battery connector and gently pull out the board for the soldering job.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Soldering&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The soldering job is pretty easy: we need only three wires and we can use the ones given with the Eachine Pro58, being careful to cut off the connectors only on one end, i.e. the side we are going to solder on the board. The other end connector is needed to plug into the diversity receiver module.&lt;/p&gt;
-
-&lt;p&gt;The three wires are used as reported below:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;red for power, taken from VBAT pad;&lt;/li&gt;
-  &lt;li&gt;black for ground, taken from GND pad;&lt;/li&gt;
-  &lt;li&gt;brown for video signal coming from the diversity receiver and going to the goggles through AV_IN pad.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This is the result after soldering the wires to the board (remember to tin pads and wires for an easy soldering job):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/diversity_wiring.png&quot; alt=&quot;Eachine VR006 Pro58 Diversity Receiver Wiring Soldered on the Board&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The other wires shown in the picture are from the DVR mod.&lt;br /&gt;
-Soldering the wires in this way gives us the possibility to maintain the original single receiver functionality; if we want to switch to the Pro58 instead, we have to activate the AV IN input from goggles MENU: in this way, goggles switch to the video signal received from the diversity receiver.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Reassembling&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Now, it is just a matter of reassembling the goggles and making a hole for taking out the wires (we are going to mount the Eachine Pro58 on the outside):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/vr006_reassembly.png&quot; alt=&quot;Eachine VR006 Reassembly&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is how soldered wires need to be connected to Eachine Pro58 pins:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/pro58_pins.png&quot; alt=&quot;Eachine VR006 Pro58 Diversity Receiver Pins&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The Eachine Pro58 comes with double sided tape, that can be used to fix the module on the left side of the VR006. Be careful to connect the wires as reported in the image below (we need to bend the pins by 90 degrees to place the receiver module flat on the surface):&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/pro58_wiring.png&quot; alt=&quot;Eachine VR006 Pro58 Diversity Receiver Wiring&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The display reports the current frequency on which the receiver is tuned on and the reception quality of the two receivers. It also cycles informations like CPU usage, temperature and input voltage (it also have a funny customizable screen saver).&lt;/p&gt;
-
-&lt;p&gt;Be careful to follow the calibration process when you start for the first time the diversity receiver module with Pirx The Pilot firmware (just follow the instructions prompted on the screen).&lt;/p&gt;
-
-&lt;p&gt;If the Eachine VR006 have already the DVR mod, remember to disconnect the AV IN connector from the ProDVR when you want to use the diversity module: this is because we have connected the Eachine Pro58 diversity receiver module in order to use AV IN to display the received signal on the screen:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-vr006-mini-fpv-goggles-pro58-diversity-receiver-mod/vr006_dvr_diversity.png&quot; alt=&quot;Eachine VR006 with ProDVR and Pro58 Diversity Mod&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now we have both DVR and Diversity, which is a big improvement. Note that, due to the higher power consumption caused by these mods, I have decided to change the internal battery, that is 3.7V 500mAh, with one that has a capacity of 2000mAh (same voltage of course).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In this article we have seen how to mod the &lt;a href=&quot;http://bit.ly/2Mz17Hp&quot;&gt;Eachine VR006 Mini FPV Goggles&lt;/a&gt; in order to add Eachine Pro58 Diversity Receiver module. This improvement increases a lot the reception quality of the goggles making them a really nice alternative to the expensive goggles on the market.&lt;br /&gt;
-Eachine Pro58 Diversity Receiver module can be found &lt;a href=&quot;http://bit.ly/2Qm98gO&quot;&gt;here&lt;/a&gt; at a very good price.&lt;/p&gt;
-
-&lt;p&gt;If you want to know how to flash Pirx The Pilot firmware on the Eachine Pro58, you can read &lt;a href=&quot;https://upinthesky.github.io/2018/10/07/eachine-pro58-diversity-receiver-overview-and-pirx-the-pilot-firmware-installation.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="Eachine" /><category term="VR006" /><category term="VR-006" /><category term="Pro58" /><category term="Goggles" /><category term="Mod" /><category term="Diversity" /><category term="Receiver" /><category term="Soldering" /><category term="Firmware" /><category term="Pirx The Pilot" /><category term="FPV" /><category term="Racing" /><category term="Freestyle" /><summary type="html">As discussed in this article, Eachine VR006 Mini FPV Goggles lack of an important feature, Diversity Reception. This is why in this blog post we are going to see how to install a diversity receiver module, in particular the Eachine Pro58, which is cheap and is a real game changer.</summary></entry></feed>
+&lt;p&gt;The Eachine Lizard 105S can be found &lt;a href=&quot;http://bit.ly/2rFfj5y&quot;&gt;here&lt;/a&gt; at a good price.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="Eachine" /><category term="Lizard" /><category term="105S" /><category term="ARF" /><category term="Overview" /><category term="Review" /><category term="Receiver" /><category term="i-BUS" /><category term="AFHDS-2A" /><category term="Flysky" /><category term="FS-i6X" /><category term="FPV" /><category term="Racing" /><category term="Freestyle" /><category term="Brushless" /><category term="DVR" /><category term="Mini" /><summary type="html">The Eachine Lizard 105S is a 105mm FPV Racing/Freestyle quadcopter. It comes with no transmitter and three possible choices for receiver protocol: Flysky AFHDS-2A, DSM2/DSMX, Frsky XM+. So, depending on our transmitter, we choose the compatible one. Since in my case the transmitter is the Flysky FS-i6X, in this article we will take a look at the version mounting a receiver compatible with Flysky AFHDS-2A protocol, which is the Flysky Flit10.</summary></entry></feed>
