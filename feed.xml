@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-26T12:32:02+02:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">iFlight Nazgul5 V2 Overview</title><link href="/2020/09/26/iflight-nazgul5-v2-overview.html" rel="alternate" type="text/html" title="iFlight Nazgul5 V2 Overview" /><published>2020-09-26T00:00:00+02:00</published><updated>2020-09-26T00:00:00+02:00</updated><id>/2020/09/26/iflight-nazgul5-v2-overview</id><content type="html" xml:base="/2020/09/26/iflight-nazgul5-v2-overview.html">&lt;p&gt;The &lt;a href=&quot;https://bit.ly/32W6lEw&quot;&gt;iFlight Nazgul5 V2 4S&lt;/a&gt; / &lt;a href=&quot;https://bit.ly/3j93yx6&quot;&gt;iFlight Nazgul5 V2 6S&lt;/a&gt; is a 5 inch FPV Racing/Freestyle quadcopter; it comes both in BNF (Bind aNd Fly) and PNP (Plug aNd Play) version. Similarly to its predecessor, the BNF version offers two types of FrSky receivers, but this time we have also a TBS addition:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-26T12:36:19+02:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">iFlight Nazgul5 V2 Overview</title><link href="/2020/09/26/iflight-nazgul5-v2-overview.html" rel="alternate" type="text/html" title="iFlight Nazgul5 V2 Overview" /><published>2020-09-26T00:00:00+02:00</published><updated>2020-09-26T00:00:00+02:00</updated><id>/2020/09/26/iflight-nazgul5-v2-overview</id><content type="html" xml:base="/2020/09/26/iflight-nazgul5-v2-overview.html">&lt;p&gt;The &lt;a href=&quot;https://bit.ly/32W6lEw&quot;&gt;iFlight Nazgul5 V2 4S&lt;/a&gt; / &lt;a href=&quot;https://bit.ly/3j93yx6&quot;&gt;iFlight Nazgul5 V2 6S&lt;/a&gt; is a 5 inch FPV Racing/Freestyle quadcopter; it comes both in BNF (Bind aNd Fly) and PNP (Plug aNd Play) version. Similarly to its predecessor, the BNF version offers two types of FrSky receivers, but this time we have also a TBS addition:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;FrSky R-XSR&lt;/li&gt;
@@ -35,9 +35,15 @@
   &lt;li&gt;Weight: 393.4g (without battery)&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/iflight-nazgul5-v2-overview/iflight_nazgul5_v2_side.jpg&quot; alt=&quot;iFlight Nazgul5 V2 Side&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Frame&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;iFlight Nazgul5 frame is an X frame (240mm * 240mm) which are connected individually to the center of the frame. There are a lot of TPU parts covering exposed portions of the frame (for example, at the end of each arms to protect motors in case of a crash).&lt;/p&gt;
+&lt;p&gt;iFlight Nazgul5 frame is an X frame (240mm * 240mm) which are connected individually to the center of the frame.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/iflight-nazgul5-v2-overview/iflight_nazgul5_v2_bottom.jpg&quot; alt=&quot;iFlight Nazgul5 V2 Bottom&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are a lot of TPU parts covering exposed portions of the frame (for example, at the end of each arms to protect motors in case of a crash).&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/iflight-nazgul5-v2-overview/iflight_nazgul5_v2_xframe.jpg&quot; alt=&quot;iFlight Nazgul5 V2 X Frame&quot; /&gt;&lt;/p&gt;
 
