@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-17T23:36:15+02:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">DJI Mavic Air 2 Review</title><link href="/2020/09/17/dji-mavic-air-2-review.html" rel="alternate" type="text/html" title="DJI Mavic Air 2 Review" /><published>2020-09-17T00:00:00+02:00</published><updated>2020-09-17T00:00:00+02:00</updated><id>/2020/09/17/dji-mavic-air-2-review</id><content type="html" xml:base="/2020/09/17/dji-mavic-air-2-review.html">&lt;p&gt;&lt;a href=&quot;https://bit.ly/3d2lwyj&quot;&gt;DJI Mavic Air 2&lt;/a&gt; is the successor of the DJI Mavic Air portable drone. In this article we will take a look at the features and improvements made by DJI, which has developed an impressive product.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-26T12:32:02+02:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">iFlight Nazgul5 V2 Overview</title><link href="/2020/09/26/iflight-nazgul5-v2-overview.html" rel="alternate" type="text/html" title="iFlight Nazgul5 V2 Overview" /><published>2020-09-26T00:00:00+02:00</published><updated>2020-09-26T00:00:00+02:00</updated><id>/2020/09/26/iflight-nazgul5-v2-overview</id><content type="html" xml:base="/2020/09/26/iflight-nazgul5-v2-overview.html">&lt;p&gt;The &lt;a href=&quot;https://bit.ly/32W6lEw&quot;&gt;iFlight Nazgul5 V2 4S&lt;/a&gt; / &lt;a href=&quot;https://bit.ly/3j93yx6&quot;&gt;iFlight Nazgul5 V2 6S&lt;/a&gt; is a 5 inch FPV Racing/Freestyle quadcopter; it comes both in BNF (Bind aNd Fly) and PNP (Plug aNd Play) version. Similarly to its predecessor, the BNF version offers two types of FrSky receivers, but this time we have also a TBS addition:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;FrSky R-XSR&lt;/li&gt;
+  &lt;li&gt;Frsky XM+&lt;/li&gt;
+  &lt;li&gt;TBS NANO SE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is ideal if you have a Taranis transmitter (the third one needs TBS Crossfire module for long range), like the &lt;a href=&quot;http://bit.ly/2ktT6Yd&quot;&gt;Taranis X9D Plus SE 2019&lt;/a&gt;, which is one of the best transmitters at the moment. Otherwise, you can choose the PNP version (without receiver) so you can equip the iFlight Nazgul5 V2 with your preferred receiver (for example, if you have a FlySky transmitter you can use the &lt;a href=&quot;http://bit.ly/2N1Qnye&quot;&gt;Flysky X6B 2.4G 6CH i-BUS PPM PWM Receiver for AFHDS&lt;/a&gt;, which is very good).&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/iflight-nazgul5-v2-overview/iflight_nazgul5_v2_front.jpg&quot; alt=&quot;iFlight Nazgul5 V2 Front&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Package Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nazgul5 V2 240mm 5 Inch 4S FPV Racing Drone&lt;/li&gt;
+  &lt;li&gt;2 sets of Nazgul 5 inch 3-blades propellers&lt;/li&gt;
+  &lt;li&gt;20mm * 200mm Microfiber PU Leather Battery Strap&lt;/li&gt;
+  &lt;li&gt;20mm * 250mm Microfiber PU Leather Battery Strap&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;iFlight Nazgul V2 manuals are available &lt;a href=&quot;https://drive.google.com/open?id=1r3MNTBNYSzGeRXQg45j4IJVoW1Xjk7Y0&quot;&gt;here&lt;/a&gt;, including factory dumps and wiring diagrams which is very nice.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SucceX-E F4 Flight controller (F405 stack)&lt;/li&gt;
+  &lt;li&gt;SucceX-E 45A 2-6S BLHeli_S 4-in-1 ESC (F405 stack)&lt;/li&gt;
+  &lt;li&gt;SucceX Force 5.8g VTX (max 800mW)&lt;/li&gt;
+  &lt;li&gt;XING-E 2207 FPV Motor (4S 2750KV / 6S 1800KV)&lt;/li&gt;
+  &lt;li&gt;Caddx Ratel, 2.1mm lens camera&lt;/li&gt;
+  &lt;li&gt;Albatross RHCP SMA 5.8g antenna&lt;/li&gt;
+  &lt;li&gt;Weight: 393.4g (without battery)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Frame&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;iFlight Nazgul5 frame is an X frame (240mm * 240mm) which are connected individually to the center of the frame. There are a lot of TPU parts covering exposed portions of the frame (for example, at the end of each arms to protect motors in case of a crash).&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/iflight-nazgul5-v2-overview/iflight_nazgul5_v2_xframe.jpg&quot; alt=&quot;iFlight Nazgul5 V2 X Frame&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FPV Camera&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The camera is the &lt;a href=&quot;http://bit.ly/3a3gsJ7&quot;&gt;2.1mm Caddx Ratel 1200 TVL&lt;/a&gt; and the cable to change the configuration is included (even if the port to plug it in is not so easy to reach). The FPV camera is mounted on TPU so it is possible to fit a micro camera there. The quality is pretty good and there is not so much noise in the video feed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/iflight-nazgul5-v2-overview/iflight_nazgul5_v2_fpv_camera.jpg&quot; alt=&quot;iFlight Nazgul5 V2 FPV Camera&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Motors and Propellers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Like its predecessor, iFlight Nazgul5 V2 comes with &lt;a href=&quot;http://bit.ly/2mLjUnS&quot;&gt;XING-E 2207 1800KV&lt;/a&gt;, which have proven to be really smooth motors (4S version comes with 2750KV motors); the 5140 3-blade props included are lightweight and they are just a perfect combination with the motors.&lt;br /&gt;
+If you want to have some spare props, you can find them here: &lt;a href=&quot;http://bit.ly/2mm05mU&quot;&gt;iFlight Nazgul5 5140 5140 3-Blade Propellers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/iflight-nazgul5-v2-overview/iflight_nazgul5_v2_motor.jpg&quot; alt=&quot;iFlight Nazgul5 V2 Motor&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ESCs and FC stack&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;iFlight Nazgul5 V2 is equipped with SucceX-E F404 V2.1 45A 2-6S Flight Stack (MPU6000 gyro). The flight controller is loaded with Betaflight 4.2.0.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/iflight-nazgul5-v2-overview/iflight_nazgul5_v2_stack.jpg&quot; alt=&quot;iFlight Nazgul5 V2 Stack&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;VTX&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;VTX is SucceX Force 5.8g 800mW, which can be set at the following power outputs: 25mW/200mW/400mW/800mW. This is a nice improvement allowing to fly at long distances or in places where walls are a problem for signal transmission; it is paired with Albatross RHCP SMA 5.8g antenna which is made for both analog and digital transmission.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/iflight-nazgul5-v2-overview/iflight_nazgul5_v2_vtx.jpg&quot; alt=&quot;iFlight Nazgul5 V2 VTX&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Battery&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Like for all BNF drones, battery is not included, so you have to buy it separately. A good choice for the 6S version is the &lt;a href=&quot;https://bit.ly/3kTKT91&quot;&gt;TATTU 1300mAh 22.2V 75C 6S Lipo Battery&lt;/a&gt;. Otherwise, for the 4S version, a good option is the &lt;a href=&quot;http://bit.ly/2oeHvuj&quot;&gt;TATTU 1550mAh 14.8V 75C 4S Lipo Battery Pack&lt;/a&gt;. Both have already the XT60 connector like the one on the drone.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;HD Camera&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As always a good choice for the HD camera is the well known GoPro Hero and here you can find the perfect TPU mount made by iFlight, including also ND8 lens filter: &lt;a href=&quot;https://bit.ly/308kAEe&quot;&gt;TPU Adjustable GoPro 5/6/7/8 Mount (0~60°) w/ND8 Lens Filter for iFlight TITAN XL5/DC5/Nazgul5/SL5/SL5-E&lt;/a&gt;. 
+If you do not want to spend much, a very good alternative is the &lt;a href=&quot;http://bit.ly/2tdeWDu&quot;&gt;Runcam 5&lt;/a&gt;, which can record FPV videos also in 4k@30fps (&lt;a href=&quot;https://upinthesky.github.io/2019/08/27/runcam-5-overview.html&quot;&gt;here&lt;/a&gt; you can find an overview of the camera).&lt;/p&gt;
+
+&lt;p&gt;3D printed TPU camera mounts for GoPro (this one is less expensive than the one mentioned before, but it is not adjustable) and Runcam 3/3S/5 are available at the links down below (comprehensive of ND filter and lens protection cap):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2lBLjYK&quot;&gt;iFlight Nazgul5 TPU Camera Mount for Gopro Hero 5/6/7 with ND8 Filter &amp;amp; Lens Protection Cap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2nT216Q&quot;&gt;iFlight Nazgul5 TPU Camera Mount for Gopro Hero 4/5 Session and Runcam 3/3S/5 with ND8 Filter &amp;amp; Lens Protection Cap&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;iFlight Nazgul5 was really good, but the upgraded version is even better with the 800mW VTX, probably the best 2020 BNF/PNP freestyle quad at this price.&lt;/p&gt;
+
+&lt;p&gt;iFlight Nazgul5 V2 is available in 4S version &lt;a href=&quot;https://bit.ly/32W6lEw&quot;&gt;here&lt;/a&gt;, while the 6S version is available &lt;a href=&quot;https://bit.ly/3j93yx6&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="iFlight" /><category term="Nazgul5 V2" /><category term="BNF" /><category term="PNP" /><category term="Overview" /><category term="Review" /><category term="Receiver" /><category term="FrSky" /><category term="Flysky" /><category term="R-XSR" /><category term="XM+" /><category term="TBS NANO SE" /><category term="FPV" /><category term="Racing" /><category term="Freestyle" /><category term="Brushless" /><category term="Caddx Ratel" /><category term="Tattu" /><category term="Betaflight" /><summary type="html">The iFlight Nazgul5 V2 4S / iFlight Nazgul5 V2 6S is a 5 inch FPV Racing/Freestyle quadcopter; it comes both in BNF (Bind aNd Fly) and PNP (Plug aNd Play) version. Similarly to its predecessor, the BNF version offers two types of FrSky receivers, but this time we have also a TBS addition: FrSky R-XSR Frsky XM+ TBS NANO SE This is ideal if you have a Taranis transmitter (the third one needs TBS Crossfire module for long range), like the Taranis X9D Plus SE 2019, which is one of the best transmitters at the moment. Otherwise, you can choose the PNP version (without receiver) so you can equip the iFlight Nazgul5 V2 with your preferred receiver (for example, if you have a FlySky transmitter you can use the Flysky X6B 2.4G 6CH i-BUS PPM PWM Receiver for AFHDS, which is very good).</summary></entry><entry><title type="html">DJI Mavic Air 2 Review</title><link href="/2020/09/17/dji-mavic-air-2-review.html" rel="alternate" type="text/html" title="DJI Mavic Air 2 Review" /><published>2020-09-17T00:00:00+02:00</published><updated>2020-09-17T00:00:00+02:00</updated><id>/2020/09/17/dji-mavic-air-2-review</id><content type="html" xml:base="/2020/09/17/dji-mavic-air-2-review.html">&lt;p&gt;&lt;a href=&quot;https://bit.ly/3d2lwyj&quot;&gt;DJI Mavic Air 2&lt;/a&gt; is the successor of the DJI Mavic Air portable drone. In this article we will take a look at the features and improvements made by DJI, which has developed an impressive product.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -147,7 +235,7 @@ Of course, a DJI account is necessary to be able to use the app and register the
 
 &lt;p&gt;&lt;strong&gt;Intelligent Flight Modes&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Like its predecessor, DJI Mavic Air 2 features Intelligent Flight Modes, i.e. autonomous functions through which the aircraft can perform interesting moves for aerial shots. These modes are the following:&lt;/p&gt;
+&lt;p&gt;Like its predecessor, DJI Mavic Air 2 features Intelligent Flight Modes, i.e. autonomous functions through which the aircraft can perform interesting maneuvers for aerial shots. These modes are the following:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;FocusTrack
@@ -1142,9 +1230,9 @@ There are a lot of TPU parts covering exposed portions of the frame (for example
 
 &lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_camera.jpg&quot; alt=&quot;iFlight Nazgul5 Camera&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Motors&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Motors and Propellers&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mLjUnS&quot;&gt;XING-E 2207 1800KV&lt;/a&gt; are really smooth motors (4S version comes with 2750KV motors) and the 5140 3-blade props included are lightweight and they are just a perfect combination with the motors.&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mLjUnS&quot;&gt;XING-E 2207 1800KV&lt;/a&gt; are really smooth motors (4S version comes with 2750KV motors); the 5140 3-blade props included are lightweight and they are just a perfect combination with the motors.&lt;br /&gt;
 If you want to have some spare props, you can find them here: &lt;a href=&quot;http://bit.ly/2mm05mU&quot;&gt;iFlight Nazgul5 5140 5140 3-Blade Propellers&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/iflight-nazgul5-overview/iflight_nazgul5_motor.jpg&quot; alt=&quot;iFlight Nazgul5 Motor&quot; /&gt;&lt;/p&gt;
@@ -1176,7 +1264,7 @@ It is also important to activate AIRMODE in the “Configuration” tab otherwis
 
 &lt;p&gt;&lt;strong&gt;HD Camera&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Of course GoPro Hero 7 showed in the pictures is not included and neither the mount. If you do not want to spend much, a very good alternative is the &lt;a href=&quot;http://bit.ly/2zp2hNw&quot;&gt;Runcam 5&lt;/a&gt;, which can record FPV videos also in 4k@30fps (&lt;a href=&quot;https://upinthesky.github.io/2019/08/27/runcam-5-overview.html&quot;&gt;here&lt;/a&gt; you can find an overview of the camera).&lt;/p&gt;
+&lt;p&gt;Of course GoPro Hero 7 showed in the pictures is not included and neither the mount. If you do not want to spend much, a very good alternative is the &lt;a href=&quot;http://bit.ly/2tdeWDu&quot;&gt;Runcam 5&lt;/a&gt;, which can record FPV videos also in 4k@30fps (&lt;a href=&quot;https://upinthesky.github.io/2019/08/27/runcam-5-overview.html&quot;&gt;here&lt;/a&gt; you can find an overview of the camera).&lt;/p&gt;
 
 &lt;p&gt;3D printed TPU camera mounts for GoPro and Runcam 3/3S/5 are available at the links down below (comprehensive of ND filter and lens protection cap):&lt;/p&gt;
 
@@ -1189,7 +1277,9 @@ It is also important to activate AIRMODE in the “Configuration” tab otherwis
 
 &lt;p&gt;iFlight has made a very nice BNF/PNP freestyle quad and probably one of the best ARF freestyle quad on the market at the moment, also considering what you get for that price.&lt;/p&gt;
 
-&lt;p&gt;You can buy the iFlight Nazgul5 4S version &lt;a href=&quot;http://bit.ly/2ZFHK1V&quot;&gt;here&lt;/a&gt;, while the 6S version is available &lt;a href=&quot;http://bit.ly/2HD109Q&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="iFlight" /><category term="Nazgul5" /><category term="BNF" /><category term="PNP" /><category term="Overview" /><category term="Review" /><category term="Receiver" /><category term="FrSky" /><category term="Flysky" /><category term="R-XSR" /><category term="XM+" /><category term="FPV" /><category term="Racing" /><category term="Freestyle" /><category term="Brushless" /><category term="Caddx Ratel" /><category term="GNB" /><category term="Tattu" /><category term="Betaflight" /><summary type="html">The iFlight Nazgul5 4S / iFlight Nazgul5 6S is a 5 inch FPV Racing/Freestyle quadcopter; it comes both in BNF (Bind aNd Fly) and PNP (Plug aNd Play) version. The BNF version offers only FrSky receivers (ideal if you have a Taranis transmitter, like the Taranis X9D Plus SE 2019, which is one of the best transmitters at the moment): in fact, you can choose between FrSky R-XSR and Frsky XM+ receiver. Otherwise, you can choose the PNP version (without receiver) so you can equip the iFlight Nazgul5 with your preferred receiver (for example, if you have a FlySky transmitter you can use the Flysky X6B 2.4G 6CH i-BUS PPM PWM Receiver for AFHDS, which is very good).</summary></entry><entry><title type="html">Runcam 5 Overview</title><link href="/2019/08/27/runcam-5-overview.html" rel="alternate" type="text/html" title="Runcam 5 Overview" /><published>2019-08-27T00:00:00+02:00</published><updated>2019-08-27T00:00:00+02:00</updated><id>/2019/08/27/runcam-5-overview</id><content type="html" xml:base="/2019/08/27/runcam-5-overview.html">&lt;p&gt;Like its predecessors (Runcam 3 and 3S), &lt;a href=&quot;http://bit.ly/2zp2hNw&quot;&gt;Runcam 5&lt;/a&gt; is an action camera designed with the main purpose of recording FPV Quads Racing/Freestyle footage.
+&lt;p&gt;You can buy the iFlight Nazgul5 4S version &lt;a href=&quot;http://bit.ly/2ZFHK1V&quot;&gt;here&lt;/a&gt;, while the 6S version is available &lt;a href=&quot;http://bit.ly/2HD109Q&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now iFlight Nazgul5 V2 is available: &lt;a href=&quot;https://bit.ly/32W6lEw&quot;&gt;4S version&lt;/a&gt; and &lt;a href=&quot;https://bit.ly/3j93yx6&quot;&gt;6S version&lt;/a&gt;.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="iFlight" /><category term="Nazgul5" /><category term="BNF" /><category term="PNP" /><category term="Overview" /><category term="Review" /><category term="Receiver" /><category term="FrSky" /><category term="Flysky" /><category term="R-XSR" /><category term="XM+" /><category term="FPV" /><category term="Racing" /><category term="Freestyle" /><category term="Brushless" /><category term="Caddx Ratel" /><category term="GNB" /><category term="Tattu" /><category term="Betaflight" /><summary type="html">The iFlight Nazgul5 4S / iFlight Nazgul5 6S is a 5 inch FPV Racing/Freestyle quadcopter; it comes both in BNF (Bind aNd Fly) and PNP (Plug aNd Play) version. The BNF version offers only FrSky receivers (ideal if you have a Taranis transmitter, like the Taranis X9D Plus SE 2019, which is one of the best transmitters at the moment): in fact, you can choose between FrSky R-XSR and Frsky XM+ receiver. Otherwise, you can choose the PNP version (without receiver) so you can equip the iFlight Nazgul5 with your preferred receiver (for example, if you have a FlySky transmitter you can use the Flysky X6B 2.4G 6CH i-BUS PPM PWM Receiver for AFHDS, which is very good).</summary></entry><entry><title type="html">Runcam 5 Overview</title><link href="/2019/08/27/runcam-5-overview.html" rel="alternate" type="text/html" title="Runcam 5 Overview" /><published>2019-08-27T00:00:00+02:00</published><updated>2019-08-27T00:00:00+02:00</updated><id>/2019/08/27/runcam-5-overview</id><content type="html" xml:base="/2019/08/27/runcam-5-overview.html">&lt;p&gt;Like its predecessors (Runcam 3 and 3S), &lt;a href=&quot;http://bit.ly/2zp2hNw&quot;&gt;Runcam 5&lt;/a&gt; is an action camera designed with the main purpose of recording FPV Quads Racing/Freestyle footage.
 However, Runcam 5 has made a jump forward since it is able to record videos not only in HD, but also in 2.7K and 4K.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -1362,101 +1452,4 @@ It can be done manually by modifying the file with a text editor or by using the
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Right now, RunCam 5 is one of the best action camera available on the market for recording FPV freestyle footage and it is sold at a very good price considering the overall product quality. If it had also the three features mentioned before, it could really become GoPro Session 5 alternative.&lt;br /&gt;
-You can get the black version &lt;a href=&quot;http://bit.ly/2zp2hNw&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Runcam 5" /><category term="Quadcopter" /><category term="Overview" /><category term="Review" /><category term="Improvements" /><category term="Comparison" /><category term="FPV" /><category term="Drone" /><category term="Racing" /><category term="Freestyle" /><category term="WDR" /><category term="Action Camera" /><category term="HD" /><category term="FOV" /><category term="Mobile App" /><category term="QR Code" /><summary type="html">Like its predecessors (Runcam 3 and 3S), Runcam 5 is an action camera designed with the main purpose of recording FPV Quads Racing/Freestyle footage. However, Runcam 5 has made a jump forward since it is able to record videos not only in HD, but also in 2.7K and 4K.</summary></entry><entry><title type="html">Eachine Lizard 105S Overview and FS-i6X Binding</title><link href="/2019/01/12/eachine-lizard-105s-overview-and-fs-i6x-binding.html" rel="alternate" type="text/html" title="Eachine Lizard 105S Overview and FS-i6X Binding" /><published>2019-01-12T00:00:00+01:00</published><updated>2019-01-12T00:00:00+01:00</updated><id>/2019/01/12/eachine-lizard-105s-overview-and-fs-i6x-binding</id><content type="html" xml:base="/2019/01/12/eachine-lizard-105s-overview-and-fs-i6x-binding.html">&lt;p&gt;The &lt;a href=&quot;http://bit.ly/2rFfj5y&quot;&gt;Eachine Lizard 105S&lt;/a&gt; is a 105mm FPV Racing/Freestyle quadcopter. It comes with no transmitter and three possible choices for receiver protocol: Flysky AFHDS-2A, DSM2/DSMX, Frsky XM+. So, depending on our transmitter, we choose the compatible one.&lt;/p&gt;
-
-&lt;p&gt;Since in my case the transmitter is the &lt;a href=&quot;http://bit.ly/2PFdqPK&quot;&gt;Flysky FS-i6X&lt;/a&gt;, in this article we will take a look at the version mounting a receiver compatible with Flysky AFHDS-2A protocol, which is the Flysky Flit10.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;The following image shows the box containing the Eachine Lizard 105S FPV Racing Drone:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_box.png&quot; alt=&quot;Eachine Lizard 105S Box&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Package contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;http://bit.ly/2rFfj5y&quot;&gt;Eachine Lizard 105S&lt;/a&gt; package comes with the following contents:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Eachine Lizard 105S;&lt;/li&gt;
-  &lt;li&gt;8 x 2435 4-blades propellers;&lt;/li&gt;
-  &lt;li&gt;4x propeller guards;&lt;/li&gt;
-  &lt;li&gt;4S 14.8V 550mAh 60C LiPo battery;&lt;/li&gt;
-  &lt;li&gt;zip ties;&lt;/li&gt;
-  &lt;li&gt;spare screws;&lt;/li&gt;
-  &lt;li&gt;screw drivers;&lt;/li&gt;
-  &lt;li&gt;battery anti slip;&lt;/li&gt;
-  &lt;li&gt;velcro;&lt;/li&gt;
-  &lt;li&gt;user manual.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_box_contents.png&quot; alt=&quot;Eachine Lizard 105S Box Contents&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The user manual is really detailed and contains all the informations to get the quad in the air. It also has a scheme with all spare parts number, which is really useful if some replacement is needed.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Eachine Lizard 105S main specs are reported down below:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Omnibus F4 nano flight controller with built-in OSD with damping box for IMU (Inertial Measurement Unit) preloaded with Betaflight 3.2 firmware;&lt;/li&gt;
-  &lt;li&gt;Compatible Frsky XM+/DSMX/Flysky AFHDS2A Receiver (possible alternatives);&lt;/li&gt;
-  &lt;li&gt;Eachine 1106 5200KV brushless motors;&lt;/li&gt;
-  &lt;li&gt;BS-28A 4IN1 ESC Dshot600 ready;&lt;/li&gt;
-  &lt;li&gt;720P HD CMOS 1/4 inch camera with 130 degrees FOV;&lt;/li&gt;
-  &lt;li&gt;720P DVR (SD card not included) for on board video recording (max 32 GB SD card);&lt;/li&gt;
-  &lt;li&gt;5.8g 25MW/200MW switchable 48CH VTX;&lt;/li&gt;
-  &lt;li&gt;UXII Antenna;&lt;/li&gt;
-  &lt;li&gt;WS2812 LED Board + Buzzer;&lt;/li&gt;
-  &lt;li&gt;Weight: 85g (without battery), 146g (with included battery).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The following image shows the dimension comparison between the Eachine Wizard X220S and the Eachine Lizard 105S:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/105s_x220s_comparison.png&quot; alt=&quot;Eachine Wizard X220S vs Eachine Lizard 105S&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Motors and propellers&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The Eachine Lizard 105S is equipped with small, but powerful motors: they are the &lt;a href=&quot;http://bit.ly/2sZDmAx&quot;&gt;Eachine 1104 6000KV brushless motors&lt;/a&gt; and they weight only 5.6 grams; they are pretty cheap, so having a couple spare motors laying around is recommended.&lt;br /&gt;
-Stock 2435 propellers work pretty good with those motors. Even if they are durable, due to the material which absorb well crashes, it is always a good idea to buy &lt;a href=&quot;http://bit.ly/383x95t&quot;&gt;some spare propellers&lt;/a&gt; and have them in your bag when you go to your flying spot.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Integrated On Board DVR&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The Eachine Lizard 105S has a nice feature: Digital Video Recording (DVR). This means it is possible to record flight footage, on board, through the FPV camera using an SD card (better if class 10).
-If the SD card is inserted, the integrated DVR will start recording videos by just pressing the button located on the board:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_dvr.png&quot; alt=&quot;Eachine Lizard 105S DVR&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Beware that maximum SD card supported size is 32 GB: &lt;a href=&quot;http://bit.ly/2FI27Un&quot;&gt;BlitzWolf BW-TF1 Class 10 UHS-1 32GB&lt;/a&gt; is a good choice.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Buzzer and Leds Board&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A little board with a buzzer and leds is placed on the back of the Lizard 105S. Be careful because it is not well fixed, so I suggest to put back some stronger double side tape. Moreover, it is a good idea to check the soldering points (in my case some wires got disconnected after few flights).
-The buzzer does a good job and can be heard from pretty far away.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Battery&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;As stated before, the included battery is an Eachine 4S 14.8V 550mAh 60C LiPo battery. As always, included batteries are not that good in terms of performance, so I suggest to take something better like these ones (they have the same XT30 connector, so you are good to go):&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2SSNRxg&quot;&gt;ZOP Power 14.8V 550mAh 80C 4S Lipo Battery XT30 Plug&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;They have same mAh, but higher discharge rate. Weight is 86 grams.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Flysky FS-i6X Binding&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In this section it is shown how to bind the Eachine Lizard 105S to the Flysky FS-i6X transmitter.&lt;br /&gt;
-To enter in binding mode we have to press and hold the binding button on the Lizard 105S receiver while connecting the battery to the quad.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_binding_1.png&quot; alt=&quot;Eachine Lizard 105S Binding&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the battery is connected, if the quad is in binding mode, you should see a green led blinking fast on the receiver. Then, it is just a matter of turning on the transmitter and, if the bind process is successful, the green led becomes solid. If the led blinks slowly, it means the receiver is getting no signal from the transmitter.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/eachine-lizard-105s-overview-and-fs-i6x-binding/lizard_105s_binding_2.png&quot; alt=&quot;Eachine Lizard 105S Binding&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We have seen an overview of the Eachine Lizard 105S which is a very nice FPV freestyle/racing mini quad: it is a good quad for who wants to start a journey in the FPV world.&lt;br /&gt;
-Comparing its behavior to the Eachine X220S, it has a pretty similar style, but you can feel the difference in the momentum due to the weight difference. However its brushless motors are really powerful so they allow to perform hard freestyle maneuvers.&lt;/p&gt;
-
-&lt;p&gt;The Eachine Lizard 105S can be found &lt;a href=&quot;http://bit.ly/2rFfj5y&quot;&gt;here&lt;/a&gt; at a good price.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="Eachine" /><category term="Lizard" /><category term="105S" /><category term="ARF" /><category term="Overview" /><category term="Review" /><category term="Receiver" /><category term="i-BUS" /><category term="AFHDS-2A" /><category term="Flysky" /><category term="FS-i6X" /><category term="FPV" /><category term="Racing" /><category term="Freestyle" /><category term="Brushless" /><category term="DVR" /><category term="Mini" /><summary type="html">The Eachine Lizard 105S is a 105mm FPV Racing/Freestyle quadcopter. It comes with no transmitter and three possible choices for receiver protocol: Flysky AFHDS-2A, DSM2/DSMX, Frsky XM+. So, depending on our transmitter, we choose the compatible one. Since in my case the transmitter is the Flysky FS-i6X, in this article we will take a look at the version mounting a receiver compatible with Flysky AFHDS-2A protocol, which is the Flysky Flit10.</summary></entry></feed>
+You can get the black version &lt;a href=&quot;http://bit.ly/2zp2hNw&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Runcam 5" /><category term="Quadcopter" /><category term="Overview" /><category term="Review" /><category term="Improvements" /><category term="Comparison" /><category term="FPV" /><category term="Drone" /><category term="Racing" /><category term="Freestyle" /><category term="WDR" /><category term="Action Camera" /><category term="HD" /><category term="FOV" /><category term="Mobile App" /><category term="QR Code" /><summary type="html">Like its predecessors (Runcam 3 and 3S), Runcam 5 is an action camera designed with the main purpose of recording FPV Quads Racing/Freestyle footage. However, Runcam 5 has made a jump forward since it is able to record videos not only in HD, but also in 2.7K and 4K.</summary></entry></feed>
