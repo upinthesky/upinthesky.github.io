@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-12-14T19:45:52+01:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">iFlight Cidora SL5 Advanced Overview</title><link href="/2020/11/07/iflight-cidora-sl5-advanced-overview.html" rel="alternate" type="text/html" title="iFlight Cidora SL5 Advanced Overview" /><published>2020-11-07T00:00:00+01:00</published><updated>2020-11-07T00:00:00+01:00</updated><id>/2020/11/07/iflight-cidora-sl5-advanced-overview</id><content type="html" xml:base="/2020/11/07/iflight-cidora-sl5-advanced-overview.html">&lt;p&gt;The &lt;a href=&quot;https://bit.ly/3n1LOp3&quot;&gt;iFlight Cidora SL5 Advanced 4S&lt;/a&gt; / &lt;a href=&quot;https://bit.ly/2I4AHgv&quot;&gt;iFlight Cidora SL5 Advanced 6S&lt;/a&gt; is a 5 inch FPV Racing/Freestyle quadcopter; it comes both in BNF (Bind aNd Fly) and PNP (Plug aNd Play) version (no receiver). The BNF version offers three type of receivers:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-12-20T12:55:05+01:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">Blitzwolf BW-P11 Power Bank Review</title><link href="/2020/12/20/blitzwolf-bw-p11-power-bank.html" rel="alternate" type="text/html" title="Blitzwolf BW-P11 Power Bank Review" /><published>2020-12-20T00:00:00+01:00</published><updated>2020-12-20T00:00:00+01:00</updated><id>/2020/12/20/blitzwolf-bw-p11-power-bank</id><content type="html" xml:base="/2020/12/20/blitzwolf-bw-p11-power-bank.html">&lt;p&gt;Running out of battery is one of the main concerns for drone pilots, especially when this happens in a place where no electrical socket is available. Suppose you need your smatphone to run DJI Fly app to check real time video feed from your Mavic Air 2 or simply you need to configure Betaflight through Speedy Bee app and you are with 5% battery left: that is a bad situation.&lt;br /&gt;
+Fortunately, devices called power banks exist: these are literally portable energy through which you can recharge your smartphone or other USB devices.&lt;/p&gt;
+
+&lt;p&gt;In this article we take a look at the &lt;a href=&quot;http://bit.ly/3p09vzc&quot;&gt;BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank&lt;/a&gt;.&lt;br /&gt;
+&lt;!--more--&gt;
+Blitzwolf BW-P11 is a power bank from BlitzWolf which is able to store 20000mAh. This is a good amount of charge capacity: in fact it means that, considering a smartphone equipped with a 4000mAh battery, it can be full charged 5 times.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/blitzwolf-bw-p11-power-bank/blitzwolf-bw-p11-power-bank.jpg&quot; alt=&quot;BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Package Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The image down below shows the package containing the power bank:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/blitzwolf-bw-p11-power-bank/blitzwolf_bw-p11_package.jpg&quot; alt=&quot;BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank Package&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is what we get in the box:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;power bank;&lt;/li&gt;
+  &lt;li&gt;USB/Type-C cable;&lt;/li&gt;
+  &lt;li&gt;instruction manual.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/blitzwolf-bw-p11-power-bank/blitzwolf_bw-p11_box_contents.jpg&quot; alt=&quot;BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank Package Contents&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Size: 143x71x30mm&lt;/li&gt;
+  &lt;li&gt;Weight: 390g&lt;/li&gt;
+  &lt;li&gt;Battery capacity: 20000 mAh&lt;/li&gt;
+  &lt;li&gt;Total power: 18W (max)&lt;/li&gt;
+  &lt;li&gt;Inputs: Micro B (5V-&amp;gt;2A, 9V-&amp;gt;2A) and TYPE-C (5V-&amp;gt;2.6A, 9V-&amp;gt;2A)&lt;/li&gt;
+  &lt;li&gt;Outputs: USB A1(QC) (5V-&amp;gt;3A, 9V-&amp;gt;2A, 12V-&amp;gt;1.5A), USB A2 (5V-&amp;gt;3A) and TYPE-C (5V-&amp;gt;3A, 9V-&amp;gt;2A, 12V-&amp;gt;1.5A)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Like reported in the specifications, Blitzwolf BW-P11 power bank has 2 input ports and 3 output ports: input ports are for charging the power bank itself, while output ports are the ones you can use to charge smartphones, laptops or any other USB powered device.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/blitzwolf-bw-p11-power-bank/blitzwolf_bw-p11_side_port.jpg&quot; alt=&quot;BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank Side Port&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/blitzwolf-bw-p11-power-bank/blitzwolf_bw-p11_front_ports.jpg&quot; alt=&quot;BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank Front Ports&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also charge more than one device at the same time, but beware that power output is 5V-&amp;gt;3A (max) in that condition.&lt;/p&gt;
+
+&lt;p&gt;Remember: do not charge the power bank via both input ports simultaneously.&lt;/p&gt;
+
+&lt;p&gt;Blitzwolf BW-P11 has multi-layer safety protection, by means it has been built with:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;over-voltage protection;&lt;/li&gt;
+  &lt;li&gt;over-current protection;&lt;/li&gt;
+  &lt;li&gt;short-circuit protection;&lt;/li&gt;
+  &lt;li&gt;over-discharge protection;&lt;/li&gt;
+  &lt;li&gt;over-charge protection.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/blitzwolf-bw-p11-power-bank/blitzwolf-bw-p11-layout.jpg&quot; alt=&quot;BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank Exploded View&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Charging devices is pretty simple and it is just a matter of connecting the device that needs to be charged to the power bank using a USB cable.&lt;/p&gt;
+
+&lt;p&gt;It is possible to check power bank charging status by pressing the side button (ON/OFF):&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/blitzwolf-bw-p11-power-bank/blitzwolf_bw-p11_button.jpg&quot; alt=&quot;BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank Side Button&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Leds indicate the residual charge from a minimum of 1 to a maximum of 4 (full charged).&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/blitzwolf-bw-p11-power-bank/blitzwolf_bw-p11_leds.jpg&quot; alt=&quot;BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank Leds&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Power banks are really useful, especially when traveling and they represent a must have device for drone pilots. BlitzWolf BW-P11 Power Bank does a very good job for its price.&lt;/p&gt;
+
+&lt;p&gt;You can buy BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank &lt;a href=&quot;http://bit.ly/3p09vzc&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Blitzwolf" /><category term="Power Bank" /><category term="BW-P11" /><category term="Accessory" /><category term="Drone" /><category term="Quadcopter" /><category term="DJI Mavic Air 2" /><category term="USB" /><category term="Type-C" /><summary type="html">Running out of battery is one of the main concerns for drone pilots, especially when this happens in a place where no electrical socket is available. Suppose you need your smatphone to run DJI Fly app to check real time video feed from your Mavic Air 2 or simply you need to configure Betaflight through Speedy Bee app and you are with 5% battery left: that is a bad situation. Fortunately, devices called power banks exist: these are literally portable energy through which you can recharge your smartphone or other USB devices. In this article we take a look at the BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank.</summary></entry><entry><title type="html">iFlight Cidora SL5 Advanced Overview</title><link href="/2020/11/07/iflight-cidora-sl5-advanced-overview.html" rel="alternate" type="text/html" title="iFlight Cidora SL5 Advanced Overview" /><published>2020-11-07T00:00:00+01:00</published><updated>2020-11-07T00:00:00+01:00</updated><id>/2020/11/07/iflight-cidora-sl5-advanced-overview</id><content type="html" xml:base="/2020/11/07/iflight-cidora-sl5-advanced-overview.html">&lt;p&gt;The &lt;a href=&quot;https://bit.ly/3n1LOp3&quot;&gt;iFlight Cidora SL5 Advanced 4S&lt;/a&gt; / &lt;a href=&quot;https://bit.ly/2I4AHgv&quot;&gt;iFlight Cidora SL5 Advanced 6S&lt;/a&gt; is a 5 inch FPV Racing/Freestyle quadcopter; it comes both in BNF (Bind aNd Fly) and PNP (Plug aNd Play) version (no receiver). The BNF version offers three type of receivers:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;FrSky R-XSR&lt;/li&gt;
@@ -1058,106 +1134,4 @@ Lastly, we have to solder video (yellow) and RX (white) wire to the FC:&lt;/p&gt
 
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2nJaytr&quot;&gt;EMAX Tinyhawk Freestyle&lt;/a&gt; is a very good mini quad, but lacks in range, so with the receiver and VTX/Antenna mods we do not need to worry anymore of radio failsafe or video feed lost. Moreover with Runcam Nano V2 we gain a better video image quality with better lighting control.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="EMAX" /><category term="Tinyhawk Freestyle" /><category term="BNF" /><category term="Upgrades" /><category term="Receiver" /><category term="FrSky" /><category term="XM+" /><category term="FPV" /><category term="Freestyle" /><category term="Runcam Nano V2" /><category term="HGLRC Forward 350mw Mini VTX" /><category term="Lumenier AXII 2 Antenna" /><category term="XT30" /><category term="Battery" /><summary type="html">In the previous article, we have discussed about the EMAX Tinyhawk Freestyle quadcopter. Since it is a beginner FPV freestyle quad, some components can be upgraded to better ones and in this article we will take a look at some possible upgrades for the battery,the receiver, the FPV camera, the VTX and its 5.8 GHz antenna.</summary></entry><entry><title type="html">EMAX Tinyhawk Freestyle Overview</title><link href="/2019/10/02/emax-tinyhawk-freestyle-overview.html" rel="alternate" type="text/html" title="EMAX Tinyhawk Freestyle Overview" /><published>2019-10-02T00:00:00+02:00</published><updated>2019-10-02T00:00:00+02:00</updated><id>/2019/10/02/emax-tinyhawk-freestyle-overview</id><content type="html" xml:base="/2019/10/02/emax-tinyhawk-freestyle-overview.html">&lt;p&gt;&lt;a href=&quot;http://bit.ly/2nJaytr&quot;&gt;EMAX Tinyhawk Freestyle&lt;/a&gt; is a 2.5 inch (115 mm) 2S FPV toothpick freestyle/racing quadcopter, designed for outdoor flying, which performs almost like a 5 inch, but with a dry weight of 53 grams; it comes in BNF (Bind aNd Fly) version, compatible with FrSky D8/D16, so if you want to use a different protocol you have to mount your own receiver.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-overview/emax_tinyhawk_front.jpg&quot; alt=&quot;EMAX Tinyhawk Freestyle Front&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Package Contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;These are the contents of the package:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tinyhawk Freestyle;&lt;/li&gt;
-  &lt;li&gt;2 x Emax 1s HV 450 mAh;&lt;/li&gt;
-  &lt;li&gt;USB charger;&lt;/li&gt;
-  &lt;li&gt;Extra Propeller Set (2x CW, 2x CCW);&lt;/li&gt;
-  &lt;li&gt;Screw pack;&lt;/li&gt;
-  &lt;li&gt;Instruction manual;&lt;/li&gt;
-  &lt;li&gt;stickers.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The quad comes in a nice bag but, unfortunately, it fits in only without propellers mounted on.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Specifications&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-overview/emax_tinyhawk_side.jpg&quot; alt=&quot;EMAX Tinyhawk Freestyle Side&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Frame: carbon fiber with white printing&lt;/li&gt;
-  &lt;li&gt;Diagonal wheelbase (without paddles): 115mm&lt;/li&gt;
-  &lt;li&gt;Maximum size of the aircraft (without antenna, cable tie): 180mm&lt;/li&gt;
-  &lt;li&gt;Aircraft weight (without battery): 53g&lt;/li&gt;
-  &lt;li&gt;Motor: TH1103 7000KV&lt;/li&gt;
-  &lt;li&gt;Propeller：Avan Rush 2.5 inch 3-blade&lt;/li&gt;
-  &lt;li&gt;Flight Controller: F4（MATEKF411RX）&lt;/li&gt;
-  &lt;li&gt;ESC: 4 in 1 5A BlHeli_S&lt;/li&gt;
-  &lt;li&gt;Receiver:  EMAX SPI compatible with Frsky D8/D16 protocol&lt;/li&gt;
-  &lt;li&gt;VTX : 25mW adjustable frequency 37CH&lt;/li&gt;
-  &lt;li&gt;Battery: 2 x 1 Cell 450 mAh HV LiPo with JST-PH2 Duo connector&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Frame&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The frame is the Storm Trooper white carbon, which is a unibody X style frame with flat top anchored with 4 screws allowing easy access to the stack. The frame is designed for top mounting battery.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-overview/emax_tinyhawk_side.jpg&quot; alt=&quot;EMAX Tinyhawk Freestyle Side&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Always remember to tighten the bolts on the frame before flying.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Motors and Propellers&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;EMAX Tinyhawk Freestyle motors are the EMAX TH1103 7000KV: these brushless motors and 2S batteries are the perfect combination. They are fixed to the frame using 3 screws and the frame has edges to protect the motors in case of crash. Propellers are AVAN Rush 2.5 inch 3-blade: they are push on props, but it is also possible to use bolts to screw them in.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-overview/emax_tinyhawk_motor.jpg&quot; alt=&quot;EMAX Tinyhawk Freestyle Motor and Propeller&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The AVAN Rush propellers assure a quiet fly, allowing discrete flights without annoying people nearby.&lt;br /&gt;
-As always, it is good to have some &lt;a href=&quot;http://bit.ly/2n1gEVD&quot;&gt;spare propellers&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;FPV camera&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;EMAX Tinyhawk Freestyle FPV camera is a 600 TVL CMOS camera that has protection on top and bottom; it has also a dampened mount. Even if it is not possible to tilt the FPV camera, the default angle is decent. 
-Video quality is pretty good with small amount of noise coming through the video feed.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-overview/emax_tinyhawk_camera.jpg&quot; alt=&quot;EMAX Tinyhawk Freestyle Camera&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;FC, ESCs and VTX Stack&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The stack is soft mounted (there are mounted dampeners between the boards) to reduce gyro noise caused by vibrations.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-overview/emax_tinyhawk_board.jpg&quot; alt=&quot;EMAX Tinyhawk Freestyle Board&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The flight controller is the MATEKF411RX, loaded with Betaflight version 4.0.0; the FC has an EMAX SPI built-in receiver for FrSky protocol and the bind button is accessible from the bottom of the frame. ESCs are 5A BLheli-S 4in1.&lt;/p&gt;
-
-&lt;p&gt;The VTX is a 25 mW with 37 channels and smart audio to change the settings easily from the OSD. Even if this is a micro quad, i.e. not suited for long range but for proximity flights, they could have gone for a 200mW VTX.&lt;/p&gt;
-
-&lt;p&gt;There is a vertical USB port to connect the quad to the PC and use Betaflight to change configurations and a little capacitor and the side to handle voltage spikes.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Battery&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The EMAX Tinyhawk Freestyle is a 2S quad, but it comes with two 1S batteries: this is because the manufacturer has chosen to use JST-PH2 duo connector, probably for those already owning this kind of 1S batteries from other EMAX drones.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-overview/emax_tinyhawk_battery.jpg&quot; alt=&quot;EMAX Tinyhawk Freestyle Battery&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This configuration is not the most convenient, so a good change is to substitute the JST-PH2 duo connector with an &lt;a href=&quot;http://bit.ly/2M1vtRF&quot;&gt;XT30 one&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In case you prefer to continue using the JST-PH2 Duo connector, then these 1S batteries are really good:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2nUJ6c0&quot;&gt;2 x GAONENG GNB 4.35V 450mAh 1S 80C HV Battery&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Otherwise you can use these 2S batteries with XT30 connector:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2oBgZ1L&quot;&gt;Tattu 7.6V 450mAh 95C 2S HV 4.35V Lipo Battery&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The EMAX Tinyhawk Freestyle is a freestyle beginner oriented quad and the default tuning is very good, so it gives the ability to new freestyle pilots to focus on the flight instead of spending time adjusting PIDs values. Moreover, the flight time with 2S 450 mAh battery is pretty long (about 5 minutes) compared to the average flight time of freestyle quads, another positive note for who is starting to fly and needs to stay in the air as long as possible.&lt;/p&gt;
-
-&lt;p&gt;You can buy the EMAX Tinyhawk Freestyle &lt;a href=&quot;http://bit.ly/2nJaytr&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you want to check some possible upgrades, take a look at &lt;a href=&quot;https://upinthesky.github.io/2019/10/12/emax-tinyhawk-freestyle-upgrades.html&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="EMAX" /><category term="Tinyhawk Freestyle" /><category term="Toothpick" /><category term="BNF" /><category term="Overview" /><category term="Review" /><category term="Receiver" /><category term="MATEKF411RX" /><category term="FrSky" /><category term="FPV" /><category term="Freestyle" /><category term="AVAN Rush" /><category term="Brushless" /><category term="Gaoneng" /><category term="Battery" /><summary type="html">EMAX Tinyhawk Freestyle is a 2.5 inch (115 mm) 2S FPV toothpick freestyle/racing quadcopter, designed for outdoor flying, which performs almost like a 5 inch, but with a dry weight of 53 grams; it comes in BNF (Bind aNd Fly) version, compatible with FrSky D8/D16, so if you want to use a different protocol you have to mount your own receiver.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2nJaytr&quot;&gt;EMAX Tinyhawk Freestyle&lt;/a&gt; is a very good mini quad, but lacks in range, so with the receiver and VTX/Antenna mods we do not need to worry anymore of radio failsafe or video feed lost. Moreover with Runcam Nano V2 we gain a better video image quality with better lighting control.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="EMAX" /><category term="Tinyhawk Freestyle" /><category term="BNF" /><category term="Upgrades" /><category term="Receiver" /><category term="FrSky" /><category term="XM+" /><category term="FPV" /><category term="Freestyle" /><category term="Runcam Nano V2" /><category term="HGLRC Forward 350mw Mini VTX" /><category term="Lumenier AXII 2 Antenna" /><category term="XT30" /><category term="Battery" /><summary type="html">In the previous article, we have discussed about the EMAX Tinyhawk Freestyle quadcopter. Since it is a beginner FPV freestyle quad, some components can be upgraded to better ones and in this article we will take a look at some possible upgrades for the battery,the receiver, the FPV camera, the VTX and its 5.8 GHz antenna.</summary></entry></feed>
