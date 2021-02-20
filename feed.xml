@@ -1,4 +1,133 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-12-20T12:59:42+01:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">BlitzWolf BW-P11 Power Bank Review</title><link href="/2020/12/20/blitzwolf-bw-p11-power-bank-review.html" rel="alternate" type="text/html" title="BlitzWolf BW-P11 Power Bank Review" /><published>2020-12-20T00:00:00+01:00</published><updated>2020-12-20T00:00:00+01:00</updated><id>/2020/12/20/blitzwolf-bw-p11-power-bank-review</id><content type="html" xml:base="/2020/12/20/blitzwolf-bw-p11-power-bank-review.html">&lt;p&gt;Running out of battery is one of the main concerns for drone pilots, especially when this happens in a place where no electrical socket is available. Suppose you need your smatphone to run DJI Fly app to check real time video feed from your Mavic Air 2 or simply you need to configure Betaflight through Speedy Bee app and you are with 5% battery left: that is a bad situation.&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-20T13:23:21+01:00</updated><id>/feed.xml</id><title type="html">Up In The Sky</title><subtitle>A blog about RC aircrafts</subtitle><author><name>UpInTheSky</name></author><entry><title type="html">Sunnylife ND Lens Filters for DJI Mavic Air 2 Review</title><link href="/2021/02/20/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review.html" rel="alternate" type="text/html" title="Sunnylife ND Lens Filters for DJI Mavic Air 2 Review" /><published>2021-02-20T00:00:00+01:00</published><updated>2021-02-20T00:00:00+01:00</updated><id>/2021/02/20/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review</id><content type="html" xml:base="/2021/02/20/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review.html">&lt;p&gt;If you are in photography you already know how ND filters work and how they can drastically effect photos or video shots. If you are not familiar with them, in this article we will go through an explanation of why they are so important and we will take a look at the &lt;a href=&quot;http://bit.ly/3be2JRa&quot;&gt;Sunnylife ND4/ND8/ND16/ND32 Lens Filters&lt;/a&gt; for the &lt;a href=&quot;https://bit.ly/3d2lwyj&quot;&gt;DJI Mavic Air 2&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Exposure&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To dive in deep in this topic, we need to introduce the basic concept of exposure, i.e. how the light reaches the camera sensor. Exposure is crucial in photography because exposing an image properly determines the ideal amount of brightness, which is fundamental to have the highest amount of details in photos or videos.&lt;/p&gt;
+
+&lt;p&gt;Exposure is affected basically by three parameters, better known as “exposure triangle”:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;aperture: dimension of the “hole” that lets the light reach the camera sensor&lt;/li&gt;
+  &lt;li&gt;shutter speed: how long the aperture stays open to let the light in (for each frame or picture), i.e. the duration of the exposure&lt;/li&gt;
+  &lt;li&gt;ISO: sensitivity of the camera sensor to the light that is coming in the aperture&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;DJI Mavic Air 2 has a 1/2” CMOS camera sensor with a focal length of 24mm and a fixed aperture of f/2.8. Since this parameter is locked, we can do nothing about it, so just be aware that this value controls the depth of field, by means the range of distance over which objects appear in sharp focus.&lt;/p&gt;
+
+&lt;p&gt;Instead, we have control on the other two parameters: shutter speed and ISO.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exposure control on DJI Fly App&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When we shoot photos or videos with our DJI Mavic Air 2, we basically have two options to handle exposure in DJI Fly App, auto or manual. In auto mode the software adjust these values autonomously by changing them depending on the lights conditions.&lt;/p&gt;
+
+&lt;p&gt;This is not always a good choice and a common example is the case in which we are filming in a bright day and we pass from a shot where we do not have the sky in the frame to a situation in which we have in the shot both the landscape and the bright sky. To compensate the big difference in brightness auto exposure kicks in darkening the picture and causing a loss in landscape quality.&lt;/p&gt;
+
+&lt;p&gt;This is why manual mode is nice: we can set ISO and shutter speed at a specific value and they will not change, so we have the same exposure level even if the bright sky enters in the frame.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review/dji_fly_app_manual_exposure.jpg&quot; alt=&quot;DJI Fly App Manual Exposure Settings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ISO and shutter speed values&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can imagine, in manual mode becomes really important to understand how to set ISO and shutter speed values properly to have the best looking image in terms of exposure.&lt;/p&gt;
+
+&lt;p&gt;For &lt;em&gt;ISO&lt;/em&gt; parameter, good values for DJI Mavic Air 2 camera are between 100-400: generally 100 or 200 are preferred; values greater than 400 tend to introduce too much noise in the image. Noise increases with greater ISO values and this is due to the higher sensitivity: beware that an ISO value of 200 makes camera sensor twice as sensitive to light as ISO 100.&lt;/p&gt;
+
+&lt;p&gt;The other parameter we can work on is the &lt;em&gt;shutter speed&lt;/em&gt;: the higher the value, the longer the aperture stays open so more light reaches camera sensor, causing a blurred effect on moving subjects, called subject blur (or on static objects if the camera holder is moving, then we talk about camera blur).&lt;/p&gt;
+
+&lt;p&gt;For video recording, the general rule (called 180 degree rule) says that we have to double the shutter speed with respect to the frame per second we are recording. For example:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;recording at 30 fps -&amp;gt; shutter speed 1/60 s&lt;/li&gt;
+  &lt;li&gt;recording at 60 fps -&amp;gt; shutter speed 1/120 s&lt;/li&gt;
+  &lt;li&gt;recording at 24 fps -&amp;gt; shutter speed 1/50 s (since 1/48 s is not available)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This technique is perfect for cinematic footage since it produces the smoothest and most natural looking video due to the blurring effect.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, using the standard lens, these shutter speed values are impossible to set in light conditions we have during a bright day, otherwise the image will result overexposed. This is one of the situations in which we need ND filters.&lt;/p&gt;
+
+&lt;p&gt;Another example is related to photography: imagine we want to take a shot by night with a long exposure time to capture traffic lights trail or we want to capture the motion effect for a waterfall; in this case we have to slow the shutter speed down and this causes the image to become really bright due to the big amount of light entering in the aperture, so a way to compensate this behavior is to use ND filters.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ND Filters&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Consider ND (Neutral-Density) camera filters like sunglasses: they basically reduce the amount of light coming from the lens to the camera sensor, so we can adjust the shutter speed down to the values we want. Based on their capability to reduce the light ND filters are identified by numbers like ND4, ND8, ND16, ND32 and so on: the higher the number the more the filter is effective in reducing the amount of light.&lt;/p&gt;
+
+&lt;p&gt;So now we take a look at the &lt;a href=&quot;http://bit.ly/3be2JRa&quot;&gt;Sunnylife ND4/ND8/ND16/ND32 Lens Filters&lt;/a&gt;, which are a very good choice for the DJI Mavic Air 2.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Package Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is Sunnylife ND filters package:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review/sunnylife_nd_filters_package.jpg&quot; alt=&quot;Sunnylife ND Filters for DJI Mavic Air 2 Package&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It contains the following ND filters case:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review/sunnylife_nd_filters_case.jpg&quot; alt=&quot;Sunnylife ND Filters for DJI Mavic Air 2 Case&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The box contains a case which stores four ND filters (ND4/ND8/ND16/ND32) and a cleaning cloth:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review/sunnylife_nd_filters_case_contents.jpg&quot; alt=&quot;Sunnylife ND Filters for DJI Mavic Air 2 Case Contents&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ND filters mounting on DJI Mavic Air 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to mount Sunnylife ND filters on the DJI Mavic Air 2 we have to remove the stock “cover” (it is just a border). This is a simple step: just press the cover a little bit and gently rotate it counterclockwise. It should come out easily.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review/dji_mavic_air_2_camera_border_removal.jpg&quot; alt=&quot;DJI Mavic Air 2 Camera Border Removal&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once done remember to put it inside the ND filters case to avoid losing it.&lt;/p&gt;
+
+&lt;p&gt;Then it is just a matter to choose the ND filter you want to use, insert it by adapting to the camera holes and rotating clockwise until it is securely fixed. The following image shows Sunnylife ND32 filter mounted on the DJI Mavic Air 2:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review/sunnylife_nd_filter_mounted.jpg&quot; alt=&quot;Sunnylife ND32 Filter mounted on DJI Mavic Air 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ND filters use cases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this section we will take a look at some use cases where equipping DJI Mavic Air 2 with Sunnylife ND filters is critical to take shots with correct exposure. Of course, in the following we are going to use manual camera settings, because we want full control on the image.&lt;/p&gt;
+
+&lt;p&gt;In this first example we have in the frame a very bright sky.&lt;/p&gt;
+
+&lt;p&gt;Remembering what we said previously about the 180 degree rule, a good setting for video recording to have the most natural motion blur in the footage we have to double the shutter speed with respect to the frame rate.&lt;/p&gt;
+
+&lt;p&gt;As we can see with the help of the histogram and of the overexposure warning (zebra stripes), in these light conditions with no filters equipped the image is overexposed with the desired shutter speed of 1/120 for a 60fps video:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review/4k_60fps_shutter_120_no_filter.jpg&quot; alt=&quot;Overexposure For Shutter Speed 1/120&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Beware that histogram and overexposure warning can be activated in camera menu:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review/dji_fly_app_histogram_overexposure_warning.jpg&quot; alt=&quot;DJI Fly App Histogram and Overexposure Warning&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This means we need to handle the increase in brightness by equipping ND filters.&lt;/p&gt;
+
+&lt;p&gt;For this situation might want to use the ND32.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ISO 100, shutter speed 1/120, 4K@60 fps, ND32&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These combination of filter and parameters seems a good choice:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review/4k_60fps_shutter_120_nd32.jpg&quot; alt=&quot;Correct exposure With ND32 For Shutter Speed 1/120&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If we increase the shutter speed, we can even use an ND16 (increasing shutter speed means shutter opened for less time -&amp;gt; less light comes in -&amp;gt; we need less filtering):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ISO 100, shutter speed 1/60, 4K@30 fps, ND16&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review/4k_30fps_shutter_60_nd16.jpg&quot; alt=&quot;Correct exposure With ND16 For Shutter Speed 1/60&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this article we have see what is exposure and how we can modify two parameters related to it on DJI Mavic Air 2: shutter speed and ISO.&lt;br /&gt;
+This can be achieved by changing their values on the DJI Fly App. We have also seen how ND filters are useful if we want to capture photos in particular light conditions or if we want to record videos to adding to our footage a cinematic look.&lt;/p&gt;
+
+&lt;p&gt;You can find Sunnylife ND4/ND8/ND16/ND32 Lens Filters for DJI Mavic Air 2 &lt;a href=&quot;http://bit.ly/3be2JRa&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are looking for a review of the DJI Mavic Air 2 you can take a look &lt;a href=&quot;https://upinthesky.github.io/2020/09/17/dji-mavic-air-2-review.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are looking for a nice bag for carrying your DJI Mavic Air 2, &lt;a href=&quot;https://upinthesky.github.io/2020/09/27/dji-mavic-air-2-drone-bag-review.html&quot;&gt;this&lt;/a&gt; is a valid choice.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="DJI" /><category term="Mavic Air 2" /><category term="Review" /><category term="FPV" /><category term="Cinematic" /><category term="Camera" /><category term="Sunnylife" /><category term="ND filters" /><category term="Exposure" /><category term="ISO" /><category term="Shutter speed" /><category term="Aperture" /><category term="Photo" /><category term="Video" /><category term="DJI Fly App" /><summary type="html">If you are in photography you already know how ND filters work and how they can drastically effect photos or video shots. If you are not familiar with them, in this article we will go through an explanation of why they are so important and we will take a look at the Sunnylife ND4/ND8/ND16/ND32 Lens Filters for the DJI Mavic Air 2.</summary></entry><entry><title type="html">BlitzWolf BW-P11 Power Bank Review</title><link href="/2020/12/20/blitzwolf-bw-p11-power-bank-review.html" rel="alternate" type="text/html" title="BlitzWolf BW-P11 Power Bank Review" /><published>2020-12-20T00:00:00+01:00</published><updated>2020-12-20T00:00:00+01:00</updated><id>/2020/12/20/blitzwolf-bw-p11-power-bank-review</id><content type="html" xml:base="/2020/12/20/blitzwolf-bw-p11-power-bank-review.html">&lt;p&gt;Running out of battery is one of the main concerns for drone pilots, especially when this happens in a place where no electrical socket is available. Suppose you need your smatphone to run DJI Fly app to check real time video feed from your Mavic Air 2 or simply you need to configure Betaflight through Speedy Bee app and you are with 5% battery left: that is a bad situation.&lt;br /&gt;
 Fortunately, devices called power banks exist: these are literally portable energy through which you can recharge your smartphone or other USB devices.&lt;/p&gt;
 
 &lt;p&gt;In this article we take a look at the &lt;a href=&quot;http://bit.ly/3p09vzc&quot;&gt;BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank&lt;/a&gt;.&lt;br /&gt;
@@ -475,7 +604,7 @@ The stack is soft mounted, so mechanical vibrations are reduced and do not influ
 
 &lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;If you are looking for a cheaper alternative to the original DJI shoulder bag for carrying your DJI Mavic Air 2, this is a valid choice. The quality of the material is pretty good and the storage space is very well designed for carrying everything you need when traveling with your drone.&lt;/p&gt;
+&lt;p&gt;If you are looking for a cheap alternative to the original DJI shoulder bag for carrying your DJI Mavic Air 2, this is a valid choice. The quality of the material is pretty good and the storage space is very well designed for carrying everything you need when traveling with your drone.&lt;/p&gt;
 
 &lt;p&gt;DJI Mavic Air 2 drone bag showed in this article is available &lt;a href=&quot;https://bit.ly/3j6ZHkf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="DJI" /><category term="Mavic Air 2" /><category term="Review" /><category term="Drone Bag" /><category term="Carrying Case" /><category term="Hand Bag" /><category term="Shoulder Bag" /><summary type="html">In this previous article we have discussed about the DJI Mavic Air 2. Only the Fly More Combo version includes the original DJI Mavic Air 2 shoulder bag, which is very expensive in the case you want to buy it separately, so in this blog post we will take a look at a cheaper Mavic Air 2 bag which is very good for carrying the aircraft during travel: DJI Mavic Air 2 Drone Bag.</summary></entry><entry><title type="html">iFlight Nazgul5 V2 Overview</title><link href="/2020/09/26/iflight-nazgul5-v2-overview.html" rel="alternate" type="text/html" title="iFlight Nazgul5 V2 Overview" /><published>2020-09-26T00:00:00+02:00</published><updated>2020-09-26T00:00:00+02:00</updated><id>/2020/09/26/iflight-nazgul5-v2-overview</id><content type="html" xml:base="/2020/09/26/iflight-nazgul5-v2-overview.html">&lt;p&gt;The &lt;a href=&quot;https://bit.ly/32W6lEw&quot;&gt;iFlight Nazgul5 V2 4S&lt;/a&gt; / &lt;a href=&quot;https://bit.ly/3j93yx6&quot;&gt;iFlight Nazgul5 V2 6S&lt;/a&gt; is a 5 inch FPV Racing/Freestyle quadcopter; it comes both in BNF (Bind aNd Fly) and PNP (Plug aNd Play) version. Similarly to its predecessor, the BNF version offers two types of FrSky receivers, but this time we have also a TBS addition:&lt;/p&gt;
 
@@ -575,7 +704,7 @@ If you do not want to spend much, a very good alternative is the &lt;a href=&quo
 
 &lt;!--more--&gt;
 
-&lt;p&gt;Like its predecessor, Mavic Air 2 is available in two different kits: standard and Fly More Combo. The second kit has 2 more batteries, ND filters (ND16/64/256), 6 pairs of propellers (instead of 3), a battery charger hub and a shoulder bag for carrying the drone.&lt;/p&gt;
+&lt;p&gt;Like its predecessor, Mavic Air 2 is available in two different kits: standard and Fly More Combo. The second kit has 2 more batteries, ND filters (ND16/64/256), 6 pairs of propellers (instead of 4), a battery charger hub and a shoulder bag for carrying the drone.&lt;/p&gt;
 
 &lt;p&gt;In this review we will examine the standard version. 
 Here is the Mavic Air 2 box:&lt;/p&gt;
@@ -1048,90 +1177,4 @@ is powered by a rechargeable battery that has a capacity of 2970 mAh, which ensu
 Intelligent Flight Modes are just awesome for taking good cinematic shoots and the obstacle detection system is very accurate.&lt;/p&gt;
 
 &lt;p&gt;You can buy the DJI Mavic Air &lt;a href=&quot;http://bit.ly/2sFBlZP&quot;&gt;here&lt;/a&gt;. 
-Now DJI Mavic Air 2 is available &lt;a href=&quot;https://bit.ly/3d2lwyj&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="DJI" /><category term="Mavic Air" /><category term="Arctic White" /><category term="Review" /><category term="FPV" /><category term="Cinematic" /><category term="Battery" /><category term="DJI GO4 App" /><category term="APAS" /><category term="HD" /><category term="4K" /><category term="Intelligent Flight Modes" /><category term="LiPo" /><category term="Telemetry" /><summary type="html">DJI Mavic Air is a high-end drone capable of recording cinematic footage in high and ultra (4K) definition at an affordable price. It is available in two different color schemes, Arctic White (the one presented in this review) and Onyx Black, and two kits: standard or “Fly More Combo”, which provides three batteries instead of one, more spare propellers, a battery charging hub, a battery power bank adapter and a travel bag.</summary></entry><entry><title type="html">EMAX Tinyhawk Freestyle Upgrades</title><link href="/2019/10/12/emax-tinyhawk-freestyle-upgrades.html" rel="alternate" type="text/html" title="EMAX Tinyhawk Freestyle Upgrades" /><published>2019-10-12T00:00:00+02:00</published><updated>2019-10-12T00:00:00+02:00</updated><id>/2019/10/12/emax-tinyhawk-freestyle-upgrades</id><content type="html" xml:base="/2019/10/12/emax-tinyhawk-freestyle-upgrades.html">&lt;p&gt;In the &lt;a href=&quot;https://upinthesky.github.io/2019/10/02/emax-tinyhawk-freestyle-overview.html&quot;&gt;previous article&lt;/a&gt;, we have discussed about the &lt;a href=&quot;http://bit.ly/2nJaytr&quot;&gt;EMAX Tinyhawk Freestyle&lt;/a&gt; quadcopter. Since it is a beginner FPV freestyle quad, some components can be upgraded to better ones and in this article we will take a look at some possible upgrades for the battery,the receiver, the FPV camera, the VTX and its 5.8 GHz antenna.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;strong&gt;Battery Connectors&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Like reported in the &lt;a href=&quot;https://upinthesky.github.io/2019/10/02/emax-tinyhawk-freestyle-overview.html&quot;&gt;previous article&lt;/a&gt;, instead of using 2 x 1S batteries, we can switch to &lt;a href=&quot;http://bit.ly/2M1vtRF&quot;&gt;XT30 Connectors&lt;/a&gt; and use 2S batteries like the &lt;a href=&quot;http://bit.ly/2oBgZ1L&quot;&gt;Tattu 7.6V 450mAh 95C 2S HV 4.35V Lipo Battery&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Receiver&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The stock receiver is built-in the FC board: this is not a full range receiver so, if you need a better range, a good upgrade is given by the &lt;a href=&quot;http://bit.ly/35qbgNh&quot;&gt;FrSky XM+ Full Range Receiver&lt;/a&gt;, which is a full range receiver.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-upgrades/frsky_xm+_receiver.jpg&quot; alt=&quot;FrSky XM+ Receiver&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is FrSky XM+ Full Range Receiver schematic:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-upgrades/frsky_xm+_full_sbus_receiver_schematic.jpg&quot; alt=&quot;FrSky XM+ Receiver Schematic&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;On the left side there are the pins we are interested in: SBUS (signal), +5V (power) and GND (ground).&lt;/p&gt;
-
-&lt;p&gt;We have to connect these pins to the same ones located on the MATEKF411RX FC:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-upgrades/fc_matekf411rx_sbus_pads.png&quot; alt=&quot;FC MATEKF411RX SBUS Pads&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The pads on the FC are located near the gray antenna where there is the label “Sbus”:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;S (signal)&lt;/li&gt;
-  &lt;li&gt;5V (power)&lt;/li&gt;
-  &lt;li&gt;- (ground)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Remember to pre-tin the pads and the wires for an easy soldering.&lt;br /&gt;
-Then, it is just a matter of removing the stock antenna by unsoldering it. A good place to put the FrSky XM+ receiver is under the FC using some double sided tape to lock it down. Be careful it does not touch the frame.&lt;/p&gt;
-
-&lt;p&gt;We can use some zip ties to orient antennas in the desired direction.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;FPV Camera&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Another good upgrade is changing the stock FPV camera with the &lt;a href=&quot;http://bit.ly/2M3ciGY&quot;&gt;Runcam Nano V2 Camera&lt;/a&gt; which is more performing; the image quality is improved with its 700 TVL and 2.1mm lens (155 degrees FOV). Runcam Nano V2 FPV camera fits perfectly in the EMAX Tinyhawk Freestyle.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-upgrades/runcam_nano_v2.jpg&quot; alt=&quot;Runcam Nano V2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To connect the Runcam Nano V2 FPV camera, we have to remove the stock 600 VTL FPV camera. Then, we have to solder the original connector wires to the Runcam Nano V2 by keeping in mind wire color meaning:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;yellow = signal&lt;/li&gt;
-  &lt;li&gt;black = ground&lt;/li&gt;
-  &lt;li&gt;red = power&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-upgrades/runcam_nano_v2_back.jpg&quot; alt=&quot;Runcam Nano V2 Back&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once connections are done, we can simply fix the camera to the frame using some double sided tape with hot glue and tilt it like the stock one.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;VTX and Antenna&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Since the original VTX has an output power of only 25 mW, if more range is needed we can change it with a better one with similar weight and dimensions. A possible choice is given by the &lt;a href=&quot;http://bit.ly/2OwaIPA&quot;&gt;HGLRC Forward 350mw Mini VTX&lt;/a&gt;, which has a maximum output power of 350 mW and MMCX connector: this means we can use a better antenna instead of the dipole stock one.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-upgrades/hglrc_forward_350mw_mini_vtx.png&quot; alt=&quot;HGLRC Forward 350mW Mini VTX&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;VTX comes with cables to connect it to the FC:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-upgrades/hglrc_forward_350mw_mini_vtx_cables.png&quot; alt=&quot;HGLRC Forward 350mW Mini VTX Cables&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Black and red wires near the video wire (yellow) are not needed.
-VCC 7-26V (red wire) and GND (black) wires, near the RX wire (white), need to be soldered to the FC board battery pads, the same ones where the capacitor is soldered.
-Lastly, we have to solder video (yellow) and RX (white) wire to the FC:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;the yellow wire needs to be soldered to the Vout pad;&lt;/li&gt;
-  &lt;li&gt;the white wire goes to TX2 pad.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-upgrades/fc_matekf411rx_schematic.png&quot; alt=&quot;FC MATEKF411RX Schematic&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;When fixing the VTX to the frame be careful the board does not touch the frame: for example, we can use some double sided tape to isolate them.&lt;/p&gt;
-
-&lt;p&gt;A good antenna for this VTX is the &lt;a href=&quot;http://bit.ly/2OzcPCv&quot;&gt;Lumenier AXII 2 Antenna with MMCX&lt;/a&gt;, which is a 5.8 GHz omnidirectional antenna:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/images/emax-tinyhawk-freestyle-upgrades/lumenier_axii_2_antenna.jpg&quot; alt=&quot;Lumenier AXII 2 Antenna&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To keep the antenna in place, we can use some zip ties.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2nJaytr&quot;&gt;EMAX Tinyhawk Freestyle&lt;/a&gt; is a very good mini quad, but lacks in range, so with the receiver and VTX/Antenna mods we do not need to worry anymore of radio failsafe or video feed lost. Moreover with Runcam Nano V2 we gain a better video image quality with better lighting control.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="EMAX" /><category term="Tinyhawk Freestyle" /><category term="BNF" /><category term="Upgrades" /><category term="Receiver" /><category term="FrSky" /><category term="XM+" /><category term="FPV" /><category term="Freestyle" /><category term="Runcam Nano V2" /><category term="HGLRC Forward 350mw Mini VTX" /><category term="Lumenier AXII 2 Antenna" /><category term="XT30" /><category term="Battery" /><summary type="html">In the previous article, we have discussed about the EMAX Tinyhawk Freestyle quadcopter. Since it is a beginner FPV freestyle quad, some components can be upgraded to better ones and in this article we will take a look at some possible upgrades for the battery,the receiver, the FPV camera, the VTX and its 5.8 GHz antenna.</summary></entry></feed>
+Now DJI Mavic Air 2 is available &lt;a href=&quot;https://bit.ly/3d2lwyj&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>UpInTheSky</name></author><category term="Quadcopter" /><category term="DJI" /><category term="Mavic Air" /><category term="Arctic White" /><category term="Review" /><category term="FPV" /><category term="Cinematic" /><category term="Battery" /><category term="DJI GO4 App" /><category term="APAS" /><category term="HD" /><category term="4K" /><category term="Intelligent Flight Modes" /><category term="LiPo" /><category term="Telemetry" /><summary type="html">DJI Mavic Air is a high-end drone capable of recording cinematic footage in high and ultra (4K) definition at an affordable price. It is available in two different color schemes, Arctic White (the one presented in this review) and Onyx Black, and two kits: standard or “Fly More Combo”, which provides three batteries instead of one, more spare propellers, a battery charging hub, a battery power bank adapter and a travel bag.</summary></entry></feed>
