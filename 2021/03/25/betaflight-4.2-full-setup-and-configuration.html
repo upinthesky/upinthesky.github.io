@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+<!-- Start of Google Analytics with consent check -->
+
+<!-- Add cookie consent css & js -->
+<link rel="stylesheet"
+    type="text/css"
+    href="/js/cookieconsent.min.css"/>
+<script src="/js/cookieconsent.min.js" data-cfasync="false"></script>
+
+<!-- Add Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88840278-1"></script>
+
+<script>
+    // Reads the value of a cookie by name or returns empty string
+    function getCookie(name) {
+        var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
+        return b ? b.pop() : '';
+    }
+
+    // Actually starting analytics up
+    function addAnalytics() {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-88840278-1');
+    }
+
+    // Waiting for the load event
+    window.addEventListener("load", function () {
+        // Reading "cookieconsent_status" cookie
+        const cookieConsent = getCookie('cookieconsent_status');
+
+        // Start analytics if user consented or did not deny
+        if (cookieConsent === 'allow' || cookieConsent === '') {
+            addAnalytics();
+        }
+
+        // Initialise cookie consent banner
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#d9d9d9",
+                    "text": "#404040"
+                },
+                "button": {
+                    "background": "#8ec760",
+                    "text": "#ffffff"
+                }
+            },
+            "type": "opt-out",
+            "content": {
+                "allow": "Approve",
+                "dismiss": "Approve",
+                "deny": "Reject"
+            },
+            // Reload the page on user choice to make sure cookie is set
+            onStatusChange: function (status, chosenBefore) {
+                location.reload();
+            }
+        })
+    });
+</script>
+
+<!-- End of Google Analytics with consent check -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Betaflight 4.2 Full Setup and Configuration - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="Keeping devices firmware updated is always important, especially when awesome new features are out. This is the case of Betaflight quadcopter firmware, which...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2021/03/25/betaflight-4.2-full-setup-and-configuration.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About/Social</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Betaflight 4.2 Full Setup and Configuration</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on March 25, 2021 &middot; <span class="reading-time" title="Estimated read time">
+  
+   23 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div id="tags"> 
+          <ul class="tag-box inline">
+            
+            <li><a href="/tags#Quadcopter" class="tag">• Quadcopter</a></li>
+            
+            <li><a href="/tags#Eachine" class="tag">• Eachine</a></li>
+            
+            <li><a href="/tags#Wizard" class="tag">• Wizard</a></li>
+            
+            <li><a href="/tags#X220S" class="tag">• X220S</a></li>
+            
+            <li><a href="/tags#Betaflight" class="tag">• Betaflight</a></li>
+            
+            <li><a href="/tags#Setup" class="tag">• Setup</a></li>
+            
+            <li><a href="/tags#Configuration" class="tag">• Configuration</a></li>
+            
+            <li><a href="/tags#FrSky" class="tag">• FrSky</a></li>
+            
+            <li><a href="/tags#SBUS" class="tag">• SBUS</a></li>
+            
+            <li><a href="/tags#XM+" class="tag">• XM+</a></li>
+            
+            <li><a href="/tags#Receiver" class="tag">• Receiver</a></li>
+            
+            <li><a href="/tags#FPV" class="tag">• FPV</a></li>
+            
+            <li><a href="/tags#Racing" class="tag">• Racing</a></li>
+            
+            <li><a href="/tags#Taranis X9D Plus SE 2019" class="tag">• Taranis X9D Plus SE 2019</a></li>
+            
+            <li><a href="/tags#PID Tuning" class="tag">• PID Tuning</a></li>
+            
+            <li><a href="/tags#Rates" class="tag">• Rates</a></li>
+            
+            <li><a href="/tags#Filters" class="tag">• Filters</a></li>
+            
+            <li><a href="/tags#Ports" class="tag">• Ports</a></li>
+            
+            <li><a href="/tags#OSD" class="tag">• OSD</a></li>
+            
+            <li><a href="/tags#Failsafe" class="tag">• Failsafe</a></li>
+            
+            <li><a href="/tags#Modes" class="tag">• Modes</a></li>
+            
+            <li><a href="/tags#Blackbox" class="tag">• Blackbox</a></li>
+            
+            <li><a href="/tags#CLI" class="tag">• CLI</a></li>
+            
+            <li><a href="/tags#RPM Filtering" class="tag">• RPM Filtering</a></li>
+            
+            <li><a href="/tags#Motors" class="tag">• Motors</a></li>
+            
+          </ul>  
+        </div>
+        
+        <p>Keeping devices firmware updated is always important, especially when awesome new features are out. This is the case of Betaflight quadcopter firmware, which has introduced incredible improvements in 4.2 version allowing to better control drone movements and trace smoother trajectories due to improved noise handling through the use of advanced control algorithms.</p>
+
+<p>Moreover Betaflight Configurator interface has gone through some changes since the <a href="https://upinthesky.github.io/2017/12/11/eachine-wizard-x220s-betaflight-setup-and-configuration.html">last configuration article on this blog</a>, so it is a nice opportunity to take a look at the updated version.<br />
+This is why in this article we are going to take a look at Betaflight 4.2, in particular version 4.2.8 (which at the time of this writing is the latest available), and how to setup and configure it.</p>
+
+<!--more-->
+
+<p><strong>Betaflight Configurator</strong></p>
+
+<p>As seen in some previous articles, Betaflight Configurator is a really popular application that allows to configure aircrafts loaded with Betaflight firmware via GUI.</p>
+
+<p>Latest application version is available for download at <a href="https://github.com/betaflight/betaflight-configurator/releases">this link</a> for free. If you are using Windows, choose betaflight-configurator-installer_10.7.0_win32.exe, where 10.7.0 indicates the current Betaflight Configurator version: downloading this specific version (or above) is important in order to flash Betaflight firmware version 4.2 or above.</p>
+
+<p>Once the application is correctly installed, it is possible to launch it. Then, it is just a matter of connecting the quadcopter to the PC using a micro USB (Flight Controller) to USB (PC) cable and clicking on “Connect” to establish the connection.</p>
+
+<p>If you do not know how to install drivers to properly connect your drone to the PC in order to use DFU (Driver Firmware Update) mode, you can take a look at the “Drivers installation” section of <a href="https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html">this article</a>.</p>
+
+<p>Here is the Welcome screen of Betaflight:</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_configurator.jpg" alt="Betaflight Firmware Configurator" /></p>
+
+<p>Before proceeding, it is a good idea to click on Settings icon on the top right and enable permanently Expert Mode: in this way we can see all possible menus and options available in Betaflight Configurator, otherwise some of them are hidden. Another good move is to enable dark theme, since it reduces eyes strain.</p>
+
+<p>In the bottom right corner of the window it is possible to verify Betaflight Configurator current version.</p>
+
+<p><strong>Betaflight Firmware Flashing</strong></p>
+
+<p>Before starting this process, remember to always backup your configuration. Betaflight 4.x PIDs configuration is completely reworked with respect to version 3.x, so it is not recommended to reuse old set up for PIDS parameters; however, having a backup is useful in case the quad is going to have issues with new version and we want to go back to the previous one. Moreover, LED strip or OSD configurations can be reapplied, so remember to launch a “diff” command in CLI tab and copy the output to a .txt file for eventual later use.</p>
+
+<p>In order to install Betaflight latest firmware we need to know which flight controller board is mounted on our quad. If you do not know, you can simply navigate to the CLI tab, which is the Command Line Interface on the Betaflight Configurator and launch the “version” command (“Current firmware version check” section of <a href="https://upinthesky.github.io/2018/08/04/eachine-wizard-x220s-omnibus-f4sd-firmware-upgrade.html">this article</a>).</p>
+
+<p>In this article, the quad we are working on is the <a href="http://bit.ly/2PIOtUS">Eachine Wizard X220S</a> (of course same following steps can be applied to every quad, just be careful selecting the correct hardware), which is equipped with OMNIBUSF4SD control board (F405), so we are going to select this board from the drop down menu combined with latest firmware version available:</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_firmware_flasher1.jpg" alt="Betaflight Firmware Flasher 1" /></p>
+
+<p>Then we can click on the “Load Firmware [Online]” button to load the firmware. Once operation is completed, Betaflight firmware is ready to be flashed on the board, so we can click on “Flash Firmware”. The quad will go automatically on DFU mode and flashing procedure starts.</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_firmware_flasher2.jpg" alt="Betaflight Firmware Flasher 2" /></p>
+
+<p>If the procedure ends correctly we can “Exit DFU Mode” and start navigating through Betaflight Configurator tabs.</p>
+
+<p><strong>Betaflight 4.2.8 installed</strong></p>
+
+<p>Once Betaflight firmware is installed, when connecting the drone with the new firmware for the first time we could get the following message:</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/custom_defaults.jpg" alt="Betaflight Apply Custom Defaults" /></p>
+
+<p>Just click on “Apply Custom Defaults” to start with the suggested default configuration for the board.</p>
+
+<p>Moreover some warnings could pop up:</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_warning.jpg" alt="Betaflight Warning" /></p>
+
+<p>The most common is the one presented in the previous image, which tells us to calibrate the accelerometer.</p>
+
+<p><strong>Betaflight Setup Tab</strong></p>
+
+<p>Accelerometer, like magnetometer, can be calibrated in the Setup tab by just clicking on the related button:</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_setup_tab.jpg" alt="Betaflight Configurator Setup Tab" /></p>
+
+<p>In Setup tab we can also reset settings to default, backup/restore configuration (even if CLI settings are not included, for that we must use “diff” command) and reboot the board into bootloader / DFU mode.<br />
+Moreover drone current attitude (roll, pitch and yaw) is shown in real time through a 3D image.</p>
+
+<p>In all the tabs we are going to review, changes are applied only after Save button at the end of the page is clicked.</p>
+
+<p>If you do not plan to use Angle mode (stable / auto level) it is a good idea to disable accelerometer since this saves a good amount of resources reducing CPU Load, which should stay as low as possible. CPU Load should not go over 11-12% when the quad is sitting at the bench considering that during flight this value increases dramatically.</p>
+
+<p><strong>Betaflight Ports Tab</strong></p>
+
+<p>In Ports tab we set ports to be used by the board. In this case we have enabled USB port and UART6 serial port for receiver connection:</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_ports_tab.jpg" alt="Betaflight Configurator Ports Tab" /></p>
+
+<p>On OMNIBUSF4SD board UART6 is configured for SBUS, which is the protocol used by FrSky transmission systems: this is the configuration we have to use since on this X220S there is an XM+ receiver installed communicating with FrSky Taranis X9D Plus SE 2019 transmitter.</p>
+
+<p><strong>Betaflight Configuration Tab</strong></p>
+
+<p>In Configuration tab, in Mixer section it is possible to set quad type and reverse motor rotation direction. System configuration allows to set Gyro update frequency and PID loop frequency. Generally this is related to ESC/motor protocol chosen in ESC/Motor features section: if we set DSHOT600 we should go for 8KHz update frequency, while DSHOT300 is more suitable for 4KHz. Higher values are preferred, but this is a good choice only if CPU Load does not go over 11-12%. This is why at every configuration change comporting an increase in computational workload on the CPU, we have always to keep an eye on the bottom of the page where CPU Load value is reported: in this case it is at 9%.</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_configuration_tab1.jpg" alt="Betaflight Configurator Configuration Tab 1" /></p>
+
+<p>Remember also to disable MOTOR_STOP because we want motors to spin when armed; even if this is a security option, we are going to address this issue by setting up a prearm switch in Modes tab, so motors do not start spinning if we inadvertently flip the arm switch.</p>
+
+<p>Bidirectional DSHOT is not enabled by default, but it is a very nice feature. Basically it enables the capability to receive telemetry from the ESCs, so the flight controller can use the information received to better control the PID loop. This is why enabling bidirectional DSHOT allows RPM filtering settings (configuration is made on PID Tuning tab -&gt; Filter Settings -&gt;  Gyro RPM Filter). Be careful to set the correct number of motor poles, i.e. the number of magnets on the motor bell (generally motors on 5 inch quads have 14 magnets). Bidirectional DSHOT can be enabled only if ESCs have been flashed with supported firmware and this can be done both for BLHELI_32 and BLHELI_S.<br />
+Remember to always keep an eye on CPU Load when enabling this feature since it is computationally intensive.</p>
+
+<p>Motor Idle Throttle Value indicates the percentage of throttle in idle: 6%-8% is generally a good compromise also in order to avoid death rolls and have more floating time when cutting of throttle.</p>
+
+<p>Set 180° in Arming section so as to enable arming of the quad even if the aircraft is upside down (useful if quad crashed and it is stuck somewhere with a certain angle).</p>
+
+<p>The other two important parameters we need to set are in Receiver section to complement what we have already set in Ports tab, i.e. our receiver configuration: since, as stated before, we are using FrSky XM+ receiver, we have to choose Serial-based receiver (SPEAKSAT, SBUS, SUMD) from the first drop down menu (Receiver Mode) and SBUS from the second one (Serial Receiver Provider).</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_configuration_tab2.jpg" alt="Betaflight Configurator Configuration Tab 2" /></p>
+
+<p>In Other Features just remember to enable AIRMODE, OSD and DYNAMIC_FILTER. Airmode is a must since we need and want control of the quad at zero throttle. In this case, also LED_STRIP is enabled since Eachine Wizard X220S has a led strip on the back indicating aircraft movements.</p>
+
+<p><strong>Betaflight Failsafe Tab</strong></p>
+
+<p>In Failsafe tab we set failsafe stages: Stage 1 is generally entered when TX loses connection with receiver. At that moment, channel fallback settings are applied to all channels. From that moment there is a time, called guard time, until Stage 2 is entered: guard time is configured in Stage 2 - Settings section  where a value of 1 means 0.1 sec, so a value of 10 means if Stage 1 is triggered then there is a guard time of 1 second to recover connection between transmitter and receiver (and the quad is armed) before Stage 2 is entered.</p>
+
+<p>In Stage 2 - Failsafe Procedure we can configure the action to take when Stage 2 is entered; there are three options:</p>
+
+<ul>
+  <li>Drop: quad turns off motors and drops down</li>
+  <li>Land: quad attempts an emergency landing</li>
+  <li>GPS Rescue: basically a “return to home point” like feature, available only if drone is equipped with a GPS module</li>
+</ul>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_failsafe_tab.jpg" alt="Betaflight Configurator Failsafe Tab" /></p>
+
+<p>Choosing one instead of the other is a matter of preference, however “Land” option is not recommended. “Drop” option is preferable for short range freestyle flights, while “GPS Rescue” is a must for long range builds.</p>
+
+<p><strong>Betaflight PID Tuning Tab</strong></p>
+
+<p>PID Tuning tab contains three sub tabs:</p>
+
+<ul>
+  <li>PID Profile Settings</li>
+  <li>Rateprofile Settings</li>
+  <li>Filter Settings</li>
+</ul>
+
+<p><strong>PID Profile Settings</strong></p>
+
+<p>PID Profile Settings allows to configure PID (proportional, integral, derivative) values and Feedforward for each one of the rotational axes (x, y, z) by means for roll, pitch and yaw.
+This can be done by changing singular values in the table or using the four sliders:</p>
+
+<ul>
+  <li>Master Multiplier: increases all PIDs in a balanced way (having a 5 inch quad as reference, for bigger quads -&gt; slider to the right, for smaller quads -&gt; slider to the left)</li>
+  <li>PD Balance: slider to the right progressively increases P (in case we need more responsiveness)</li>
+  <li>P and D Gain: this is the most important slider, from this one we get the compromise between responsiveness and oscillations/propwash occurrence; the good thing is that P and D values automatically balance while moving the slider</li>
+  <li>Stick Response Gain: this slider modifies feedforward values; basically feedforward reduces PID controller action latency, i.e. how fast the quad responds to our commands. How to set this parameter depends from the flight style: slider to the right means a more nervous behavior for aggressive maneuvers; sliders to the left for a smooth/cinematic flight style.</li>
+</ul>
+
+<p>Sliders are particularly useful for users new to tuning and largely simplify the process. While moving sliders to left or right, variations on PIDs can be seen in the table above. The fundamental step is to change sliders with small steps, flying after every change to test the difference in quad response. If Expert Mode is not enabled, sliders movement is reduced.</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_pidtuning_tab1.jpg" alt="Betaflight Configurator PID Tuning Profile Settings Tab" /></p>
+
+<p>In PID Controller Settings section it is possible to set Feedforward transition, which represents how feedforward control acts and can vary from a minimum of 0 to a maximum of 1: higher values determine a more relaxed action (a value of zero gives more reactivity to input controls).</p>
+
+<p>Dmin sets a minimum value for D parameter, so it will vary from a minimum to a maximum value depending on how we move the sticks, for example how fast we move them: this means that D parameter is dynamic. Personally I do no use this functionality, so I keep it disabled.</p>
+
+<p>When changing values in PID Tuning tabs it is important to always check motors temperature: if they are getting too hot, by means it is uncomfortable to hold them with hands, that is an indicator that they are not able to handle that configuration and we should go back to the previous one.</p>
+
+<p>Before starting to play around with these parameters, testing a first flight with defaults is recommended. Betaflight developers have done a great job with Betaflight 4.2 version and you will be amazed to find that even with default values the quad flies great.</p>
+
+<p><strong>Betaflight 4.2 Tuning Notes</strong></p>
+
+<p>Before proceeding to the next tab, it is worth to take a look at the following page that reports tuning configurations for different fly styles directly made by Betaflight developers: <a href="https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes">Betaflight 4.2 Tuning Notes</a>.</p>
+
+<p>The following one, as stated, is made for HD (smoothed FF for HD cameras, strong low turn rate smoothness, low <em>iterm</em> relax to minimize bounce back):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set iterm_relax_cutoff = 10
+set rc_smoothing_auto_smoothness = 20
+set ff_interpolate_sp = AVERAGED_3
+set ff_smooth_factor = 40
+set ff_spike_limit = 55
+set ff_boost = 0
+set feedforward_transition = 40
+set yaw_lowpass_hz = 70
+set throttle_boost = 5
+set throttle_boost_cutoff = 10
+set dyn_lpf_dterm_curve_expo = 7
+set gyro_rpm_notch_q = 800
+</code></pre></div></div>
+
+<p>To use a certain configuration, it is just a matter of going in the CLI tab, copying and pasting the code snippet and pressing Enter. Then we have to save the parameters by simply writing the “save” command and pressing Enter again.</p>
+
+<p>However, in case we do not like the feeling with a particular setup, we can always go back to the default configuration by copying and pasting the default parameters setup in the CLI and then saving the changes.</p>
+
+<p>Return to defaults:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set iterm_relax_cutoff = 15
+set rc_smoothing_auto_smoothness = 10
+set ff_interpolate_sp = AVERAGED_2
+set ff_smooth_factor = 37	
+set ff_spike_limit = 60
+set ff_boost = 15
+set feedforward_transition = 0
+set yaw_lowpass_hz = 0
+set throttle_boost = 5
+set throttle_boost_cutoff = 15
+set dyn_lpf_dterm_curve_expo = 5
+set gyro_rpm_notch_q = 500
+set iterm_windup = 100
+</code></pre></div></div>
+
+<p><strong>Rateprofile Settings</strong></p>
+
+<p>In Rateprofile Settings tab we can set rates and expos, i.e. the relation between stick movements and rotational velocity of the quad along its axes.</p>
+
+<p>The graph is really useful since it show how roll/pitch/yaw profile curves modify after changing RC Rates, Rates and RC Expo values.</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_pidtuning_tab2.jpg" alt="Betaflight Configurator PID Tuning Rateprofile Settings Tab" /></p>
+
+<p>The configuration above gives a good rotational speed smoothing stick sensitivity for central movements.</p>
+
+<p><strong>Filter Settings</strong></p>
+
+<p>In Filter Settings tab, sliders come back. Be really careful when playing with them and always keep attention when you turn on motors after changes. If after turning on everything looks ok, it is a good practice to fly for 30 seconds and check motors temperature.</p>
+
+<p>Gyro RPM Filter is displayed if we have enabled Bidirectional DSHOT in Configuration tab and this is a must have, especially if our build and motors have some flights on the back since it does a great job handling noise.</p>
+
+<p>Having Dynamic Notch Filter at zero is another must have.</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_pidtuning_tab3.jpg" alt="Betaflight Configurator PID Tuning Filter Settings Tab" /></p>
+
+<p><strong>Betaflight Receiver Tab</strong></p>
+
+<p>In Receiver tab, if we have correctly setup the receiver in Ports and Configuration tabs, we should see channel values changing when moving the sticks on the transmitter. So it is just a matter of setting the Channel Map to map correctly sticks movements to channels based on transmitter sticks mode (Mode 2 in this example): for this FrSky Taranis X9D Plus SE 2019 it is TAER1234 and RSSI Channel is mapped to AUX 12 for XM+ receiver.</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_receiver_tab.jpg" alt="Betaflight Configurator Receiver Tab" /></p>
+
+<p>Take a look at <a href="http://192.168.1.200:4000/2020/01/15/frsky-taranis-x9d-plus-se-2019-switch-setup-and-configuration-in-betaflight.html">how to setup and configure switches for the FrSky Taranis X9D SE 2019 on Betaflight</a> article if needed. This is also useful for next tab.</p>
+
+<p><strong>Betaflight Modes Tab</strong></p>
+
+<p>In Modes tab it is possible to map transmitter switches to Betaflight flight modes or features.</p>
+
+<p>Here there are the most useful: ARM, ANGLE, HORIZON, BEEPER, FLIP OVER AFTER CRASH, PREARM.</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_modes_tab.jpg" alt="Betaflight Configurator Modes Tab" /></p>
+
+<p><strong>Betaflight Motors Tab</strong></p>
+
+<p>Motors tab is useful to check motor errors percentage, which is the value in red after “E:”. You have to connect battery to the quad in order to make this test. It should always stay under 1% while moving the sliders up and down.</p>
+
+<p>Always make sure propellers are removed when testing and never run motors for more than few seconds or you can burn them since propellers are not there to cool them down.</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_motors_tab.jpg" alt="Betaflight Configurator Motors Tab" /></p>
+
+<p><strong>Betaflight OSD Tab</strong></p>
+
+<p>OSD stands for On Screen Display: here we can set all the informations we want to visualize on the FPV Goggles.<br />
+The most useful are for sure battery voltage, RSSI and flight time.</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_osd_tab.jpg" alt="Betaflight Configurator OSD Tab" /></p>
+
+<p><strong>Betaflight LED Strip Tab</strong></p>
+
+<p>Since Eachine Wizard X220S has led strips on the back, we need to reconfigure their values. Thankfully we have said through “diff” command previous configuration, so we can just use CLI to bring it back:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># led
+led 0 0,11::AI:8
+led 1 0,12::AI:8
+led 2 0,13::AI:2
+led 3 0,14::AI:2
+led 4 0,15::AI:2
+led 5 15,11::AI:8
+led 6 15,12::AI:8
+led 7 15,13::AI:2
+led 8 15,14::AI:2
+led 9 15,15::AI:2
+
+# color
+
+# mode_color
+mode_color 6 0 2
+mode_color 7 0 0
+</code></pre></div></div>
+
+<p>On LED Strip tab we can verify the success of the operation:</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_ledstrip_tab.jpg" alt="Betaflight Configurator LED Strip Tab" /></p>
+
+<p><strong>Betaflight Blackbox Tab</strong></p>
+
+<p>Betaflight Blackbox is a must have, since it can help us evaluating how good are the parameters we have set in PID Tuning tabs.</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_blackbox_tab.jpg" alt="Betaflight Configurator Blackbox Tab" /></p>
+
+<p>In fact, having Blackbox enabled allows the quad to write flight logs on SD card, so we can check them post flight to verify if there is something wrong with the quad: we can do this by feeling it, but this is definitely the best way to finely tune the quad.</p>
+
+<p>If you are interested, check <a href="https://upinthesky.github.io/2017/12/27/eachine-wizard-x220s-yaw-wobbling-resolution.html">this simple example of how Betaflight Blackbox is useful to analyze quad problems</a>.</p>
+
+<p><strong>Betaflight CLI Tab</strong></p>
+
+<p>Like stated before, in CLI we can insert commands and set parameter values.</p>
+
+<p class="center"><img class="img-fluid" src="/images/betaflight-4.2-full-setup-and-configuration/betaflight_cli_tab.jpg" alt="Betaflight CLI Tab" /></p>
+
+<p>After setting values it is important to use “save” command to commit changes.</p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>In this article we have seen Betaflight 4.2 firmware features, in particular 4.2.8 version, and how to setup and configure them using Betaflight Configurator 10.7 on the Eachine Wizard X220S equipped with OMNIIBUSF4SD board and FrSky XM+ receiver. This firmware is a real game changer with improved algorithms and parameters control allowing smoother flying and better handling of propwash effects.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2021/02/20/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review.html" data-toggle="tooltip" data-placement="top" title="Sunnylife ND Lens Filters for DJI Mavic Air 2 Review">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCOvot4Xl-x5vTcC_decowEA">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://instagram.com/upintheskyfpv">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2021 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

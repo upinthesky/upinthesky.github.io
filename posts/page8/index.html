@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+<!-- Start of Google Analytics with consent check -->
+
+<!-- Add cookie consent css & js -->
+<link rel="stylesheet"
+    type="text/css"
+    href="/js/cookieconsent.min.css"/>
+<script src="/js/cookieconsent.min.js" data-cfasync="false"></script>
+
+<!-- Add Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88840278-1"></script>
+
+<script>
+    // Reads the value of a cookie by name or returns empty string
+    function getCookie(name) {
+        var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
+        return b ? b.pop() : '';
+    }
+
+    // Actually starting analytics up
+    function addAnalytics() {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-88840278-1');
+    }
+
+    // Waiting for the load event
+    window.addEventListener("load", function () {
+        // Reading "cookieconsent_status" cookie
+        const cookieConsent = getCookie('cookieconsent_status');
+
+        // Start analytics if user consented or did not deny
+        if (cookieConsent === 'allow' || cookieConsent === '') {
+            addAnalytics();
+        }
+
+        // Initialise cookie consent banner
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#d9d9d9",
+                    "text": "#404040"
+                },
+                "button": {
+                    "background": "#8ec760",
+                    "text": "#ffffff"
+                }
+            },
+            "type": "opt-out",
+            "content": {
+                "allow": "Approve",
+                "dismiss": "Approve",
+                "deny": "Reject"
+            },
+            // Reload the page on user choice to make sure cookie is set
+            onStatusChange: function (status, chosenBefore) {
+                location.reload();
+            }
+        })
+    });
+</script>
+
+<!-- End of Google Analytics with consent check -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Up In The Sky
+  </title>
+
+  <meta name="description" content="A blog about RC aircrafts">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/posts/page8/">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About/Social</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/images/clouds_banner.jpg')">
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Up In The Sky</h1>
+            
+            <span class="subheading">A blog about RC aircrafts</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        
+
+        <!-- Home Post List -->
+        
+
+        <article class="post-preview">
+          <a href="/2021/03/25/betaflight-4.2-full-setup-and-configuration.html">
+            <h2 class="post-title">Betaflight 4.2 Full Setup and Configuration</h2>
+          </a>
+          
+          <p>Keeping devices firmware updated is always important, especially when awesome new features are out. This is the case of Betaflight quadcopter firmware, which has introduced incredible improvements in 4.2 version allowing to better control drone movements and trace smoother trajectories due to improved noise handling through the use of advanced control algorithms.</p>
+
+<p>Moreover Betaflight Configurator interface has gone through some changes since the <a href="https://upinthesky.github.io/2017/12/11/eachine-wizard-x220s-betaflight-setup-and-configuration.html">last configuration article on this blog</a>, so it is a nice opportunity to take a look at the updated version.<br />
+This is why in this article we are going to take a look at Betaflight 4.2, in particular version 4.2.8 (which at the time of this writing is the latest available), and how to setup and configure it.</p>
+
+
+          
+            <span class archive-link><a href="/2021/03/25/betaflight-4.2-full-setup-and-configuration.html">Read more</a></span>
+          
+          
+          <p class="post-meta">Posted by
+            
+            UpInTheSky
+            
+            on
+            March 25, 2021 &middot; <span class="reading-time" title="Estimated read time">
+  
+   23 mins  read </span>
+            
+          </p>
+        </article>
+
+        <hr>
+
+        
+
+        <article class="post-preview">
+          <a href="/2021/02/20/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review.html">
+            <h2 class="post-title">Sunnylife ND Lens Filters for DJI Mavic Air 2 Review</h2>
+          </a>
+          
+          <p>If you are in photography you already know how ND filters work and how they can drastically affect photos or video shots. If you are not familiar with them, in this article we will go through an explanation of why they are so important. Then, we will take a look at the <a href="http://bit.ly/3be2JRa">Sunnylife ND4/ND8/ND16/ND32 Lens Filters</a> for the <a href="https://bit.ly/3d2lwyj">DJI Mavic Air 2</a> and see how to use them to capture nice photos and videos.</p>
+
+
+          
+            <span class archive-link><a href="/2021/02/20/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review.html">Read more</a></span>
+          
+          
+          <p class="post-meta">Posted by
+            
+            UpInTheSky
+            
+            on
+            February 20, 2021 &middot; <span class="reading-time" title="Estimated read time">
+  
+   12 mins  read </span>
+            
+          </p>
+        </article>
+
+        <hr>
+
+        
+
+        <article class="post-preview">
+          <a href="/2020/12/20/blitzwolf-bw-p11-power-bank-review.html">
+            <h2 class="post-title">BlitzWolf BW-P11 Power Bank Review</h2>
+          </a>
+          
+          <p>Running out of battery is one of the main concerns for drone pilots, especially when this happens in a place where no electrical socket is available. Suppose you need your smartphone to run DJI Fly app to check real time video feed from your Mavic Air 2 or simply you need to configure Betaflight through Speedy Bee app and you are with 5% battery left: that is a bad situation.<br />
+Fortunately, devices called power banks exist: these are literally portable energy through which you can recharge your smartphone or other USB devices.</p>
+
+<p>In this article we take a look at the <a href="http://bit.ly/3p09vzc">BlitzWolf BW-P11 20000mAh 18W QC3.0 PD Power Bank</a>.</p>
+
+
+          
+            <span class archive-link><a href="/2020/12/20/blitzwolf-bw-p11-power-bank-review.html">Read more</a></span>
+          
+          
+          <p class="post-meta">Posted by
+            
+            UpInTheSky
+            
+            on
+            December 20, 2020 &middot; <span class="reading-time" title="Estimated read time">
+  
+   4 mins  read </span>
+            
+          </p>
+        </article>
+
+        <hr>
+
+        
+
+        <article class="post-preview">
+          <a href="/2020/11/07/iflight-cidora-sl5-advanced-overview.html">
+            <h2 class="post-title">iFlight Cidora SL5 Advanced Overview</h2>
+          </a>
+          
+          <p>The <a href="https://bit.ly/3n1LOp3">iFlight Cidora SL5 Advanced 4S</a> / <a href="https://bit.ly/2I4AHgv">iFlight Cidora SL5 Advanced 6S</a> is a 5 inch FPV Racing/Freestyle quadcopter; it comes both in BNF (Bind aNd Fly) and PNP (Plug aNd Play) version (no receiver). The BNF version offers three type of receivers:</p>
+
+<ul>
+  <li>FrSky R-XSR</li>
+  <li>Frsky XM+</li>
+  <li>TBS Crossfire NANO RX with T type antenna</li>
+</ul>
+
+
+          
+            <span class archive-link><a href="/2020/11/07/iflight-cidora-sl5-advanced-overview.html">Read more</a></span>
+          
+          
+          <p class="post-meta">Posted by
+            
+            UpInTheSky
+            
+            on
+            November 07, 2020 &middot; <span class="reading-time" title="Estimated read time">
+  
+   7 mins  read </span>
+            
+          </p>
+        </article>
+
+        <hr>
+
+        
+
+        <article class="post-preview">
+          <a href="/2020/10/18/eachine-novice-ii-overview.html">
+            <h2 class="post-title">Eachine Novice II Overview</h2>
+          </a>
+          
+          <p><a href="https://bit.ly/3lTIJXC">Eachine Novice II</a> is a toothpick RTF FPV freestyle racing quadcopter. Since it is Ready To Fly (RTF), it is meant for users new to this hobby: the package includes everything you need. It is just a matter of charging the batteries and we are ready to lift off.</p>
+
+
+          
+            <span class archive-link><a href="/2020/10/18/eachine-novice-ii-overview.html">Read more</a></span>
+          
+          
+          <p class="post-meta">Posted by
+            
+            UpInTheSky
+            
+            on
+            October 18, 2020 &middot; <span class="reading-time" title="Estimated read time">
+  
+   5 mins  read </span>
+            
+          </p>
+        </article>
+
+        <hr>
+
+        
+
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="/archive">View All Posts &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCOvot4Xl-x5vTcC_decowEA">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://instagram.com/upintheskyfpv">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2021 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>
