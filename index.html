@@ -14,8 +14,8 @@
     href="/js/cookieconsent.min.css"/>
 <script src="/js/cookieconsent.min.js" data-cfasync="false"></script>
 
-<!-- Add Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88840278-1"></script>
+<!-- Add Google Analytics without setting the ID-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
 
 <script>
     // Reads the value of a cookie by name or returns empty string
@@ -24,7 +24,7 @@
         return b ? b.pop() : '';
     }
 
-    // Actually starting analytics up
+    // Actually starting analytics up adding the ID
     function addAnalytics() {
         window.dataLayer = window.dataLayer || [];
 
