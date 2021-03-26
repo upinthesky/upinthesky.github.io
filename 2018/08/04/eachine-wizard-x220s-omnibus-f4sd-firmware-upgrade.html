@@ -338,7 +338,7 @@ rateprofile 0
 
 <p>Once CP210x and STM32 drivers are installed, it is possible to start the FC in DFU mode: this can be either done by pressing and holding the “Boot” button on the FC and then connecting the quadcopter to the PC or by first connecting the drone to the PC and, using the CLI, entering the “bl” command or “dfu” for versions older than 3.2 (first method is preferred):</p>
 
-<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.png" alt="Eachine Wizard X220S Omnibus F4SD Boot Button" /></p>
+<p class="center"><img class="img-fluid" src="/images/eachine_wizard_x220s_omnibus_f4sd_firmware_upgrade/boot_button.jpg" alt="Eachine Wizard X220S Omnibus F4SD Boot Button" /></p>
 
 <p>A continuous beep from the FC warns it is in DFU mode. However, to make it possible to flash the firmware, we need to install one last driver by using Zadig (otherwise DFU mode does not show up in Betaflight Configurator). In Zadig, to list all devices, click on “Options -&gt; List All Devices”.<br />
 As the image below reports, by default we have the value “NONE” for the STM32 BOOTLOADER (if you do not see this entry it means you have not installed correctly STM32 Virtual COM Port Driver).</p>
