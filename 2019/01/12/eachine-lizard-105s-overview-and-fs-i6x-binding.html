@@ -15,7 +15,7 @@
 <script src="/js/cookieconsent.min.js" data-cfasync="false"></script>
 
 <!-- Add Google Analytics without setting the ID-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88840278-1"></script>
 
 <script>
     // Reads the value of a cookie by name or returns empty string
@@ -42,7 +42,7 @@
         const cookieConsent = getCookie('cookieconsent_status');
 
         // Start analytics if user consented or did not deny
-        if (cookieConsent === 'allow' || cookieConsent === '') {
+        if (cookieConsent === 'allow') {
             addAnalytics();
         }
 
