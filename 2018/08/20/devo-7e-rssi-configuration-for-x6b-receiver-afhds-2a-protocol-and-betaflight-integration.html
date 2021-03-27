@@ -6,76 +6,6 @@
 
 <head>
 
-<!-- Start of Google Analytics with consent check -->
-
-<!-- Add cookie consent css & js -->
-<link rel="stylesheet"
-    type="text/css"
-    href="/js/cookieconsent.min.css"/>
-<script src="/js/cookieconsent.min.js" data-cfasync="false"></script>
-
-<!-- Add Google Analytics without setting the ID-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88840278-1"></script>
-
-<script>
-    // Reads the value of a cookie by name or returns empty string
-    function getCookie(name) {
-        var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
-        return b ? b.pop() : '';
-    }
-
-    // Actually starting analytics up adding the ID
-    function addAnalytics() {
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'UA-88840278-1', {
-            "anonymize_ip": true
-        });
-    }
-
-    // Waiting for the load event
-    window.addEventListener("load", function () {
-        // Reading "cookieconsent_status" cookie
-        const cookieConsent = getCookie('cookieconsent_status');
-
-        // Start analytics if user consented or did not deny
-        if (cookieConsent === 'allow') {
-            addAnalytics();
-        }
-
-        // Initialise cookie consent banner
-        window.cookieconsent.initialise({
-            "palette": {
-                "popup": {
-                    "background": "#d9d9d9",
-                    "text": "#404040"
-                },
-                "button": {
-                    "background": "#8ec760",
-                    "text": "#ffffff"
-                }
-            },
-            "type": "opt-out",
-            "content": {
-                "allow": "Approve",
-                "dismiss": "Approve",
-                "deny": "Reject"
-            },
-            // Reload the page on user choice to make sure cookie is set
-            onStatusChange: function (status, chosenBefore) {
-                location.reload();
-            }
-        })
-    });
-</script>
-
-<!-- End of Google Analytics with consent check -->
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -343,17 +273,73 @@ By going in Model menu -&gt; Telemetry config, we can set up an alarm that trigg
 
 
 
-  <!-- <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <!-- Global site tag (gtag.js) - Google Analytics with consent check -->
+
+<!-- Add cookie consent css & js -->
+<link rel="stylesheet"
+    type="text/css"
+    href="/js/cookieconsent.min.css"/>
+<script src="/js/cookieconsent.min.js" data-cfasync="false"></script>
+
+<!-- Add Google Analytics without setting the ID-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88840278-1"></script>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    // Reads the value of a cookie by name or returns empty string
+    function getCookie(name) {
+        var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
+        return b ? b.pop() : '';
+    }
 
-  gtag('config', '');
+    // Actually starting analytics up adding the ID
+    function addAnalytics() {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-88840278-1', {
+            anonymize_ip: true
+        });
+    }
+
+    // Waiting for the load event
+    window.addEventListener("load", function () {
+        // Reading "cookieconsent_status" cookie
+        const cookieConsent = getCookie('cookieconsent_status');
+
+        // Start analytics if user consented or did not deny
+        if (cookieConsent === 'allow') {
+            addAnalytics();
+        }
+
+        // Initialise cookie consent banner
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#d9d9d9",
+                    "text": "#404040"
+                },
+                "button": {
+                    "background": "#8ec760",
+                    "text": "#ffffff"
+                }
+            },
+            "type": "opt-out",
+            "content": {
+                "allow": "Approve",
+                "dismiss": "Approve",
+                "deny": "Reject"
+            },
+            // Reload the page on user choice to make sure cookie is set
+            onStatusChange: function (status, chosenBefore) {
+                location.reload();
+            }
+        })
+    });
 </script>
-
- -->
 
 </body>
 
