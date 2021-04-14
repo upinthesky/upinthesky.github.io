@@ -262,6 +262,8 @@ Remember to always keep an eye on CPU Load when enabling this feature since it i
 
 <p>Choosing one instead of the other is a matter of preference, however “Land” option is not recommended. “Drop” option is preferable for short range freestyle flights, while “GPS Rescue” is a must for long range builds.</p>
 
+<p>On Channel Fallback Settings it is possible to set the value the channel will get when a failsafe happens: here it is a good idea to change the settings for the RSSI channel (AUX12) so RSSI value goes to zero when connection to the receiver is lost (otherwise by default it will “Hold” on that value). Since the value of 1000 corresponds to the minimum, i.e. zero, we are going to change “Hold” to “Set” and type this value.</p>
+
 <p><strong>Betaflight PID Tuning Tab</strong></p>
 
 <p>PID Tuning tab contains three sub tabs:</p>
