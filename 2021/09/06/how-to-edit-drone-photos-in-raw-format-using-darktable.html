@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    How to Edit Drone Photos in RAW Format Using Darktable - Up In The Sky
+    
+  </title>
+
+  <meta name="description" content="One of the reasons drones are so popular is because they allow to look at things from a different perspective by capturing awesome shots from the sky. High q...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2021/09/06/how-to-edit-drone-photos-in-raw-format-using-darktable.html">
+  <link rel="alternate" type="application/rss+xml" title="Up In The Sky" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Up In The Sky</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About/Social</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/archive">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tags">Tags</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead">
+    
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>How to Edit Drone Photos in RAW Format Using Darktable</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">UpInTheSky</a>
+              on September 06, 2021 &middot; <span class="reading-time" title="Estimated read time">
+  
+   11 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div id="tags"> 
+          <ul class="tag-box inline">
+            
+            <li><a href="/tags#Quadcopter" class="tag">• Quadcopter</a></li>
+            
+            <li><a href="/tags#Drone" class="tag">• Drone</a></li>
+            
+            <li><a href="/tags#Photography" class="tag">• Photography</a></li>
+            
+            <li><a href="/tags#Photo" class="tag">• Photo</a></li>
+            
+            <li><a href="/tags#Post Production" class="tag">• Post Production</a></li>
+            
+            <li><a href="/tags#RAW" class="tag">• RAW</a></li>
+            
+            <li><a href="/tags#Image" class="tag">• Image</a></li>
+            
+            <li><a href="/tags#Editing" class="tag">• Editing</a></li>
+            
+            <li><a href="/tags#Darktable" class="tag">• Darktable</a></li>
+            
+            <li><a href="/tags#Exposure" class="tag">• Exposure</a></li>
+            
+            <li><a href="/tags#Contrast" class="tag">• Contrast</a></li>
+            
+            <li><a href="/tags#Saturation" class="tag">• Saturation</a></li>
+            
+            <li><a href="/tags#White Balance" class="tag">• White Balance</a></li>
+            
+            <li><a href="/tags#Color Zones" class="tag">• Color Zones</a></li>
+            
+            <li><a href="/tags#Lens Correction" class="tag">• Lens Correction</a></li>
+            
+            <li><a href="/tags#Tutorial" class="tag">• Tutorial</a></li>
+            
+          </ul>  
+        </div>
+        
+        <p>One of the reasons drones are so popular is because they allow to look at things from a different perspective by capturing awesome shots from the sky.<br />
+High quality models have the possibility to shoot in RAW format, like happens in digital photo cameras, i.e. to save pictures with the highest amount of information instead of having the classic compressed JPEG file.</p>
+
+<p>This enables the possibility to edit photos in post production easily at home using photo editing software and reaching the desired result without spending too much time on the field taking the perfect shot.</p>
+
+<!--more-->
+
+<p>The <a href="https://bit.ly/3d2lwyj">DJI Mavic Air 2</a> is a fantastic drone capable of taking pictures in RAW format, specifically in .DNG extension, and it is the one used to take the photo we are going to edit in this article.</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/dji_mavic_air_2.jpg" alt="DJI Mavic Air 2" /></p>
+
+<p>In order to take pictures with the desired shutter speed, <a href="http://bit.ly/3be2JRa">Sunnylife ND filters</a> have been used in combination with the DJI Mavic Air 2. If you want to know more about that, take a look at the <a href="https://upinthesky.github.io/2021/02/20/sunnylife-nd-lens-filters-for-dji-mavic-air-2-review.html">Sunnylife ND lens filters for DJI Mavic Air 2 article</a>.</p>
+
+<p>Since we are going to edit photos, we need a software that is capable to handle RAW image files: the chosen one for this tutorial is Darktable, which is a very powerful open source photo editing application.</p>
+
+<p><strong>Downloading and installing Darktable</strong></p>
+
+<p><a href="https://www.darktable.org/">Darktable</a>, like the official website reports, <em>is an open source photography workflow application and raw developer</em>. This software has basically all the features available in the well known Adobe Photoshop Lightroom, but it is free (!).</p>
+
+<p>Darktable is <a href="https://www.darktable.org/install/">available</a> for basically every type of OS (Microsoft Windows, Linux, MAC OS) and you can find installation instructions at the dedicated page. Installation is pretty simple, since generally (for example for Microsoft Windows) it is just a matter of launching the installation executable and going through the standard Wizard.</p>
+
+<p>Once the installation process is over we can start using Darktable software.</p>
+
+<p><strong>Launching Darktable</strong></p>
+
+<p>Launching the program we are prompted with Darktable import interface, that is called “lighttable”:</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/darktable_lighttable_interface.jpg" alt="Darktable Lighttable Interface" /></p>
+
+<p>As shown, on the top left there are two buttons “image” and “folder”: by clicking them, it is possible to import a single image or a folder in Darktable.</p>
+
+<p>Once the RAW file has been imported, we get transferred to the darkroom interface, which is the one we are going to use for the editing process.</p>
+
+<p>Here is the image we are going to work on:</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/original_image.jpg" alt="Darktable Darkroom Interface" /></p>
+
+<p>As we can see from the histogram on the top right, the image is correctly exposed so in post we can recover the details of the darkest parts of the picture by manually increasing the exposure through Darkroom.</p>
+
+<p>This picture has been captured using an ISO of 100 and a shutter speed of 1/160 s (focal length for the DJI Mavic Air 2 is 24mm with aperture f/2.8 and this cannot be changed). This information is also reported in the bottom part of Darktable interface.</p>
+
+<p>As shown in the left tab called “history”, Darktable applies by default ten basic corrections to the imported image. We can look at the differences from the original RAW image by clicking on the desired step in the history itself (“10 -&gt; base curve” is the last one).</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/image_after_darktable_default_modules.jpg" alt="Darktable Image After Import" /></p>
+
+<p>If the image had been taken with different exposure in order to show the bottom part of the frame, this would have caused the burn of the top part due to the high dynamic range of this particular shot. Situation like this one are common especially when the sun is in the shot, so it is always better to underexpose the image.</p>
+
+<p>Moreover, due to the size of the sensor, sunset situations are very difficult to handle, so in this cases it is critical to shot with the correct exposure.</p>
+
+<p>That said, we can now begin the post editing process in Darktable.</p>
+
+<p><strong>Shadow and Highlights</strong></p>
+
+<p>We can start by using the first module called “Shadow and Highlights”. To use a module it is just a matter of searching for it using the “search module” box and selecting it. Once it has been selected the corresponding panel opens showing the parameters we can change.</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/image_after_darktable_shadow_highlights.jpg" alt="Darktable Shadow and Highlights Module" /></p>
+
+<p>Beware that some modules apply changes just after they have been activated: of course, by playing with the values we get more or less impact.</p>
+
+<p>In order to view the difference, it is possible to click on the on/off button near the module name: this hides the effects of the module itself and it is very useful to check if we are going in the right direction.</p>
+
+<p>This module modifies the tonal range of the shadows and highlights of an image by enhancing local contrast.</p>
+
+<p><strong>Exposure</strong></p>
+
+<p>“Exposure” module is one of the most important: it increases or decreases the overall brightness of an image. This means we can “revive” the dark part of the image by recovering hidden details and bringing them back to the light.</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/image_after_darktable_exposure.jpg" alt="Darktable Exposure Module" /></p>
+
+<p>A value of 1.65 EV seems to work well, but we can adjust it later after the effects of the other modules are applied. In fact, even if we set certain values, it is common to go back and rework on them especially after making color corrections with other modules.</p>
+
+<p><strong>Local Contrast</strong></p>
+
+<p>Next module we are going to apply is “Local Contrast”. Meaning is pretty straightforward and its effect is similar to the “Shadows and Highlights” module.</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/image_after_darktable_local_contrast.jpg" alt="Darktable Local Contrast Module" /></p>
+
+<p>Like with all the other modules, it is important to apply small changes. This concept may seem trivial, but it is critical.</p>
+
+<p><strong>Color Zones</strong></p>
+
+<p>“Color Zones” is one of the best modules since it allows to emphasize specific colors in the image, so as to capture viewer attention in certain areas of the picture.</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/image_after_darktable_color_zones.jpg" alt="Darktable Color Zones Module" /></p>
+
+<p>The usage is pretty simple; there are three tabs: lightness, saturation and hue. For each one of them we can set the effectiveness of the colors, i.e. the lightness, saturation and hue of pixels, by modifying the curve represented on the graph. For example, in saturation tab, the more the curve is on the upper part of the “y” axis for a specific color the more that color will be rendered vivid in the image.</p>
+
+<p>Keep in mind that the graph shows also colors distribution for loaded image, so you can already see which colors are dominant in the picture.</p>
+
+<p>Just experiment with the curve until you reach the desired outcome: here I have chosen a pretty aggressive profile.</p>
+
+<p><strong>Lens Corrections</strong></p>
+
+<p>“Lens Correction” module automatically correct for lens distortion after setting the camera lens the picture was taken with.</p>
+
+<p>At the time of this writing the lens for the DJI Mavic Air 2, i.e. DJI FC3170, is not available, so we are going to set DJI FC210 because this seems to work decently: this is the lens correction profile for the DJI Mavic Air.</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/image_after_darktable_lens_correction.jpg" alt="Darktable Lens Correction Module" /></p>
+
+<p>Hopefully in the future developers will add the specific one.</p>
+
+<p><strong>Denoise</strong></p>
+
+<p>Another very useful module is “Denoise”: this module reduces the noise present in the image. It works pretty well in cases like this one where low light conditions and wide dynamic range are not easily handled by small size camera sensors.</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/image_after_darktable_denoise.jpg" alt="Darktable Denoise Module" /></p>
+
+<p>Setting the mode on “wavelets auto” does the job: zooming in, the difference is pretty clear.</p>
+
+<p>Before noise reduction:</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/noise_comparison_before.jpg" alt="Image Before Denoise Module Application" /></p>
+
+<p>After noise reduction:</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/noise_comparison_after.jpg" alt="Image After Denoise Module Application" /></p>
+
+<p><strong>Vignetting</strong></p>
+
+<p>Finally, to make the viewer focus its attention on the central part of the image we can use the “Vignetting” module that is pretty self-explanatory. Usually I do not use this one, but in this case a soft usage gives an interesting look to the scene:</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/image_after_darktable_vignetting.jpg" alt="Darktable Vignetting Module" /></p>
+
+<p>Playing a little bit more with the modules shown above, we can get the following final image which, due to how we have edited the colors, gives to the viewer the sensation of looking at a fantasy environment.</p>
+
+<p class="center"><img class="img-fluid" src="/images/how-to-edit-drone-photos-in-raw-format-using-darktable/image_darktable_result_scaled.jpg" alt="Image Result After Darktable Editing" /></p>
+
+<p><strong>Conclusions</strong></p>
+
+<p>In this article we have seen how to edit drone RAW photos using Darktable software. This has been done by importing RAW image in Darkroom and using its modules to edit the picture according to our preferences. In this tutorial we have gone through the following Darktable modules: Shadows and Highlights, Exposure, Local Contrast, Color Zones, Lens Correction and Vignetting.</p>
+
+<p>Considering the starting image we can confirm that the final result is pretty astonishing and represents a good example of what we can achieve with drone photography even in difficult light conditions, like in the case of the sunset, and with small camera sensors.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/2021/09/01/flywoo-firefly-baby-quad-overview.html" data-toggle="tooltip" data-placement="top" title="Flywoo Firefly Baby Quad Overview">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:upintheskyblog[at]gmail[dot]com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCOvot4Xl-x5vTcC_decowEA">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://instagram.com/upintheskyfpv">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2021 | All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics with consent check -->
+
+<!-- Add cookie consent css & js -->
+<link rel="stylesheet"
+    type="text/css"
+    href="/js/cookieconsent.min.css"/>
+<script src="/js/cookieconsent.min.js" data-cfasync="false"></script>
+
+<!-- Add Google Analytics without setting the ID-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88840278-1"></script>
+
+<script>
+    // Reads the value of a cookie by name or returns empty string
+    function getCookie(name) {
+        var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
+        return b ? b.pop() : '';
+    }
+
+    // Actually starting analytics up adding the ID
+    function addAnalytics() {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-88840278-1', {
+            anonymize_ip: true
+        });
+    }
+
+    // Waiting for the load event
+    window.addEventListener("load", function () {
+        // Reading "cookieconsent_status" cookie
+        const cookieConsent = getCookie('cookieconsent_status');
+
+        // Start analytics if user consented or did not deny
+        if (cookieConsent === 'allow') {
+            addAnalytics();
+        }
+
+        // Initialise cookie consent banner
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#d9d9d9",
+                    "text": "#404040"
+                },
+                "button": {
+                    "background": "#8ec760",
+                    "text": "#ffffff"
+                }
+            },
+            "type": "opt-out",
+            "content": {
+                "allow": "Approve",
+                "dismiss": "Approve",
+                "deny": "Reject"
+            },
+            // Reload the page on user choice to make sure cookie is set
+            onStatusChange: function (status, chosenBefore) {
+                location.reload();
+            }
+        })
+    });
+</script>
+
+</body>
+
+</html>
