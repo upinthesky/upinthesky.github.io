@@ -134,13 +134,13 @@
 
 <!--more-->
 
-<p>In the following, we will see how to configure this feature on the <a href="http://bit.ly/2L960Ce">Devo 7E</a> loaded with Deviation TX firmware for the <a href="http://bit.ly/2N1Qnye">X6B</a> receiver, i.e. AFHD-2A protocol. Moreover, we will integrate RSSI on Betaflight so the value shows up  in real time on the OSD.</p>
+<p>In the following, we will see how to configure this feature on the <a href="https://www.banggood.com/Wholesale-Walkera-Devo-7E-7CH-Transmitter-Mode-2-Without-Receiver-p-48117.html?p=CA03112038011201508Q">Devo 7E</a> loaded with Deviation TX firmware for the <a href="https://www.banggood.com/Flysky-X6B-2_4G-6CH-i-BUS-PPM-PWM-Receiver-for-AFHDS-i6s-i6-i6x-Transmitter-p-1101513.html?p=CA03112038011201508Q">X6B</a> receiver, i.e. AFHD-2A protocol. Moreover, we will integrate RSSI on Betaflight so the value shows up  in real time on the OSD.</p>
 
 <p><strong>Loading Deviation firmware and installing A7105 module</strong></p>
 
 <p>Since we are going to bind Devo 7E with X6B receiver which uses FlySky protocol, first thing to do is load Deviation TX firmware in the Devo 7E (always use the latest release): the download is available <a href="https://www.deviationtx.com/downloads-new">here</a> under “Deviation Releases” where you can find both stable releases and “nightly builds”. There are many guides on how to load Deviation TX firmware so we will not go in detail through the entire process. However, it is pretty simple: connect the radio to the computer using the supplied USB cable, power it up in “Program Update” mode (press hold “EXT” on TX and then turn it on), install the drivers and load the DFU file present in the archive (downloaded before) using <a href="https://www.deviationtx.com/downloads-new/category/162-walkera">Walkera DfuSe USB Upgrade Tool</a>. Once that is done, just it is just a matter of copying inside the transmitter (press hold “ENT” on TX and then turn it on to connect in USB mode) all the file present in the archive excluding .zip and .dfu.</p>
 
-<p>To bind protocols which are not supported by CYRF6936 module (the one that is there by default), such as FlySky, we need additional RF modules. For FlySky protocol, we need to solder the A7105 RF module inside the transmitter: I suggest <a href="http://bit.ly/2MG6PXV">this version</a> that has integrated Power Amplifier (PA).<br />
+<p>To bind protocols which are not supported by CYRF6936 module (the one that is there by default), such as FlySky, we need additional RF modules. For FlySky protocol, we need to solder the A7105 RF module inside the transmitter: I suggest <a href="https://www.banggood.com/A7105-Wireless-RF-2_4GHz-Transceiver-Module-3_3V-Power-Supply-Module-p-909404.html?p=CA03112038011201508Q">this version</a> that has integrated Power Amplifier (PA).<br />
 For the connection refer to the <a href="http://www.deviationtx.com/wiki/modulelist/a7105">official documentation</a>; beware that after Deviation release 4.0.1 some connections change (everything is well described with images showing the pinout).</p>
 
 <p>Once the soldering job is finished, we need to enable the module via software: connect again the TX to the computer in USB mode and edit the lines referring to the A7105 module in hardware.ini file like shown below (has_pa-a7105 set to 1 only if you have the version with integrated PA):</p>
@@ -152,7 +152,7 @@ For the connection refer to the <a href="http://www.deviationtx.com/wiki/modulel
 .......................
 </code></pre></div></div>
 
-<p>As a side note, since modifying the Devo 7E could be a little tricky if not particularly familiar with soldering, there is a new multi-protocol radio already loaded with Deviation firmware, inside which are already installed additional RF modules, including the FlySky one (it has a 4in1 RF module - CC2500, CYRF6936, A7105, NRF2401): <a href="http://bit.ly/2OVgl6O">Jumper T8SG V2.0 Plus</a>.</p>
+<p>As a side note, since modifying the Devo 7E could be a little tricky if not particularly familiar with soldering, there is a new multi-protocol radio already loaded with Deviation firmware, inside which are already installed additional RF modules, including the FlySky one (it has a 4in1 RF module - CC2500, CYRF6936, A7105, NRF2401): <a href="https://www.banggood.com/Jumper-T8SG-Plus-V2_0-Multi-protocal-2_4G-12CH-OLED-Transmitter-for-Flysky-Frsky-DSM2-Devo-Futaba-p-1257102.html?p=CA03112038011201508Q">Jumper T8SG V2.0 Plus</a>.</p>
 
 <p>Now that everything is set up, we can start the configuration.</p>
 
@@ -257,7 +257,7 @@ By going in Model menu -&gt; Telemetry config, we can set up an alarm that trigg
           
           
         </ul>
-        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2023 | All Rights Reserved </p>
+        <p class="copyright text-muted">Copyright &copy; UpInTheSky 2017-2025 | All Rights Reserved </p>
       </div>
     </div>
   </div>
